@@ -1,0 +1,54 @@
+.btn-primary {
+    color: #fff;
+    background-color: $primeColor;
+    border-color: $primeColor;
+    text-transform: uppercase;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: darken($primeColor, 15%);
+    border-color: darken($primeColor, 15%);
+}
+.btn-primary.focus, .btn-primary:focus {
+	color: #fff;
+	background-color: darken($primeColor, 15%);
+	border-color: lighten($primeColor, 50%);
+	box-shadow: 0 0 0 0.2rem rgba($primeColor, 0.25);
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+	color: #fff;
+	background-color: darken($primeColor, 15%);
+	border-color: lighten($primeColor, 50%);
+	box-shadow: 0 0 0 0.2rem rgba($primeColor, 0.25);
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 0.2rem rgba($primeColor, 0.25);
+}
+.btn-outline-primary {
+    color: $primeColor;
+    border-color: $primeColor;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: $primeColor;
+    border-color: $primeColor;
+}
+.btn-outline-primary.focus, .btn-outline-primary:focus{
+	box-shadow: 0 0 0 0.2rem rgba($primeColor, 0.25);
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active{
+	color: #fff;
+	background-color: darken($primeColor, 15%);
+	border-color: darken($primeColor, 15%);
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus{
+	box-shadow: 0 0 0 0.2rem rgba($primeColor, 0.25);
+}
+
+.form-control:focus {
+    border-color: $primeColor;
+    box-shadow: 0 0 0 0.2rem rgba($primeColor, 0.25);
+}
+
+
+@import "contentResponsive";

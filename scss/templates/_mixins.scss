@@ -1,0 +1,30 @@
+@mixin flex($param1, $param2:null, $param3:null){
+	@if $param1 == "row"{
+		display: flex;
+		flex-direction: row;
+		justify-content: $param2;
+		align-items: $param3;
+	}
+	@else if $param1 == "col"{
+		display: flex;
+		flex-direction: column;
+		justify-content: $param2;
+		align-items: $param3;
+	}
+}
+
+@mixin head($weight){
+	@if $weight == "800" {
+		font-family: $headFF;
+		font-weight: 800;
+	}
+	@else{
+		font-family: $headFF;
+		font-weight: 700;
+	}
+	
+}
+
+@mixin para{
+	font-family: $paraFF;
+}

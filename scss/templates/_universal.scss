@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	@include para;
+}
+
+a, a:hover, a:focus {
+	text-decoration: none;
+	color: unset;
+}
+
+a, p, span,button{
+	@include para;
+}
+
+h1, h2, h3, h4, h5, h6{
+	@include head("700");
+	margin:0;
+}
+
+hr{
+	margin: 0;
+}
+
+.pt15{
+	padding-top: 15px;
+}
+.pt30{
+	padding-top: 30px;
+}
+.pt60{
+	padding-top: 60px;
+}
+.pb15{
+	padding-bottom: 15px;
+}
+.pb30{
+	padding-bottom: 30px;
+}
+.pb60{
+	padding-bottom: 60px;
+}
+.ptb15{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.ptb30{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.ptb60{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.mt15{
+	margin-top: 15px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt60{
+	margin-top: 60px;
+}
+.mb15{
+	margin-bottom: 15px;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+.mb60{
+	margin-bottom: 60px;
+}
+.mtb15{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.mtb30{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.mtb60{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}

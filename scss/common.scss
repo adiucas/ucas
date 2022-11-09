@@ -1,0 +1,45 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+
+
+/*================================
+=            uiversal            =
+================================*/
+
+@import 'templates/universal';
+
+/*=====  End of uiversal  ======*/
+
+
+
+/*==============================
+=            header            =
+==============================*/
+
+@import 'layouts/header';
+
+/*=====  End of header  ======*/
+
+
+/*===============================
+=            content            =
+===============================*/
+
+@import 'layouts/content';
+
+/*=====  End of content  ======*/
+
+
+/*===============================
+=            footer            =
+===============================*/
+
+@import 'layouts/footer';
+
+/*=====  End of footer  ======*/
+
+
+
+
+
