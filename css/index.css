@@ -1,0 +1,166 @@
+/*==============================
+=            banner            =
+==============================*/
+.slider {
+  margin-top: 15px; }
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: calc(100vh - 100px); }
+  .carousel-inner .carousel-item .primTitle {
+    font-family: "Gantari", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1;
+    color: #ffffff; }
+  .carousel-inner .carousel-item .secTitle {
+    font-family: "M PLUS 2", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px; }
+  .carousel-inner .carousel-item .btn-banner {
+    border: 1px solid #F3F9F4;
+    width: max-content;
+    color: #F3F9F4;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px; }
+    .carousel-inner .carousel-item .btn-banner:hover {
+      background: #F3F9F4;
+      color: #0E8944; }
+  .carousel-inner img {
+    max-width: 100%; }
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #F3F9F4;
+  background-clip: unset;
+  border: 0;
+  border-top: unset;
+  border-bottom: unset;
+  border-radius: 100px;
+  opacity: .5;
+  transition: opacity .6s ease;
+  transition: width 0.6s ease; }
+
+.carousel-indicators .active {
+  opacity: 1;
+  width: 60px; }
+
+.carousel-indicators {
+  margin-bottom: 30px; }
+
+/*=====  End of banner  ======*/
+/*==================================
+=            about ucas            =
+==================================*/
+.aboutUcasInner {
+  display: flex;
+  flex-direction: row;
+  background: #F3F9F4;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(14, 137, 68, 0.25); }
+  .aboutUcasInner .left, .aboutUcasInner .right {
+    color: #0E8944;
+    text-align: justify; }
+  .aboutUcasInner .left .textWrapper {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .aboutUcasInner .right .mdMsgBg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+    height: 100%;
+    padding: 30px; }
+    .aboutUcasInner .right .mdMsgBg .photoWrapper .photo {
+      width: 100%; }
+    .aboutUcasInner .right .mdMsgBg .nameDesignationWrapper {
+      color: #F3F9F4;
+      text-align: center;
+      margin-top: 15px; }
+    .aboutUcasInner .right .mdMsgBg .speachWrapper {
+      margin-top: 30px;
+      padding: 25px 20px;
+      color: #F3F9F4;
+      position: relative; }
+      .aboutUcasInner .right .mdMsgBg .speachWrapper i {
+        font-size: 50px;
+        opacity: 0.2;
+        z-index: 0;
+        position: absolute; }
+      .aboutUcasInner .right .mdMsgBg .speachWrapper .fa-quote-left {
+        top: 0;
+        left: 0; }
+      .aboutUcasInner .right .mdMsgBg .speachWrapper .fa-quote-right {
+        bottom: 0;
+        right: 0; }
+
+/*=====  End of about ucas  ======*/
+/*================================
+=            services            =
+================================*/
+.serviceWrapper, .serviceWrapper2, .serviceWrapper3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px; }
+  .serviceWrapper .singleService, .serviceWrapper2 .singleService, .serviceWrapper3 .singleService {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    position: relative;
+    transition: 0.3s all; }
+    .serviceWrapper .singleService img, .serviceWrapper2 .singleService img, .serviceWrapper3 .singleService img {
+      width: 100%; }
+    .serviceWrapper .singleService .iconText, .serviceWrapper2 .singleService .iconText, .serviceWrapper3 .singleService .iconText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      padding: 15px;
+      text-align: center;
+      color: #F3F9F4;
+      font-weight: 500;
+      transition: 0.3s all; }
+      .serviceWrapper .singleService .iconText img, .serviceWrapper2 .singleService .iconText img, .serviceWrapper3 .singleService .iconText img {
+        width: unset;
+        height: 100px;
+        margin-bottom: 5px; }
+    .serviceWrapper .singleService:hover, .serviceWrapper2 .singleService:hover, .serviceWrapper3 .singleService:hover {
+      transform: scale(0.9);
+      cursor: pointer; }
+      .serviceWrapper .singleService:hover .iconText, .serviceWrapper2 .singleService:hover .iconText, .serviceWrapper3 .singleService:hover .iconText {
+        text-decoration: underline;
+        text-shadow: 0 2px 5px black; }
+
+.serviceWrapper2 {
+  margin-top: -70px; }
+  .serviceWrapper2 .singleService {
+    max-width: 300px; }
+
+.serviceWrapper3 {
+  margin-top: -70px; }
+  .serviceWrapper3 .singleService {
+    max-width: 300px; }
+
+/*=====  End of services  ======*/
+
+/*# sourceMappingURL=index.css.map */

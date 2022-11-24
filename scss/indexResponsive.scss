@@ -1,0 +1,193 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media (max-width: 1720px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		height: calc(100vh - 141px);
+	}
+}
+
+@media (max-width: 1600px) {
+	/*================================
+	=            services            =
+	================================*/
+	.serviceWrapper{
+		.singleService{
+			max-width: 246px;
+
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 70px;
+				}
+			}
+		}
+	}
+	.serviceWrapper2{
+		margin-top: -50px;
+		.singleService{
+			max-width: 246px;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 70px;
+				}
+			}
+		}
+	}
+	.serviceWrapper3{
+		margin-top: -50px;
+		.singleService{
+			max-width: 246px;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 70px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		.carousel-item{
+			.primTitle{
+				font-size: 45px;
+			}
+		}
+	}
+	/*================================
+	=            services            =
+	================================*/
+	.serviceWrapper{
+		.singleService{
+			max-width: 210px;
+		}
+	}
+	.serviceWrapper2{
+		margin-top: -40px;
+		.singleService{
+			max-width: 210px;
+		}
+	}
+	.serviceWrapper3{
+		margin-top: -40px;
+		.singleService{
+			max-width: 210px;
+		}
+	}
+}
+
+@media (max-width: 1200px){
+	/*================================
+	=            services            =
+	================================*/
+	.serviceWrapper{
+		.singleService{
+			max-width: 174px;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 50px;
+				}
+			}
+		}
+	}
+	.serviceWrapper2{
+		margin-top: -35px;
+		.singleService{
+			max-width: 174px;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 50px;
+				}
+			}
+		}
+	}
+	.serviceWrapper3{
+		margin-top: -35px;
+		.singleService{
+			max-width: 174px;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		height: calc(100vh - 100px);
+
+		img{
+			margin-top: 30px;
+			max-height: 250px;
+		}
+
+		.carousel-item{
+			.primTitle{
+				font-size: 35px;
+			}
+		}
+	}
+	/*================================
+	=            services            =
+	================================*/
+	.serviceWrapper{
+		@include flex(col,null,center);
+		.singleService{
+			max-width: 300px;
+			margin-bottom: .75rem;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 100px;
+				}
+			}
+		}
+	}
+	.serviceWrapper2{
+		@include flex(col,null,center);
+		margin-top: .75rem;
+		.singleService{
+			max-width: 300px;
+			margin-bottom: .75rem;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 100px;
+				}
+			}
+		}
+	}
+	.serviceWrapper3{
+		@include flex(col,null,center);
+		margin-top: .75rem;
+		.singleService{
+			max-width: 300px;
+			margin-bottom: .75rem;
+			.iconText{
+				font-size: 14px;
+				img{
+					height: 100px;
+				}
+			}
+		}
+	}
+}
+
+

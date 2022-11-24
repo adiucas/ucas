@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1414" height="638" viewBox="0 0 1414 638">
+  <ellipse id="Ellipse_24" data-name="Ellipse 24" cx="250" cy="249.5" rx="250" ry="249.5" transform="translate(145 71)" fill="rgba(246,246,246,0.25)"/>
+  <ellipse id="Ellipse_25" data-name="Ellipse 25" cx="250" cy="249.5" rx="250" ry="249.5" transform="translate(766 71)" fill="rgba(246,246,246,0.25)"/>
+  <ellipse id="Ellipse_26" data-name="Ellipse 26" cx="147" cy="146.5" rx="147" ry="146.5" transform="translate(1120 174)" fill="rgba(246,246,246,0.25)"/>
+  <ellipse id="Ellipse_27" data-name="Ellipse 27" cx="147" cy="146.5" rx="147" ry="146.5" transform="translate(0 174)" fill="rgba(246,246,246,0.25)"/>
+  <g id="avatar" transform="translate(393 10)" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="10">
+    <ellipse cx="310.5" cy="309" rx="310.5" ry="309" stroke="none"/>
+    <ellipse cx="310.5" cy="309" rx="315.5" ry="314" fill="none"/>
+  </g>
+</svg>

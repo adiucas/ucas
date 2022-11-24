@@ -1,0 +1,223 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+/*==============================
+=            banner            =
+==============================*/
+
+.slider{
+	margin-top: 15px;
+}
+
+.carousel-inner{
+	@include flex(row,null,center);
+	height: calc(100vh - 100px);
+
+	.carousel-item{
+		.primTitle{
+			@include head("900");
+			color: #ffffff;
+			font-size: 65px;
+			line-height: 1;
+			color: #ffffff;
+		}
+
+		.secTitle{
+			@include para();
+			color: #ffffff;
+			font-size: 20px;
+			margin-top: 15px;
+		}
+
+		.btn-banner{
+			border: 1px solid $lpCol;
+			width: max-content;
+			color: $lpCol;
+			margin-top: 30px;
+			border-radius: 30px;
+			padding: 10px 20px 10px 20px;
+
+			&:hover{
+				background: $lpCol;
+				color: $primCol;
+			}
+		}
+	}
+	img{
+		max-width: 100%;
+	}
+}
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: $lpCol;
+    background-clip: unset;
+    border: 0;
+    border-top: unset;
+    border-bottom: unset;
+    border-radius: 100px;
+    opacity: .5;
+    transition: opacity .6s ease;
+    transition: width 0.6s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    width: 60px;
+}
+
+.carousel-indicators{
+	margin-bottom: 30px;
+}
+
+/*=====  End of banner  ======*/
+
+/*==================================
+=            about ucas            =
+==================================*/
+
+.aboutUcasInner{
+	@include flex(row);
+	background: $lpCol;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px darken(rgba($primCol,25%), 0%);
+
+	.left,.right{
+		color: $primCol;
+		text-align: justify;
+	}
+
+	.left{
+		.textWrapper{
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+		}
+	}
+
+	.right{
+		.mdMsgBg{
+			@include flex(col,null,center);
+			background: grad();
+			height: 100%;
+			padding: 30px;
+
+			.photoWrapper{
+				.photo{
+					width: 100%;
+				}
+			}
+
+			.nameDesignationWrapper{
+				color: $lpCol;
+				text-align: center;
+				margin-top: 15px;
+			}
+
+			.speachWrapper{
+				margin-top: 30px;
+				padding: 25px 20px;
+				color: $lpCol;
+				position: relative;
+				i{
+					font-size: 50px;
+					opacity: 0.2;
+					z-index: 0;
+					position: absolute;
+				}
+				.fa-quote-left{
+					top: 0;
+					left: 0;
+				}
+				.fa-quote-right{
+					bottom: 0;
+					right: 0;
+				}
+			}
+			
+		}
+	}
+}
+
+/*=====  End of about ucas  ======*/
+
+/*================================
+=            services            =
+================================*/
+
+.serviceWrapper{
+	@include flex(row,center);
+	margin-top: 30px;
+
+	.singleService{
+		@include flex(row,center,center);
+		max-width: 300px;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+		position: relative;
+		transition: 0.3s all;
+
+		img{
+			width: 100%;
+		}
+
+		.iconText{
+			@include flex(col,center,center);
+			position: absolute;
+			padding: 15px;
+			text-align: center;
+			color: $lpCol;
+			font-weight: 500;
+			transition: 0.3s all;
+
+			img{
+				width: unset;
+				height: 100px;
+				margin-bottom: 5px;
+			}
+		}
+
+		&:hover{
+			transform: scale(0.9);
+			cursor: pointer;
+
+			.iconText{
+				text-decoration: underline;
+				text-shadow: 0 2px 5px black;
+			}
+		}
+	}
+}
+
+.serviceWrapper2{
+	@extend .serviceWrapper;
+	margin-top: -70px;
+
+	.singleService{
+		max-width: 300px;
+	}
+}
+
+.serviceWrapper3{
+	@extend .serviceWrapper;
+	margin-top: -70px;
+
+	.singleService{
+		max-width: 300px;
+	}
+}
+
+/*=====  End of services  ======*/
+
+
+
+

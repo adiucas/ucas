@@ -13,10 +13,10 @@
 	}
 }
 
-@mixin head($weight){
-	@if $weight == "800" {
+@mixin head($weight:null){
+	@if $weight == "900" {
 		font-family: $headFF;
-		font-weight: 800;
+		font-weight: 900;
 	}
 	@else{
 		font-family: $headFF;
@@ -27,4 +27,9 @@
 
 @mixin para{
 	font-family: $paraFF;
+}
+
+@function grad($direction:'135deg', $startColor:$primCol, $endColor:$secCol){
+	$gradRes: linear-gradient(#{$direction}, #{$startColor} 0%, #{$endColor} 100%);
+	@return $gradRes;
 }

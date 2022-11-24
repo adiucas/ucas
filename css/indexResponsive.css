@@ -1,0 +1,138 @@
+@media (max-width: 1720px) {
+  /*==============================
+  =            banner            =
+  ==============================*/
+  .carousel-inner {
+    height: calc(100vh - 141px); } }
+@media (max-width: 1600px) {
+  /*================================
+  =            services            =
+  ================================*/
+  .serviceWrapper .singleService {
+    max-width: 246px; }
+    .serviceWrapper .singleService .iconText {
+      font-size: 14px; }
+      .serviceWrapper .singleService .iconText img {
+        height: 70px; }
+
+  .serviceWrapper2 {
+    margin-top: -50px; }
+    .serviceWrapper2 .singleService {
+      max-width: 246px; }
+      .serviceWrapper2 .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper2 .singleService .iconText img {
+          height: 70px; }
+
+  .serviceWrapper3 {
+    margin-top: -50px; }
+    .serviceWrapper3 .singleService {
+      max-width: 246px; }
+      .serviceWrapper3 .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper3 .singleService .iconText img {
+          height: 70px; } }
+@media (max-width: 1400px) {
+  /*==============================
+  =            banner            =
+  ==============================*/
+  .carousel-inner .carousel-item .primTitle {
+    font-size: 45px; }
+
+  /*================================
+  =            services            =
+  ================================*/
+  .serviceWrapper .singleService {
+    max-width: 210px; }
+
+  .serviceWrapper2 {
+    margin-top: -40px; }
+    .serviceWrapper2 .singleService {
+      max-width: 210px; }
+
+  .serviceWrapper3 {
+    margin-top: -40px; }
+    .serviceWrapper3 .singleService {
+      max-width: 210px; } }
+@media (max-width: 1200px) {
+  /*================================
+  =            services            =
+  ================================*/
+  .serviceWrapper .singleService {
+    max-width: 174px; }
+    .serviceWrapper .singleService .iconText {
+      font-size: 14px; }
+      .serviceWrapper .singleService .iconText img {
+        height: 50px; }
+
+  .serviceWrapper2 {
+    margin-top: -35px; }
+    .serviceWrapper2 .singleService {
+      max-width: 174px; }
+      .serviceWrapper2 .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper2 .singleService .iconText img {
+          height: 50px; }
+
+  .serviceWrapper3 {
+    margin-top: -35px; }
+    .serviceWrapper3 .singleService {
+      max-width: 174px; }
+      .serviceWrapper3 .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper3 .singleService .iconText img {
+          height: 50px; } }
+@media (max-width: 992px) {
+  /*==============================
+  =            banner            =
+  ==============================*/
+  .carousel-inner {
+    height: calc(100vh - 100px); }
+    .carousel-inner img {
+      margin-top: 30px;
+      max-height: 250px; }
+    .carousel-inner .carousel-item .primTitle {
+      font-size: 35px; }
+
+  /*================================
+  =            services            =
+  ================================*/
+  .serviceWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .serviceWrapper .singleService {
+      max-width: 300px;
+      margin-bottom: .75rem; }
+      .serviceWrapper .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper .singleService .iconText img {
+          height: 100px; }
+
+  .serviceWrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .75rem; }
+    .serviceWrapper2 .singleService {
+      max-width: 300px;
+      margin-bottom: .75rem; }
+      .serviceWrapper2 .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper2 .singleService .iconText img {
+          height: 100px; }
+
+  .serviceWrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .75rem; }
+    .serviceWrapper3 .singleService {
+      max-width: 300px;
+      margin-bottom: .75rem; }
+      .serviceWrapper3 .singleService .iconText {
+        font-size: 14px; }
+        .serviceWrapper3 .singleService .iconText img {
+          height: 100px; } }
+
+/*# sourceMappingURL=indexResponsive.css.map */
