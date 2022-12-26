@@ -19,6 +19,52 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+var $grid = $('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows',
+  filter: '.ubroker'
+});
+
+$('.filter button').on("click", function(){
+  var value = $(this).attr('data-name');
+  $grid.isotope({
+    filter:value
+  });
+})
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    items: 1,
+    nav:true,
+    navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
+    autoplay: false,
+    // autoplayTimeout: 3000,
+    // autoplayHoverPause:false,
+    dots: false,
+    margin:12
+    // responsive:{
+    //     0:{
+    //         items:1,
+    //         nav:false
+    //     },
+    //     576:{
+    //         items:1,
+    //         nav:false
+    //     },
+    //     768:{
+    //       items:1,
+    //       nav:false
+    //     },
+    //     1200:{
+    //         items:1,
+    //         nav:false,
+    //         loop:true
+    //     }
+    // }
+})
+
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();

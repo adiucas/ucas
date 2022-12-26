@@ -50,6 +50,14 @@
 			}
 		}
 	}
+	/*========================================
+	=            featured product            =
+	========================================*/
+	.featuredProduct{
+		.fpBg{
+			top: -260px;
+		}
+	}
 }
 
 @media (max-width: 1400px){
@@ -81,6 +89,14 @@
 		margin-top: -40px;
 		.singleService{
 			max-width: 210px;
+		}
+	}
+	/*========================================
+	=            featured product            =
+	========================================*/
+	.featuredProduct{
+		.fpBg{
+			top: -230px;
 		}
 	}
 }
@@ -122,6 +138,14 @@
 					height: 50px;
 				}
 			}
+		}
+	}
+	/*========================================
+	=            featured product            =
+	========================================*/
+	.featuredProduct{
+		.fpBg{
+			top: -190px;
 		}
 	}
 }
@@ -186,6 +210,40 @@
 					height: 100px;
 				}
 			}
+		}
+	}
+	/*========================================
+	=            featured product            =
+	========================================*/
+	.featuredProduct{
+		.fpBg{
+			top: -150px;
+		}
+	}
+
+	/*=======================================
+	=            client feedback            =
+	=======================================*/
+
+	.clientFeedback{
+		.cfBody{
+			.owl-nav{
+				top: unset;
+				bottom: 10px;
+				right: unset;
+				left: 20px;
+			}
+		}
+	}
+}
+
+@media(max-width:768px){
+	/*========================================
+	=            featured product            =
+	========================================*/
+	.featuredProduct{
+		.fpBg{
+			top: -65px;
 		}
 	}
 }

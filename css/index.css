@@ -71,7 +71,7 @@
   background: #F3F9F4;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 5px 10px rgba(14, 137, 68, 0.25); }
+  box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15); }
   .aboutUcasInner .left, .aboutUcasInner .right {
     color: #0E8944;
     text-align: justify; }
@@ -143,13 +143,15 @@
       .serviceWrapper .singleService .iconText img, .serviceWrapper2 .singleService .iconText img, .serviceWrapper3 .singleService .iconText img {
         width: unset;
         height: 100px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        transition: 0.3s all; }
     .serviceWrapper .singleService:hover, .serviceWrapper2 .singleService:hover, .serviceWrapper3 .singleService:hover {
       transform: scale(0.9);
       cursor: pointer; }
       .serviceWrapper .singleService:hover .iconText, .serviceWrapper2 .singleService:hover .iconText, .serviceWrapper3 .singleService:hover .iconText {
-        text-decoration: underline;
         text-shadow: 0 2px 5px black; }
+        .serviceWrapper .singleService:hover .iconText img, .serviceWrapper2 .singleService:hover .iconText img, .serviceWrapper3 .singleService:hover .iconText img {
+          filter: drop-shadow(0 0 5px #F3F9F4); }
 
 .serviceWrapper2 {
   margin-top: -70px; }
@@ -162,5 +164,440 @@
     max-width: 300px; }
 
 /*=====  End of services  ======*/
+/*========================================
+=            featured product            =
+========================================*/
+.featuredProduct {
+  position: relative; }
+  .featuredProduct .fpBg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: -320px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .featuredProduct .contentBg {
+    padding: 1rem 2rem 1.5rem 2rem;
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+    border-radius: 1.5rem;
+    position: relative; }
+    .featuredProduct .contentBg .btn-explore, .featuredProduct .contentBg .btn-explore1 {
+      position: absolute;
+      top: 25px;
+      right: -17px; }
+      .featuredProduct .contentBg .btn-explore img, .featuredProduct .contentBg .btn-explore1 img {
+        width: 100%;
+        max-width: 150px; }
+    .featuredProduct .contentBg .btn-explore1 {
+      top: unset;
+      right: unset;
+      left: 0;
+      bottom: -18px;
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+      .featuredProduct .contentBg .btn-explore1 img {
+        max-width: 170px; }
+    .featuredProduct .contentBg .secHead {
+      padding: 1rem 0 .5rem 0; }
+    .featuredProduct .contentBg .singleFp {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #F3F9F4;
+      padding: 1rem;
+      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      border-radius: 1rem;
+      transition: 0.3s all; }
+      .featuredProduct .contentBg .singleFp .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #0E8944;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        transition: 0.3s all; }
+        .featuredProduct .contentBg .singleFp .icon img {
+          max-height: 50px;
+          transition: 0.3s all; }
+      .featuredProduct .contentBg .singleFp .text {
+        color: #0E8944;
+        text-align: center;
+        margin-top: .5rem;
+        transition: 0.3s all; }
+      .featuredProduct .contentBg .singleFp:hover {
+        background: #0E8944;
+        transform: scale(0.9); }
+        .featuredProduct .contentBg .singleFp:hover .icon {
+          border-color: #F3F9F4; }
+          .featuredProduct .contentBg .singleFp:hover .icon img {
+            filter: brightness(0) invert(1) drop-shadow(0 0 5px #F3F9F4); }
+        .featuredProduct .contentBg .singleFp:hover .text {
+          color: #F3F9F4; }
+
+/*=====  End of featured product  ======*/
+/*=========================================================
+=            website development & vps hosting            =
+=========================================================*/
+.webVps {
+  position: relative;
+  overflow-x: hidden; }
+  .webVps .webVpsBg1, .webVps .webVpsBg2, .webVps .webVpsBg3, .webVps .webVpsBg4 {
+    position: absolute;
+    z-index: -1;
+    width: 150px;
+    top: 250px;
+    left: -100px; }
+  .webVps .webVpsBg2 {
+    width: 70px;
+    top: 480px;
+    left: -45px; }
+  .webVps .webVpsBg3 {
+    width: 200px;
+    top: 50px;
+    left: unset;
+    right: -240px; }
+  .webVps .webVpsBg4 {
+    width: 180px;
+    top: 350px;
+    left: unset;
+    right: -200px; }
+  .webVps .contentBg {
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+    border-radius: 1.5rem;
+    position: relative; }
+  .webVps .services {
+    padding: 1rem 2rem 1.5rem 2rem;
+    position: relative; }
+    .webVps .services .secHead {
+      padding: 1rem 0 .5rem 0; }
+    .webVps .services .singleWebVps {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #F3F9F4;
+      padding: 35px 15px 15px;
+      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      border-radius: 1rem;
+      transition: 0.3s all;
+      position: relative;
+      margin-top: 35px; }
+      .webVps .services .singleWebVps .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        width: 70px;
+        height: 70px;
+        transition: 0.3s all;
+        position: absolute;
+        top: -35px;
+        background: #0E8944; }
+        .webVps .services .singleWebVps .icon img {
+          max-height: 35px;
+          filter: brightness(0) invert(1);
+          transition: 0.3s all; }
+      .webVps .services .singleWebVps .text {
+        color: #0E8944;
+        text-align: center;
+        margin-top: .5rem;
+        transition: 0.3s all; }
+      .webVps .services .singleWebVps:hover {
+        background: #0E8944;
+        transform: scale(0.9); }
+        .webVps .services .singleWebVps:hover .icon {
+          outline: 7px solid #F3F9F4; }
+          .webVps .services .singleWebVps:hover .icon img {
+            filter: drop-shadow(0 0 5px #F3F9F4); }
+        .webVps .services .singleWebVps:hover .text {
+          color: #F3F9F4; }
+  .webVps .portfolio {
+    padding: 1rem 2rem 1.5rem 2rem;
+    position: relative; }
+    .webVps .portfolio .secHead {
+      padding: 1rem 0 .5rem 0; }
+    .webVps .portfolio .singleWebVps {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #F3F9F4;
+      padding: 15px;
+      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      border: 1px solid #009999;
+      border-radius: 1.5rem;
+      transition: 0.3s all;
+      position: relative; }
+      .webVps .portfolio .singleWebVps .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        transition: 0.3s all; }
+        .webVps .portfolio .singleWebVps .logo img {
+          height: 40px;
+          max-width: 100%;
+          transition: 0.3s all; }
+      .webVps .portfolio .singleWebVps .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #0E8944;
+        border-radius: 100px;
+        border: 1px solid #0E8944;
+        margin-top: .5rem;
+        width: 100%;
+        transition: 0.3s all;
+        padding: 5px; }
+        .webVps .portfolio .singleWebVps .link .text {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
+          width: 100%; }
+        .webVps .portfolio .singleWebVps .link .icon {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          background: #0E8944;
+          border-radius: 32px;
+          flex-shrink: 0;
+          color: #ffffff;
+          transition: 0.3s all; }
+      .webVps .portfolio .singleWebVps:hover {
+        transform: scale(0.9); }
+        .webVps .portfolio .singleWebVps:hover .link {
+          color: #F3F9F4;
+          background: #0E8944; }
+          .webVps .portfolio .singleWebVps:hover .link .icon {
+            background: #F3F9F4;
+            color: #0E8944; }
+
+/*=====  End of website development & vps hosting  ======*/
+/*===================================
+=            our clients            =
+===================================*/
+.ourClient {
+  position: relative; }
+  .ourClient .contentBg {
+    padding: 1rem 2rem 1.5rem 2rem;
+    background: #f6f6f6;
+    border: 1px solid #dddddd;
+    border-radius: 1.5rem;
+    position: relative; }
+    .ourClient .contentBg .btn-explore, .ourClient .contentBg .btn-explore1 {
+      position: absolute;
+      top: 25px;
+      right: -17px; }
+      .ourClient .contentBg .btn-explore img, .ourClient .contentBg .btn-explore1 img {
+        width: 100%;
+        max-width: 150px; }
+    .ourClient .contentBg .btn-explore1 {
+      top: unset;
+      right: unset;
+      left: 0;
+      bottom: -18px;
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+      .ourClient .contentBg .btn-explore1 img {
+        max-width: 170px; }
+    .ourClient .contentBg .secHead {
+      padding: 1rem 0 1rem 0; }
+    .ourClient .contentBg .clientLogos .filter {
+      text-align: center; }
+      .ourClient .contentBg .clientLogos .filter button:not(:last-child) {
+        margin-right: 15px; }
+    .ourClient .contentBg .clientLogos .grid .clientLogoWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #F3F9F4;
+      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      min-height: 100px;
+      border-radius: 15px;
+      outline: 1px solid transparent;
+      transition: 0.3s all; }
+      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper img {
+        max-width: 100%;
+        height: 50px; }
+      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper:hover {
+        transform: scale(0.9);
+        outline: 1px solid #0E8944; }
+
+/*=====  End of our clients  ======*/
+/*=======================================
+=            client feedback            =
+=======================================*/
+.clientFeedback {
+  background: #f6f6f6; }
+  .clientFeedback .cfBody {
+    background: #F3F9F4;
+    box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 30px;
+    position: relative; }
+    .clientFeedback .cfBody .left {
+      background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+      color: #F3F9F4; }
+      .clientFeedback .cfBody .left .photoNameWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 18px 30px 30px; }
+        .clientFeedback .cfBody .left .photoNameWrapper .photo {
+          max-width: 250px;
+          max-height: 250px;
+          border-radius: 250px;
+          overflow: hidden;
+          outline: 10px solid rgba(243, 249, 244, 0.25); }
+        .clientFeedback .cfBody .left .photoNameWrapper .name {
+          margin-top: 15px;
+          text-align: center; }
+    .clientFeedback .cfBody .right {
+      padding: 30px 35px 30px 30px; }
+      .clientFeedback .cfBody .right .feedTextWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        position: relative;
+        height: 100%; }
+        .clientFeedback .cfBody .right .feedTextWrapper .fa-quote-left, .clientFeedback .cfBody .right .feedTextWrapper .fa-quote-right {
+          position: absolute;
+          font-size: 124px;
+          color: rgba(14, 137, 68, 0.15);
+          z-index: -1;
+          line-height: 75px; }
+        .clientFeedback .cfBody .right .feedTextWrapper .fa-quote-left {
+          top: 0;
+          left: 0; }
+        .clientFeedback .cfBody .right .feedTextWrapper .fa-quote-right {
+          bottom: 0;
+          right: 0; }
+    .clientFeedback .cfBody .owl-nav {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px; }
+      .clientFeedback .cfBody .owl-nav [type="button"] {
+        margin: 0 5px; }
+    .clientFeedback .cfBody .btn-all-feedback {
+      background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 5px 15px;
+      border-radius: 100px;
+      color: #ffffff;
+      z-index: 2; }
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+  background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*=====  End of client feedback  ======*/
+/*==============================
+=            footer            =
+==============================*/
+footer {
+  background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+  color: #ffffff; }
+  footer .secHead {
+    width: 100%;
+    text-align: left;
+    text-transform: unset;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-family: "Gantari", sans-serif; }
+    footer .secHead span {
+      font-size: 32px; }
+    footer .secHead .divider .left, footer .secHead .divider .right {
+      background: #ffffff; }
+  footer .cu-container .infoWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #F3F9F4;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+    footer .cu-container .infoWrapper span {
+      color: #000000; }
+    footer .cu-container .infoWrapper .iconWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #0E8944;
+      border-radius: 30px;
+      margin-right: 10px;
+      flex-shrink: 0; }
+      footer .cu-container .infoWrapper .iconWrapper img {
+        height: 25px; }
+    footer .cu-container .infoWrapper:not(:last-child) {
+      margin-bottom: 15px; }
+  footer .usefulLinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; }
+    footer .usefulLinks a:hover {
+      text-decoration: underline; }
+    footer .usefulLinks a:not(:last-child) {
+      margin-bottom: 5px; }
+  footer .followUs {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    footer .followUs a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #F3F9F4;
+      border-radius: 30px;
+      background: #F3F9F4;
+      color: #0E8944;
+      font-size: 25px;
+      transition: 0.3s all; }
+      footer .followUs a:not(:last-child) {
+        margin-right: 10px; }
+      footer .followUs a:hover {
+        background: transparent;
+        color: #F3F9F4;
+        transform: scale(0.9); }
+  footer .mapWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+    footer .mapWrapper iframe {
+      width: 100%; }
+
+/*=====  End of footer  ======*/
 
 /*# sourceMappingURL=index.css.map */

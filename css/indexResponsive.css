@@ -31,7 +31,13 @@
       .serviceWrapper3 .singleService .iconText {
         font-size: 14px; }
         .serviceWrapper3 .singleService .iconText img {
-          height: 70px; } }
+          height: 70px; }
+
+  /*========================================
+  =            featured product            =
+  ========================================*/
+  .featuredProduct .fpBg {
+    top: -260px; } }
 @media (max-width: 1400px) {
   /*==============================
   =            banner            =
@@ -53,7 +59,13 @@
   .serviceWrapper3 {
     margin-top: -40px; }
     .serviceWrapper3 .singleService {
-      max-width: 210px; } }
+      max-width: 210px; }
+
+  /*========================================
+  =            featured product            =
+  ========================================*/
+  .featuredProduct .fpBg {
+    top: -230px; } }
 @media (max-width: 1200px) {
   /*================================
   =            services            =
@@ -81,7 +93,13 @@
       .serviceWrapper3 .singleService .iconText {
         font-size: 14px; }
         .serviceWrapper3 .singleService .iconText img {
-          height: 50px; } }
+          height: 50px; }
+
+  /*========================================
+  =            featured product            =
+  ========================================*/
+  .featuredProduct .fpBg {
+    top: -190px; } }
 @media (max-width: 992px) {
   /*==============================
   =            banner            =
@@ -133,6 +151,27 @@
       .serviceWrapper3 .singleService .iconText {
         font-size: 14px; }
         .serviceWrapper3 .singleService .iconText img {
-          height: 100px; } }
+          height: 100px; }
+
+  /*========================================
+  =            featured product            =
+  ========================================*/
+  .featuredProduct .fpBg {
+    top: -150px; }
+
+  /*=======================================
+  =            client feedback            =
+  =======================================*/
+  .clientFeedback .cfBody .owl-nav {
+    top: unset;
+    bottom: 10px;
+    right: unset;
+    left: 20px; } }
+@media (max-width: 768px) {
+  /*========================================
+  =            featured product            =
+  ========================================*/
+  .featuredProduct .fpBg {
+    top: -65px; } }
 
 /*# sourceMappingURL=indexResponsive.css.map */
