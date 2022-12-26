@@ -229,10 +229,36 @@
 		.cfBody{
 			.owl-nav{
 				top: unset;
-				bottom: 10px;
+				bottom: 15px;
 				right: unset;
 				left: 20px;
 			}
+		}
+	}
+
+	/*==============================
+	=            footer            =
+	==============================*/
+	footer{
+		.secHead {
+		    span{
+		    	font-size: 24px;
+		    }
+		}
+		.cu-container{
+			.infoWrapper{
+				span{
+					font-size: 14px;
+				}
+			}
+		}
+		.usefulLinks{
+			a{
+				font-size: 14px;
+			}
+		}
+		.mapWrapper{
+			min-height: 300px;
 		}
 	}
 }

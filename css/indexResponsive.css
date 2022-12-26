@@ -164,9 +164,21 @@
   =======================================*/
   .clientFeedback .cfBody .owl-nav {
     top: unset;
-    bottom: 10px;
+    bottom: 15px;
     right: unset;
-    left: 20px; } }
+    left: 20px; }
+
+  /*==============================
+  =            footer            =
+  ==============================*/
+  footer .secHead span {
+    font-size: 24px; }
+  footer .cu-container .infoWrapper span {
+    font-size: 14px; }
+  footer .usefulLinks a {
+    font-size: 14px; }
+  footer .mapWrapper {
+    min-height: 300px; } }
 @media (max-width: 768px) {
   /*========================================
   =            featured product            =
