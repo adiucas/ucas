@@ -98,7 +98,9 @@ hr, p {
   flex-direction: column;
   color: #ffffff;
   margin-left: 15px;
-  position: absolute; }
+  position: absolute;
+  z-index: 1;
+  }
   .contactTop .phone, .contactFollowTop .left .phone, .contactTop .mail, .contactFollowTop .left .mail {
     display: flex;
     flex-direction: row;
@@ -117,14 +119,23 @@ hr, p {
         font-size: 14px;
         color: #0E8944; }
 
+.contactTop.scrolled, .contactFollowTop .scrolled.left, .followUsTop.scrolled, .contactFollowTop .scrolled.right {
+  color: #0E8944; }
+  .contactTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.left .phone .iconWrapper, .contactTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.left .mail .iconWrapper, .followUsTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.right .phone .iconWrapper, .followUsTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.right .mail .iconWrapper {
+    background: #0E8944; }
+    .contactTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.left .phone .iconWrapper i, .contactTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.left .mail .iconWrapper i, .followUsTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.right .phone .iconWrapper i, .followUsTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.right .mail .iconWrapper i {
+      color: #F3F9F4; }
+
 .followUsTop, .contactFollowTop .right {
   display: flex;
   flex-direction: column;
   color: #ffffff;
   margin-right: 15px;
   position: absolute;
-  right: 0;
-  top: 0; }
+  right: 15px;
+  top: 0;
+  z-index: 1;
+  }
   .followUsTop .icons, .contactFollowTop .right .icons {
     display: flex;
     flex-direction: row;
@@ -169,7 +180,8 @@ hr, p {
           border-radius: 50%; }
 
 .sticky-top {
-  top: 15px; }
+  top: 15px;
+  padding: 0 15px; }
 
 .navbar {
   background: #F3F9F4;

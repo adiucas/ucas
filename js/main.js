@@ -40,39 +40,20 @@ $('.owl-carousel').owlCarousel({
     nav:true,
     navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
     autoplay: false,
-    // autoplayTimeout: 3000,
-    // autoplayHoverPause:false,
+    autoplayTimeout: 3000,
+    autoplayHoverPause:false,
     dots: false,
     margin:12
-    // responsive:{
-    //     0:{
-    //         items:1,
-    //         nav:false
-    //     },
-    //     576:{
-    //         items:1,
-    //         nav:false
-    //     },
-    //     768:{
-    //       items:1,
-    //       nav:false
-    //     },
-    //     1200:{
-    //         items:1,
-    //         nav:false,
-    //         loop:true
-    //     }
-    // }
 })
 
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if ($(window).width() > 575) {
-
       if (scroll > 100) {
         if ($(window).width() > 1720) {
-          $(".contactTop, .followUsTop").hide();
+          $(".contactTop, .followUsTop").addClass("scrolled");
+          $(".navbar").addClass("container-fluid").removeClass("container");
         }
         if ($(window).width() < 1720) {
           $("header").css("padding-top",0);
@@ -80,10 +61,10 @@ $(document).ready(function(){
           $(".contactFollowTop").hide();
         }
       }
-      
       else{
         if ($(window).width() > 1720) {
-          $(".contactTop, .followUsTop").show();
+          $(".contactTop, .followUsTop").removeClass("scrolled");
+          $(".navbar").removeClass("container-fluid").addClass("container");
         }
         if ($(window).width() < 1720) {
           $("header").css("padding-top",40);
