@@ -186,7 +186,16 @@
   footer .usefulLinks a {
     font-size: 14px; }
   footer .mapWrapper {
-    min-height: 300px; } }
+    min-height: 300px; }
+
+  /*=================================
+  =            copyright            =
+  =================================*/
+  .copyright {
+    flex-direction: column; }
+    .copyright img {
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 @media (max-width: 768px) {
   /*========================================
   =            featured product            =

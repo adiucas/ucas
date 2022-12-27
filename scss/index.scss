@@ -792,6 +792,24 @@ footer{
 
 /*=====  End of footer  ======*/
 
+/*=================================
+=            copyright            =
+=================================*/
+
+.copyright{
+	@include flex(row,center,center);
+	background: $primCol;
+	padding: 5px 10px;
+	color: $lpCol;
+
+	img{
+		margin:0 15px;
+		height: 30px;
+	}
+}
+
+/*=====  End of copyright  ======*/
+
 
 
 

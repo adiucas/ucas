@@ -599,5 +599,21 @@ footer {
       width: 100%; }
 
 /*=====  End of footer  ======*/
+/*=================================
+=            copyright            =
+=================================*/
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #0E8944;
+  padding: 5px 10px;
+  color: #F3F9F4; }
+  .copyright img {
+    margin: 0 15px;
+    height: 30px; }
+
+/*=====  End of copyright  ======*/
 
 /*# sourceMappingURL=index.css.map */

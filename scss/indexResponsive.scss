@@ -278,6 +278,18 @@
 			min-height: 300px;
 		}
 	}
+
+	/*=================================
+	=            copyright            =
+	=================================*/
+	.copyright{
+		flex-direction: column;
+
+		img{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
 }
 
 @media(max-width:768px){
