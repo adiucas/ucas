@@ -99,8 +99,7 @@ hr, p {
   color: #ffffff;
   margin-left: 15px;
   position: absolute;
-  z-index: 1;
-  }
+  z-index: 1; }
   .contactTop .phone, .contactFollowTop .left .phone, .contactTop .mail, .contactFollowTop .left .mail {
     display: flex;
     flex-direction: row;
@@ -120,7 +119,8 @@ hr, p {
         color: #0E8944; }
 
 .contactTop.scrolled, .contactFollowTop .scrolled.left, .followUsTop.scrolled, .contactFollowTop .scrolled.right {
-  color: #0E8944; }
+  color: #0E8944;
+  top: 9px; }
   .contactTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.left .phone .iconWrapper, .contactTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.left .mail .iconWrapper, .followUsTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.right .phone .iconWrapper, .followUsTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.right .mail .iconWrapper {
     background: #0E8944; }
     .contactTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.left .phone .iconWrapper i, .contactTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.left .mail .iconWrapper i, .followUsTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.right .phone .iconWrapper i, .followUsTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.right .mail .iconWrapper i {
@@ -130,12 +130,11 @@ hr, p {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  margin-right: 15px;
+  margin-right: 30px;
   position: absolute;
-  right: 15px;
+  right: 0;
   top: 0;
-  z-index: 1;
-  }
+  z-index: 1; }
   .followUsTop .icons, .contactFollowTop .right .icons {
     display: flex;
     flex-direction: row;
@@ -179,6 +178,36 @@ hr, p {
           z-index: -1;
           border-radius: 50%; }
 
+.followUsTop.scrolled .icons .iconWrapper, .contactFollowTop .scrolled.right .icons .iconWrapper {
+  border: 1px solid #0E8944; }
+  .followUsTop.scrolled .icons .iconWrapper:after, .contactFollowTop .scrolled.right .icons .iconWrapper:after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #0E8944;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    transition: 0.3s all; }
+  .followUsTop.scrolled .icons .iconWrapper i, .contactFollowTop .scrolled.right .icons .iconWrapper i {
+    font-size: 16px;
+    color: #F3F9F4; }
+  .followUsTop.scrolled .icons .iconWrapper:not(:last-child), .contactFollowTop .scrolled.right .icons .iconWrapper:not(:last-child) {
+    margin-right: 15px; }
+  .followUsTop.scrolled .icons .iconWrapper:hover, .contactFollowTop .scrolled.right .icons .iconWrapper:hover {
+    border: 1px solid #0E8944;
+    transform: scale(1.5); }
+    .followUsTop.scrolled .icons .iconWrapper:hover:after, .contactFollowTop .scrolled.right .icons .iconWrapper:hover:after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: #0E8944;
+      position: absolute;
+      z-index: -1;
+      border-radius: 50%; }
+
 .sticky-top {
   top: 15px;
   padding: 0 15px; }
@@ -189,6 +218,10 @@ hr, p {
   padding-left: 15px;
   padding-right: 15px;
   box-shadow: 0 5px 10px rgba(14, 137, 68, 0.25); }
+
+.navbar.container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .navbar-brand {
   display: flex;
@@ -304,7 +337,8 @@ hr, p {
       display: flex; }
 
   .sticky-top {
-    top: 10px; }
+    top: 10px;
+    padding: 0; }
 
   header {
     padding-top: 40px;
@@ -346,7 +380,13 @@ hr, p {
 
   header {
     padding-right: 15px;
-    padding-left: 15px; } }
+    padding-left: 15px; }
+
+  .sticky-top {
+    top: 0; }
+
+  .navbar {
+    border-radius: 0; } }
 /*=====  End of header  ======*/
 /*===============================
 =            content            =

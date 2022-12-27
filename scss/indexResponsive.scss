@@ -71,6 +71,20 @@
 			}
 		}
 	}
+	.carousel-inner{
+		.carousel-item{
+			.right{
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+
+				img{
+					max-width: unset;
+					max-height: calc(100% - 168px);
+				}
+			}
+		}
+	}
 	/*================================
 	=            services            =
 	================================*/

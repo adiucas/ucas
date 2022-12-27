@@ -57,6 +57,8 @@ $(document).ready(function(){
         }
         if ($(window).width() < 1720) {
           $("header").css("padding-top",0);
+          $(".sticky-top").css("top",0);
+          $(".navbar").addClass("container-fluid").removeClass("container").css("border-radius","0");
           $(".gradBg").css("min-height","calc(100vh - 57px)");
           $(".contactFollowTop").hide();
         }
@@ -68,10 +70,10 @@ $(document).ready(function(){
         }
         if ($(window).width() < 1720) {
           $("header").css("padding-top",40);
+          $(".sticky-top").css("top","10px");
+          $(".navbar").removeClass("container-fluid").addClass("container").css("border-radius","15px");
           $(".gradBg").css("min-height","100vh");
           $(".contactFollowTop").show();
-
-          
         }
       }
     }
