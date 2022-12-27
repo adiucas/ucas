@@ -70,6 +70,8 @@ $(document).ready(function(){
           $("header").css("padding-top",40);
           $(".gradBg").css("min-height","100vh");
           $(".contactFollowTop").show();
+
+          
         }
       }
     }
