@@ -219,10 +219,6 @@ hr, p {
   padding-right: 15px;
   box-shadow: 0 5px 10px rgba(14, 137, 68, 0.25); }
 
-.navbar.container-fluid {
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
 .navbar-brand {
   display: flex;
   flex-direction: row;
@@ -345,7 +341,11 @@ hr, p {
     transition: 0.3s ease; } }
 @media (min-width: 1720px) {
   .contactFollowTop {
-    display: none; } }
+    display: none; }
+
+  .navbar.container-fluid {
+    padding-top: 15px;
+    padding-bottom: 15px; } }
 @media (max-width: 1400px) {
   .companyName {
     width: 250px; } }

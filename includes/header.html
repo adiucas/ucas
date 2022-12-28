@@ -64,7 +64,7 @@
 </div>
 <nav class="navbar navbar-expand-lg container">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="http://www.ucasbd.com/">
       <img src="images/logo.svg" class="logo">
       <div class="companyName">United Corporate Advisory Services Ltd.</div>
     </a>
@@ -76,16 +76,16 @@
     <div class="collapse navbar-collapse" id="mobileNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="http://www.ucasbd.com/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Featured Products</a>
+          <a class="nav-link" href="#featuredProduct">Featured Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#aboutUs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About Us
           </a>
           <ul class="dropdown-menu">
@@ -99,7 +99,7 @@
           <a class="nav-link" href="#">Management</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contactUs">Contact</a>
         </li>
       </ul>
     </div>
@@ -107,6 +107,16 @@
 </nav>
 
 <script type="text/javascript">
+  $(document).ready(function() {
+      $('a[href^="#"]').click(function(event) {
+          var id = $(this).attr("href");
+          var offset = 80;
+          var target = $(id).offset().top - offset;
+          $('html, body').animate({scrollTop:target}, 500);
+          event.preventDefault();
+      });
+  });
+
   if ($(window).width() > 960) {
      $( ".dropdown" )
        .mouseover(function() {
@@ -123,5 +133,5 @@
 
   function toggleNavBtn() {
       $("#navToggler").toggleClass('fa-bars fa-xmark');
-    }  
+  }
 </script>

@@ -162,11 +162,6 @@
 	box-shadow: 0 5px 10px rgba($primCol, 25%);
 }
 
-.navbar.container-fluid{
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
 .navbar-brand{
 	@include flex(row,null, center);
 	margin-right: unset;
