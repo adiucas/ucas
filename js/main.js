@@ -6,46 +6,6 @@ $(function () {
   })
 })
 
-$('.first-option').hide();
-
-
-$('.custom-file input').change(function (e) {
-    if (e.target.files.length) {
-        $(this).next('.custom-file-label').html(e.target.files[0].name);
-    }
-});
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-var $grid = $('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-  filter: '.ubroker'
-});
-
-$('.filter button').on("click", function(){
-  var value = $(this).attr('data-name');
-  $grid.isotope({
-    filter:value
-  });
-})
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    responsiveClass:true,
-    items: 1,
-    nav:true,
-    navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
-    autoplay: false,
-    autoplayTimeout: 3000,
-    autoplayHoverPause:false,
-    dots: false,
-    margin:12
-})
-
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -79,4 +39,55 @@ $(document).ready(function(){
     }
   })
 })
+
+$('.first-option').hide();
+
+
+$('.custom-file input').change(function (e) {
+    if (e.target.files.length) {
+        $(this).next('.custom-file-label').html(e.target.files[0].name);
+    }
+});
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows',
+  filter: '.ubroker'
+});
+
+$('.filter button').on("click", function(){
+  var value = $(this).attr('data-name');
+  $grid.isotope({
+    filter:value
+  });
+})
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    items: 1,
+    nav:true,
+    navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
+    autoplay: false,
+    autoplayTimeout: 3000,
+    autoplayHoverPause:false,
+    dots: false,
+    margin:12
+})
+
+
+AOS.init({
+  offset: 0, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+
 
