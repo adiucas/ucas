@@ -1,0 +1,39 @@
+@media (max-width: 992px){
+	/*==============================
+	=            footer            =
+	==============================*/
+	footer{
+		.secHead {
+		    span{
+		    	font-size: 24px;
+		    }
+		}
+		.cu-container{
+			.infoWrapper{
+				span{
+					font-size: 14px;
+				}
+			}
+		}
+		.usefulLinks{
+			a{
+				font-size: 14px;
+			}
+		}
+		.mapWrapper{
+			min-height: 300px;
+		}
+	}
+
+	/*=================================
+	=            copyright            =
+	=================================*/
+	.copyright{
+		flex-direction: column;
+
+		img{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}
