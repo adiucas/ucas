@@ -69,6 +69,8 @@ body {
         font-weight: normal;
         margin-right: 5px;
         color: #0E8944; }
+    .realEstateErp .cardWrapper img {
+      margin-top: 5px; }
     .realEstateErp .cardWrapper:not(:last-child) {
       margin-bottom: 30px; }
 

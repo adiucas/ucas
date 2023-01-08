@@ -112,6 +112,9 @@
   /*==============================
   =            banner            =
   ==============================*/
+  .carousel-indicators {
+    margin-bottom: 0; }
+
   .carousel-inner {
     height: calc(100vh - 100px); }
     .carousel-inner img {

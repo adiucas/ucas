@@ -240,7 +240,7 @@
 
 	.contentBg{
 		padding: 1rem 2rem 1.5rem 2rem;
-		background: #f6f6f6;
+		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
 		position: relative;
@@ -365,7 +365,7 @@
 	}
 
 	.contentBg{
-		background: #f6f6f6;
+		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
 		position: relative;
@@ -517,7 +517,7 @@
 
 	.contentBg{
 		padding: 1rem 2rem 1.5rem 2rem;
-		background: #f6f6f6;
+		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
 		position: relative;
@@ -564,6 +564,10 @@
 			}
 
 			.grid{
+				.grid-item{
+					display: flex;
+					height:100px;
+				}
 				.clientLogoWrapper{
 					@include flex(row,center,center);
 					background: $lpCol;
@@ -572,10 +576,22 @@
 					border-radius: 15px;
 					outline: 1px solid transparent;
 					transition: 0.3s all;
+					padding:30px;
+					width: 100%;
 
 					img{
-						max-width: 100%;
+						max-width:100%;
+						max-height: 50px;
+					}
+
+					span{
+						@include flex(row,center,center);
+						font-family: $headFF;
+						font-weight: bold;
 						height: 50px;
+						color: $primCol;
+						font-size: 18px;
+						line-height: 1.1;
 					}
 
 					&:hover{
@@ -596,7 +612,7 @@
 =======================================*/
 
 .clientFeedback{
-	background: #f6f6f6;
+	background: #f2f2f2;
 
 	.cfBody{
 		background: $lpCol;

@@ -59,8 +59,7 @@
   width: 60px; }
 
 .carousel-indicators {
-  margin-bottom: 30px;
-  }
+  margin-bottom: 30px; }
 
 /*=====  End of banner  ======*/
 /*==================================
@@ -179,7 +178,7 @@
     transform: translateX(-50%); }
   .featuredProduct .contentBg {
     padding: 1rem 2rem 1.5rem 2rem;
-    background: #f6f6f6;
+    background: #f2f2f2;
     border: 1px solid #dddddd;
     border-radius: 1.5rem;
     position: relative; }
@@ -268,7 +267,7 @@
     left: unset;
     right: -200px; }
   .webVps .contentBg {
-    background: #f6f6f6;
+    background: #f2f2f2;
     border: 1px solid #dddddd;
     border-radius: 1.5rem;
     position: relative; }
@@ -395,7 +394,7 @@
   position: relative; }
   .ourClient .contentBg {
     padding: 1rem 2rem 1.5rem 2rem;
-    background: #f6f6f6;
+    background: #f2f2f2;
     border: 1px solid #dddddd;
     border-radius: 1.5rem;
     position: relative; }
@@ -422,6 +421,9 @@
       text-align: center; }
       .ourClient .contentBg .clientLogos .filter button:not(:last-child) {
         margin-right: 15px; }
+    .ourClient .contentBg .clientLogos .grid .grid-item {
+      display: flex;
+      height: 100px; }
     .ourClient .contentBg .clientLogos .grid .clientLogoWrapper {
       display: flex;
       flex-direction: row;
@@ -432,10 +434,23 @@
       min-height: 100px;
       border-radius: 15px;
       outline: 1px solid transparent;
-      transition: 0.3s all; }
+      transition: 0.3s all;
+      padding: 30px;
+      width: 100%; }
       .ourClient .contentBg .clientLogos .grid .clientLogoWrapper img {
         max-width: 100%;
-        height: 50px; }
+        max-height: 50px; }
+      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Gantari", sans-serif;
+        font-weight: bold;
+        height: 50px;
+        color: #0E8944;
+        font-size: 18px;
+        line-height: 1.1; }
       .ourClient .contentBg .clientLogos .grid .clientLogoWrapper:hover {
         transform: scale(0.9);
         outline: 1px solid #0E8944; }
@@ -445,7 +460,7 @@
 =            client feedback            =
 =======================================*/
 .clientFeedback {
-  background: #f6f6f6; }
+  background: #f2f2f2; }
   .clientFeedback .cfBody {
     background: #F3F9F4;
     box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);

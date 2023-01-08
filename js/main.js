@@ -53,12 +53,6 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-var $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-  filter: '.ubroker'
-});
-
 $('.filter button').on("click", function(){
   var value = $(this).attr('data-name');
   $grid.isotope({
