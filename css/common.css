@@ -464,6 +464,9 @@ hr, p {
       height: 2px;
       background: #0E8944; }
 
+.text-justify {
+  text-align: justify !important; }
+
 /*=====  End of content  ======*/
 /*===============================
 =            footer            =
