@@ -97,8 +97,7 @@ body {
       display: flex;
       flex-direction: row;
       align-items: baseline;
-      margin: 5px 0;
-      }
+      margin: 5px 0; }
       .digiagm .cardWrapper span:before {
         content: "\f058";
         font-family: "Font Awesome 6 Free";
@@ -109,5 +108,50 @@ body {
       margin-bottom: 30px; }
 
 /*=====  End of management info  ======*/
+/*===================================
+=            client list            =
+===================================*/
+.clientList {
+  position: relative;
+  background: #F3F9F4; }
+  .clientList .contentBg {
+    position: relative; }
+    .clientList .contentBg .clientLogos .grid .grid-item {
+      display: flex;
+      height: 100px; }
+    .clientList .contentBg .clientLogos .grid .clientLogoWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      min-height: 100px;
+      border-radius: 15px;
+      outline: 1px solid transparent;
+      transition: 0.3s all;
+      padding: 30px;
+      width: 100%; }
+      .clientList .contentBg .clientLogos .grid .clientLogoWrapper img {
+        max-width: 100%;
+        max-height: 50px; }
+      .clientList .contentBg .clientLogos .grid .clientLogoWrapper span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Gantari", sans-serif;
+        font-weight: bold;
+        height: 50px;
+        color: #0E8944;
+        font-size: 18px;
+        line-height: 1.1; }
+        .clientList .contentBg .clientLogos .grid .clientLogoWrapper span:before {
+          display: none; }
+      .clientList .contentBg .clientLogos .grid .clientLogoWrapper:hover {
+        transform: scale(0.9);
+        outline: 1px solid #0E8944; }
+
+/*=====  End of our clients  ======*/
 
 /*# sourceMappingURL=digiagm.css.map */
