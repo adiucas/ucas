@@ -13,6 +13,8 @@ $(document).ready(function(){
       if (scroll > 100) {
         if ($(window).width() > 1720) {
           $(".contactTop, .followUsTop").addClass("scrolled");
+          $(".sticky-top").css("top",0);
+          $(".navbar").css("border-radius","0 0 15px 15px");
           $(".navbar").addClass("container-fluid").removeClass("container");
         }
         if ($(window).width() < 1720) {
@@ -26,6 +28,8 @@ $(document).ready(function(){
       else{
         if ($(window).width() > 1720) {
           $(".contactTop, .followUsTop").removeClass("scrolled");
+          $(".sticky-top").css("top",15);
+          $(".navbar").css("border-radius","15px");
           $(".navbar").removeClass("container-fluid").addClass("container");
         }
         if ($(window).width() < 1720) {

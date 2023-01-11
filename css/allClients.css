@@ -43,25 +43,6 @@ body {
     border: 1px solid #dddddd;
     border-radius: 1.5rem;
     position: relative; }
-    .ourClient .contentBg .btn-explore, .ourClient .contentBg .btn-explore1 {
-      position: absolute;
-      top: 25px;
-      right: -17px; }
-      .ourClient .contentBg .btn-explore img, .ourClient .contentBg .btn-explore1 img {
-        width: 100%;
-        max-width: 150px; }
-    .ourClient .contentBg .btn-explore1 {
-      top: unset;
-      right: unset;
-      left: 0;
-      bottom: -18px;
-      display: flex;
-      width: 100%;
-      justify-content: center; }
-      .ourClient .contentBg .btn-explore1 img {
-        max-width: 170px; }
-    .ourClient .contentBg .secHead {
-      padding: 1rem 0 1rem 0; }
     .ourClient .contentBg .clientLogos .filter {
       text-align: center; }
       .ourClient .contentBg .clientLogos .filter button:not(:last-child) {

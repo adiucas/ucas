@@ -58,36 +58,6 @@ body{
 		border-radius: 1.5rem;
 		position: relative;
 
-		.btn-explore{
-			position: absolute;
-			top: 25px;
-			right: -17px;
-
-			img{
-				width: 100%;
-				max-width: 150px;
-			}
-		}
-
-		.btn-explore1{
-			@extend .btn-explore;
-			top: unset;
-			right: unset;
-			left: 0;
-			bottom: -18px;
-			display: flex;
-			width: 100%;
-			justify-content: center;
-
-			img{
-				max-width: 170px;
-			}
-		}
-
-		.secHead{
-			padding: 1rem 0 1rem 0;
-		}
-
 		.clientLogos{
 			.filter{
 				text-align: center;
