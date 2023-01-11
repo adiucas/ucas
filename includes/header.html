@@ -107,7 +107,14 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
-      $('a[href^="#"]').click(function(event) {
+      // $('a[href^="#"]').click(function(event) {
+      //     var id = $(this).attr("href");
+      //     var offset = 80;
+      //     var target = $(id).offset().top - offset;
+      //     $('html, body').animate({scrollTop:target}, 500);
+      //     event.preventDefault();
+      // });
+      $('.nav-item .nav-link').click(function(event) {
           var id = $(this).attr("href");
           var offset = 80;
           var target = $(id).offset().top - offset;
