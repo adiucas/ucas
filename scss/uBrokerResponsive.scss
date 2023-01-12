@@ -1,0 +1,104 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media (max-width: 1720px){
+	.sticky-top {
+	    padding-top: 40px;
+	}
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		height: unset;
+	}
+}
+
+@media (max-width: 1400px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		.carousel-item{
+			.primTitle{
+				font-size: 45px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+	.carousel-inner{
+		.carousel-item{
+			.right{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		img{
+			margin-top: 30px;
+			max-width: 200px;
+		}
+
+		.carousel-item{
+			.primTitle{
+				font-size: 35px;
+			}
+		}
+	}
+
+	.uBroker{
+		.cardWrapper{
+			.body{
+				.infoWrapper{
+					@include flex(col,null,null);
+					border-radius: 15px;
+					border: 2px solid rgba($primCol,50%);
+					padding: 15px;
+					&:not(:last-child){
+						margin-bottom: 15px;
+					}
+
+					.left,.right{
+						padding: unset;
+						flex-basis:100%;
+
+						img{
+							height: 18px;
+							margin-right: 10px;
+						}
+						span{
+							margin:unset;
+							&:before{
+								display:none;
+							}
+						}
+					}
+
+					.left{
+						@include flex(row,null,center);
+						font-weight: bold;
+					}
+					.right{
+						margin-top: 5px;
+						margin-left: 28px; 
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px){
+	.sticky-top {
+	    padding-top: 0;
+	}
+}

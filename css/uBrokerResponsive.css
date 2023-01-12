@@ -1,0 +1,59 @@
+@media (max-width: 1720px) {
+  .sticky-top {
+    padding-top: 40px; }
+
+  /*==============================
+  =            banner            =
+  ==============================*/
+  .carousel-inner {
+    height: unset; } }
+@media (max-width: 1400px) {
+  /*==============================
+  =            banner            =
+  ==============================*/
+  .carousel-inner .carousel-item .primTitle {
+    font-size: 45px; } }
+@media (min-width: 992px) and (max-width: 1400px) {
+  .carousel-inner .carousel-item .right img {
+    width: 100%; } }
+@media (max-width: 992px) {
+  /*==============================
+  =            banner            =
+  ==============================*/
+  .carousel-inner img {
+    margin-top: 30px;
+    max-width: 200px; }
+  .carousel-inner .carousel-item .primTitle {
+    font-size: 35px; }
+
+  .uBroker .cardWrapper .body .infoWrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid rgba(14, 137, 68, 0.5);
+    padding: 15px; }
+    .uBroker .cardWrapper .body .infoWrapper:not(:last-child) {
+      margin-bottom: 15px; }
+    .uBroker .cardWrapper .body .infoWrapper .left, .uBroker .cardWrapper .body .infoWrapper .right {
+      padding: unset;
+      flex-basis: 100%; }
+      .uBroker .cardWrapper .body .infoWrapper .left img, .uBroker .cardWrapper .body .infoWrapper .right img {
+        height: 18px;
+        margin-right: 10px; }
+      .uBroker .cardWrapper .body .infoWrapper .left span, .uBroker .cardWrapper .body .infoWrapper .right span {
+        margin: unset; }
+        .uBroker .cardWrapper .body .infoWrapper .left span:before, .uBroker .cardWrapper .body .infoWrapper .right span:before {
+          display: none; }
+    .uBroker .cardWrapper .body .infoWrapper .left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-weight: bold; }
+    .uBroker .cardWrapper .body .infoWrapper .right {
+      margin-top: 5px;
+      margin-left: 28px; } }
+@media (max-width: 576px) {
+  .sticky-top {
+    padding-top: 0; } }
+
+/*# sourceMappingURL=uBrokerResponsive.css.map */
