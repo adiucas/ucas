@@ -26,6 +26,16 @@
   .carousel-inner .carousel-item .primTitle {
     font-size: 35px; }
 
+  .spyNavMobile {
+    position: sticky;
+    top: 68px;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #F3F9F4; }
+    .spyNavMobile .nav-pills {
+      justify-content: center; }
+
   .uBroker .cardWrapper .body .infoWrapper {
     display: flex;
     flex-direction: column;
@@ -51,7 +61,17 @@
       font-weight: bold; }
     .uBroker .cardWrapper .body .infoWrapper .right {
       margin-top: 5px;
-      margin-left: 28px; } }
+      margin-left: 28px; }
+  .uBroker .cardWrapper .clientLogos .grid .clientLogoWrapper {
+    padding: 15px;
+    flex-direction: column;
+    text-align: center; }
+    .uBroker .cardWrapper .clientLogos .grid .clientLogoWrapper span {
+      font-size: 14px; }
+  .uBroker .cardWrapper .clientLogos .grid .grid-item {
+    height: unset;
+    min-height: 100px;
+    } }
 @media (max-width: 576px) {
   .sticky-top {
     padding-top: 0; } }

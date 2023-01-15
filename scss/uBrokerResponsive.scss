@@ -4,6 +4,8 @@
 @media (max-width: 1720px){
 	.sticky-top {
 	    padding-top: 40px;
+
+	    
 	}
 	/*==============================
 	=            banner            =
@@ -55,6 +57,19 @@
 		}
 	}
 
+	.spyNavMobile{
+		position: sticky;
+		top: 68px;
+		z-index: 1;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: $lpCol;
+
+		.nav-pills{
+			justify-content: center;
+		}
+	}
+
 	.uBroker{
 		.cardWrapper{
 			.body{
@@ -90,6 +105,24 @@
 					.right{
 						margin-top: 5px;
 						margin-left: 28px; 
+					}
+				}
+			}
+			.clientLogos{
+				.grid{
+					.clientLogoWrapper{
+						padding: 15px;
+						flex-direction: column;
+						text-align: center;
+
+						span{
+							font-size: 14px;
+						}
+					}
+
+					.grid-item{
+						height: unset;
+						min-height: 100px;
 					}
 				}
 			}

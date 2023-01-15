@@ -133,21 +133,43 @@
 				</div>
 			</div>
 			<div class="row">
-			  <div class="col-2">
-			    <nav id="ubrokerScrollspy" class="h-100 flex-column align-items-stretch pe-4 border-end">
-			      <nav class="nav nav-pills flex-column">
+			  <div class="col-lg-2 spyNavMobile d-none d-lg-flex">
+			    <nav id="ubrokerScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end">
+			      <nav class="nav nav-pills parent-pills flex-lg-column">
 			        <a class="nav-link" href="#item-1">Accounts</a>
 			        <a class="nav-link" href="#item-2">Back Office</a>
-			        <nav class="nav nav-pills flex-column">
+			        <nav class="nav nav-pills flex-lg-column">
 			          <a class="nav-link ms-3 my-1" href="#item-2-1">Broker Setup</a>
 			          <a class="nav-link ms-3 my-1" href="#item-2-2">Securities Setup</a>
 			          <a class="nav-link ms-3 my-1" href="#item-2-3">Instrument</a>
 			          <a class="nav-link ms-3 my-1" href="#item-2-4">Investor Information</a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-5">Portfolio Management</a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-6">IPO Management </a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-7">Trade Service </a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-8">CDBL Service</a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-9">Margin</a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-10">Charges</a>
+			          <a class="nav-link ms-3 my-1" href="#item-2-11">Accounts</a>
+			        </nav>
+			        <a class="nav-link" href="#item-3">Basic Setup</a>
+			        <nav class="nav nav-pills flex-lg-column">
+			          <a class="nav-link ms-3 my-1" href="#item-3-1">File Export</a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-2"> Email & SMS </a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-3">Security</a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-4">Process</a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-5">DSE Uniform Reports</a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-6">Lookup</a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-7"> Employee Information </a>
+			          <a class="nav-link ms-3 my-1" href="#item-3-8">Security</a>
+			        </nav>
+			        <a class="nav-link" href="#item-4">MKS</a>
+			        <nav class="nav nav-pills flex-lg-column">
+			          <a class="nav-link ms-3 my-1" href="#item-4-1"> MIS Reports </a>
 			        </nav>
 			      </nav>
 			    </nav>
 			  </div>
-			  <div class="col-10">
+			  <div class="col-lg-10">
 			    <div data-bs-spy="scroll" data-bs-target="#ubrokerScrollspy" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
 			      <div class="cardWrapper" id="item-1">
 			      	<div class="head">
@@ -333,17 +355,20 @@
 			      			<div class="infoWrapper">
 			      				<div class="left">
 			      					<img src="images/shield-check.svg">
-			      					<span>Instrument Information</span>
+			      					<span>BO Opening Form</span>
 			      				</div>
-			      				<div class="right">Create modify Instrument Information</div>
+			      				<div class="right">
+			      					Investor BO opening /BO Setup/Investor
+			      					Code Assign
+			      				</div>
 			      			</div>
 			      			<div class="infoWrapper">
 			      				<div class="left">
 			      					<img src="images/shield-check.svg">
-			      					<span>Instrument Margin Status Setup</span>
+			      					<span>Investor Setup</span>
 			      				</div>
 			      				<div class="right">
-			      					Assign instrument margin/non-margin status
+			      					create modify delete investor information
 			      				</div>
 			      			</div>
 			      			<div class="infoWrapper">
@@ -356,9 +381,1004 @@
 			      			<div class="infoWrapper">
 			      				<div class="left">
 			      					<img src="images/shield-check.svg">
-			      					<span>Employee Target Setup</span>
+			      					<span>Investor Account Close</span>
 			      				</div>
-			      				<div class="right">Create modify delete Employee Target Setup</div>
+			      				<div class="right">
+			      					Close investor BO Account From
+			      					CDBL/Manual
+			      				</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Investor Introducer Setup</span>
+			      				</div>
+			      				<div class="right">
+			      					Investor wise introducer assign
+			      				</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Investor Profile</span>
+			      				</div>
+			      				<div class="right">
+			      					Investor all information at a glance
+			      				</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Mobile Trade Status Setup</span>
+			      				</div>
+			      				<div class="right">
+			      					Investor wise DSE mobile trade status
+			      				</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Investor Information Reports</span>
+			      				</div>
+			      				<div class="right">
+			      					Investor details report, Special investor
+			      					access report
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-5">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Portfolio Management</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Change Average Cost</span>
+			      				</div>
+			      				<div class="right">Manually change instrument average cost of an investor </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Instrument Lock/Unlock Details </span>
+			      				</div>
+			      				<div class="right">Investor wise instrument lock/Unlock history </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Portfolio Adjustment </span>
+			      				</div>
+			      				<div class="right">Manually change instrument Quantity of an investor </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Share In </span>
+			      				</div>
+			      				<div class="right">Manually Add instrument </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Share In (Adjustment) </span>
+			      				</div>
+			      				<div class="right">Manually Add instrument For Adjustment purpose</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Investor Profile</span>
+			      				</div>
+			      				<div class="right">
+			      					Investor all information at a glance
+			      				</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Mobile Trade Status Setup</span>
+			      				</div>
+			      				<div class="right">
+			      					Investor wise DSE mobile trade status
+			      				</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Share Lock </span>
+			      				</div>
+			      				<div class="right">Manually/CDBL(Auto) Lock Instrument for Buy/Sale </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Share Out </span>
+			      				</div>
+			      				<div class="right">Manually Remove instrument </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Share Out (Adjustment) </span>
+			      				</div>
+			      				<div class="right">Manually Remove instrument For Adjustment purpose </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Portfolio Related Reports </span>
+			      				</div>
+			      				<div class="right">Client’s Portfolio, short portfolio, portfolio statement (company wise), portfolio statement (Account type wise), client account status(receivable), client account status(payable), portfolio management (security holdings), client’s free balance, investor above ten crore equity, Margin client equity negative, company wise margin ratio analysis reports </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-6">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>IPO Management </h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Export IPO File </span>
+			      				</div>
+			      				<div class="right">Export an IPO Application file for issuer </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Application </span>
+			      				</div>
+			      				<div class="right">Subscription of an IPO </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Application Cancel </span>
+			      				</div>
+			      				<div class="right">Reject subscription of an IPO </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Application for lower balance </span>
+			      				</div>
+			      				<div class="right">Subscription of an IPO Without Balance Check </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Declaration </span>
+			      				</div>
+			      				<div class="right">Create modify delete an IPO Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Foreign Investor Draft </span>
+			      				</div>
+			      				<div class="right">Create modify delete foreign subscriber Draft Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Order Without balance check </span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Order With balance check </span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Result Upload (Allocation Refund) </span>
+			      				</div>
+			      				<div class="right">IPO Allocation/Refund Process </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>NRB Draft & Order </span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Sent IPO Result SMS </span>
+			      				</div>
+			      				<div class="right">Facility Of sending IPO allocation/Refund Result </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>IPO Reports </span>
+			      				</div>
+			      				<div class="right">IPO Order, Application, Cancel, Allocation, Summary, Refund, fine reports. IPO details reports, IPO Application Summary report for Issuer. IPO Draft report for NRB applications. </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-7">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Trade Service<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Limit</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Export Limit File </span> </div>
+			      				<div class="right">Export Investor Limit File For DSE/CSE</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Process Limit File </span> </div>
+			      				<div class="right">Process Uploaded Omnibus Investor Limit File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Rollback Limit Upload </span> </div>
+			      				<div class="right">Rollback Uploaded Omnibus Investor Limit File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Upload Limit File </span> </div>
+			      				<div class="right"></div>
+			      			</div>
+			      		</div>
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Trade Service<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Trade &closing</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Export DP Trade Files</span>
+			      				</div>
+			      				<div class="right">Export Omnibus Investor Trade(Buy/Sale)</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Process Trade Files</span>
+			      				</div>
+			      				<div class="right">Process DSE/CSE Daily Trade File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Rollback Trade Files (After Process)</span>
+			      				</div>
+			      				<div class="right">Rollback DSE/CSE Daily Processed Trade File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Rollback Trade Upload</span> </div>
+			      				<div class="right">Rollback Uploaded DSE/CSE Daily Trade File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Upload Trade Files</span> </div>
+			      				<div class="right">Upload DSE/CSE Daily Trade File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Trade Related Reports</span> </div>
+			      				<div class="right">Stock Exchange related reports like Net Brokerage Income(Details), Net Brokerage Income(Summary) CNS, Members Payment, Instrument Wise Netting, Client Wise Netting, Income Statement, Turnover,MO(CSE Format) Client's trade reports like Trade Summary Report, Trade Confirmation Summary & Details wise, Brokerage commission. DP wise bill, Buy sale Netting, Instrument wise trade Summary reports. Trader wise reports like Buy Sale Details, Summary, order reports. Analysis reports like Buy Sale on Same Time, Over Trading, Margin buy non margin sale, short sale reports</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-8">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>CDBL Service</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Assign Non-IPO Share</span>
+			      				</div>
+			      				<div class="right">Assign Non-IPO/Director/Sponsored Share from CDBL IPO File </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>CDBL Share In Rate Setup</span>
+			      				</div>
+			      				<div class="right">Facility Of setting Rate of CDBL Share IN</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Export Pay In/Out File</span>
+			      				</div>
+			      				<div class="right">Export Daily Pay IN/OUT File For CDBL</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Process CDBL Files</span>
+			      				</div>
+			      				<div class="right">Process Uploaded Daily CDBL File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Rollback CDBL Upload</span>
+			      				</div>
+			      				<div class="right">Rollback Uploaded Daily CDBL File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Upload CDBL Files</span>
+			      				</div>
+			      				<div class="right">Upload Daily CDBL File</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>CDBL Report</span>
+			      				</div>
+			      				<div class="right">CDBL General Reports, BO Open & Close Reports, Pay In/Out Report, Bonus/Rights Reports, IPO Share Credit Report, Closing Stock (CDBL), CDBL Charges Reports</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-9">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Margin</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Margin Client Setup</span>
+			      				</div>
+			      				<div class="right">Assign an Investor's Margin/Cash Status</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Interest Setup</span>
+			      				</div>
+			      				<div class="right">Investor wise/Overall Interest Rate Setup Facility </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Quarterly/Monthly/Yearly/Half Yearly Interest process</span>
+			      				</div>
+			      				<div class="right">Accrued Interest Auto Process(Quarterly/Monthly/Yearly/Half Yearly) Setup </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Interest Collection</span>
+			      				</div>
+			      				<div class="right">Manually Collect an Investor/Overall Accrued Interest at Any Time </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Receive Cash Dividend</span>
+			      				</div>
+			      				<div class="right">Facility Of Receiving Cash Dividend from Company </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Margin Reports</span>
+			      				</div>
+			      				<div class="right">Margin Client Wise Reports like, Interest Report, Fresh Loan & EDR Report, Margin Client list, loan position Report, cash dividend and cash fraction reports </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-10">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Charges</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>All Charge Setup</span>
+			      				</div>
+			      				<div class="right">Any kind of Charge Setup Facility</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Investor All Charges</span>
+			      				</div>
+			      				<div class="right">Investor wise All Charge Setup History</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Investor Wise Charge Setup</span>
+			      				</div>
+			      				<div class="right">Investor wise Any Charge Setup</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Charges Addition/Deduction </span>
+			      				</div>
+			      				<div class="right">Manually Charge Addition/Deduction Facility</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Charges Approve</span>
+			      				</div>
+			      				<div class="right">Manually Charge Addition/Deduction Approval </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Charge Report</span>
+			      				</div>
+			      				<div class="right">Charge Information Report, manual Charge Report Branch wise, investor wise, transaction wise. </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-2-11">
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Collection</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Approve</span>
+			      				</div>
+			      				<div class="right">Approval Of Cheque/Cash Receive Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque/Ca sh Receive </span>
+			      				</div>
+			      				<div class="right">create modify delete Cheque/Cash Receive Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque/Ca sh Receive of Closed Investor </span>
+			      				</div>
+			      				<div class="right">Facility of collection of a closed investor</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque/Ca sh Clearance &Dishonor </span>
+			      				</div>
+			      				<div class="right"> Cheque/ Cash Reconciliation according to Bank </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque/Ca sh Deposit To Bank </span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque/Ca sh Redeposit </span>
+			      				</div>
+			      				<div class="right">Redeposit facility of a dishonored cheque</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Collection Transaction </span>
+			      				</div>
+			      				<div class="right">Modification Facility of Cheque/cash Receive Information after reconciliation </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Edit at Any Stage </span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Collection Report</span>
+			      				</div>
+			      				<div class="right">Collection Report Investor wise, Date wise, branch wise, Status wise. Unclear cheque report, dishonor cheque report. </div>
+			      			</div>
+			      		</div>
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i class="fa-solid fa-arrow-right ms-2 me-2"></i> Fund Transfer </h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Fund Transfer </span>
+			      				</div>
+			      				<div class="right">Fund Transfer facility between investors</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Fund Transfer Approve </span>
+			      				</div>
+			      				<div class="right">Fund Transfer information approval</div>
+			      			</div>
+			      		</div>
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i class="fa-solid fa-arrow-right ms-2 me-2"></i>  Money Receipts  </h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Collection/ Payment Money Receipt </span>
+			      				</div>
+			      				<div class="right">Printing facility of collection and payment money receipt (Office/Client Copy)</div>
+			      			</div>
+			      		</div>
+			      		<div class="head mt-4">
+			      			<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Payment</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque/Ca sh Payment </span>
+			      				</div>
+			      				<div class="right">create modify delete Client Payment Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Cheque Print </span>
+			      				</div>
+			      				<div class="right">Payment Cheque Printing Facility</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Close Investor Payment </span>
+			      				</div>
+			      				<div class="right">Payment Facility to a closed investor</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Fund Requisition </span>
+			      				</div>
+			      				<div class="right">Requisition Of a client payment</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Fund Requisition </span>
+			      				</div>
+			      				<div class="right">Requisition Information Approval</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Negative Balance Payment</span>
+			      				</div>
+			      				<div class="right">``Payment Facility to Margin(Negative Balance) Investor</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Payment Approve </span>
+			      				</div>
+			      				<div class="right">Approval Of a Payment</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Payment Clearance </span>
+			      				</div>
+			      				<div class="right">Payment Reconciliation according to bank</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Requisition Approve </span>
+			      				</div>
+			      				<div class="right">Requisition Approval</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Payment Report </span>
+			      				</div>
+			      				<div class="right">Payment reports Investor wise, Date wise, branch wise, BEFTN Report. </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      </div>
+			      <div class="cardWrapper" id="item-3">
+			      	<div id="item-3-1">
+			      		<div class="head">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>File Export</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Export Client Registration File</span>
+			      				</div>
+			      				<div class="right">Export Facility Of daily new client registration file for CSE </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-2">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email & SMS<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Portfolio & Trade Confirmation Email </span>
+			      				</div>
+			      				<div class="right">Email Facility of Investor Portfolio and daily trade confirmation</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Send General Email </span>
+			      				</div>
+			      				<div class="right">Bulk Email Facility</div>
+			      			</div>
+			      		</div>
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email & SMS</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Email & SMS DP Access</span>
+			      				</div>
+			      				<div class="right">Email Sending Access to investor (Setup)</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Email & SMS Investor Access</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      		</div>
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email & SMS<i class="fa-solid fa-arrow-right ms-2 me-2"></i>SMS</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Sent General SMS </span>
+			      				</div>
+			      				<div class="right">Bulk general SMS sending facility</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Sent Trade SMS </span>
+			      				</div>
+			      				<div class="right">SMS sending facility of daily trade confirmation </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-3">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Security</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>CDBL File Upload Setup</span>
+			      				</div>
+			      				<div class="right">Setup facility of which file should upload from CDBL and which are not </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>One Percent Share Setup</span>
+			      				</div>
+			      				<div class="right">Different Commission Setup facility according to Share Type </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Special Investor User Permission </span>
+			      				</div>
+			      				<div class="right">Employee wise Investor Report Lock Facility for Security Purpose </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Upload File Access Control</span>
+			      				</div>
+			      				<div class="right">Employee wise file upload access facility</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-4">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Process<i class="fa-solid fa-arrow-right ms-2 me-2"></i> Day Process </h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Day Initial Process </span>
+			      				</div>
+			      				<div class="right">Day Start process before daily work</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Day End Process </span>
+			      				</div>
+			      				<div class="right">Day End process after daily work</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Holiday Process </span>
+			      				</div>
+			      				<div class="right">Holiday Declaration Facility</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-5">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>DSE Uniform Reports</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Accounting Report</span>
+			      				</div>
+			      				<div class="right">Regulatory Report</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Stock CDBL Report</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Stock Portfolio Reports</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Trade Stock Reports</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Margin Reports</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-6">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Lookup</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Department</span>
+			      				</div>
+			      				<div class="right">create modify delete Employee Department Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Designation</span>
+			      				</div>
+			      				<div class="right">create modify delete Employee Designation Information </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Occupation</span>
+			      				</div>
+			      				<div class="right">create modify delete Investor Occupation Information </div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-7">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i> Employee Information </h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Employee Basic</span>
+			      				</div>
+			      				<div class="right">Employee Basic Information setup</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Employee's Education Information </span>
+			      				</div>
+			      				<div class="right">Employee Educational Information setup</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      	<div id="item-3-8">
+			      		<div class="head mt-4">
+			      			<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i> Security</h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>All Investor Access Control</span>
+			      				</div>
+			      				<div class="right">Employee wise Full Access to all Investor(Back Office/MIS Report Module) </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Manual Lock/Unlock User</span>
+			      				</div>
+			      				<div class="right">Manually Lock/Unlock of a User/Employee</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Register</span>
+			      				</div>
+			      				<div class="right">create new Software User and assign role to User </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Report Access Control</span>
+			      				</div>
+			      				<div class="right">User/Employee wise Report Access Control</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Role</span>
+			      				</div>
+			      				<div class="right">create modify delete User Role Information</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Security Module</span>
+			      				</div>
+			      				<div class="right">Role wise Page Access to User/Employee</div>
+			      			</div>
+			      		</div>
+			      	</div>
+			      </div>
+			      <div class="cardWrapper" id="item-4">
+			      	<div id="item-4-1">
+			      		<div class="head">
+			      			<h4>MIS<i class="fa-solid fa-arrow-right ms-2 me-2"></i> MIS Reports </h4>
+			      		</div>
+			      		<div class="body">
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Active/Inactive Client</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>All RM's Asset Database</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>BO Opening</span>
+			      				</div>
+			      				<div class="right">Introducer wise BO Opening Information report </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Deposit &withdraw</span>
+			      				</div>
+			      				<div class="right">Introducer wise Deposit/Withdraw Details/Summary report </div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Portfolio Management</span>
+			      				</div>
+			      				<div class="right">Introducer wise Investor Portfolio Reports</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>RM Wise Securities Holding</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>RM Performance</span>
+			      				</div>
+			      				<div class="right">Employee Performance Report (At a glance)</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>RM Portfolio Return</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>RM Profile & Log</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>RM's Customer Database</span>
+			      				</div>
+			      				<div class="right"></div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Securities Buy & Sale</span>
+			      				</div>
+			      				<div class="right">Introducer wise Trade (Buy/Sale), Report</div>
+			      			</div>
+			      			<div class="infoWrapper">
+			      				<div class="left">
+			      					<img src="images/shield-check.svg">
+			      					<span>Turnover & Commission</span>
+			      				</div>
+			      				<div class="right">Introducer wise Daily Trade Turnover and commission Report </div>
 			      			</div>
 			      		</div>
 			      	</div>
@@ -367,344 +1387,58 @@
 			  </div>
 			</div>
 		</div>
+
+		<!--=================================
+		=            client list            =
+		==================================-->
 		<div class="container pt30">
-			<div class="cardWrapper">
-				<div class="head">
-					<h4>Client List</h4>
+			<div class="secHead">
+				<h1 class="display-6">client list</h1>
+				<div class="divider">
+					<div class="left"></div>
+					<img src="images/star.svg">
+					<span class="right"></span>
 				</div>
+			</div>
+			<div class="cardWrapper">
 				<div class="clientList">
 					<div class="contentBg">
 						<div class="clientLogos">
 							<div class="grid row">
-								<div class="grid-item default digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.bashundharagroup.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/bashundhara.png">
+								<div class="grid-item ubroker uhrms col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="http://www.eblsecurities.com" target="_blank" class="clientLogoWrapper">
+										<img src="images/clients/ubroker/eblsl.svg">
 									</a>
 								</div>
-								<div class="grid-item default digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://pocl.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/padmaOil.png">
+								<div class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="https://www.barakasecurities.com/" target="_blank" class="clientLogoWrapper">
+										<img src="images/clients/ubroker/baraka.png">
 									</a>
 								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://mpl.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/meghna.png">
-										<span class="ms-3">Meghna Oil Company</span>
+								<div class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="https://biplobgroupbd.com/" target="_blank" class="clientLogoWrapper">
+										<img src="images/clients/ubroker/biplob.svg">
 									</a>
 								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://jamunaoil.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/jamuna.png">
-										<span class="ms-3">Jamuna Oil Company</span>
+								<div class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="https://www.agraniinsurance.com/" target="_blank" class="clientLogoWrapper">
+										<img src="images/clients/ubroker/agrani.svg">
 									</a>
 								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://jamunaoil.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/navana.png">
+								<div class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="http://tsisecurities.com/" target="_blank" class="clientLogoWrapper">
+										<img src="images/clients/ubroker/tsi.png">
 									</a>
 								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.acmeglobal.com/contact-us/factory/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/acme.png">
+								<div class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="http://www.cordialsecurities.net/" target="_blank" class="clientLogoWrapper">
+										<img src="images/clients/ubroker/cordial.png">
+										<span class="ms-lg-3">Cordial <br> Securities Ltd.</span>
 									</a>
 								</div>
-								<div class="grid-item default digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.gphispat.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/gph.png">
-									</a>
-								</div>
-								<div class="grid-item default digiagmegm udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.unionbank.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/union.png">
-									</a>
-								</div>
-								<div class="grid-item default digiagmegm udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://www.bsccl.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/bsccl.png">
-										<span style="font-size: 14px; margin-left: 10px;">Bangladesh Submarine Cable Company Limited</span>
-									</a>
-								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://pgcb.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/powrgrid.png">
-										<span style="font-size: 14px; margin-left: 10px;">Power Grid Company of Bangladesh Ltd</span>
-									</a>
-								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.saifpowertecltd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/saif.png">
-									</a>
-								</div>
-								<div class="grid-item digiagmegm col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.genexinfosys.com/about.php" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/genex.png">
-									</a>
-								</div>
-								<div class="grid-item default udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.acmeglobal.com/contact-us/corporate-office/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/digiagm/acme.png">
-									</a>
-								</div>
-								<div class="grid-item default udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://youthbd.com/sister-concern/shahjibazar-power-co-ltd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/udr/shahjibazar.png">
-										<span style="margin-left: 10px;">Shahjibazar <br>Power Co. Ltd.</span>
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.newasiabd.com/rahimtextiles.php" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/udr/rahim.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.newasiabd.com/malekspinning.php" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/udr/malek.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.index-agro.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/udr/index.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://lub-rref.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/udr/lub.png">
-										<span style="margin-left: 10px;">Lub-rref (Bangladesh) Ltd.</span>
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://oryzaagro-bd.com/site/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/oryzavlogo.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.sandhanilife.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/shandhani.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.first-finance.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/firstfinance.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://unioninsurancebd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/unioninsurance.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://eilbd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/expressinsurance.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.intracorefueling.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/intracorefuel.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://www.globalinsurancebd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/globalinsurance.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://easterninsurancebd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/easterninsurance.svg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.phoenixinsurance.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/phoenixinsurance.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://niil.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/northernislamiinsurance.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.cilbd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/continental.jpg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://bnicl.net/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/bnic.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://paramounttextilebd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/paramount.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://www.bankasia-bd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/bankasia.jpg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://elbl.portal.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/easternlubricants.jpg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://www.newline.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/newlineclothing.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://desco.gov.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/desco.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://pragatiinsurance.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/pragati.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://purabiinsurance.org/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/purabi.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://ail.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/alif.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.goldensonbd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/gsl.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.gq-group.com/gq-ball-pen-industries-limited/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/gq.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.ilfsl.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/internationalleasing.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://ktlbd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/Kattali-Textile-Limited-Logo-e1597472619590.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://silvapharma.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/silva.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://tunghaiknittingdl.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/tunghai.jpg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://vfsthread.com/new/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/vfs.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.bashundharapapermills.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/bpm.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.gnf-bd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/generationnext.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://yeakinpolymerbd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/yeakin.jpg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.btaalu.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/bdthaialu.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.premiercement.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/premiercement.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.khansonsgroupbd.com/sonargaontextiles.html" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/khansons.gif">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.afchem.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/activefine.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.indo-banglapharma.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/indobangla.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.olympicaccessoriesbd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/olympic.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://shashadenims.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/shasha.svg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.sktrimsin.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/sktrims.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.wms.com.bd/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/western.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://aramitcement.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/aramit.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="http://ifadautos.com/ifad-product/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/ifad.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.transteclighting.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/bdlamps.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.adventpharmabd.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/advent.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://pacificdenims.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/pacificdenims.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.saihamcotton.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/saihamcotton.jpg">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://quasemindustries.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/qaasem.png">
-									</a>
-								</div>
-								<div class="grid-item udr col-lg-4 col-xl-3 col-md-4 my-2">
-									<a href="https://www.achia-seafoods.com/" target="_blank" class="clientLogoWrapper">
-										<img src="images/clients/all/achia.jpg">
+								<div class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
+									<a href="https://www.cse.com.bd/stockbroker/memberDetails/137" target="_blank" class="clientLogoWrapper">
+										<span>Nurjahan <br>Securities Ltd.</span>
 									</a>
 								</div>
 							</div>

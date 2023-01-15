@@ -54,10 +54,9 @@ body{
 	}
 
 	#ubrokerScrollspy{
-		.nav-pills{
+		.parent-pills{
 			position: sticky;
 			top:100px;
-			
 		}
 	}
 
@@ -92,6 +91,7 @@ body{
 				.left,.right{
 					padding: 15px;
 					flex-basis:50%;
+					word-wrap: break-word;
 
 					img{
 						height: 18px;

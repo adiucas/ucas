@@ -39,7 +39,7 @@ body {
   .uBroker .col-lg-4 {
     display: flex;
     flex-direction: row; }
-  .uBroker #ubrokerScrollspy .nav-pills {
+  .uBroker #ubrokerScrollspy .parent-pills {
     position: sticky;
     top: 100px; }
   .uBroker .nav-pills .nav-link.active, .uBroker .nav-pills .show > .nav-link {
@@ -64,7 +64,8 @@ body {
         margin-bottom: 15px; }
       .uBroker .cardWrapper .body .infoWrapper .left, .uBroker .cardWrapper .body .infoWrapper .right {
         padding: 15px;
-        flex-basis: 50%; }
+        flex-basis: 50%;
+        word-wrap: break-word; }
         .uBroker .cardWrapper .body .infoWrapper .left img, .uBroker .cardWrapper .body .infoWrapper .right img {
           height: 18px;
           margin-right: 10px; }
@@ -147,7 +148,8 @@ body {
     position: relative; }
     .clientList .contentBg .clientLogos .grid .grid-item {
       display: flex;
-      height: 100px; }
+      height: 100px;
+      }
     .clientList .contentBg .clientLogos .grid .clientLogoWrapper {
       display: flex;
       flex-direction: row;
