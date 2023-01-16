@@ -53,6 +53,22 @@ body{
 		@include flex(row);
 	}
 
+	#digiagmScrollspy{
+		.parent-pills{
+			position: sticky;
+			top:100px;
+		}
+	}
+
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	    color: $lpCol;
+	    background-color: $primCol;
+	}
+
+	.nav-link:focus:after, .nav-link:hover:after {
+	    display: none;
+	}
+
 	.secHead{
 		margin-bottom: 30px;
 	}
@@ -126,6 +142,7 @@ body{
 		span{
 			@include flex(row,null,baseline);
 			margin:5px 0;
+			word-break: break-word;
 			&:before{
 				content: "\f058";
 				font-family: "Font Awesome 6 Free";

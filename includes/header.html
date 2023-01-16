@@ -84,7 +84,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#services">Services</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link" href="#aboutUs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About Us
           </a>
@@ -93,9 +93,9 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="">Something else here</a></li>
           </ul>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="ourTeam.html">UCAS Family</a>
+          <a class="nav-link" href="UCAS-Family.html">UCAS Family</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contactUs">Contact</a>
@@ -116,7 +116,7 @@
       // });
       $('.nav-item .nav-link').click(function(event) {
           var id = $(this).attr("href");
-          var offset = 80;
+          var offset = 50;
           var target = $(id).offset().top - offset;
           $('html, body').animate({scrollTop:target}, 500);
           event.preventDefault();
