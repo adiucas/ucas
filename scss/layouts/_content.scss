@@ -75,4 +75,38 @@
 	text-align: justify !important;
 }
 
+.UcasScrollSpy{
+	.parent-pills{
+		position: sticky;
+		top:100px;
+	}
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	    color: $lpCol;
+	    background-color: $primCol;
+	}
+	.nav-link:focus, .nav-link:hover {
+	    color: $primCol;
+	}
+	.nav-link{
+		@include flex(row,space-between,center);
+		position: relative;
+		&:after{
+			content:"\f0a9";
+			font-family: "Font Awesome 6 Free";
+			font-weight: bold;
+			margin-left: 10px;
+			color: $lpCol;
+		}
+	}
+}
+
+#SpyNav{
+	white-space: nowrap;
+	
+}
+#SpyContent{
+	flex: 1 0 0;
+}
+
+
 @import "contentResponsive";

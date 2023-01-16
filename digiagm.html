@@ -65,8 +65,8 @@
 	<div class="digiagm ptb30">
 		<div class="container-fluid">
 			<div class="row">
-			  <div class="col-lg-2 spyNavMobile d-none d-lg-block">
-			    <nav id="digiagmScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end">
+			  <div class="col-lg-2 SpyNav spyNavMobile d-none d-lg-block">
+			    <nav id="digiagmScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end UcasScrollSpy">
 			      <nav class="nav nav-pills parent-pills flex-lg-column">
 			        <a class="nav-link" href="#backgroundDigiAGM">Background History</a>
 			        <a class="nav-link" href="#whyChoose">Why Choose Us</a>
@@ -86,8 +86,8 @@
 			      </nav>
 			    </nav>
 			  </div>
-			  <div class="col-lg-10">
-			    <div data-bs-spy="scroll" data-bs-target="#digiagmScrollspy" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+			  <div class="col-lg-10 SpyContent">
+			    <div data-bs-spy="scroll" data-bs-target="#digiagmScrollspy" data-bs-smooth-scroll="true" tabindex="0">
 			    	<div  id="backgroundDigiAGM">
 			    		<div class="secHead">
 			    			<h1 class="display-6">background of UCAS Digital-AGM/EGM</h1>
@@ -606,13 +606,4 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	$('.nav-pills .nav-link').click(function(event) {
-	    var id = $(this).attr("href");
-	    var offset = 100;
-	    var target = $(id).offset().top - offset;
-	    $('html, body').animate({scrollTop:target}, 500);
-	    event.preventDefault();
-	});
-</script>
 </html>

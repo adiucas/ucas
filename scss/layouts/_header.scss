@@ -188,30 +188,32 @@
 	color: rgba($primCol, 50%);
 }
 
-.navbar-nav .nav-link.active{
-	color: $primCol;
+.navbar{
+	.navbar-nav .nav-link.active{
+		color: $primCol;
 
-	&:after{
-		content: "";
-		display: block;
-		width: 100%;
-		height: 2px;
-		background: $primCol;
-		border-radius: 2px;
+		&:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 2px;
+			background: $primCol;
+			border-radius: 2px;
+		}
 	}
-}
 
-.nav-link:focus, .nav-link:hover {
-    color: $primCol;
+	.nav-link:focus, .nav-link:hover {
+	    color: $primCol;
 
-    &:after{
-    	content: "";
-    	display: block;
-    	width: 100%;
-    	height: 2px;
-    	background: $primCol;
-    	border-radius: 2px;
-    }
+	    &:after{
+	    	content: "";
+	    	display: block;
+	    	width: 100%;
+	    	height: 2px;
+	    	background: $primCol;
+	    	border-radius: 2px;
+	    }
+	}
 }
 
 .dropdown-menu{

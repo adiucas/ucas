@@ -61,12 +61,12 @@
 	<!--================================
 	=            our client            =
 	=================================-->
-	<div class="ourClient ptb60">
+	<div class="ourClient pt30 pb60">
 		<div class="container-fluid">
 			<div class="row">
-			  <div class="col-lg-2 spyNavMobile">
-			    <nav id="clientScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end">
-			      <nav class="nav nav-pills flex-lg-column">
+			  <div class="col-lg-auto spyNavMobile" id="SpyNav">
+			    <nav id="clientScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end UcasScrollSpy">
+			      <nav class="nav nav-pills parent-pills flex-lg-column">
 			        <a class="nav-link" href="#uBroker">UBroker</a>
 			        <a class="nav-link" href="#RealEstateERP">Real Estate ERP</a>
 			        <a class="nav-link" href="#DigiAGM">Digi AGM/EGM</a>
@@ -75,8 +75,8 @@
 			      </nav>
 			    </nav>
 			  </div>
-			  <div class="col-lg-10">
-			    <div data-bs-spy="scroll" data-bs-target="#clientScrollspy" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0">
+			  <div class="col-lg-auto" id="SpyContent">
+			    <div data-bs-spy="scroll" data-bs-target="#clientScrollspy" data-bs-smooth-scroll="true" tabindex="0">
 			      <div id="uBroker">
 			        <div class="contentBg">
 			        	<div class="secHead">
@@ -639,14 +639,6 @@
 	var $grid = $('.grid').isotope({
 	  itemSelector: '.grid-item',
 	  layoutMode: 'fitRows'
-	});
-
-	$('.nav-pills .nav-link').click(function(event) {
-	    var id = $(this).attr("href");
-	    var offset = 100;
-	    var target = $(id).offset().top - offset;
-	    $('html, body').animate({scrollTop:target}, 500);
-	    event.preventDefault();
 	});
 </script>
 </html>

@@ -77,4 +77,14 @@ $('.owl-carousel').owlCarousel({
     margin:12
 })
 
+$('.nav-pills .nav-link').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 100;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({scrollTop:target}, 500);
+    event.preventDefault();
+});
 
+
+/*var lefWidth = document.getElementById("SpyNav").offsetWidth;
+document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";*/

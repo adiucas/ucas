@@ -39,14 +39,6 @@ body {
   .uBroker .col-lg-4 {
     display: flex;
     flex-direction: row; }
-  .uBroker #ubrokerScrollspy .parent-pills {
-    position: sticky;
-    top: 100px; }
-  .uBroker .nav-pills .nav-link.active, .uBroker .nav-pills .show > .nav-link {
-    color: #F3F9F4;
-    background-color: #0E8944; }
-  .uBroker .nav-link:focus:after, .uBroker .nav-link:hover:after {
-    display: none; }
   .uBroker .secHead {
     margin-bottom: 30px; }
   .uBroker .cardWrapper {
@@ -148,8 +140,7 @@ body {
     position: relative; }
     .clientList .contentBg .clientLogos .grid .grid-item {
       display: flex;
-      height: 100px;
-      }
+      height: 100px; }
     .clientList .contentBg .clientLogos .grid .clientLogoWrapper {
       display: flex;
       flex-direction: row;

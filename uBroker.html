@@ -134,7 +134,7 @@
 			</div>
 			<div class="row">
 			  <div class="col-lg-2 spyNavMobile d-none d-lg-block">
-			    <nav id="ubrokerScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end">
+			    <nav id="ubrokerScrollspy" class="h-100 flex-column align-items-stretch pe-md-4 border-end UcasScrollSpy">
 			      <nav class="nav nav-pills parent-pills flex-lg-column">
 			        <a class="nav-link" href="#item-1">Accounts</a>
 			        <a class="nav-link" href="#item-2">Back Office</a>
@@ -170,7 +170,7 @@
 			    </nav>
 			  </div>
 			  <div class="col-lg-10">
-			    <div data-bs-spy="scroll" data-bs-target="#ubrokerScrollspy" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+			    <div data-bs-spy="scroll" data-bs-target="#ubrokerScrollspy" data-bs-smooth-scroll="true" tabindex="0">
 			      <div class="cardWrapper" id="item-1">
 			      	<div class="head">
 			      		<h4>Accounts<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Account Entries</h4>
@@ -1461,13 +1461,4 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-	$('.nav-pills .nav-link').click(function(event) {
-	    var id = $(this).attr("href");
-	    var offset = 100;
-	    var target = $(id).offset().top - offset;
-	    $('html, body').animate({scrollTop:target}, 500);
-	    event.preventDefault();
-	});
-</script>
 </html>
