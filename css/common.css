@@ -468,7 +468,8 @@ hr, p {
 
 .UcasScrollSpy .parent-pills {
   position: sticky;
-  top: 100px; }
+  top: 100px;
+  z-index: 1; }
 .UcasScrollSpy .nav-pills .nav-link.active, .UcasScrollSpy .nav-pills .show > .nav-link {
   color: #F3F9F4;
   background-color: #0E8944; }
@@ -485,14 +486,111 @@ hr, p {
     font-family: "Font Awesome 6 Free";
     font-weight: bold;
     margin-left: 10px;
-    color: #F3F9F4; }
+    color: #F3F9F4;
+    visibility: hidden; }
+.UcasScrollSpy .nav-link.active:after {
+  visibility: visible; }
 
 #SpyNav {
-  white-space: nowrap; }
+  white-space: nowrap;
+  position: relative; }
 
-#SpyContent {
-  flex: 1 0 0; }
+.SpyNavBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+  position: absolute;
+  top: 0;
+  right: -60px;
+  border-radius: 0 5px 5px 0;
+  width: 35px;
+  height: 35px;
+  cursor: pointer; }
+  .SpyNavBtn .close {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 3px;
+    background: rgba(243, 249, 244, 0); }
+    .SpyNavBtn .close:before, .SpyNavBtn .close:after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 3px;
+      border-radius: 3px;
+      background: #F3F9F4;
+      transition: 0.3s all; }
+    .SpyNavBtn .close:before {
+      transform: rotate(45deg); }
+    .SpyNavBtn .close:after {
+      transform: rotate(-45deg); }
 
+/*===================================
+=            client list            =
+===================================*/
+.clientListParent .cardWrapper .clientList {
+  position: relative;
+  background: #F3F9F4; }
+  .clientListParent .cardWrapper .clientList .contentBg {
+    position: relative; }
+    .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .grid-item {
+      display: flex;
+      height: 100px; }
+    .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      min-height: 100px;
+      border-radius: 15px;
+      outline: 1px solid transparent;
+      transition: 0.3s all;
+      padding: 15px;
+      width: 100%; }
+      .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper img {
+        max-width: 100%;
+        max-height: 50px; }
+      .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Gantari", sans-serif;
+        font-weight: bold;
+        height: 50px;
+        color: #0E8944;
+        font-size: 18px;
+        line-height: 1.1; }
+        .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper span:before {
+          display: none; }
+      .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper:hover {
+        transform: scale(0.9);
+        outline: 1px solid #0E8944; }
+
+/*=====  End of our clients  ======*/
+@media (max-width: 992px) {
+  .UcasScrollSpy .nav-link:after {
+    display: none; }
+
+  .clientListParent .cardWrapper {
+    padding: 0.5rem 1rem !important; }
+    .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper {
+      padding: 15px;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 20px; }
+      .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper span {
+        font-size: 14px;
+        height: unset; }
+    .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .grid-item {
+      height: unset;
+      min-height: 100px; } }
 /*=====  End of content  ======*/
 /*===============================
 =            footer            =

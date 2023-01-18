@@ -79,6 +79,7 @@
 	.parent-pills{
 		position: sticky;
 		top:100px;
+		z-index: 1;
 	}
 	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	    color: $lpCol;
@@ -96,17 +97,137 @@
 			font-weight: bold;
 			margin-left: 10px;
 			color: $lpCol;
+			visibility: hidden;
+		}
+	}
+	.nav-link.active{
+		&:after{
+			visibility: visible;
 		}
 	}
 }
 
 #SpyNav{
 	white-space: nowrap;
-	
-}
-#SpyContent{
-	flex: 1 0 0;
+	position: relative;
 }
 
+.SpyNavBtn{
+	@include flex(row,center,center);
+	background: grad();
+	position: absolute;
+	top: 0;
+	right: -60px;
+	border-radius: 0 5px 5px 0;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+
+	.close{
+		@include flex(row,center,center);
+		width: 15px;
+		height: 3px;
+		background: rgba($lpCol,0%);
+
+		&:before,&:after{
+			position: absolute;
+			content:"";
+			width: 15px;
+			height: 3px;
+			border-radius: 3px;
+			background: $lpCol;
+			transition: 0.3s all;
+		}
+		&:before{
+			transform: rotate(45deg);
+		}
+		&:after{
+			transform: rotate(-45deg);
+		}
+	}
+
+	// .close{
+	// 	background: rgba($lpCol,100%);
+
+	// 	&:before{
+	// 		transform: rotate(0);
+	// 		margin-bottom: 12px;
+	// 	}
+	// 	&:after{
+	// 		transform: rotate(0);
+	// 		margin-top: 12px;
+	// 	}
+	// }
+}
+
+.closed{
+	
+}
+
+
+/*===================================
+=            client list            =
+===================================*/
+
+.clientListParent{
+	.cardWrapper{
+		.clientList{
+			position: relative;
+			background: $lpCol;
+
+			.contentBg{
+				position: relative;
+
+				.clientLogos{
+
+					.grid{
+						.grid-item{
+							display: flex;
+							height:100px;
+						}
+						.clientLogoWrapper{
+							@include flex(row,center,center);
+							background: #fff;
+							box-shadow: 0 10px 20px rgba($primCol,15%);
+							min-height: 100px;
+							border-radius: 15px;
+							outline: 1px solid transparent;
+							transition: 0.3s all;
+							padding:15px;
+							width: 100%;
+
+							img{
+								max-width:100%;
+								max-height: 50px;
+							}
+
+							span{
+								@include flex(row,center,center);
+								font-family: $headFF;
+								font-weight: bold;
+								height: 50px;
+								color: $primCol;
+								font-size: 18px;
+								line-height: 1.1;
+
+								&:before{
+									display:none;
+								}
+							}
+
+							&:hover{
+								transform: scale(0.9);
+								outline: 1px solid $primCol;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+/*=====  End of our clients  ======*/
 
 @import "contentResponsive";

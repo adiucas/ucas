@@ -114,7 +114,7 @@
       //     $('html, body').animate({scrollTop:target}, 500);
       //     event.preventDefault();
       // });
-      $('.nav-item .nav-link').click(function(event) {
+      $('header .nav-item .nav-link').click(function(event) {
           var id = $(this).attr("href");
           var offset = 50;
           var target = $(id).offset().top - offset;

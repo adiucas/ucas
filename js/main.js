@@ -86,5 +86,15 @@ $('.nav-pills .nav-link').click(function(event) {
 });
 
 
-/*var lefWidth = document.getElementById("SpyNav").offsetWidth;
-document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";*/
+if (window.innerWidth > 960) {
+  var lefWidth = document.getElementById("SpyNav").offsetWidth + 24;
+  document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";
+}
+
+$('.SpyNavBtn').click(function(event) {
+  $('#SpyNav').toggleClass('closed');
+});
+
+
+
+

@@ -39,6 +39,9 @@ body {
   .realEstateErp .col-lg-4 {
     display: flex;
     flex-direction: row; }
+  .realEstateErp #SpyNav {
+    min-width: 300px;
+    white-space: unset; }
   .realEstateErp .secHead {
     margin-bottom: 30px; }
   .realEstateErp .cardWrapper {

@@ -42,7 +42,9 @@ body {
     background: #f2f2f2;
     border: 1px solid #dddddd;
     border-radius: 1.5rem;
-    position: relative; }
+    position: relative;
+    /* z-index: 0; */
+    }
     .ourClient .contentBg .clientLogos .filter {
       text-align: center; }
       .ourClient .contentBg .clientLogos .filter button:not(:last-child) {

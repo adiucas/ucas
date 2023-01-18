@@ -62,16 +62,18 @@
     .uBroker .cardWrapper .body .infoWrapper .right {
       margin-top: 5px;
       margin-left: 28px; }
-  .uBroker .cardWrapper .clientLogos .grid .clientLogoWrapper {
-    padding: 15px;
-    flex-direction: column;
-    text-align: center; }
-    .uBroker .cardWrapper .clientLogos .grid .clientLogoWrapper span {
-      font-size: 14px; }
-  .uBroker .cardWrapper .clientLogos .grid .grid-item {
-    height: unset;
-    min-height: 100px;
-    } }
+  .uBroker .clientListParent .cardWrapper {
+    padding: 0.5rem 1rem; }
+    .uBroker .clientListParent .cardWrapper .clientList .clientLogos .grid .clientLogoWrapper {
+      padding: 15px;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 20px; }
+      .uBroker .clientListParent .cardWrapper .clientList .clientLogos .grid .clientLogoWrapper span {
+        font-size: 14px; }
+    .uBroker .clientListParent .cardWrapper .clientList .clientLogos .grid .grid-item {
+      height: unset;
+      min-height: 100px; } }
 @media (max-width: 576px) {
   .sticky-top {
     padding-top: 0; } }
