@@ -87,7 +87,7 @@ $('.nav-pills .nav-link').click(function(event) {
 
 
 if (window.innerWidth > 960) {
-  var lefWidth = document.getElementById("SpyNav").offsetWidth + 24;
+  var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
   document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";
 }
 

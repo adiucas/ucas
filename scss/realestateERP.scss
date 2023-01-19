@@ -105,3 +105,12 @@ body{
 }
 
 /*=====  End of management info  ======*/
+
+.UcasScrollSpy{
+	.parent-pills{
+		&:before{
+			top:30px;
+			height:calc(100% - 50px);
+		}
+	}
+}

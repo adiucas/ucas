@@ -109,5 +109,9 @@ body {
       margin-bottom: 30px; }
 
 /*=====  End of management info  ======*/
+.UcasScrollSpy .parent-pills:before {
+  height: calc(100% - 40px); }
+.UcasScrollSpy .child-pills:before {
+  height: calc(100% - 40px); }
 
 /*# sourceMappingURL=digiagm.css.map */

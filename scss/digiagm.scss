@@ -143,3 +143,16 @@ body{
 }
 
 /*=====  End of management info  ======*/
+
+.UcasScrollSpy{
+	.parent-pills{
+		&:before{
+			height:calc(100% - 40px);
+		}
+	}
+	.child-pills{
+		&:before{
+			height:calc(100% - 40px);
+		}
+	}
+}

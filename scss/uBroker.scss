@@ -53,6 +53,11 @@ body{
 		@include flex(row);
 	}
 
+	#SpyNav{
+		min-width: 300px;
+		white-space: unset;
+	}
+
 	.secHead{
 		margin-bottom: 30px;
 	}
@@ -173,3 +178,16 @@ body{
 }
 
 /*=====  End of management info  ======*/
+
+.UcasScrollSpy{
+	.parent-pills{
+		&:before{
+			height:calc(100% - 80px);
+		}
+	}
+	.child-pills{
+		&:before{
+			height:calc(100% - 40px);
+		}
+	}
+}

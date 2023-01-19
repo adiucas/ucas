@@ -112,6 +112,12 @@ body{
 }
 /*=====  End of our clients  ======*/
 
-
+.UcasScrollSpy{
+	.parent-pills{
+		&:before{
+			height:calc(100% - 30px);
+		}
+	}
+}
 
 
