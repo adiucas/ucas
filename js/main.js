@@ -93,6 +93,7 @@ if (window.innerWidth > 960) {
 
 $('.SpyNavBtn').click(function(event) {
   $('#SpyNav').toggleClass('closed');
+  $("#SpyContent").toggleClass("w-100");
 });
 
 

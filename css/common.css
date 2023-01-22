@@ -466,64 +466,67 @@ hr, p {
 .text-justify {
   text-align: justify !important; }
 
-.UcasScrollSpy .parent-pills {
-  position: sticky;
-  top: 100px;
-  z-index: 1; }
-  .UcasScrollSpy .parent-pills:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #0E8944;
-    position: absolute;
-    left: 21px;
-    top: 15px; }
-.UcasScrollSpy .child-pills {
-  position: relative; }
-  .UcasScrollSpy .child-pills:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #0E8944;
-    position: absolute;
-    left: 37px;
-    top: 20px; }
-.UcasScrollSpy .nav-pills .nav-link.active, .UcasScrollSpy .nav-pills .show > .nav-link {
-  color: #F3F9F4;
-  background-color: #0E8944; }
-.UcasScrollSpy .nav-link:focus, .UcasScrollSpy .nav-link:hover {
-  color: #0E8944; }
-.UcasScrollSpy .nav-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative; }
-  .UcasScrollSpy .nav-link:before {
-    content: "";
-    font-family: "Font Awesome 6 Free";
-    margin-right: 10px;
-    visibility: visible;
-    width: 12px;
-    height: 12px;
-    background: #0E8944;
-    border-radius: 100px;
-    flex-shrink: 0; }
-  .UcasScrollSpy .nav-link:after {
-    content: "\f0a9";
-    font-family: "Font Awesome 6 Free";
-    font-weight: bold;
-    margin-left: auto;
-    padding-left: 10px;
+.UcasScrollSpy {
+  transition: 0.3s all; }
+  .UcasScrollSpy .parent-pills {
+    position: sticky;
+    top: 100px;
+    z-index: 1; }
+    .UcasScrollSpy .parent-pills:before {
+      content: "";
+      width: 2px;
+      height: 100%;
+      background: #0E8944;
+      position: absolute;
+      left: 21px;
+      top: 15px; }
+  .UcasScrollSpy .child-pills {
+    position: relative; }
+    .UcasScrollSpy .child-pills:before {
+      content: "";
+      width: 2px;
+      height: 100%;
+      background: #0E8944;
+      position: absolute;
+      left: 37px;
+      top: 20px; }
+  .UcasScrollSpy .nav-pills .nav-link.active, .UcasScrollSpy .nav-pills .show > .nav-link {
     color: #F3F9F4;
+    background-color: #0E8944; }
+  .UcasScrollSpy .nav-link:focus, .UcasScrollSpy .nav-link:hover {
+    color: #0E8944; }
+  .UcasScrollSpy .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative; }
+    .UcasScrollSpy .nav-link:before {
+      content: "";
+      font-family: "Font Awesome 6 Free";
+      margin-right: 10px;
+      visibility: visible;
+      width: 12px;
+      height: 12px;
+      background: #0E8944;
+      border-radius: 100px;
+      flex-shrink: 0; }
+    .UcasScrollSpy .nav-link:after {
+      content: "\f0a9";
+      font-family: "Font Awesome 6 Free";
+      font-weight: bold;
+      margin-left: auto;
+      padding-left: 10px;
+      color: #F3F9F4;
+      visibility: hidden; }
+  .UcasScrollSpy .nav-link.active:before {
     visibility: hidden; }
-.UcasScrollSpy .nav-link.active:before {
-  visibility: hidden; }
-.UcasScrollSpy .nav-link.active:after {
-  visibility: visible; }
+  .UcasScrollSpy .nav-link.active:after {
+    visibility: visible; }
 
 #SpyNav {
   white-space: nowrap;
-  position: relative; }
+  position: relative;
+  transition: 0.3s all; }
 
 .SpyNavBtn {
   display: flex;
@@ -558,6 +561,24 @@ hr, p {
       transform: rotate(45deg); }
     .SpyNavBtn .close:after {
       transform: rotate(-45deg); }
+
+.closed {
+  padding: 0; }
+  .closed .UcasScrollSpy {
+    padding-right: 0;
+    border-right: unset; }
+    .closed .UcasScrollSpy .nav-link {
+      display: none; }
+  .closed .SpyNavBtn {
+    right: -35px; }
+    .closed .SpyNavBtn .close {
+      background: #f3f9f4; }
+      .closed .SpyNavBtn .close:before {
+        transform: rotate(0);
+        margin-bottom: 12px; }
+      .closed .SpyNavBtn .close:after {
+        transform: rotate(0);
+        margin-top: 12px; }
 
 /*===================================
 =            client list            =
@@ -621,6 +642,10 @@ hr, p {
     .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .grid-item {
       height: unset;
       min-height: 100px; } }
+@media (min-width: 992px) {
+  .UcasScrollSpy {
+    padding-right: 24px;
+    border-right: 1px solid #dee2e6; } }
 /*=====  End of content  ======*/
 /*===============================
 =            footer            =

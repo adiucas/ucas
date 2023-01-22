@@ -76,6 +76,7 @@
 }
 
 .UcasScrollSpy{
+	transition:0.3s all;
 	.parent-pills{
 		position: sticky;
 		top:100px;
@@ -148,6 +149,7 @@
 #SpyNav{
 	white-space: nowrap;
 	position: relative;
+	transition: 0.3s all;
 }
 
 .SpyNavBtn{
@@ -183,23 +185,35 @@
 			transform: rotate(-45deg);
 		}
 	}
-
-	// .close{
-	// 	background: rgba($lpCol,100%);
-
-	// 	&:before{
-	// 		transform: rotate(0);
-	// 		margin-bottom: 12px;
-	// 	}
-	// 	&:after{
-	// 		transform: rotate(0);
-	// 		margin-top: 12px;
-	// 	}
-	// }
 }
 
 .closed{
-	
+	padding: 0;
+
+	.UcasScrollSpy{
+		padding-right: 0;
+		border-right: unset;
+
+		.nav-link{
+			display: none;
+		}
+	}
+
+	.SpyNavBtn{
+		right:-35px;
+		.close{
+			background: rgba($lpCol,100%);
+
+			&:before{
+				transform: rotate(0);
+				margin-bottom: 12px;
+			}
+			&:after{
+				transform: rotate(0);
+				margin-top: 12px;
+			}
+		}
+	}
 }
 
 
@@ -208,6 +222,7 @@
 ===================================*/
 
 .clientListParent{
+
 	.cardWrapper{
 		.clientList{
 			position: relative;
