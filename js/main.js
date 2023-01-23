@@ -54,7 +54,7 @@ $('.custom-file input').change(function (e) {
 });
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
 })
 
 $('.filter button').on("click", function(){
