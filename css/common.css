@@ -471,7 +471,8 @@ hr, p {
   .UcasScrollSpy .parent-pills {
     position: sticky;
     top: 100px;
-    z-index: 1; }
+    z-index: 1;
+    }
     .UcasScrollSpy .parent-pills:before {
       content: "";
       width: 2px;
@@ -525,8 +526,10 @@ hr, p {
 
 #SpyNav {
   white-space: nowrap;
-  position: relative;
-  transition: 0.3s all; }
+  /* position: sticky; */
+  transition: 0.3s all;
+  top: 100px;
+  }
 
 .SpyNavBtn {
   display: flex;
