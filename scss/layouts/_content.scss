@@ -76,7 +76,6 @@
 }
 
 .UcasScrollSpy{
-	transition:0.3s all;
 	.parent-pills{
 		position: sticky;
 		top:100px;
@@ -148,9 +147,8 @@
 
 #SpyNav{
 	white-space: nowrap;
-	position: relative;
+	z-index: 1;
 	transition: 0.3s all;
-	right:0;
 }
 
 .SpyNavBtn{
@@ -190,6 +188,8 @@
 
 .closed{
 	padding: 0;
+	transform: translateX(-100%);
+
 	.UcasScrollSpy{
 		padding-right: 0;
 		border-right: unset;
@@ -201,7 +201,6 @@
 
 	.SpyNavBtn{
 		right:-35px;
-		
 		.close{
 			background: rgba($lpCol,100%);
 

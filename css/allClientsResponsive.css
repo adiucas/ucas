@@ -25,16 +25,18 @@
     .spyNavMobile .nav-pills {
       justify-content: center; }
 
-  .ourClient .contentBg {
-    padding: 1rem 1rem 1.5rem 1rem; }
-    .ourClient .contentBg .clientLogos .grid .clientLogoWrapper {
-      padding: 15px;
-      flex-direction: column;
-      text-align: center; }
-      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper span {
-        font-size: 14px; }
-    .ourClient .contentBg .clientLogos .grid .grid-item {
-      height: unset;
-      min-height: 100px; } }
+  .ourClient {
+    padding-top: unset; }
+    .ourClient .contentBg {
+      padding: 1rem 1rem 1.5rem 1rem; }
+      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center; }
+        .ourClient .contentBg .clientLogos .grid .clientLogoWrapper span {
+          font-size: 14px; }
+      .ourClient .contentBg .clientLogos .grid .grid-item {
+        height: unset;
+        min-height: 100px; } }
 
 /*# sourceMappingURL=allClientsResponsive.css.map */

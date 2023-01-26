@@ -15,25 +15,63 @@
     color: #ffffff;
     font-size: 65px;
     line-height: 1;
-    color: #ffffff; }
+    color: #ffffff;
+    visibility: hidden; }
   .carousel-inner .carousel-item .secTitle {
+    visibility: hidden;
     font-family: "M PLUS 2", sans-serif;
     color: #ffffff;
     font-size: 20px;
     margin-top: 15px; }
   .carousel-inner .carousel-item .btn-banner {
+    visibility: hidden;
     border: 1px solid #F3F9F4;
     width: max-content;
     color: #F3F9F4;
     margin-top: 30px;
     border-radius: 30px;
-    padding: 10px 20px 10px 20px; }
+    padding: 10px 20px 10px 20px;
+    transition: opacity 1s linear; }
     .carousel-inner .carousel-item .btn-banner:hover {
       background: #F3F9F4;
       color: #0E8944; }
   .carousel-inner img {
+    visibility: hidden;
     max-width: 100%; }
-
+  .carousel-inner .carousel-item.active .primTitle {
+    visibility: visible;
+    animation: titleAnim 1s ease 0s 1 normal both; }
+@keyframes titleAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+  .carousel-inner .carousel-item.active .secTitle {
+    visibility: visible;
+    animation: titleAnim2 2s ease 0.5s 1 normal both; }
+@keyframes titleAnim2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .carousel-inner .carousel-item.active .btn-banner {
+    visibility: visible;
+    animation: btnBannerAnim 1s ease 0.5s 1 normal both; }
+@keyframes btnBannerAnim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .carousel-inner .carousel-item.active img {
+    visibility: visible;
+    animation: banneImg 1s ease-in-out 1.5s 1 normal both; }
+@keyframes banneImg {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;

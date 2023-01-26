@@ -1,7 +1,18 @@
 @media(max-width:992px){
 	.UcasScrollSpy{
 		.nav-link{
+			&:before{
+				display: none;
+			}
 			&:after{
+				display: none;
+			}
+		}
+		.SpyNavBtn{
+			display: none;
+		}
+		.parent-pills{
+			&:before{
 				display: none;
 			}
 		}

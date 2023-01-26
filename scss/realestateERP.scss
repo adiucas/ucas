@@ -52,11 +52,6 @@ body{
 	.col-lg-4{
 		@include flex(row);
 	}
-
-	#SpyNav{
-		min-width: 300px;
-		white-space: unset;
-	}
 	.secHead{
 		margin-bottom: 30px;
 	}

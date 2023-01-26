@@ -12,7 +12,6 @@
 .carousel-inner{
 	@include flex(row,null,center);
 	height: calc(100vh - 100px);
-
 	.carousel-item{
 		.primTitle{
 			@include head("900");
@@ -20,9 +19,10 @@
 			font-size: 65px;
 			line-height: 1;
 			color: #ffffff;
+			visibility: hidden;
 		}
-
 		.secTitle{
+			visibility: hidden;
 			@include para();
 			color: #ffffff;
 			font-size: 20px;
@@ -30,12 +30,14 @@
 		}
 
 		.btn-banner{
+			visibility: hidden;
 			border: 1px solid $lpCol;
 			width: max-content;
 			color: $lpCol;
 			margin-top: 30px;
 			border-radius: 30px;
 			padding: 10px 20px 10px 20px;
+			transition: opacity 1s linear;
 
 			&:hover{
 				background: $lpCol;
@@ -44,7 +46,69 @@
 		}
 	}
 	img{
+		visibility: hidden;
 		max-width: 100%;
+	}
+
+	.carousel-item.active{
+		.primTitle{
+			visibility: visible;
+			animation: titleAnim 1s ease 0s 1 normal both;
+
+			@keyframes titleAnim {
+				0% {
+					opacity: 0;
+					transform: translateY(50px);
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+		.secTitle{
+			visibility: visible;
+			animation: titleAnim2 2s ease 0.5s 1 normal both;
+
+			@keyframes titleAnim2 {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+		.btn-banner{
+			visibility: visible;
+			animation: btnBannerAnim 1s ease 0.5s 1 normal both;
+
+			@keyframes btnBannerAnim {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+		img{
+			visibility:visible;
+			animation: banneImg 1s ease-in-out 1.5s 1 normal both;
+
+			@keyframes banneImg {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
 
