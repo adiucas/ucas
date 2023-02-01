@@ -473,14 +473,15 @@ hr, p {
   position: sticky;
   top: 100px;
   z-index: 1; }
-  .UcasScrollSpy .parent-pills:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #0E8944;
-    position: absolute;
-    left: 21px;
-    top: 15px; }
+  .UcasScrollSpy .parent-pills .nav-link:before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    color: #0E8944;
+    font-weight: bold;
+    margin-right: 10px;
+    visibility: visible;
+    border-radius: 100px;
+    flex-shrink: 0; }
 .UcasScrollSpy .child-pills {
   position: relative; }
   .UcasScrollSpy .child-pills:before {
@@ -491,6 +492,17 @@ hr, p {
     position: absolute;
     left: 37px;
     top: 20px; }
+  .UcasScrollSpy .child-pills .nav-link:before {
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    margin-right: 10px;
+    visibility: visible;
+    width: 12px;
+    height: 12px;
+    background: #0E8944;
+    border-radius: 100px;
+    flex-shrink: 0; }
 .UcasScrollSpy .nav-pills .nav-link.active, .UcasScrollSpy .nav-pills .show > .nav-link {
   color: #F3F9F4;
   background-color: #0E8944; }
@@ -501,16 +513,6 @@ hr, p {
   flex-direction: row;
   align-items: center;
   position: relative; }
-  .UcasScrollSpy .nav-link:before {
-    content: "";
-    font-family: "Font Awesome 6 Free";
-    margin-right: 10px;
-    visibility: visible;
-    width: 12px;
-    height: 12px;
-    background: #0E8944;
-    border-radius: 100px;
-    flex-shrink: 0; }
   .UcasScrollSpy .nav-link:after {
     content: "\f0a9";
     font-family: "Font Awesome 6 Free";

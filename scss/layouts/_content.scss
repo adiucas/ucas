@@ -81,14 +81,26 @@
 		top:100px;
 		z-index: 1;
 
-		&:before{
-			content:"";
-			width:2px;
-			height:100%;
-			background: $primCol;
-			position: absolute;
-			left: 21px;
-			top:15px;
+		// &:before{
+		// 	content:"";
+		// 	width:2px;
+		// 	height:100%;
+		// 	background: $primCol;
+		// 	position: absolute;
+		// 	left: 21px;
+		// 	top:15px;
+		// }
+		.nav-link{
+			&:before{
+				content:"\f058";
+				font-family: "Font Awesome 6 Free";
+				color: $primCol;
+				font-weight: bold;
+				margin-right: 10px;
+				visibility: visible;
+				border-radius:100px;
+				flex-shrink:0;
+			}
 		}
 	}
 	.child-pills{
@@ -102,6 +114,20 @@
 			left: 37px;
 			top:20px;
 		}
+		.nav-link{
+			&:before{
+				content:"";
+				font-family: "Font Awesome 6 Free";
+				font-weight: bold;
+				margin-right: 10px;
+				visibility: visible;
+				width: 12px;
+				height: 12px;
+				background: $primCol;
+				border-radius:100px;
+				flex-shrink:0;
+			}
+		}
 	}
 	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	    color: $lpCol;
@@ -113,18 +139,6 @@
 	.nav-link{
 		@include flex(row,null,center);
 		position: relative;
-		&:before{
-			content:"";
-			font-family: "Font Awesome 6 Free";
-			margin-right: 10px;
-			visibility: visible;
-			width: 12px;
-			height: 12px;
-			background: $primCol;
-			border-radius:100px;
-			// filter: invert(25%) sepia(89%) saturate(4220%) hue-rotate(145deg) brightness(95%) contrast(89%);
-			flex-shrink:0;
-		}
 		&:after{
 			content:"\f0a9";
 			font-family: "Font Awesome 6 Free";

@@ -10,7 +10,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if ($(window).width() > 575) {
-      if (scroll > 100) {
+      if (scroll > 200) {
         if ($(window).width() > 1720) {
           $(".contactTop, .followUsTop").addClass("scrolled");
           $(".sticky-top").css("top",0);
@@ -86,7 +86,7 @@ $('.nav-pills .nav-link').click(function(event) {
 });
 
 
-if (window.innerWidth > 960 & ('#SpyNav')) {
+if (window.innerWidth > 960 && ('#SpyNav')) {
   var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
   document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";
 }
