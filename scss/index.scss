@@ -37,12 +37,15 @@
 			margin-top: 30px;
 			border-radius: 30px;
 			padding: 10px 20px 10px 20px;
-			transition: opacity 1s linear;
+			transition: 0.3s all;
 
 			&:hover{
 				background: $lpCol;
 				color: $primCol;
 			}
+		}
+		.btn-brochure{
+			visibility:hidden;
 		}
 	}
 	img{
@@ -83,6 +86,21 @@
 		}
 		.btn-banner{
 			visibility: visible;
+			animation: btnBannerAnim 1s ease 0.5s 1 normal both;
+
+			@keyframes btnBannerAnim {
+				0% {
+					opacity: 0;
+				}
+
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+		.btn-brochure{
+			visibility:visible;
+
 			animation: btnBannerAnim 1s ease 0.5s 1 normal both;
 
 			@keyframes btnBannerAnim {

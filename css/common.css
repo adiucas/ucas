@@ -629,6 +629,22 @@ hr, p {
         outline: 1px solid #0E8944; }
 
 /*=====  End of our clients  ======*/
+.btn-brochure {
+  background: #F3F9F4;
+  border: 1px solid #F3F9F4;
+  width: max-content;
+  color: #0E8944;
+  margin-top: 30px;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  transition: 0.3s all; }
+  .btn-brochure:hover, .btn-brochure:active {
+    background: linear-gradient(315deg, #076932, #009999);
+    transform: scale(0.9);
+    color: #F3F9F4 !important;
+    border: 1px solid #F3F9F4 !important;
+    box-shadow: 0 0 10px #ffffff; }
+
 @media (max-width: 992px) {
   .UcasScrollSpy .nav-link:before {
     display: none; }
@@ -656,6 +672,9 @@ hr, p {
   .UcasScrollSpy {
     padding-right: 24px;
     border-right: 1px solid #dee2e6; } }
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1024px; } }
 /*=====  End of content  ======*/
 /*===============================
 =            footer            =

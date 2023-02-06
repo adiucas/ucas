@@ -57,3 +57,9 @@
 		border-right: 1px solid #dee2e6;
 	}
 }
+
+@media (min-width: 576px){
+	.modal-dialog {
+	    max-width: 1024px;
+	}
+}

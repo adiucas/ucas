@@ -31,6 +31,17 @@
 	<link rel="stylesheet" href="css/realestateERPResponsive.css">
 </head>
 <body>
+	<!-- Modal -->
+	<div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered">
+	  	<div class="modal-content">
+	  		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	  		<div class="modal-body">
+	  			<iframe class="brochureLoader" src="realEstateErpBrochure.html"></iframe>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
 	<!--============================
 	=            header            =
 	=============================-->
@@ -48,6 +59,7 @@
 			    		<div class="left col-lg-8 align-self-center text-center text-lg-start">
 			    			<div class="primTitle">Real Estate ERP</div>
 			    			<div class="secTitle">Enterprise Resource Planner <br> for realestate and landbusiness</div>
+			    			<button class="btn btn-brochure" data-bs-toggle="modal" data-bs-target="#brochureModal">Read Brochure</button>
 			    		</div>
 			    		<div class="right col-lg-4 text-center text-lg-end">
 			    			<img src="images/realestateerp.png">
@@ -58,7 +70,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!--=================================
 	=            real estate erp            =
 	==================================-->
@@ -82,7 +93,7 @@
 			    </nav>
 			  </div>
 			  <div class="col-lg-10" id="SpyContent">
-			    <div data-bs-spy="scroll" data-bs-target="#digiagmScrollspy" data-bs-smooth-scroll="true" tabindex="0">
+			    <div data-bs-spy="scroll" data-bs-target="#digiagmScrollspy" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -70%" tabindex="0">
 			    	<div class="secHead">
 			    		<h1 class="display-6">features we provide</h1>
 			    		<div class="divider">

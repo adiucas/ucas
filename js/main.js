@@ -10,14 +10,14 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if ($(window).width() > 575) {
-      if (scroll > 200) {
+      if (scroll > 50) {
         if ($(window).width() > 1720) {
           $(".contactTop, .followUsTop").addClass("scrolled");
           $(".sticky-top").css("top",0);
           $(".navbar").css("border-radius","0 0 15px 15px");
           $(".navbar").addClass("container-fluid").removeClass("container");
         }
-        if ($(window).width() < 1720) {
+        else{
           $("header").css("padding-top",0);
           $(".sticky-top").css("top",0);
           $(".navbar").addClass("container-fluid").removeClass("container").css("border-radius","0");
@@ -32,7 +32,7 @@ $(document).ready(function(){
           $(".navbar").css("border-radius","15px");
           $(".navbar").removeClass("container-fluid").addClass("container");
         }
-        if ($(window).width() < 1720) {
+        else{
           $("header").css("padding-top",40);
           $(".sticky-top").css("top","10px");
           $(".navbar").removeClass("container-fluid").addClass("container").css("border-radius","15px");

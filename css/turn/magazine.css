@@ -9,7 +9,7 @@ body{
 	position:absolute;
 	top:50%;
 	left:50%;
-	width:922px;
+	width: 330px;
 	height:600px;
 	margin:auto;
 }
@@ -19,6 +19,7 @@ body{
 	height:600px;
 	left:-461px;
 	top:-300px;
+	overflow: visible !important;
 }
 
 .magazine-viewport .page{

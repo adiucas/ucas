@@ -297,4 +297,23 @@
 
 /*=====  End of our clients  ======*/
 
+.btn-brochure{
+	background: #F3F9F4;
+	border: 1px solid #F3F9F4;
+	width: max-content;
+	color: $primCol;
+	margin-top: 30px;
+	border-radius: 30px;
+	padding: 10px 20px 10px 20px;
+	transition: 0.3s all;
+
+	&:hover,&:active{
+		background: linear-gradient(315deg,#076932,#009999);
+		transform: scale(0.9);
+		color: #F3F9F4 !important;
+		border: 1px solid #F3F9F4 !important;
+		box-shadow:  0 0 10px #ffffff;
+	}
+}
+
 @import "contentResponsive";
