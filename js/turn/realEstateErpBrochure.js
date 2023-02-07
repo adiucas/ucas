@@ -50,7 +50,7 @@ function loadPage(page, pageElement) {
 
 	img.attr('src', 'brochure/realEstateErp/' +  page + '.jpg');
 
-	loadRegions(page, pageElement);
+	// loadRegions(page, pageElement);
 
 }
 
