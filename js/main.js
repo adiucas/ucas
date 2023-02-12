@@ -6,43 +6,43 @@ $(function () {
   })
 })
 
-$(document).ready(function(){
+
+if ($(window).width() > 575) {
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    if ($(window).width() > 575) {
-      if (scroll > 50) {
-        if ($(window).width() > 1720) {
-          $(".contactTop, .followUsTop").addClass("scrolled");
-          $(".sticky-top").css("top",0);
-          $(".navbar").css("border-radius","0 0 15px 15px");
-          $(".navbar").addClass("container-fluid").removeClass("container");
-        }
-        else{
-          $("header").css("padding-top",0);
-          $(".sticky-top").css("top",0);
-          $(".navbar").addClass("container-fluid").removeClass("container").css("border-radius","0");
-          $(".gradBg").css("min-height","calc(100vh - 57px)");
-          $(".contactFollowTop").hide();
-        }
+    if (scroll > 50) {
+      if ($(window).width() > 1720) {
+        $(".contactTop, .followUsTop").addClass("scrolled");
+        $(".sticky-top").css("top",0);
+        $(".navbar").css("border-radius","0 0 15px 15px");
+        $(".navbar").addClass("container-fluid").removeClass("container");
       }
       else{
-        if ($(window).width() > 1720) {
-          $(".contactTop, .followUsTop").removeClass("scrolled");
-          $(".sticky-top").css("top",15);
-          $(".navbar").css("border-radius","15px");
-          $(".navbar").removeClass("container-fluid").addClass("container");
-        }
-        else{
-          $("header").css("padding-top",40);
-          $(".sticky-top").css("top","10px");
-          $(".navbar").removeClass("container-fluid").addClass("container").css("border-radius","15px");
-          $(".gradBg").css("min-height","100vh");
-          $(".contactFollowTop").show();
-        }
+        $("header").css("padding-top",0);
+        $(".sticky-top").css("top",0);
+        $(".navbar").addClass("container-fluid").removeClass("container").css("border-radius","0");
+        $(".gradBg").css("min-height","calc(100vh - 57px)");
+        $(".contactFollowTop").hide();
+      }
+    }
+    else{
+      if ($(window).width() > 1720) {
+        $(".contactTop, .followUsTop").removeClass("scrolled");
+        $(".sticky-top").css("top",15);
+        $(".navbar").css("border-radius","15px");
+        $(".navbar").removeClass("container-fluid").addClass("container");
+      }
+      else{
+        $("header").css("padding-top",40);
+        $(".sticky-top").css("top","10px");
+        $(".navbar").removeClass("container-fluid").addClass("container").css("border-radius","15px");
+        $(".gradBg").css("min-height","100vh");
+        $(".contactFollowTop").show();
       }
     }
   })
-})
+}
+
 
 $('.first-option').hide();
 
@@ -85,10 +85,13 @@ $('.nav-pills .nav-link').click(function(event) {
     event.preventDefault();
 });
 
+var hasSpyNav = document.getElementById("SpyNav");
 
-if (window.innerWidth > 960 && ('#SpyNav')) {
-  var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
-  document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";
+if(hasSpyNav != null){
+  if (window.innerWidth > 960) {
+    var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
+    document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";
+  }
 }
 
 $('.SpyNavBtn').click(function(event) {

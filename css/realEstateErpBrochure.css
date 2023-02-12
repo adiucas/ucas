@@ -1,3 +1,17 @@
+.next-button {
+  display: flex;
+  align-items: center; }
+  .next-button i {
+    font-size: 30px;
+    color: #0E8944;
+    margin-left: 30px; }
 
+.previous-button {
+  display: flex;
+  align-items: center; }
+  .previous-button i {
+    font-size: 30px;
+    color: #0E8944;
+    margin-left: -30px; }
 
 /*# sourceMappingURL=realEstateErpBrochure.css.map */

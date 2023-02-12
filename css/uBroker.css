@@ -35,6 +35,7 @@ body {
 =            ubroker           =
 ===================================*/
 .uBroker {
+  position: relative;
   background: #eeeeee; }
   .uBroker .col-lg-4 {
     display: flex;

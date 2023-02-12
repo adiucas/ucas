@@ -1,6 +1,9 @@
 body {
   background: linear-gradient(135deg, #0E8944 0%, #009999 100%); }
 
+.gradBg {
+  min-height: calc(100vh - 200px); }
+
 /*==============================
 =            banner            =
 ==============================*/

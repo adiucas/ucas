@@ -56,6 +56,7 @@ body {
 =            real estate erp            =
 ===================================*/
 .realEstateErp {
+  position: relative;
   background: #eeeeee; }
   .realEstateErp .col-lg-4 {
     display: flex;

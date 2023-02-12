@@ -28,84 +28,86 @@ body {
     line-height: 1.2;
     margin-top: 5px; }
   .carousel-inner img {
-    max-width: 100%; }
+    max-width: 100%;
+    height: 250px; }
 
 /*=====  End of banner  ======*/
 /*===================================
 =            digiagm           =
 ===================================*/
-.digiagm {
+.crm {
+  position: relative;
   background: #eeeeee; }
-  .digiagm .col-lg-4 {
+  .crm .col-lg-4 {
     display: flex;
     flex-direction: row; }
-  .digiagm .secHead {
+  .crm .secHead {
     margin-bottom: 30px; }
-  .digiagm .cardWrapper {
+  .crm .cardWrapper {
     background: #F3F9F4;
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
     width: 100%; }
-    .digiagm .cardWrapper label {
+    .crm .cardWrapper label {
       font-family: "Gantari", sans-serif;
       color: #0E8944;
       font-weight: bold;
       width: 100%;
       margin-bottom: 5px; }
-      .digiagm .cardWrapper label:after {
+      .crm .cardWrapper label:after {
         content: "";
         display: block;
         width: 100%;
         background: rgba(14, 137, 68, 0.5);
         height: 2px; }
-    .digiagm .cardWrapper ul {
+    .crm .cardWrapper ul {
       list-style-type: none;
       padding-left: 0; }
-      .digiagm .cardWrapper ul li {
+      .crm .cardWrapper ul li {
         display: flex;
         flex-direction: row;
         align-items: baseline;
         margin: 5px 0; }
-        .digiagm .cardWrapper ul li:before {
+        .crm .cardWrapper ul li:before {
           content: "\f058";
           font-family: "Font Awesome 6 Free";
           font-weight: normal;
           margin-right: 10px;
           color: #0E8944; }
-    .digiagm .cardWrapper .head {
+    .crm .cardWrapper .head {
       width: 100%;
       color: #0E8944;
       border-radius: 30px;
       margin-bottom: 10px; }
-      .digiagm .cardWrapper .head:after {
+      .crm .cardWrapper .head:after {
         content: "";
         display: block;
         height: 2px;
         background: rgba(14, 137, 68, 0.25);
         margin-top: 3px; }
-    .digiagm .cardWrapper .pdfWrapper {
+    .crm .cardWrapper .pdfWrapper {
       width: 100%;
       height: 100%;
       border-radius: 15px;
       overflow: hidden;
       border: 2px solid #0E8944; }
-    .digiagm .cardWrapper .pdfFile {
+    .crm .cardWrapper .pdfFile {
       width: 100%;
       height: 100%; }
-    .digiagm .cardWrapper span {
+    .crm .cardWrapper span {
       display: flex;
       flex-direction: row;
       align-items: baseline;
       margin: 5px 0;
       word-break: break-word; }
-      .digiagm .cardWrapper span:before {
+      .crm .cardWrapper span:before {
         content: "\f058";
         font-family: "Font Awesome 6 Free";
         font-weight: normal;
         margin-right: 5px;
         color: #0E8944; }
-    .digiagm .cardWrapper:not(:last-child) {
+    .crm .cardWrapper:not(:last-child) {
       margin-bottom: 30px; }
 
 /*=====  End of management info  ======*/

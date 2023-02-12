@@ -77,6 +77,7 @@ body{
 ===================================*/
 
 .realEstateErp{
+	position: relative;
 	background: #eeeeee;
 	.col-lg-4{
 		@include flex(row);

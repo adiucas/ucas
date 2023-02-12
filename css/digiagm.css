@@ -35,6 +35,7 @@ body {
 =            digiagm           =
 ===================================*/
 .digiagm {
+  position: relative;
   background: #eeeeee; }
   .digiagm .col-lg-4 {
     display: flex;

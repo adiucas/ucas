@@ -48,6 +48,7 @@ body{
 ===================================*/
 
 .digiagm{
+	position: relative;
 	background: #eeeeee;
 	.col-lg-4{
 		@include flex(row);

@@ -1,9 +1,12 @@
-
 @import 'templates/variables';
 @import 'templates/mixins';
 
 body{
 	background: grad();
+}
+
+.gradBg{
+	min-height: calc(100vh - 200px);
 }
 
 /*==============================
