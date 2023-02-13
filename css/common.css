@@ -608,7 +608,8 @@ hr, p {
       outline: 1px solid transparent;
       transition: 0.3s all;
       padding: 15px;
-      width: 100%; }
+      width: 100%;
+      }
       .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper img {
         max-width: 100%;
         max-height: 50px; }

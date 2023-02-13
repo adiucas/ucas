@@ -1,0 +1,164 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+body{
+	background: grad();
+}
+
+/*==============================
+=            banner            =
+==============================*/
+
+.slider{
+	margin-top: -120px;
+}
+
+.carousel-inner{
+	@include flex(row,null,center);
+	height: unset;
+	padding-top: 150px;
+	padding-bottom: 30px;
+
+	.carousel-item{
+		.primTitle{
+			@include head("900");
+			color: #ffffff;
+			font-size: 65px;
+			line-height: 1;
+			color: #ffffff;
+		}
+
+		.secTitle{
+			@include para();
+			color: #ffffff;
+			font-size: 20px;
+			line-height: 1.2;
+			margin-top: 5px;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: 250px;
+	}
+}
+
+/*=====  End of banner  ======*/
+
+/*===================================
+=            digiagm           =
+===================================*/
+
+.udr{
+	position: relative;
+	background: #eeeeee;
+	.col-lg-4{
+		@include flex(row);
+	}
+
+	.secHead{
+		margin-bottom: 30px;
+	}
+	.cardWrapper{
+		background: $lpCol;
+		padding: 30px;
+		border-radius: 30px;
+		box-shadow: 0 10px 20px rgba($primCol, 15%);
+		width: 100%;
+
+		label{
+			font-family: $headFF;
+			color: $primCol;
+			font-weight: bold;
+			width:100%;
+			margin-bottom: 5px;
+
+			&:after{
+				content:"";
+				display: block;
+				width: 100%;
+				background: rgba($primCol,50%);
+				height:2px;
+			}
+		}
+
+		ul{
+			list-style-type: none;
+			padding-left: 0;
+
+			li{
+				@include flex(row,null,baseline);
+				margin:5px 0;
+
+				&:before{
+					content: "\f058";
+					font-family: "Font Awesome 6 Free";
+					font-weight: normal;
+					margin-right: 10px;
+					color: $primCol;
+				}
+			}
+		}
+
+		.head{
+			width: 100%;
+			color: $primCol;
+			border-radius: 30px;
+			margin-bottom: 10px;
+
+			&:after{
+				content:"";
+				display: block;
+				height:2px;
+				background: rgba($primCol, 25%);
+				margin-top: 3px;
+			}
+		}
+		.pdfWrapper{
+			width: 100%;
+			height: 100%;
+			border-radius: 15px;
+			overflow: hidden;
+			border: 2px solid $primCol;
+		}
+		.pdfFile{
+			width:100%;
+			height: 100%;
+		}
+
+		span{
+			@include flex(row,null,baseline);
+			margin:5px 0;
+			word-break: break-word;
+			&:before{
+				content: "\f058";
+				font-family: "Font Awesome 6 Free";
+				font-weight: normal;
+				margin-right: 5px;
+				color: $primCol;
+			}
+		}
+
+		&:not(:last-child){
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/*=====  End of management info  ======*/
+
+.UcasScrollSpy{
+	.parent-pills{
+		&:before{
+			height:calc(100% - 40px);
+		}
+	}
+	.child-pills{
+		&:before{
+			height:calc(100% - 40px);
+		}
+	}
+}
+
+.grid-item.udr{
+	background: unset;
+}
