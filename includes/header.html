@@ -81,6 +81,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link" href="#featuredProduct" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Featured Products
+            <i class="fa-solid fa-chevron-down d-lg-none d-inline-block" style="font-size: 14px;"></i>
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="uBroker.html">UBroker</a></li>
@@ -116,9 +117,9 @@
       // });
       $('header .nav-item .nav-link').click(function(event) {
           var id = $(this).attr("href");
-          var offset = 50;
+          var offset = 60;
           var target = $(id).offset().top - offset;
-          $('html, body').animate({scrollTop:target}, 500);
+          $('html, body').animate({scrollTop:target}, 0);
           event.preventDefault();
       });
   });
