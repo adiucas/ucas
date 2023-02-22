@@ -419,7 +419,7 @@
 
 	.singleService{
 		@include flex(row,center,center);
-		max-width: 300px;
+		max-width: 250px;
 		margin-right: 0.5rem;
 		margin-left: 0.5rem;
 		position: relative;
@@ -463,19 +463,19 @@
 
 .serviceWrapper2{
 	@extend .serviceWrapper;
-	margin-top: -70px;
+	margin-top: -55px;
 
 	.singleService{
-		max-width: 300px;
+		max-width: 250px;
 	}
 }
 
 .serviceWrapper3{
 	@extend .serviceWrapper;
-	margin-top: -70px;
+	margin-top: -55px;
 
 	.singleService{
-		max-width: 300px;
+		max-width: 250px;
 	}
 }
 
@@ -734,6 +734,7 @@
 					@include flex(row,center,center);
 					padding: 0 10px;
 					width: 100%;
+					font-size: 11px;
 				}
 
 				.icon{

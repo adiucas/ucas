@@ -2,8 +2,7 @@
 =            banner            =
 ==============================*/
 .slider {
-  margin-top: 15px;
-  }
+  margin-top: 15px; }
 
 .carousel-inner {
   display: flex;
@@ -328,7 +327,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
+    max-width: 250px;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     position: relative;
@@ -360,14 +359,14 @@
           filter: drop-shadow(0 0 5px #F3F9F4); }
 
 .serviceWrapper2 {
-  margin-top: -70px; }
+  margin-top: -55px; }
   .serviceWrapper2 .singleService {
-    max-width: 300px; }
+    max-width: 250px; }
 
 .serviceWrapper3 {
-  margin-top: -70px; }
+  margin-top: -55px; }
   .serviceWrapper3 .singleService {
-    max-width: 300px; }
+    max-width: 250px; }
 
 /*=====  End of services  ======*/
 /*========================================
@@ -570,7 +569,8 @@
           justify-content: center;
           align-items: center;
           padding: 0 10px;
-          width: 100%; }
+          width: 100%;
+          font-size: 11px; }
         .webVps .portfolio .singleWebVps .link .icon {
           display: flex;
           flex-direction: row;
