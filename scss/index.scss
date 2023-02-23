@@ -498,7 +498,7 @@
 	}
 
 	.contentBg{
-		padding: 1rem 2rem 1.5rem 2rem;
+		padding: 1rem 2rem 2.2rem 2rem;
 		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
@@ -534,28 +534,142 @@
 			padding: 1rem 0 .5rem 0;
 		}
 
-		.nav-tabs{
-			padding-right: unset;
-			border-bottom: unset;
-			.nav-item{
-				flex-grow: 1;
-				margin-left: 0.75rem;
-				margin-right: 0.75rem;
+		.fpTabWrapper{
+			background: $lpCol;
+			border-radius: 15px;
+			box-shadow: 0 10px 20px rgba($primCol,15%);
+			overflow: hidden;
+			margin-top: 15px;
+			.nav-tabs{
+				padding-right: unset;
+				border-bottom: 2px solid #dddddd;
+				.nav-item{
+					flex-grow: 1;
+					flex-basis: (100%/6);
+					flex-grow: 1;
+					display: flex;
+					justify-content: center;
+
+					&:not(:last-child){
+						border-right: 1px solid #dddddd;
+					}
+				}
 			}
+			.tab-content{
+				.tab-pane{
+					padding: 30px;
+
+					.borderr{
+						border: 1px solid $primCol;
+						border-radius: 15px;
+					}
+
+					.title{
+						padding: 30px 45px 0 45px;
+						h2{
+							color: $primCol;
+						}
+						p{
+							color: rgba($primCol, 90%);
+							font-size: 24px;
+						}
+
+						&:after{
+							content:"";
+							display: block;
+							width: 100%;
+							height: 2px;
+							background: $primCol;
+							border-radius:2px;
+							margin-top: 5px;
+						}
+					}
+					.content{
+						padding: 5px 30px 30px 30px;
+						@include flex(row,null,null);
+						flex-wrap:wrap;
+						.point{
+							flex-basis: calc(50% - 30px);
+							margin: 5px 15px;
+
+							&:before{
+								content:"\f058";
+								font-family: $fw;
+								color: $primCol;
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+			.singleFp{
+				@include flex(col,center,center);
+				background: $lpCol;
+				padding: 1rem;
+				border-radius: 0;
+				border:unset;
+				width: 100%;
+				transition: 0.3s all;
+
+				.icon{
+					@include flex(row,center,center);
+					width: 50px;
+					height: 50px;
+					transition: 0.3s all;
+
+					img{
+						max-height: 50px;
+						transition: 0.3s all;
+					}
+				}
+
+				.text{
+					color:$primCol;
+					text-align: center;
+					margin-top: .5rem;
+					transition: 0.3s all;
+				}
+
+				&:hover,&.active{
+					background: $primCol;
+
+					.icon{
+						border-color: $lpCol;
+
+						img{
+							filter: brightness(0) invert(1) drop-shadow(0 0 5px $lpCol);
+						}
+					}
+					.text{
+						color:$lpCol;
+					}
+				}
+
+				&.active{
+					position: relative;
+					&:after{
+						content: "\f0d7";
+						font-family: "Font Awesome 6 Free";
+						position: absolute;
+						bottom: -40px;
+						font-weight: bold;
+						font-size: 50px;
+						color:$primCol;
+					}
+				}
+			}
+
 		}
 
 		.singleFp{
 			@include flex(col,center,center);
 			background: $lpCol;
 			padding: 1rem;
-			box-shadow: 0 10px 20px rgba($primCol,15%);
-			border-radius: 1rem;
+			border-radius: 0;
 			transition: 0.3s all;
 
 			.icon{
 				@include flex(row,center,center);
-				border: 2px solid $primCol;
-				border-radius: 100px;
 				width: 50px;
 				height: 50px;
 				transition: 0.3s all;
