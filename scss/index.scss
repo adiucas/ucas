@@ -534,6 +534,16 @@
 			padding: 1rem 0 .5rem 0;
 		}
 
+		.nav-tabs{
+			padding-right: unset;
+			border-bottom: unset;
+			.nav-item{
+				flex-grow: 1;
+				margin-left: 0.75rem;
+				margin-right: 0.75rem;
+			}
+		}
+
 		.singleFp{
 			@include flex(col,center,center);
 			background: $lpCol;
@@ -546,12 +556,12 @@
 				@include flex(row,center,center);
 				border: 2px solid $primCol;
 				border-radius: 100px;
-				width: 100px;
-				height: 100px;
+				width: 50px;
+				height: 50px;
 				transition: 0.3s all;
 
 				img{
-					max-height: 50px;
+					max-height: 30px;
 					transition: 0.3s all;
 				}
 			}
@@ -565,7 +575,6 @@
 
 			&:hover{
 				background: $primCol;
-				transform: scale(0.9);
 
 				.icon{
 					border-color: $lpCol;
