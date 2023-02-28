@@ -6,8 +6,7 @@
   =            banner            =
   ==============================*/
   .carousel-inner {
-    height: unset;
-    } }
+    height: unset; } }
 @media (max-width: 1400px) {
   /*==============================
   =            banner            =
