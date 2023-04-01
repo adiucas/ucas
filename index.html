@@ -39,7 +39,7 @@
 	=            banner            =
 	=============================-->
 	<div class="slider container">
-		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
 			<a class="mouse_scroll" href="#aboutUs">
 				<div class="mouse">
 					<div class="wheel"></div>
@@ -302,72 +302,207 @@
 						<span class="right"></span>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-6 col-xl-4 py-2">
-						<a href="uBroker.html" class="singleFp">
-							<div class="icon">
-								<img src="images/FeaturedProductIcon/brokerage-icon.png">
+				<div class="fpTabWrapper">
+					<ul class="nav nav-tabs" id="fpTab" role="tablist">
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link active singleFp" id="ubroker-tab" data-bs-toggle="tab" data-bs-target="#ubroker-tab-pane" type="button" role="tab" aria-controls="ubroker-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/brokerage-icon.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>UBroker</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="realErp-tab" data-bs-toggle="tab" data-bs-target="#realErp-tab-pane" type="button" role="tab" aria-controls="realErp-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/NicePng_size-icon-png_3597973.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>Real Estate ERP</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="digiagm-tab" data-bs-toggle="tab" data-bs-target="#digiagm-tab-pane" type="button" role="tab" aria-controls="digiagm-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/video-conference-icon.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>DigiAGM/EGM</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="uhrms-tab" data-bs-toggle="tab" data-bs-target="#uhrms-tab-pane" type="button" role="tab" aria-controls="uhrms-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/uhrms.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>UHRMS</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="udr-tab" data-bs-toggle="tab" data-bs-target="#udr-tab-pane" type="button" role="tab" aria-controls="udr-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/udr.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>UDR</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="crm-tab" data-bs-toggle="tab" data-bs-target="#crm-tab-pane" type="button" role="tab" aria-controls="crm-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/crm.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>CRM</h5>
+					    	</div>
+					    </a>
+					  </li>
+					</ul>
+					<div class="tab-content" id="fpTabContent">
+						<div class="tab-pane show active" id="ubroker-tab-pane" role="tabpanel" aria-labelledby="ubroker-tab" tabindex="0">
+							<div class="borderr">
+								<div class="title">
+									<p>Back office Management software for stockbrokers and dealer</p>
+								</div>
+								<div class="content">
+									<div class="point">User Access Management (Multi User Access module with report level)</div>
+									<div class="point">Investor Information Management</div>
+									<div class="point">Portfolio Management</div>
+									<div class="point">IPO Management</div>
+									<div class="point">Trade Management</div>
+									<div class="point">CDBL Management</div>
+									<div class="point">Margin Loan Management</div>
+									<div class="point">Investor Receipt Payment Management (Cash, Cheque, BEFTN, RTGS)</div>
+									<div class="point">Charge Management (Investor wise Charge Setup)</div>
+									<div class="point">Various Process Management (Day initial, Day end, month end, Quarter end, Year-end, Holiday)</div>
+									<div class="point">Data Backup facility</div>
+									<div class="point">Accounting Management</div>
+									<div class="pt-4 w-100 text-center">
+										<a href="ubroker.html" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
 							</div>
-							<div class="text">
-								<h2>UBroker</h2>
-								<p>Back office Management software <br> for stockbrokers and dealer</p>
+						</div>
+						<div class="tab-pane" id="realErp-tab-pane" role="tabpanel" aria-labelledby="realErp-tab" tabindex="0">
+							<div class="borderr">
+								<div class="title">
+									<p>Enterprise Resource Planner for realestate and landbusiness</p>
+								</div>
+								<div class="content">
+									<div class="point">Human Resource Management System</div>
+									<div class="point">Land Purchase System</div>
+									<div class="point">Credit Realization System</div>
+									<div class="point">Asset Management System</div>
+									<div class="point">Purchase & Inventory System</div>
+									<div class="point">CDBL Management</div>
+									<div class="point">Margin Loan Management</div>
+									<div class="point">Integrated Accounting Information System</div>
+									<div class="pt-4 w-100 text-center">
+										<a href="RealestateERP.html" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
 							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-xl-4 py-2">
-						<a href="RealestateERP.html" class="singleFp">
-							<div class="icon">
-								<img src="images/FeaturedProductIcon/NicePng_size-icon-png_3597973.png">
+						</div>
+						<div class="tab-pane" id="digiagm-tab-pane" role="tabpanel" aria-labelledby="digiagm-tab" tabindex="0">
+							<div class="borderr">
+								<div class="title">
+									<p>Digital Platform for AGM/EGM</p>
+								</div>
+								<div class="content">
+									<div class="point">Video conferencing</div>
+									<div class="point">LIVE Q/A sessions</div>
+									<div class="point">On-line (Real time) Voting</div>
+									<div class="point">Feedback from participants</div>
+									<div class="point">Texting/Chatting</div>
+									<div class="point">Annual Report upload</div>
+									<div class="point">E-mail & SMS facility</div>
+									<div class="point">Required online participant of the shareholders</div>
+									<div class="point">Secure Identity authentication of the shareholders</div>
+									<div class="point">Authentication with BO ID for Individual shareholders as well as Representatives of Institutions</div>
+									<div class="point">Proxy facilities</div>
+									<div class="point">Scrutinizer’s facilitating option</div>
+									<div class="pt-4 w-100 text-center">
+										<a href="digiagm.html" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
 							</div>
-							<div class="text">
-								<h2>Realestate ERP</h2>
-								<p>Enterprise Resource Planner <br>for realestate and landbusiness</p>
+						</div>
+						<div class="tab-pane" id="uhrms-tab-pane" role="tabpanel" aria-labelledby="uhrms-tab" tabindex="0">
+							<div class="borderr">
+								<div class="title">
+									<p>Universal Human Resource Management System</p>
+								</div>
+								<div class="content">
+									<div class="point">Employee Database</div>
+									<div class="point">Attendance Management</div>
+									<div class="point">Leave management</div>
+									<div class="point">Payroll Management</div>
+									<div class="point">Loan Management(Advance Salary)</div>
+									<div class="point">PF Management</div>
+									<div class="point">Reports</div>
+									<div class="pt-4 w-100 text-center">
+										<a href="uhrms.html" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
 							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-xl-4 py-2">
-						<a href="digiagm.html" class="singleFp">
-							<div class="icon">
-								<img src="images/FeaturedProductIcon/video-conference-icon.png">
+						</div>
+						<div class="tab-pane" id="udr-tab-pane" role="tabpanel" aria-labelledby="udr-tab" tabindex="0">
+							<div class="borderr">
+								<div class="title">
+									<p>Share Reconciliation System and monthly reporting to regulatory</p>
+								</div>
+								<div class="content">
+									<div class="row w-100">
+										<div class="col-lg-6">
+											<label>Reconciliation</label>
+											<div class="point">File Upload</div>
+											<div class="point">Email & SMS</div>
+											<div class="point">IPO</div>
+											<div class="point">Dividend</div>
+											<div class="point">Report</div>
+										</div>
+										<div class="col-lg-6">
+											<label>Monthly Reports</label>
+											<div class="point">File Upload</div>
+											<div class="point">Reports</div>
+											<div class="point">Directors</div>
+										</div>
+									</div>
+									<div class="pt-4 w-100 text-center">
+										<a href="udr.html" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
 							</div>
-							<div class="text">
-								<h2> DigiAGM/EGM</h2>
-								<p>Digital Platform <br>for AGM/EGM</p>
+						</div>
+						<div class="tab-pane" id="crm-tab-pane" role="tabpanel" aria-labelledby="crm-tab" tabindex="0">
+							<div class="borderr">
+								<div class="title">
+									<p>Customer Relationship Management for Marketing</p>
+								</div>
+								<div class="content">
+									<div class="point">Leads Add</div>
+									<div class="point">Search Leads</div>
+									<div class="point">Leads Options</div>
+									<div class="point">Digital marketing</div>
+									<div class="point">Notice</div>
+									<div class="point">Reports</div>
+									<div class="point">Executive Setup</div>
+									<div class="point">Data Setup</div>
+									<div class="point">Basic Reports</div>
+									<div class="point">Security</div>
+									<div class="pt-4 w-100 text-center">
+										<a href="uhrms.html" class="btn btn-primary">Learn More</a>
+									</div>
+								</div>
 							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-xl-4 py-2">
-						<a href="#" class="singleFp">
-							<div class="icon">
-								<img src="images/FeaturedProductIcon/udr.png">
-							</div>
-							<div class="text">
-								<h2>UDR</h2>
-								<p>Share Reconciliation System <br>and monthly reporting to CDBL</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-xl-4 py-2">
-						<a href="#" class="singleFp">
-							<div class="icon">
-								<img src="images/FeaturedProductIcon/uhrms.png">
-							</div>
-							<div class="text">
-								<h2>UHRMS</h2>
-								<p>Universal Human Resource <br>Management System</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-6 col-xl-4 py-2">
-						<a href="#" class="singleFp">
-							<div class="icon">
-								<img src="images/FeaturedProductIcon/crm.png">
-							</div>
-							<div class="text">
-								<h2>CRM</h2>
-								<p>Customer Relationship <br>Management for Marketing</p>
-							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>

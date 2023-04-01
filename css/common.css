@@ -94,7 +94,8 @@ hr, p {
   background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
   min-height: 100vh;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  }
 
 .contactTop, .contactFollowTop .left {
   display: flex;
