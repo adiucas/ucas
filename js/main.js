@@ -64,18 +64,66 @@ $('.filter button').on("click", function(){
   });
 })
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    responsiveClass:true,
-    items: 1,
-    nav:true,
-    navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause:false,
-    dots: false,
-    margin:12
+
+$('#cfCarousel').owlCarousel({
+  loop:true,
+  responsiveClass:true,
+  items: 1,
+  nav:true,
+  navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause:false,
+  dots: false,
+  margin:12
+});
+
+$('#fpCarousel').owlCarousel({
+  loop:true,
+  responsiveClass:true,
+  items: 1,
+  nav:true,
+  navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
+  autoplayHoverPause:false,
+  dots: false,
+  margin:12,
+  touchDrag: false
+});
+
+const triggerTabList = document.querySelectorAll('#fpCarousel a')
+triggerTabList.forEach(triggerEl => {
+  const tabTrigger = new bootstrap.Tab(triggerEl)
+
+  triggerEl.addEventListener('click', event => {
+    event.preventDefault()
+    tabTrigger.show()
+  })
 })
+
+const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="#ubroker-tab-pane"]')
+    bootstrap.Tab.getInstance(triggerEl).show()
+
+$(".owl-nav button").click(function (events) {
+  var activeTab  = $(".owl-item.active .nav-link").attr("data-bs-target");
+
+  const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="'+activeTab+'"]')
+  bootstrap.Tab.getInstance(triggerEl).show()
+})
+
+// $("#fpCarousel").on('changed.owl.carousel', function(event) {
+//     var activeTab  = $(".owl-item.active .nav-link").attr("data-bs-target");
+
+//     const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="'+activeTab+'"]')
+//     bootstrap.Tab.getInstance(triggerEl).show()
+// })
+
+$('.mouse_scroll').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 60;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({scrollTop:target}, 0);
+    event.preventDefault();
+});
 
 $('.nav-pills .nav-link').click(function(event) {
     var id = $(this).attr("href");

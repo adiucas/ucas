@@ -38,7 +38,7 @@
 	<!--============================
 	=            banner            =
 	=============================-->
-	<div class="slider container">
+	<div class="slider container-lg container-fluid">
 		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
 			<a class="mouse_scroll" href="#aboutUs">
 				<div class="mouse">
@@ -79,7 +79,7 @@
 		    			<a class="btn btn-banner me-2" href="uBroker.html">Discover Now</a>
 		    		</div>
 		    		<div class="right col-lg-7 col-xl-8 text-center text-lg-end">
-		    			<img src="images/banner/ubroker.png" style="max-height: 100%;">
+		    			<img src="images/banner/ubroker.png" style="max-height: calc(100% - 70px);">
 		    		</div>
 		    	</div>
 		    </div>
@@ -176,7 +176,12 @@
 								<div class="speachWrapper">
 									<i class="fa-solid fa-quote-left"></i>
 									<i class="fa-solid fa-quote-right"></i>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+									<p>Today’s world thrives on and progress through technology. Understanding this reality, few of us started a company named “UNITED CORPORATE ADVISORY SERVICES LIMITED”.  The company was formed on 22 November 2009 and started its operation from January 2010 with a focus and aspiration to become market leader in the field of software solution and ITES provider of the country. In course of time we have given attention to develop customized software for the sectors of real estate and capital market. Directors and Management of the company has pristine reputation as the business leaders in various genres.</p>
+
+									<p class="mt-3">‘UBROKER’ is our capstan product. We have a successful journey as IT enabled Services (ITES) /software solution provider for various wings of capital market certifies our credibility and capabilities. We have highly trained dedicated professionals behind our successful journey as of now.</p> 
+
+									<p class="mt-3">We are confident that giving the expertise we have and ever-growing market demand we will be able to have our expected share in the market.</p>
+									<p class="mt-3">Thanks and regards</p>
 								</div>
 							</div>
 						</div>
@@ -303,7 +308,7 @@
 					</div>
 				</div>
 				<div class="fpTabWrapper">
-					<ul class="nav nav-tabs" id="fpTab" role="tablist">
+					<ul class="nav nav-tabs d-none d-lg-flex" id="fpTab" role="tablist">
 					  <li class="nav-item" role="presentation">
 					    <a class="nav-link active singleFp" id="ubroker-tab" data-bs-toggle="tab" data-bs-target="#ubroker-tab-pane" type="button" role="tab" aria-controls="ubroker-tab-pane" aria-selected="true">
 					    	<div class="icon">
@@ -365,8 +370,70 @@
 					    </a>
 					  </li>
 					</ul>
+					<ul class="nav nav-tabs owl-carousel d-block d-lg-none" id="fpCarousel" role="tablist">
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="ubroker-tab" data-bs-toggle="tab" data-bs-target="#ubroker-tab-pane" type="button" role="tab" aria-controls="ubroker-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/brokerage-icon.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>UBroker</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="realErp-tab" data-bs-toggle="tab" data-bs-target="#realErp-tab-pane" type="button" role="tab" aria-controls="realErp-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/NicePng_size-icon-png_3597973.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>Real Estate ERP</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="digiagm-tab" data-bs-toggle="tab" data-bs-target="#digiagm-tab-pane" type="button" role="tab" aria-controls="digiagm-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/video-conference-icon.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>DigiAGM/EGM</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="uhrms-tab" data-bs-toggle="tab" data-bs-target="#uhrms-tab-pane" type="button" role="tab" aria-controls="uhrms-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/uhrms.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>UHRMS</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="udr-tab" data-bs-toggle="tab" data-bs-target="#udr-tab-pane" type="button" role="tab" aria-controls="udr-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/udr.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>UDR</h5>
+					    	</div>
+					    </a>
+					  </li>
+					  <li class="nav-item" role="presentation">
+					    <a class="nav-link singleFp" id="crm-tab" data-bs-toggle="tab" data-bs-target="#crm-tab-pane" type="button" role="tab" aria-controls="crm-tab-pane" aria-selected="true">
+					    	<div class="icon">
+					    		<img src="images/FeaturedProductIcon/crm.png">
+					    	</div>
+					    	<div class="text">
+					    		<h5>CRM</h5>
+					    	</div>
+					    </a>
+					  </li>
+					</ul>
 					<div class="tab-content" id="fpTabContent">
-						<div class="tab-pane show active" id="ubroker-tab-pane" role="tabpanel" aria-labelledby="ubroker-tab" tabindex="0">
+						<div class="tab-pane" id="ubroker-tab-pane" role="tabpanel" aria-labelledby="ubroker-tab" tabindex="0">
 							<div class="borderr">
 								<div class="title">
 									<p>Back office Management software for stockbrokers and dealer</p>
@@ -398,11 +465,9 @@
 								<div class="content">
 									<div class="point">Human Resource Management System</div>
 									<div class="point">Land Purchase System</div>
-									<div class="point">Credit Realization System</div>
+									<div class="point">Credit Realization System (land and apartment)</div>
 									<div class="point">Asset Management System</div>
 									<div class="point">Purchase & Inventory System</div>
-									<div class="point">CDBL Management</div>
-									<div class="point">Margin Loan Management</div>
 									<div class="point">Integrated Accounting Information System</div>
 									<div class="pt-4 w-100 text-center">
 										<a href="RealestateERP.html" class="btn btn-primary">Learn More</a>
@@ -505,6 +570,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -867,7 +933,7 @@
 	<!--=====================================
 	=            client feedback            =
 	======================================-->
-	<div class="container-fluid g-0 mt60 pt30 pb60 clientFeedback">
+	<div class="container-fluid g-0 pt30 pb60 clientFeedback">
 		<div class="container">
 			<div class="secHead">
 				<h1 class="display-6">client feedback</h1>
@@ -881,7 +947,7 @@
 				<a href="#" class="btn-all-feedback">
 					All Feedback
 				</a>
-				<div class="owl-carousel">
+				<div class="owl-carousel" id="cfCarousel">
 				  <div class="row">
 				  	<div class="left col-lg-4 col-xxl-3">
 				  		<div class="photoNameWrapper">
@@ -941,14 +1007,6 @@
 <script>
 	var $grid = $('.grid').isotope({
 	  filter: '.default'
-	});
-
-	$('.mouse_scroll').click(function(event) {
-	    var id = $(this).attr("href");
-	    var offset = 60;
-	    var target = $(id).offset().top - offset;
-	    $('html, body').animate({scrollTop:target}, 0);
-	    event.preventDefault();
 	});
 </script>
 </html>

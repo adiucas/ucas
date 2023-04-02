@@ -63,7 +63,8 @@ hr, p {
   margin-top: 30px; }
 
 .mt60 {
-  margin-top: 60px; }
+  margin-top: 60px;
+  }
 
 .mb15 {
   margin-bottom: 15px; }
@@ -94,8 +95,7 @@ hr, p {
   background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
   min-height: 100vh;
   position: absolute;
-  width: 100%;
-  }
+  width: 100%; }
 
 .contactTop, .contactFollowTop .left {
   display: flex;

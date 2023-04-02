@@ -168,18 +168,32 @@
 }
 
 @media (max-width: 992px){
+	body{
+		background:grad();
+	}
 	.gradBg{
-		min-height: calc(100vh - 200px);
+		display: none;
+	}
+	#aboutUs, #services, #featuredProduct, .webVps, .ourClient{
+		background: #ffffff;
 	}
 	/*==============================
 	=            banner            =
 	==============================*/
+	.slider{
+		margin-top: unset;
+		background: unset;
+	}
 	.carousel-indicators{
-		margin-bottom: 0;
+		margin-bottom: 30px;
 	}
 	.carousel-inner{
-		height: calc(100vh - 300px);
+		padding: 30px 0;
+		min-height: 550px;
+		height: unset;
 		align-items: start;
+
+
 
 		img{
 			margin-top: 30px;
@@ -211,9 +225,21 @@
 	.carousel-indicators .active {
 	    width: 45px;
 	}
+	/*=================================
+	=            about us            =
+	=================================*/
+	#aboutUs{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	
+	
 	/*================================
 	=            services            =
 	================================*/
+	#services{
+		padding-top: 30px;
+	}
 	.serviceWrapper{
 		@include flex(col,null,center);
 		.singleService{
@@ -259,11 +285,88 @@
 	=            featured product            =
 	========================================*/
 	.featuredProduct{
+		padding-bottom: unset;
 		.fpBg{
 			top: -150px;
 		}
+		.contentBg{
+			padding: 15px;
+
+			.fpTabWrapper{
+				#fpCarousel{
+					@include flex(row,center);
+					position: relative;
+					background: $primCol;
+
+					.owl-nav button.owl-prev, .owl-nav button.owl-next{
+						background: $lpCol;
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						border: none;
+					}
+
+					.owl-nav{
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						padding: 0 30px;
+
+						i{
+							font-size: 30px;
+						}
+					}
+				}
+
+				.singleFp{
+					width: 170px;
+					background: unset;
+					.icon{
+						img{
+							filter: brightness(0) invert(1) drop-shadow(0 0 5px #F3F9F4);
+						}
+					}
+					.text{
+						color: $lpCol;
+						h5{
+							font-size:16px;
+						}
+					}
+				}
+
+				.tab-content{
+					.tab-pane{
+						.title{
+							padding: 20px 20px 0 20px;
+
+							p{
+								font-size: 20px;
+							}
+						}
+						.content{
+							@include flex(col);
+							padding: 5px 20px 20px 20px;
+
+							.point{
+								margin: 5px 0;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
+	/*===================================
+	=            website vps            =
+	===================================*/
+	.webVps{
+		padding-bottom:unset;
+	}
+	
+	
 	/*=======================================
 	=            client feedback            =
 	=======================================*/
@@ -326,6 +429,16 @@
 		.fpBg{
 			top: -65px;
 		}
+	}
+}
+
+@media (min-width:576px) and (max-width: 992px){
+	.slider{
+		margin-top: -110px;
+	}
+	.carousel-inner{
+		padding-top: 140px;
+		min-height: 650px;
 	}
 }
 
