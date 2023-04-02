@@ -673,9 +673,17 @@
 						color:$primCol;
 					}
 				}
+				&#realErp-tab{
+					&:hover,&.active{
+						.icon{
+							img{
+								filter: drop-shadow(0 0 5px $lpCol);
+							}
+						}
+					}
+				}
 			}
 		}
-		
 	}
 }
 

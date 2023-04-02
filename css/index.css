@@ -490,10 +490,12 @@
           align-items: center;
           width: 50px;
           height: 50px;
-          transition: 0.3s all; }
+          transition: 0.3s all;
+          }
           .featuredProduct .contentBg .fpTabWrapper .singleFp .icon img {
             max-height: 50px;
-            transition: 0.3s all; }
+            transition: 0.3s all;
+            }
         .featuredProduct .contentBg .fpTabWrapper .singleFp .text {
           color: #0E8944;
           text-align: center;
@@ -517,6 +519,8 @@
             font-weight: bold;
             font-size: 50px;
             color: #0E8944; }
+        .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab:hover .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab.active .icon img {
+          filter: drop-shadow(0 0 5px #F3F9F4); }
 
 /*=====  End of featured product  ======*/
 /*=========================================================

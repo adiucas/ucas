@@ -318,6 +318,9 @@
 							font-size: 30px;
 						}
 					}
+					.owl-item img{
+						width: unset;
+					}
 				}
 
 				.singleFp{
@@ -332,6 +335,26 @@
 						color: $lpCol;
 						h5{
 							font-size:16px;
+						}
+					}
+					&.active{
+						&:after{
+							display: none;
+						}
+					}
+					&#realErp-tab{
+						.icon{
+							img{
+								margin-top:15px;
+								height:150px;
+							}
+						}
+						&:hover,&.active{
+							.icon{
+								img{
+									filter: drop-shadow(0 0 5px $lpCol);
+								}
+							}
 						}
 					}
 				}
