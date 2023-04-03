@@ -90,33 +90,6 @@ $('#fpCarousel').owlCarousel({
   touchDrag: false
 });
 
-const triggerTabList = document.querySelectorAll('#fpCarousel a')
-triggerTabList.forEach(triggerEl => {
-  const tabTrigger = new bootstrap.Tab(triggerEl)
-
-  triggerEl.addEventListener('click', event => {
-    event.preventDefault()
-    tabTrigger.show()
-  })
-})
-
-const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="#ubroker-tab-pane"]')
-    bootstrap.Tab.getInstance(triggerEl).show()
-
-$(".owl-nav button").click(function (events) {
-  var activeTab  = $(".owl-item.active .nav-link").attr("data-bs-target");
-
-  const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="'+activeTab+'"]')
-  bootstrap.Tab.getInstance(triggerEl).show()
-})
-
-// $("#fpCarousel").on('changed.owl.carousel', function(event) {
-//     var activeTab  = $(".owl-item.active .nav-link").attr("data-bs-target");
-
-//     const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="'+activeTab+'"]')
-//     bootstrap.Tab.getInstance(triggerEl).show()
-// })
-
 $('.mouse_scroll').click(function(event) {
     var id = $(this).attr("href");
     var offset = 60;
@@ -133,16 +106,19 @@ $('.nav-pills .nav-link').click(function(event) {
     event.preventDefault();
 });
 
-var hasSpyNav = document.getElementById("SpyNav");
-
-if(hasSpyNav != null){
-  if (window.innerWidth > 960) {
-    var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
-    document.getElementById("SpyContent").style.width = "calc(100% - " + lefWidth + "px";
+$(document).ready(function () {
+  var hasSpyNav = document.getElementById("SpyNav");
+  var SpyContent = document.getElementById("SpyContent");
+  
+  if(hasSpyNav != null){
+    if (window.innerWidth > 960) {
+      var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
+      SpyContent.style.width = "calc(100% - " + lefWidth + "px";
+    }
   }
-}
 
-$('.SpyNavBtn').click(function(event) {
-  $('#SpyNav').toggleClass('closed');
-  $("#SpyContent").toggleClass("w-100");
-});
+  $('.SpyNavBtn').click(function(event) {
+    $('#SpyNav').toggleClass('closed');
+    $("#SpyContent").toggleClass("w-100");
+  });
+})

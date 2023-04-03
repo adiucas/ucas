@@ -16,8 +16,8 @@ body{
 .carousel-inner{
 	@include flex(row,null,center);
 	height: unset;
-	padding-top: 150px;
-	padding-bottom: 30px;
+	padding-top: 170px;
+	padding-bottom: 50px;
 
 	.carousel-item{
 		.primTitle{
@@ -26,6 +26,10 @@ body{
 			font-size: 65px;
 			line-height: 1;
 			color: #ffffff;
+
+			img{
+				max-width: 400px;
+			}
 		}
 
 		.secTitle{

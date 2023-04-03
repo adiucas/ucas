@@ -39,7 +39,7 @@
 	=            banner            =
 	=============================-->
 	<div class="slider container-lg container-fluid">
-		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
+		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 			<a class="mouse_scroll" href="#aboutUs">
 				<div class="mouse">
 					<div class="wheel"></div>
@@ -86,7 +86,9 @@
 		    <div class="carousel-item">
 		    	<div class="row">
 		    		<div class="left col-lg-5 col-xl-4 col-xxl-5 align-self-center text-center text-lg-start">
-		    			<div class="primTitle">Realestate ERP</div>
+		    			<div class="primTitle">
+		    				<img src="images/FeaturedProductIcon/abashon.png" alt="">
+		    			</div>
 		    			<div class="secTitle">Enterprise Resource Planner <br> for realestate and landbusiness</div>
 		    			<a href="RealestateERP.html" class="btn btn-banner me-2">Discover Now</a>
 		    			<a class="btn btn-brochure" href="uBroker.html">Read Brochure</a>
@@ -1002,5 +1004,25 @@
 	var $grid = $('.grid').isotope({
 	  filter: '.default'
 	});
+
+	const triggerTabList = document.querySelectorAll('#fpCarousel a')
+	triggerTabList.forEach(triggerEl => {
+	  const tabTrigger = new bootstrap.Tab(triggerEl)
+
+	  triggerEl.addEventListener('click', event => {
+	    event.preventDefault()
+	    tabTrigger.show()
+	  })
+	})
+
+	const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="#ubroker-tab-pane"]')
+	    bootstrap.Tab.getInstance(triggerEl).show()
+
+	$(".owl-nav button").click(function (events) {
+	  var activeTab  = $(".owl-item.active .nav-link").attr("data-bs-target");
+
+	  const triggerEl = document.querySelector('#fpCarousel a[data-bs-target="'+activeTab+'"]')
+	  bootstrap.Tab.getInstance(triggerEl).show()
+	})
 </script>
 </html>
