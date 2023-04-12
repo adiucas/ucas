@@ -6,6 +6,20 @@ $(function () {
   })
 })
 
+var hasSpyNav = document.getElementById("SpyNav");
+var SpyContent = document.getElementById("SpyContent");
+var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
+
+if(hasSpyNav != null){
+  if (window.innerWidth > 960) {
+    SpyContent.style.width = "calc(100% - " + lefWidth + "px";
+  }
+}
+
+$('.SpyNavBtn').click(function(event) {
+  $('#SpyNav').toggleClass('closed');
+  $("#SpyContent").toggleClass("w-100");
+});
 
 if ($(window).width() > 575) {
   $(window).scroll(function(){
@@ -106,19 +120,4 @@ $('.nav-pills .nav-link').click(function(event) {
     event.preventDefault();
 });
 
-$(document).ready(function () {
-  var hasSpyNav = document.getElementById("SpyNav");
-  var SpyContent = document.getElementById("SpyContent");
-  
-  if(hasSpyNav != null){
-    if (window.innerWidth > 960) {
-      var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
-      SpyContent.style.width = "calc(100% - " + lefWidth + "px";
-    }
-  }
 
-  $('.SpyNavBtn').click(function(event) {
-    $('#SpyNav').toggleClass('closed');
-    $("#SpyContent").toggleClass("w-100");
-  });
-})

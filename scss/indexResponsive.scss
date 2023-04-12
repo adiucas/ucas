@@ -194,6 +194,10 @@
 		align-items: start;
 
 
+		.abashon-logo{
+			margin-top: 15px;
+			max-width: 300px;
+		}
 
 		img{
 			margin-top: 30px;
@@ -462,6 +466,37 @@
 	.carousel-inner{
 		padding-top: 140px;
 		min-height: 650px;
+	}
+}
+
+@media(max-width:576px){
+	.carousel-inner{
+		align-items: center;
+		.abashon-logo{
+			max-height: unset;
+			max-width:200px;
+			margin-top: unset;
+		}
+		img{
+			margin-top: 15px;
+			max-height:300px;
+		}
+		.carousel-item{
+			.btn-banner{
+				padding: 7px 15px;
+				font-size: 14px;
+			}
+		}
+	}
+	.carousel-indicators{
+		margin-bottom: 15px;
+	}
+	.uBroker-banner{
+		max-height: unset !important;
+		width: 100%;
+	}
+	.btn-brochure{
+		padding: 7px 15px;
 	}
 }
 

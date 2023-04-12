@@ -36,6 +36,7 @@
       background: #F3F9F4;
       color: #0E8944; }
   .carousel-inner .carousel-item .btn-brochure {
+    margin-top: 30px;
     visibility: hidden; }
   .carousel-inner img {
     visibility: hidden;
@@ -481,8 +482,7 @@
         border-radius: 0;
         border: unset;
         width: 100%;
-        transition: 0.3s all;
-        }
+        transition: 0.3s all; }
         .featuredProduct .contentBg .fpTabWrapper .singleFp .icon {
           display: flex;
           flex-direction: row;
@@ -490,12 +490,10 @@
           align-items: center;
           width: 50px;
           height: 50px;
-          transition: 0.3s all;
-          }
+          transition: 0.3s all; }
           .featuredProduct .contentBg .fpTabWrapper .singleFp .icon img {
             max-height: 50px;
-            transition: 0.3s all;
-            }
+            transition: 0.3s all; }
         .featuredProduct .contentBg .fpTabWrapper .singleFp .text {
           color: #0E8944;
           text-align: center;
