@@ -588,7 +588,8 @@ hr, p {
     .closed .UcasScrollSpy .nav-link {
       display: none; }
   .closed .SpyNavBtn {
-    right: -35px; }
+    right: -50px;
+    }
     .closed .SpyNavBtn .close {
       background: #f3f9f4; }
       .closed .SpyNavBtn .close:before {
@@ -685,7 +686,9 @@ hr, p {
 @media (min-width: 992px) {
   .UcasScrollSpy {
     padding-right: 24px;
-    border-right: 1px solid #dee2e6; } }
+    border-right: 1px solid #dee2e6;
+    margin-right: 30px;
+    } }
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 1024px; } }

@@ -8,9 +8,9 @@ $(function () {
 
 var hasSpyNav = document.getElementById("SpyNav");
 var SpyContent = document.getElementById("SpyContent");
-var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
 
 if(hasSpyNav != null){
+  var lefWidth = document.getElementById("SpyNav").offsetWidth + 1;
   if (window.innerWidth > 960) {
     SpyContent.style.width = "calc(100% - " + lefWidth + "px";
   }
