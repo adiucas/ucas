@@ -667,6 +667,51 @@
           .webVps .portfolio .singleWebVps:hover .link .icon {
             background: #F3F9F4;
             color: #0E8944; }
+  .webVps .borderr {
+    margin-right: -15px;
+    margin-left: -15px; }
+  .webVps .title {
+    padding: 30px 45px 0 45px; }
+    .webVps .title h2 {
+      color: #0E8944; }
+    .webVps .title p {
+      color: rgba(14, 137, 68, 0.9);
+      font-size: 24px; }
+    .webVps .title:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: #0E8944;
+      border-radius: 2px;
+      margin-top: 5px; }
+  .webVps .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .webVps .content label {
+      margin-left: 15px;
+      color: rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 100%; }
+      .webVps .content label:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.25); }
+    .webVps .content .point {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      flex-basis: calc(33.333% - 30px);
+      margin: 5px 15px; }
+      .webVps .content .point:before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        color: #0E8944;
+        margin-right: 5px; }
 
 /*=====  End of website development & vps hosting  ======*/
 /*===================================

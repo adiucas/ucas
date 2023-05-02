@@ -457,6 +457,12 @@
 			top: -65px;
 		}
 	}
+
+	.webVps{
+		.content{
+			flex-direction: column;
+		}
+	}
 }
 
 @media (min-width:576px) and (max-width: 992px){
