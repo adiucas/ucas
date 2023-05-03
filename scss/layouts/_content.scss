@@ -214,7 +214,7 @@
 	}
 
 	.SpyNavBtn{
-		right:-35px;
+		right:-50px;
 		.close{
 			background: rgba($lpCol,100%);
 
@@ -297,6 +297,21 @@
 
 /*=====  End of our clients  ======*/
 
+@keyframes btnBrochureAnim {
+	0%,
+	50%,
+	100% {
+		box-shadow:  0 0 20px #fff;
+		// transform: scale(1.2);
+	}
+
+	25%,
+	75% {
+		box-shadow:  0 0 0 #ffffff;
+		// transform: scale(1);
+	}
+}
+
 .btn-brochure{
 	background: #F3F9F4;
 	border: 1px solid #F3F9F4;
@@ -306,6 +321,8 @@
 	border-radius: 30px;
 	padding: 10px 20px 10px 20px;
 	transition: 0.3s all;
+	transform-origin: 0 50%;
+	animation: btnBrochureAnim 2s linear 0s infinite normal forwards;
 
 	&:hover,&:active{
 		background: linear-gradient(315deg,#076932,#009999);
