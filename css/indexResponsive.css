@@ -110,7 +110,7 @@
     top: -190px; } }
 @media (max-width: 992px) {
   body {
-    background: linear-gradient(135deg, #0E8944 0%, #009999 100%); }
+    background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
 
   .gradBg {
     display: none; }
@@ -133,7 +133,7 @@
     min-height: 550px;
     height: unset;
     align-items: start; }
-    .carousel-inner .abashon-logo {
+    .carousel-inner .product-logo {
       margin-top: 15px;
       max-width: 300px; }
     .carousel-inner img {
@@ -222,7 +222,7 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        background: #0E8944; }
+        background: #08A039; }
         .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-prev, .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-next {
           background: #F3F9F4;
           -webkit-background-clip: text;
@@ -321,7 +321,7 @@
 @media (max-width: 576px) {
   .carousel-inner {
     align-items: center; }
-    .carousel-inner .abashon-logo {
+    .carousel-inner .product-logo {
       max-height: unset;
       max-width: 200px;
       margin-top: unset; }

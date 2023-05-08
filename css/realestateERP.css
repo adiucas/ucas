@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(135deg, #0E8944 0%, #009999 100%); }
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
 
 /*==============================
 =            banner            =
@@ -69,18 +69,18 @@ body {
     background: #F3F9F4;
     padding: 30px;
     border-radius: 30px;
-    box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+    box-shadow: 0 10px 20px rgba(8, 160, 57, 0.15);
     width: 100%; }
     .realEstateErp .cardWrapper .head {
       width: 100%;
-      color: #0E8944;
+      color: #08A039;
       border-radius: 30px;
       margin-bottom: 10px; }
       .realEstateErp .cardWrapper .head:after {
         content: "";
         display: block;
         height: 2px;
-        background: rgba(14, 137, 68, 0.25);
+        background: rgba(8, 160, 57, 0.25);
         margin-top: 3px; }
     .realEstateErp .cardWrapper span {
       display: flex;
@@ -92,7 +92,7 @@ body {
         font-family: "Font Awesome 6 Free";
         font-weight: normal;
         margin-right: 5px;
-        color: #0E8944; }
+        color: #08A039; }
     .realEstateErp .cardWrapper img {
       margin-top: 5px;
       height: 480px; }

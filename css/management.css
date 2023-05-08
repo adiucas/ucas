@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(135deg, #0E8944 0%, #009999 100%); }
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
 
 /*==============================
 =            banner            =
@@ -46,10 +46,10 @@ body {
     background: #F3F9F4;
     padding: 30px;
     border-radius: 30px;
-    box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+    box-shadow: 0 10px 20px rgba(8, 160, 57, 0.15);
     width: 100%; }
     .management .cardWrapper .imgWrapper {
-      outline: 5px solid #0E8944;
+      outline: 5px solid #08A039;
       border-radius: 100%;
       overflow: hidden; }
       .management .cardWrapper .imgWrapper img {
@@ -60,12 +60,12 @@ body {
       text-align: center;
       width: 100%; }
       .management .cardWrapper .textWrapper .name {
-        color: #0E8944; }
+        color: #08A039; }
       .management .cardWrapper .textWrapper .email, .management .cardWrapper .textWrapper .phone {
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        border: 1px solid rgba(14, 137, 68, 0.5);
+        border: 1px solid rgba(8, 160, 57, 0.5);
         margin-top: 10px;
         border-radius: 100px;
         overflow: hidden; }
@@ -74,7 +74,7 @@ body {
           flex-direction: row;
           justify-content: center;
           align-items: center;
-          background: #0E8944;
+          background: #08A039;
           width: 20%;
           height: 30px; }
           .management .cardWrapper .textWrapper .email .iconWrapper i, .management .cardWrapper .textWrapper .phone .iconWrapper i {

@@ -91,7 +91,7 @@ hr, p {
 =            header            =
 ==============================*/
 .gradBg {
-  background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%);
   min-height: 100vh;
   position: absolute;
   width: 100%; }
@@ -119,13 +119,13 @@ hr, p {
       margin-right: 10px; }
       .contactTop .phone .iconWrapper i, .contactFollowTop .left .phone .iconWrapper i, .contactTop .mail .iconWrapper i, .contactFollowTop .left .mail .iconWrapper i {
         font-size: 14px;
-        color: #0E8944; }
+        color: #08A039; }
 
 .contactTop.scrolled, .contactFollowTop .scrolled.left, .followUsTop.scrolled, .contactFollowTop .scrolled.right {
-  color: #0E8944;
+  color: #08A039;
   top: 9px; }
   .contactTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.left .phone .iconWrapper, .contactTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.left .mail .iconWrapper, .followUsTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.right .phone .iconWrapper, .followUsTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.right .mail .iconWrapper {
-    background: #0E8944; }
+    background: #08A039; }
     .contactTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.left .phone .iconWrapper i, .contactTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.left .mail .iconWrapper i, .followUsTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.right .phone .iconWrapper i, .followUsTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.right .mail .iconWrapper i {
       color: #F3F9F4; }
 
@@ -165,7 +165,7 @@ hr, p {
         transition: 0.3s all; }
       .followUsTop .icons .iconWrapper i, .contactFollowTop .right .icons .iconWrapper i {
         font-size: 16px;
-        color: #0E8944; }
+        color: #08A039; }
       .followUsTop .icons .iconWrapper:not(:last-child), .contactFollowTop .right .icons .iconWrapper:not(:last-child) {
         margin-right: 15px; }
       .followUsTop .icons .iconWrapper:hover, .contactFollowTop .right .icons .iconWrapper:hover {
@@ -182,13 +182,13 @@ hr, p {
           border-radius: 50%; }
 
 .followUsTop.scrolled .icons .iconWrapper, .contactFollowTop .scrolled.right .icons .iconWrapper {
-  border: 1px solid #0E8944; }
+  border: 1px solid #08A039; }
   .followUsTop.scrolled .icons .iconWrapper:after, .contactFollowTop .scrolled.right .icons .iconWrapper:after {
     content: "";
     display: block;
     width: 32px;
     height: 32px;
-    background: #0E8944;
+    background: #08A039;
     position: absolute;
     z-index: -1;
     border-radius: 50%;
@@ -199,14 +199,14 @@ hr, p {
   .followUsTop.scrolled .icons .iconWrapper:not(:last-child), .contactFollowTop .scrolled.right .icons .iconWrapper:not(:last-child) {
     margin-right: 15px; }
   .followUsTop.scrolled .icons .iconWrapper:hover, .contactFollowTop .scrolled.right .icons .iconWrapper:hover {
-    border: 1px solid #0E8944;
+    border: 1px solid #08A039;
     transform: scale(1.5); }
     .followUsTop.scrolled .icons .iconWrapper:hover:after, .contactFollowTop .scrolled.right .icons .iconWrapper:hover:after {
       content: "";
       display: block;
       width: 24px;
       height: 24px;
-      background: #0E8944;
+      background: #08A039;
       position: absolute;
       z-index: -1;
       border-radius: 50%; }
@@ -220,14 +220,14 @@ hr, p {
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  box-shadow: 0 5px 10px rgba(14, 137, 68, 0.25); }
+  box-shadow: 0 5px 10px rgba(8, 160, 57, 0.25); }
 
 .navbar-brand {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: unset;
-  color: #0E8944;
+  color: #08A039;
   white-space: unset; }
   .navbar-brand .logo {
     width: 100%;
@@ -235,7 +235,7 @@ hr, p {
     margin-right: 15px; }
 
 .navbar-brand:focus, .navbar-brand:hover {
-  color: #0E8944; }
+  color: #08A039; }
 
 .companyName {
   font-family: "Gantari", sans-serif;
@@ -244,28 +244,28 @@ hr, p {
   line-height: 1; }
 
 .nav-link {
-  color: #0e8944; }
+  color: #08a039; }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #0E8944; }
+  color: #08A039; }
   .navbar .navbar-nav .nav-link.active:after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
-    background: #0E8944;
+    background: #08A039;
     border-radius: 2px; }
 .navbar .nav-link {
   line-height: 1.8; }
   .navbar .nav-link:after {
     margin-top: -2px; }
 .navbar .nav-link:focus, .navbar .nav-link:hover {
-  color: #0E8944; }
+  color: #08A039; }
   .navbar .nav-link:focus:after, .navbar .nav-link:hover:after {
     content: "";
     display: block;
     width: 100%;
-    border-bottom: 2px solid #0E8944;
+    border-bottom: 2px solid #08A039;
     border-radius: 2px; }
 
 .dropdown-menu {
@@ -274,7 +274,7 @@ hr, p {
   border-radius: 10px;
   border: 0;
   overflow: hidden;
-  box-shadow: 0px 5px 10px rgba(7, 68, 34, 0.75);
+  box-shadow: 0px 5px 10px rgba(4, 87, 31, 0.75);
   display: block;
   padding: 0;
   max-height: 0;
@@ -296,15 +296,15 @@ hr, p {
 
 .dropdown-item:focus, .dropdown-item:hover {
   color: #ffffff;
-  background-color: #0E8944; }
+  background-color: #08A039; }
 
 .dropBorder {
-  color: #0E8944; }
+  color: #08A039; }
   .dropBorder:after {
     content: "";
     display: block;
     width: 100%;
-    border-bottom: 2px solid #0E8944;
+    border-bottom: 2px solid #08A039;
     border-radius: 2px; }
 
 .contactFollowTop {
@@ -329,7 +329,7 @@ hr, p {
   border: unset;
   outline: none;
   padding: unset;
-  color: #0E8944; }
+  color: #08A039; }
 
 .navbar-toggler:focus {
   outline: none;
@@ -413,59 +413,59 @@ hr, p {
 ===============================*/
 .btn-primary {
   color: #fff;
-  background-color: #0E8944;
-  border-color: #0E8944;
+  background-color: #08A039;
+  border-color: #08A039;
   text-transform: uppercase; }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0c7239;
-  border-color: #0c7239; }
+  background-color: #078830;
+  border-color: #078830; }
 
 .btn-primary.focus, .btn-primary:focus {
   color: #fff;
-  background-color: #0c7239;
-  border-color: #a1f5c6;
-  box-shadow: 0 0 0 0.2rem rgba(14, 137, 68, 0.25); }
+  background-color: #078830;
+  border-color: #acfbc6;
+  box-shadow: 0 0 0 0.2rem rgba(8, 160, 57, 0.25); }
 
 .btn-primary:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-color: #0c7239;
-  border-color: #a1f5c6;
-  box-shadow: 0 0 0 0.2rem rgba(14, 137, 68, 0.25); }
+  background-color: #078830;
+  border-color: #acfbc6;
+  box-shadow: 0 0 0 0.2rem rgba(8, 160, 57, 0.25); }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(14, 137, 68, 0.25); }
+  box-shadow: 0 0 0 0.2rem rgba(8, 160, 57, 0.25); }
 
 .btn-outline-primary {
-  color: #0E8944;
-  border-color: #0E8944; }
+  color: #08A039;
+  border-color: #08A039; }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #0E8944;
-  border-color: #0E8944; }
+  background-color: #08A039;
+  border-color: #08A039; }
 
 .btn-outline-primary.focus, .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(14, 137, 68, 0.25); }
+  box-shadow: 0 0 0 0.2rem rgba(8, 160, 57, 0.25); }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active {
   color: #fff;
-  background-color: #0c7239;
-  border-color: #0c7239; }
+  background-color: #078830;
+  border-color: #078830; }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(14, 137, 68, 0.25); }
+  box-shadow: 0 0 0 0.2rem rgba(8, 160, 57, 0.25); }
 
 .form-control:focus {
-  border-color: #0E8944;
-  box-shadow: 0 0 0 0.2rem rgba(14, 137, 68, 0.25); }
+  border-color: #08A039;
+  box-shadow: 0 0 0 0.2rem rgba(8, 160, 57, 0.25); }
 
 .secHead {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: #0E8944; }
+  color: #08A039; }
   .secHead .divider {
     display: flex;
     flex-direction: row;
@@ -478,7 +478,7 @@ hr, p {
     .secHead .divider .left, .secHead .divider .right {
       width: 100%;
       height: 2px;
-      background: #0E8944; }
+      background: #08A039; }
 
 .text-justify {
   text-align: justify !important; }
@@ -490,7 +490,7 @@ hr, p {
   .UcasScrollSpy .parent-pills .nav-link:before {
     content: "\f058";
     font-family: "Font Awesome 6 Free";
-    color: #0E8944;
+    color: #08A039;
     font-weight: bold;
     margin-right: 10px;
     visibility: visible;
@@ -502,7 +502,7 @@ hr, p {
     content: "";
     width: 2px;
     height: 100%;
-    background: #0E8944;
+    background: #08A039;
     position: absolute;
     left: 37px;
     top: 20px; }
@@ -514,14 +514,14 @@ hr, p {
     visibility: visible;
     width: 12px;
     height: 12px;
-    background: #0E8944;
+    background: #08A039;
     border-radius: 100px;
     flex-shrink: 0; }
 .UcasScrollSpy .nav-pills .nav-link.active, .UcasScrollSpy .nav-pills .show > .nav-link {
   color: #F3F9F4;
-  background-color: #0E8944; }
+  background-color: #08A039; }
 .UcasScrollSpy .nav-link:focus, .UcasScrollSpy .nav-link:hover {
-  color: #0E8944; }
+  color: #08A039; }
 .UcasScrollSpy .nav-link {
   display: flex;
   flex-direction: row;
@@ -550,7 +550,7 @@ hr, p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%);
   position: absolute;
   top: 0;
   right: -60px;
@@ -615,7 +615,7 @@ hr, p {
       justify-content: center;
       align-items: center;
       background: #fff;
-      box-shadow: 0 10px 20px rgba(14, 137, 68, 0.15);
+      box-shadow: 0 10px 20px rgba(8, 160, 57, 0.15);
       min-height: 100px;
       border-radius: 15px;
       outline: 1px solid transparent;
@@ -633,14 +633,14 @@ hr, p {
         font-family: "Gantari", sans-serif;
         font-weight: bold;
         height: 50px;
-        color: #0E8944;
+        color: #08A039;
         font-size: 18px;
         line-height: 1.1; }
         .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper span:before {
           display: none; }
       .clientListParent .cardWrapper .clientList .contentBg .clientLogos .grid .clientLogoWrapper:hover {
         transform: scale(0.9);
-        outline: 1px solid #0E8944; }
+        outline: 1px solid #08A039; }
 
 /*=====  End of our clients  ======*/
 @keyframes btnBrochureAnim {
@@ -655,7 +655,7 @@ hr, p {
   background: #F3F9F4;
   border: 1px solid #F3F9F4;
   width: max-content;
-  color: #0E8944;
+  color: #08A039;
   margin-top: 15px;
   border-radius: 30px;
   padding: 10px 20px 10px 20px;
@@ -708,7 +708,7 @@ hr, p {
 =            footer            =
 ==============================*/
 footer {
-  background: linear-gradient(135deg, #0E8944 0%, #009999 100%);
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%);
   color: #ffffff; }
   footer .secHead {
     width: 100%;
@@ -738,7 +738,7 @@ footer {
       align-items: center;
       width: 50px;
       height: 50px;
-      border: 1px solid #0E8944;
+      border: 1px solid #08A039;
       border-radius: 30px;
       margin-right: 10px;
       flex-shrink: 0; }
@@ -768,7 +768,7 @@ footer {
       border: 2px solid #F3F9F4;
       border-radius: 30px;
       background: #F3F9F4;
-      color: #0E8944;
+      color: #08A039;
       font-size: 25px;
       transition: 0.3s all; }
       footer .followUs a:not(:last-child) {
@@ -796,7 +796,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: #0E8944;
+  background: #08A039;
   padding: 5px 10px;
   color: #F3F9F4; }
   .copyright img {
