@@ -1,0 +1,155 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+@media (max-width: 1720px){
+	.sticky-top {
+	    padding-top: 40px;
+	}
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		height: unset;
+	}
+}
+
+@media (max-width: 1400px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		.carousel-item{
+			.primTitle{
+				font-size: 45px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+	.carousel-inner{
+		.carousel-item{
+			.right{
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px){
+	/*==============================
+	=            banner            =
+	==============================*/
+	.carousel-inner{
+		img{
+			margin-top: 30px;
+			max-width: 200px;
+		}
+
+		.carousel-item{
+			.primTitle{
+				font-size: 35px;
+			}
+		}
+	}
+
+	.allFeedback{
+		.fpTabWrapper{
+			#fpCarousel{
+				@include flex(row,center);
+				position: relative;
+				background: $primCol;
+
+				.owl-nav button.owl-prev, .owl-nav button.owl-next{
+					background: $lpCol;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					border: none;
+				}
+
+				.owl-nav{
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					padding: 0 30px;
+
+					i{
+						font-size: 30px;
+					}
+				}
+				.owl-item img{
+					width: unset;
+				}
+			}
+
+			.singleFp{
+				width: 170px;
+				background: unset;
+				.icon{
+					img{
+						filter: brightness(0) invert(1) drop-shadow(0 0 5px #F3F9F4);
+					}
+				}
+				.text{
+					color: $lpCol;
+					h5{
+						font-size:16px;
+					}
+				}
+				&.active{
+					&:after{
+						display: none;
+					}
+				}
+				&#realErp-tab{
+					.icon{
+						img{
+							margin-top:15px;
+							height:150px;
+						}
+					}
+					&:hover,&.active{
+						.icon{
+							img{
+								filter: drop-shadow(0 0 5px $lpCol);
+							}
+						}
+					}
+				}
+			}
+
+			.tab-content{
+				.tab-pane{
+					.feedbackWrapper{
+						@include flex(col,null,center);
+
+						.left{
+							@include flex(col,center,center);
+							border-right: unset;
+							border-bottom: 1px dashed rgba($primCol,50%);
+							width: 100%;
+						}
+						.right{
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px){
+	.sticky-top {
+	    padding-top: 0;
+	}
+}

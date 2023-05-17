@@ -1,0 +1,186 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+body{
+	background: grad();
+}
+
+/*==============================
+=            banner            =
+==============================*/
+
+.slider{
+	margin-top: -120px;
+}
+
+.carousel-inner{
+	@include flex(row,null,center);
+	height: unset;
+	padding-top: 150px;
+	padding-bottom: 30px;
+
+	.carousel-item{
+		.primTitle{
+			@include head("900");
+			color: #ffffff;
+			font-size: 65px;
+			line-height: 1;
+			color: #ffffff;
+		}
+
+		.secTitle{
+			@include para();
+			color: #ffffff;
+			font-size: 20px;
+			margin-top: 15px;
+		}
+	}
+	img{
+		max-width: 100%;
+	}
+}
+
+/*=====  End of banner  ======*/
+
+/*===================================
+=            All Feedback            =
+===================================*/
+
+.allFeedback{
+	position: relative;
+	background: #eeeeee;
+
+	.fpTabWrapper{
+		background: $lpCol;
+		border-radius: 15px;
+		box-shadow: 0 10px 20px rgba($primCol,15%);
+		overflow: hidden;
+		margin-top: 15px;
+		.nav-tabs{
+			padding-right: unset;
+			border-bottom: 2px solid #dddddd;
+			.nav-item{
+				flex-grow: 1;
+				flex-basis: (100%/6);
+				flex-grow: 1;
+				display: flex;
+				justify-content: center;
+
+				&:not(:last-child){
+					border-right: 1px solid #dddddd;
+				}
+			}
+		}
+		.tab-content{
+			.tab-pane{
+				padding: 30px;
+				
+				.feedbackWrapper{
+					@include flex(row,null,center);
+					border: 1px dashed rgba($primCol,50%);
+					border-radius: 15px;
+					&:not(:last-child){
+						margin-bottom: 20px;
+					}
+
+					.left{
+						@include flex(col,center,center);
+						flex-shrink:0;
+						padding: 20px;
+						border-right: 1px dashed rgba($primCol,50%);
+						.userImage{
+							display: inline-block;
+							overflow: hidden;
+							border-radius: 100px;
+							border: 1px solid $primCol;
+							img{
+								width: 100%;
+								max-width: 100px;
+							}
+						}
+						.name{
+							@include head();
+							font-size: 24px;
+							line-height: 1;
+							color: $primCol;
+						}
+						.designation{
+							color: rgba(#000,75%);
+						}
+					}
+					.right{
+						padding: 20px;
+					}
+				}
+			}
+		}
+		.singleFp{
+			@include flex(col,center,center);
+			background: $lpCol;
+			padding: 1rem;
+			border-radius: 0;
+			border:unset;
+			width: 100%;
+			transition: 0.3s all;
+
+			.icon{
+				@include flex(row,center,center);
+				width: 50px;
+				height: 50px;
+				transition: 0.3s all;
+
+				img{
+					max-height: 50px;
+					transition: 0.3s all;
+				}
+			}
+
+			.text{
+				color:$primCol;
+				text-align: center;
+				margin-top: .5rem;
+				transition: 0.3s all;
+			}
+
+			&:hover,&.active{
+				background: $primCol;
+
+				.icon{
+					border-color: $lpCol;
+
+					img{
+						filter: brightness(0) invert(1) drop-shadow(0 0 5px $lpCol);
+					}
+				}
+				.text{
+					color:$lpCol;
+				}
+			}
+
+			&.active{
+				position: relative;
+				&:after{
+					content: "\f0d7";
+					font-family: "Font Awesome 6 Free";
+					position: absolute;
+					bottom: -40px;
+					font-weight: bold;
+					font-size: 50px;
+					color:$primCol;
+				}
+			}
+			&#realErp-tab,&#ubroker-tab{
+				&:hover,&.active{
+					.icon{
+						img{
+							filter: drop-shadow(0 0 5px $lpCol);
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/*=====  End of All Feedback  ======*/

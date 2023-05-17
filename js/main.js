@@ -87,7 +87,7 @@ $('#cfCarousel').owlCarousel({
   navText: ["<i class='fa-solid fa-circle-left'></i>","<i class='fa-solid fa-circle-right'></i>"],
   autoplay: true,
   autoplayTimeout: 3000,
-  autoplayHoverPause:false,
+  autoplayHoverPause:true,
   dots: false,
   margin:12
 });

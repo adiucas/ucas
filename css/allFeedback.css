@@ -1,0 +1,142 @@
+body {
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
+
+/*==============================
+=            banner            =
+==============================*/
+.slider {
+  margin-top: -120px; }
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: unset;
+  padding-top: 150px;
+  padding-bottom: 30px; }
+  .carousel-inner .carousel-item .primTitle {
+    font-family: "Gantari", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1;
+    color: #ffffff; }
+  .carousel-inner .carousel-item .secTitle {
+    font-family: "M PLUS 2", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px; }
+  .carousel-inner img {
+    max-width: 100%; }
+
+/*=====  End of banner  ======*/
+/*===================================
+=            All Feedback            =
+===================================*/
+.allFeedback {
+  position: relative;
+  background: #eeeeee; }
+  .allFeedback .fpTabWrapper {
+    background: #F3F9F4;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(8, 160, 57, 0.15);
+    overflow: hidden;
+    margin-top: 15px; }
+    .allFeedback .fpTabWrapper .nav-tabs {
+      padding-right: unset;
+      border-bottom: 2px solid #dddddd; }
+      .allFeedback .fpTabWrapper .nav-tabs .nav-item {
+        flex-grow: 1;
+        flex-basis: 16.6666666667%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center; }
+        .allFeedback .fpTabWrapper .nav-tabs .nav-item:not(:last-child) {
+          border-right: 1px solid #dddddd; }
+    .allFeedback .fpTabWrapper .tab-content .tab-pane {
+      padding: 30px; }
+      .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px dashed rgba(8, 160, 57, 0.5);
+        border-radius: 15px; }
+        .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper:not(:last-child) {
+          margin-bottom: 20px; }
+        .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          padding: 20px;
+          border-right: 1px dashed rgba(8, 160, 57, 0.5); }
+          .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper .left .userImage {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 100px;
+            border: 1px solid #08A039; }
+            .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper .left .userImage img {
+              width: 100%;
+              max-width: 100px; }
+          .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper .left .name {
+            font-family: "Gantari", sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1;
+            color: #08A039; }
+          .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper .left .designation {
+            color: rgba(0, 0, 0, 0.75); }
+        .allFeedback .fpTabWrapper .tab-content .tab-pane .feedbackWrapper .right {
+          padding: 20px; }
+    .allFeedback .fpTabWrapper .singleFp {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #F3F9F4;
+      padding: 1rem;
+      border-radius: 0;
+      border: unset;
+      width: 100%;
+      transition: 0.3s all; }
+      .allFeedback .fpTabWrapper .singleFp .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        transition: 0.3s all; }
+        .allFeedback .fpTabWrapper .singleFp .icon img {
+          max-height: 50px;
+          transition: 0.3s all; }
+      .allFeedback .fpTabWrapper .singleFp .text {
+        color: #08A039;
+        text-align: center;
+        margin-top: .5rem;
+        transition: 0.3s all; }
+      .allFeedback .fpTabWrapper .singleFp:hover, .allFeedback .fpTabWrapper .singleFp.active {
+        background: #08A039; }
+        .allFeedback .fpTabWrapper .singleFp:hover .icon, .allFeedback .fpTabWrapper .singleFp.active .icon {
+          border-color: #F3F9F4; }
+          .allFeedback .fpTabWrapper .singleFp:hover .icon img, .allFeedback .fpTabWrapper .singleFp.active .icon img {
+            filter: brightness(0) invert(1) drop-shadow(0 0 5px #F3F9F4); }
+        .allFeedback .fpTabWrapper .singleFp:hover .text, .allFeedback .fpTabWrapper .singleFp.active .text {
+          color: #F3F9F4; }
+      .allFeedback .fpTabWrapper .singleFp.active {
+        position: relative; }
+        .allFeedback .fpTabWrapper .singleFp.active:after {
+          content: "\f0d7";
+          font-family: "Font Awesome 6 Free";
+          position: absolute;
+          bottom: -40px;
+          font-weight: bold;
+          font-size: 50px;
+          color: #08A039; }
+      .allFeedback .fpTabWrapper .singleFp#realErp-tab:hover .icon img, .allFeedback .fpTabWrapper .singleFp#realErp-tab.active .icon img, .allFeedback .fpTabWrapper .singleFp#ubroker-tab:hover .icon img, .allFeedback .fpTabWrapper .singleFp#ubroker-tab.active .icon img {
+        filter: drop-shadow(0 0 5px #F3F9F4); }
+
+/*=====  End of All Feedback  ======*/
+
+/*# sourceMappingURL=allFeedback.css.map */
