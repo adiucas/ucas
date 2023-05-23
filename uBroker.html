@@ -73,7 +73,7 @@
 	=            ubroker           =
 	==================================-->
 	<div class="uBroker ptb30">
-		<div class="container-fluid pt30">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="d-flex flex-column flex-lg-row">
 					<div class="spyNavMobile d-none d-lg-block" id="SpyNav">
@@ -82,40 +82,69 @@
 								<div class="SpyNavBtn">
 									<span class="close"></span>
 								</div>
-								<a class="nav-link" href="#item-hf">Main Modules</a>
-								<a class="nav-link" href="#item-0">Main Modules</a>
-								<a class="nav-link" href="#item-01">Detailed Features <br> of the UBroker</a>
-								<a class="nav-link" href="#item-1">Accounts</a>
-								<a class="nav-link" href="#item-2">Back Office</a>
-								<nav class="nav nav-pills child-pills flex-lg-column">
-									<a class="nav-link ms-3 my-1" href="#item-2-1">Broker Setup</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-2">Securities Setup</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-3">Instrument</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-4">Investor Information</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-5">Portfolio Management</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-6">IPO Management </a>
-									<a class="nav-link ms-3 my-1" href="#item-2-7">Trade Service </a>
-									<a class="nav-link ms-3 my-1" href="#item-2-8">CDBL Service</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-9">Margin</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-10">Charges</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-11">Accounts</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-12">File Export</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-13">Email & SMS</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-14">Security</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-15">Day Process</a>
-									<a class="nav-link ms-3 my-1" href="#item-2-16">DSE Uniform Reports</a>
-								</nav>
-								<a class="nav-link" href="#item-3">Basic Setup</a>
-								<nav class="nav nav-pills child-pills flex-lg-column">
-									<a class="nav-link ms-3 my-1" href="#item-3-6">Lookup</a>
-									<a class="nav-link ms-3 my-1" href="#item-3-7"> Employee Information </a>
-									<a class="nav-link ms-3 my-1" href="#item-3-8">Security</a>
-								</nav>
-								<a class="nav-link" href="#item-4">MKS</a>
-								<nav class="nav nav-pills child-pills flex-lg-column">
-									<a class="nav-link ms-3 my-1" href="#item-4-1"> MIS Reports </a>
-								</nav>
-								<a class="nav-link" href="#item-5">Client List</a>
+								<a class="nav-link" href="#item-hf">Highlighted Feature</a>
+								<a class="nav-link" href="#item-mm">Main Modules</a>
+								<a class="nav-link" href="#item-cpf">
+									Investor/Client portal <br> Features (Through
+									website)
+								</a>
+								<a class="nav-link" href="#item-uas">
+									User Access & Security
+								</a>
+								<a class="nav-link" href="#item-dse-cse">
+									DSE/CSE
+								</a>
+								<a class="nav-link" href="#item-cdbl">
+									CDBL
+								</a>
+								<a class="nav-link" href="#item-bsec">
+									BSEC
+								</a>
+								<a class="nav-link" href="#item-mb">
+									Merchant Bank (DP)
+								</a>
+								<a class="nav-link" href="#item-ii">
+									Investor & Instrument
+								</a>
+								<a class="nav-link" href="#item-tbc">
+									Trade & Brokerage Commission
+								</a>
+								<a class="nav-link" href="#item-plm">
+									Portfolio & Ledger Management
+								</a>
+								<a class="nav-link" href="#item-ipo">
+									IPO Management
+								</a>
+								<a class="nav-link" href="#item-charges">
+									Charges
+								</a>
+								<a class="nav-link" href="#item-margin">
+									Margin
+								</a>
+								<a class="nav-link" href="#item-cp">
+									Collection & Payment
+								</a>
+								<a class="nav-link" href="#item-it">
+									Introducer & Trader
+								</a>
+								<a class="nav-link" href="#item-cr">
+									Compliance Reports
+								</a>
+								<a class="nav-link" href="#item-email-sms">
+									Email & SMS
+								</a>
+								<a class="nav-link" href="#item-reports">
+									Reports
+								</a>
+								<a class="nav-link" href="#item-mis">
+									MIS Reports / RM Performance
+								</a>
+								<a class="nav-link" href="#item-accounting">
+									Accounting
+								</a>
+								<a class="nav-link" href="#item-audit">
+									Audit Trail
+								</a>
 							</nav>
 						</nav>
 					</div>
@@ -131,10 +160,11 @@
 										<span class="right"></span>
 									</div>
 								</div>
-								<div class="cardWrapper">
+								<div class="cardWrapper highlighted-feature">
 									<div class="row">
 										<div class="col-lg-12">
 											<div class="row">
+												<label>User Access</label>
 												<div class="col-lg-12">
 													<span>
 														<div class="d-flex flex-column">
@@ -150,87 +180,102 @@
 														User Access Control- Role creation, segregation of roles
 														(maker
 														Checker-authorization), input permissions, view
-														permissions
+														permissions.
 													</span>
 												</div>
 												<div class="col-lg-12">
-													<span>Agent Commissioning System</span>
+													<span>
+														Security Hardening features of Application- Enforced Password
+														Complexity, Unsuccessful Login attempts, Idle login Lockout,
+														Multiple login blocked.
+													</span>
+												</div>
+												<label class="mt-3">Audit Trail</label>
+												<div class="col-lg-12">
+													<span>
+														Audit Trail as guided by Dhaka Stock Exchange (DSE).
+													</span>
 												</div>
 												<div class="col-lg-12">
-													<span> Dealer & broker both has same interface & has the facility to
-														login from one to another system</span>
+													<span>
+														Audit Log/audit trail of every operation of application and
+														Database
+													</span>
+												</div>
+												<label class="mt-3">Email & SMS</label>
+												<div class="col-lg-12">
+													<span>
+														SMS & E-mail notification for Client’s information Change,
+														Deposit, Withdraw, Trade Confirmation, Special day, any other
+														SMS.
+													</span>
 												</div>
 												<div class="col-lg-12">
-													<span> Regulatory Reports are available.</span>
+													<span>
+														E-mail facility for sending Portfolio, trade confirmation, DSE
+														News research reports & other reports. Has the facility for
+														sending general e-mail like greetings.
+													</span>
+												</div>
+												<label class="mb-3"></label>
+												<div class="col-lg-12">
+													<span>
+														RM,Trader or employee performance analysis module with reports.
+													</span>
+												</div>
+												<label class="mt-3">Client Portal</label>
+												<div class="col-lg-12">
+													<span>
+														Integrated client portal
+													</span>
 												</div>
 												<div class="col-lg-12">
-													<span> Multi User Access module with report level accessing.</span>
+													<span>
+														API for data fetching from back-office for client portal
+													</span>
+												</div>
+												<label class="mt-3">Process</label>
+												<div class="col-lg-12">
+													<span>
+														Faster process time (Trade, Day-end, Day Start, Back-up,
+														Portfolio E-mail).
+													</span>
 												</div>
 												<div class="col-lg-12">
-													<span> Email facility for sending Portfolio, trade confirmation, DSE
-														News, research reports & other reports. </span>
+													<span>
+														Any process maximum time in 3min based on server configuration.
+														Regulatory Reports are available at Regulatory (DSE, CSE, BSEC)
+														Portal.
+													</span>
 												</div>
+												<label class="mb-3"></label>
 												<div class="col-lg-12">
-													<span>Has the facility for sending general email like
-														greetings.</span>
-												</div>
-												<div class="col-lg-12">
-													<span> SMS facility for sending trade confirmation & any other
-														SMS.</span>
-												</div>
-												<div class="col-lg-12">
-													<span>Audit Trial.</span>
+													<span>
+														SME, ATB, G-Sec & all the latest features are available.
+													</span>
 												</div>
 												<div class="col-lg-12">
 													<span> Integrated Accounting System.</span>
 												</div>
 												<div class="col-lg-12">
-													<span> RTGS & BEFTN Facility for monetary transaction.</span>
+													<span>
+														Data conversion from Existing or previous system. Historical
+														data will
+														be available in the new system.
+													</span>
 												</div>
-											</div>
-										</div>
-										<div class="col-lg-12 mt-3">
-											<label>Client Portal (Through website)</label>
-											<div class="row">
-												<div class="col-lg-6"><span> Portfolio Statement and Ledger.</span>
+												<div class="col-lg-12">
+													<span>
+														User friendly interface
+													</span>
 												</div>
-												<div class="col-lg-6"><span> Stock Ledger.</span></div>
-												<div class="col-lg-6"><span> TAX Report</span></div>
-												<div class="col-lg-6"><span> Cash or Stock Dividend Report</span></div>
-												<div class="col-lg-6"><span> BO Opening (client will provide information
-														through data entry or Uploading file)</span></div>
-												<div class="col-lg-6"><span> IPO Order</span></div>
-												<div class="col-lg-6"><span> Payment Requisition</span></div>
-												<div class="col-lg-6"><span> Buy and Sale order</span></div>
-											</div>
-										</div>
-										<div class="col-lg-12 mt-3">
-											<label>Major Features</label>
-											<div class="row">
-												<div class="col-lg-6"><span> User Access Management (Multi User Access
-														module with report level)</span></div>
-												<div class="col-lg-6"><span> Investor Information Management</span>
-												</div>
-												<div class="col-lg-6"><span> Portfolio Management</span></div>
-												<div class="col-lg-6"><span> IPO Management</span></div>
-												<div class="col-lg-6"><span> Trade Management</span></div>
-												<div class="col-lg-6"><span> CDBL Management</span></div>
-												<div class="col-lg-6"><span> Margin Loan Management</span></div>
-												<div class="col-lg-6"><span> Investor Receipt Payment Management (Cash,
-														Cheque, BEFTN, RTGS)</span></div>
-												<div class="col-lg-6"><span> Charge Management (Investor wise Charge
-														Setup)</span></div>
-												<div class="col-lg-6"><span> Various Process Management (Day initial,
-														Day end, month end, Quarter end, Year-end, Holiday)</span></div>
-												<div class="col-lg-6"><span> Data Backup facility</span></div>
-												<div class="col-lg-6"><span> Accounting Management</span></div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div id="item-0">
-								<div class="secHead">
+							<div id="item-mm">
+								<div class="secHead mt-4">
 									<h1 class="display-6">Main Modules/Features of the UBroker</h1>
 									<div class="divider">
 										<div class="left"></div>
@@ -241,1425 +286,905 @@
 								<div class="cardWrapper">
 									<div class="row">
 										<div class="col-lg-12">
-											<label>Major distinctions:</label>
 											<div class="row">
-												<div class="col-lg-12"><span> Data conversion from Existing or previous
-														system. Historical data will be available in the new
-														system.</span></div>
-												<div class="col-lg-12"><span> Trader or employee performance analysis
-														facility.</span></div>
-												<div class="col-lg-12"><span>Agent Commissioning System</span></div>
-												<div class="col-lg-12"><span> Dealer & broker both has same interface &
-														has the facility to login from one to another system</span>
+												<div class="col-lg-12">
+													<span>
+														Investor Information Management
+													</span>
 												</div>
-												<div class="col-lg-12"><span> Regulatory Reports are available.</span>
+												<div class="col-lg-12">
+													<span>
+														Portfolio & Ledger Management
+													</span>
 												</div>
-												<div class="col-lg-12"><span> Multi User Access module with report level
-														accessing.</span></div>
-												<div class="col-lg-12"><span> Email facility for sending Portfolio,
-														trade confirmation, DSE News, research reports & other reports.
-													</span></div>
-												<div class="col-lg-12"><span>Has the facility for sending general email
-														like greetings.</span></div>
-												<div class="col-lg-12"><span> SMS facility for sending trade
-														confirmation & any other SMS.</span></div>
-												<div class="col-lg-12"><span>Audit Trial.</span></div>
-												<div class="col-lg-12"><span> Integrated Accounting System.</span></div>
-												<div class="col-lg-12"><span> RTGS & BEFTN Facility for monetary
-														transaction.</span></div>
-											</div>
-										</div>
-										<div class="col-lg-12 mt-3">
-											<label>Client Portal (Through website)</label>
-											<div class="row">
-												<div class="col-lg-6"><span> Portfolio Statement and Ledger.</span>
+												<div class="col-lg-12">
+													<span>
+														IPO Management
+													</span>
 												</div>
-												<div class="col-lg-6"><span> Stock Ledger.</span></div>
-												<div class="col-lg-6"><span> TAX Report</span></div>
-												<div class="col-lg-6"><span> Cash or Stock Dividend Report</span></div>
-												<div class="col-lg-6"><span> BO Opening (client will provide information
-														through data entry or Uploading file)</span></div>
-												<div class="col-lg-6"><span> IPO Order</span></div>
-												<div class="col-lg-6"><span> Payment Requisition</span></div>
-												<div class="col-lg-6"><span> Buy and Sale order</span></div>
-											</div>
-										</div>
-										<div class="col-lg-12 mt-3">
-											<label>Major Features</label>
-											<div class="row">
-												<div class="col-lg-6"><span> User Access Management (Multi User Access
-														module with report level)</span></div>
-												<div class="col-lg-6"><span> Investor Information Management</span>
+												<div class="col-lg-12">
+													<span>
+														Trade Management
+													</span>
 												</div>
-												<div class="col-lg-6"><span> Portfolio Management</span></div>
-												<div class="col-lg-6"><span> IPO Management</span></div>
-												<div class="col-lg-6"><span> Trade Management</span></div>
-												<div class="col-lg-6"><span> CDBL Management</span></div>
-												<div class="col-lg-6"><span> Margin Loan Management</span></div>
-												<div class="col-lg-6"><span> Investor Receipt Payment Management (Cash,
-														Cheque, BEFTN, RTGS)</span></div>
-												<div class="col-lg-6"><span> Charge Management (Investor wise Charge
-														Setup)</span></div>
-												<div class="col-lg-6"><span> Various Process Management (Day initial,
-														Day end, month end, Quarter end, Year-end, Holiday)</span></div>
-												<div class="col-lg-6"><span> Data Backup facility</span></div>
-												<div class="col-lg-6"><span> Accounting Management</span></div>
+												<div class="col-lg-12">
+													<span>
+														Settlement with CDBL
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Margin Loan Management
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Investor Receipt Payment Management (Cash, Cheque,
+														BEFTN, RTGS)
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Charge Management (Investor wise Charge Setup)
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Various Process Management (Day initial, Day end, Month
+														end, Quarter end, Year-end, Holiday)
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Audit Trial, SMS & E-mail Notification
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Data Backup facility from Front end.
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Accounting Management
+													</span>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="secHead mt-4" id="item-01">
-								<h1 class="display-6">Detailed Features of the UBroker</h1>
-								<div class="divider">
-									<div class="left"></div>
-									<img src="images/star.svg">
-									<span class="right"></span>
-								</div>
-							</div>
-							<div class="cardWrapper" id="item-1">
-								<div class="head">
-									<h4>Accounts<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Account Entries</h4>
-								</div>
-								<div class="body">
-									<div class="infoWrapper">
-										<div class="left">
-											<img src="images/shield-check.svg">
-											<span>Bank Balance Status Entry</span>
-										</div>
-										<div class="right"></div>
-									</div>
-									<div class="infoWrapper">
-										<div class="left">
-											<img src="images/shield-check.svg">
-											<span>Charts of accounts</span>
-										</div>
-										<div class="right">
-											Create modify Charts of accounts
-											information
-										</div>
-									</div>
-									<div class="infoWrapper">
-										<div class="left">
-											<img src="images/shield-check.svg">
-											<span>Other Charge Money Receipt</span>
-										</div>
-										<div class="right"></div>
-									</div>
-									<div class="infoWrapper">
-										<div class="left">
-											<img src="images/shield-check.svg">
-											<span>Voucher Entries</span>
-										</div>
-										<div class="right">Create modify delete Voucher information
-											(Debit, credit, journal, Contra voucher)</div>
-									</div>
-									<div class="infoWrapper">
-										<div class="left">
-											<img src="images/shield-check.svg">
-											<span>Accounts Reports</span>
-										</div>
-										<div class="right">Voucher, Trail Balance, Cash Book, Bank
-											Book, Receive Payment, Income
-											Expenditure, Balance Sheet Reports</div>
+							<div id="item-cpf">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Investor/Client portal Features <br> (Through
+										website)
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
 									</div>
 								</div>
-							</div>
-							<div class="cardWrapper" id="item-2">
-								<div id="item-2-1">
-									<div class="head">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Broker Setup
-										</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Instrument Type</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Market Group</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Market Type</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Securities Depository</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Securities Sector</span>
-											</div>
-											<div class="right">
-												Create modify delete Securities Sector
-												information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Security Market</span>
-											</div>
-											<div class="right"></div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-2">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Securities Setup
-										</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Bank</span>
-											</div>
-											<div class="right">Create modify delete bank information</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Bank Branch</span>
-											</div>
-											<div class="right">
-												Create modify delete bank branch
-												information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Trader Setup</span>
-											</div>
-											<div class="right">Create modify delete trader information</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Employee Target Setup</span>
-											</div>
-											<div class="right">Create modify delete Employee Target Setup</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-3">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Instrument</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Instrument Information</span>
-											</div>
-											<div class="right">Create modify Instrument Information</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Instrument Margin Status Setup</span>
-											</div>
-											<div class="right">
-												Assign instrument margin/non-margin status
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Trader Setup</span>
-											</div>
-											<div class="right">Create modify delete trader information</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Employee Target Setup</span>
-											</div>
-											<div class="right">Create modify delete Employee Target Setup</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-4">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Investor
-											Information</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>BO Opening Form</span>
-											</div>
-											<div class="right">
-												Investor BO opening /BO Setup/Investor
-												Code Assign
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Setup</span>
-											</div>
-											<div class="right">
-												create modify delete investor information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Trader Setup</span>
-											</div>
-											<div class="right">Create modify delete trader information</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Account Close</span>
-											</div>
-											<div class="right">
-												Close investor BO Account From
-												CDBL/Manual
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Introducer Setup</span>
-											</div>
-											<div class="right">
-												Investor wise introducer assign
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Profile</span>
-											</div>
-											<div class="right">
-												Investor all information at a glance
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Mobile Trade Status Setup</span>
-											</div>
-											<div class="right">
-												Investor wise DSE mobile trade status
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Information Reports</span>
-											</div>
-											<div class="right">
-												Investor details report, Special investor
-												access report
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-5">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Portfolio
-											Management</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Change Average Cost</span>
-											</div>
-											<div class="right">Manually change instrument average cost of an investor
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Instrument Lock/Unlock Details </span>
-											</div>
-											<div class="right">Investor wise instrument lock/Unlock history </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Portfolio Adjustment </span>
-											</div>
-											<div class="right">Manually change instrument Quantity of an investor </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Share In </span>
-											</div>
-											<div class="right">Manually Add instrument </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Share In (Adjustment) </span>
-											</div>
-											<div class="right">Manually Add instrument For Adjustment purpose</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Profile</span>
-											</div>
-											<div class="right">
-												Investor all information at a glance
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Mobile Trade Status Setup</span>
-											</div>
-											<div class="right">
-												Investor wise DSE mobile trade status
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Share Lock </span>
-											</div>
-											<div class="right">Manually/CDBL(Auto) Lock Instrument for Buy/Sale </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Share Out </span>
-											</div>
-											<div class="right">Manually Remove instrument </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Share Out (Adjustment) </span>
-											</div>
-											<div class="right">Manually Remove instrument For Adjustment purpose </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Portfolio Related Reports </span>
-											</div>
-											<div class="right">Client’s Portfolio, short portfolio, portfolio statement
-												(company wise), portfolio statement (Account type wise), client account
-												status(receivable), client account status(payable), portfolio management
-												(security holdings), client’s free balance, investor above ten crore
-												equity, Margin client equity negative, company wise margin ratio
-												analysis reports </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-6">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>IPO Management
-										</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Export IPO File </span>
-											</div>
-											<div class="right">Export an IPO Application file for issuer </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Application </span>
-											</div>
-											<div class="right">Subscription of an IPO </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Application Cancel </span>
-											</div>
-											<div class="right">Reject subscription of an IPO </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Application for lower balance </span>
-											</div>
-											<div class="right">Subscription of an IPO Without Balance Check </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Declaration </span>
-											</div>
-											<div class="right">Create modify delete an IPO Information </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Foreign Investor Draft </span>
-											</div>
-											<div class="right">Create modify delete foreign subscriber Draft Information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Order Without balance check </span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Order With balance check </span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Result Upload (Allocation Refund) </span>
-											</div>
-											<div class="right">IPO Allocation/Refund Process </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>NRB Draft & Order </span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Sent IPO Result SMS </span>
-											</div>
-											<div class="right">Facility Of sending IPO allocation/Refund Result </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>IPO Reports </span>
-											</div>
-											<div class="right">IPO Order, Application, Cancel, Allocation, Summary,
-												Refund, fine reports. IPO details reports, IPO Application Summary
-												report for Issuer. IPO Draft report for NRB applications. </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-7">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Trade Service<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i>Limit</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Export Limit File </span>
-											</div>
-											<div class="right">Export Investor Limit File For DSE/CSE</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Process Limit File </span>
-											</div>
-											<div class="right">Process Uploaded Omnibus Investor Limit File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Rollback Limit Upload </span>
-											</div>
-											<div class="right">Rollback Uploaded Omnibus Investor Limit File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Upload Limit File </span>
-											</div>
-											<div class="right"></div>
-										</div>
-									</div>
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Trade Service<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i>Trade &closing</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Export DP Trade Files</span>
-											</div>
-											<div class="right">Export Omnibus Investor Trade(Buy/Sale)</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Process Trade Files</span>
-											</div>
-											<div class="right">Process DSE/CSE Daily Trade File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Rollback Trade Files (After Process)</span>
-											</div>
-											<div class="right">Rollback DSE/CSE Daily Processed Trade File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Rollback Trade Upload</span>
-											</div>
-											<div class="right">Rollback Uploaded DSE/CSE Daily Trade File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Upload Trade Files</span>
-											</div>
-											<div class="right">Upload DSE/CSE Daily Trade File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Trade Related Reports</span>
-											</div>
-											<div class="right">Stock Exchange related reports like Net Brokerage
-												Income(Details), Net Brokerage Income(Summary) CNS, Members Payment,
-												Instrument Wise Netting, Client Wise Netting, Income Statement,
-												Turnover,MO(CSE Format) Client's trade reports like Trade Summary
-												Report, Trade Confirmation Summary & Details wise, Brokerage commission.
-												DP wise bill, Buy sale Netting, Instrument wise trade Summary reports.
-												Trader wise reports like Buy Sale Details, Summary, order reports.
-												Analysis reports like Buy Sale on Same Time, Over Trading, Margin buy
-												non margin sale, short sale reports</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-8">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>CDBL Service
-										</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Assign Non-IPO Share</span>
-											</div>
-											<div class="right">Assign Non-IPO/Director/Sponsored Share from CDBL IPO
-												File </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>CDBL Share In Rate Setup</span>
-											</div>
-											<div class="right">Facility Of setting Rate of CDBL Share IN</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Export Pay In/Out File</span>
-											</div>
-											<div class="right">Export Daily Pay IN/OUT File For CDBL</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Process CDBL Files</span>
-											</div>
-											<div class="right">Process Uploaded Daily CDBL File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Rollback CDBL Upload</span>
-											</div>
-											<div class="right">Rollback Uploaded Daily CDBL File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Upload CDBL Files</span>
-											</div>
-											<div class="right">Upload Daily CDBL File</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>CDBL Report</span>
-											</div>
-											<div class="right">CDBL General Reports, BO Open & Close Reports, Pay In/Out
-												Report, Bonus/Rights Reports, IPO Share Credit Report, Closing Stock
-												(CDBL), CDBL Charges Reports</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-9">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Margin</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Margin Client Setup</span>
-											</div>
-											<div class="right">Assign an Investor's Margin/Cash Status</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Interest Setup</span>
-											</div>
-											<div class="right">Investor wise/Overall Interest Rate Setup Facility </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Quarterly/Monthly/Yearly/Half Yearly Interest process</span>
-											</div>
-											<div class="right">Accrued Interest Auto
-												Process(Quarterly/Monthly/Yearly/Half Yearly) Setup </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Interest Collection</span>
-											</div>
-											<div class="right">Manually Collect an Investor/Overall Accrued Interest at
-												Any Time </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Receive Cash Dividend</span>
-											</div>
-											<div class="right">Facility Of Receiving Cash Dividend from Company </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Margin Reports</span>
-											</div>
-											<div class="right">Margin Client Wise Reports like, Interest Report, Fresh
-												Loan & EDR Report, Margin Client list, loan position Report, cash
-												dividend and cash fraction reports </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-10">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Charges</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>All Charge Setup</span>
-											</div>
-											<div class="right">Any kind of Charge Setup Facility</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor All Charges</span>
-											</div>
-											<div class="right">Investor wise All Charge Setup History</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Investor Wise Charge Setup</span>
-											</div>
-											<div class="right">Investor wise Any Charge Setup</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Charges Addition/Deduction </span>
-											</div>
-											<div class="right">Manually Charge Addition/Deduction Facility</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Charges Approve</span>
-											</div>
-											<div class="right">Manually Charge Addition/Deduction Approval </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Charge Report</span>
-											</div>
-											<div class="right">Charge Information Report, manual Charge Report Branch
-												wise, investor wise, transaction wise. </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-11">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i>Collection</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Approve</span>
-											</div>
-											<div class="right">Approval Of Cheque/Cash Receive Information </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque/Ca sh Receive </span>
-											</div>
-											<div class="right">create modify delete Cheque/Cash Receive Information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque/Ca sh Receive of Closed Investor </span>
-											</div>
-											<div class="right">Facility of collection of a closed investor</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque/Ca sh Clearance &Dishonor </span>
-											</div>
-											<div class="right"> Cheque/ Cash Reconciliation according to Bank </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque/Ca sh Deposit To Bank </span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque/Ca sh Redeposit </span>
-											</div>
-											<div class="right">Redeposit facility of a dishonored cheque</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Collection Transaction </span>
-											</div>
-											<div class="right">Modification Facility of Cheque/cash Receive Information
-												after reconciliation </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Edit at Any Stage </span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Collection Report</span>
-											</div>
-											<div class="right">Collection Report Investor wise, Date wise, branch wise,
-												Status wise. Unclear cheque report, dishonor cheque report. </div>
-										</div>
-									</div>
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i> Fund Transfer </h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Fund Transfer </span>
-											</div>
-											<div class="right">Fund Transfer facility between investors</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Fund Transfer Approve </span>
-											</div>
-											<div class="right">Fund Transfer information approval</div>
-										</div>
-									</div>
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i> Money Receipts </h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Collection/ Payment Money Receipt </span>
-											</div>
-											<div class="right">Printing facility of collection and payment money receipt
-												(Office/Client Copy)</div>
-										</div>
-									</div>
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Accounts<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i>Payment</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque/Ca sh Payment </span>
-											</div>
-											<div class="right">create modify delete Client Payment Information </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Cheque Print </span>
-											</div>
-											<div class="right">Payment Cheque Printing Facility</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Close Investor Payment </span>
-											</div>
-											<div class="right">Payment Facility to a closed investor</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Fund Requisition </span>
-											</div>
-											<div class="right">Requisition Of a client payment</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Fund Requisition </span>
-											</div>
-											<div class="right">Requisition Information Approval</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Negative Balance Payment</span>
-											</div>
-											<div class="right">``Payment Facility to Margin(Negative Balance) Investor
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Payment Approve </span>
-											</div>
-											<div class="right">Approval Of a Payment</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Payment Clearance </span>
-											</div>
-											<div class="right">Payment Reconciliation according to bank</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Requisition Approve </span>
-											</div>
-											<div class="right">Requisition Approval</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Payment Report </span>
-											</div>
-											<div class="right">Payment reports Investor wise, Date wise, branch wise,
-												BEFTN Report. </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-12">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>File Export</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Export Client Registration File</span>
-											</div>
-											<div class="right">Export Facility Of daily new client registration file for
-												CSE </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-13">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email & SMS</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Email & SMS DP Access</span>
-											</div>
-											<div class="right">Email Sending Access to investor (Setup)</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Email & SMS Investor Access</span>
-											</div>
-											<div class="right"></div>
-										</div>
-									</div>
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email & SMS<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i>Email</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Portfolio & Trade Confirmation Email </span>
-											</div>
-											<div class="right">Email Facility of Investor Portfolio and daily trade
-												confirmation</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Send General Email </span>
-											</div>
-											<div class="right">Bulk Email Facility</div>
-										</div>
-									</div>
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Email & SMS<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i>SMS</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Sent General SMS </span>
-											</div>
-											<div class="right">Bulk general SMS sending facility</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Sent Trade SMS </span>
-											</div>
-											<div class="right">SMS sending facility of daily trade confirmation </div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-14">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Security</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>CDBL File Upload Setup</span>
-											</div>
-											<div class="right">Setup facility of which file should upload from CDBL and
-												which are not </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>One Percent Share Setup</span>
-											</div>
-											<div class="right">Different Commission Setup facility according to Share
-												Type </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Special Investor User Permission </span>
-											</div>
-											<div class="right">Employee wise Investor Report Lock Facility for Security
-												Purpose </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Upload File Access Control</span>
-											</div>
-											<div class="right">Employee wise file upload access facility</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-15">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Process<i
-												class="fa-solid fa-arrow-right ms-2 me-2"></i> Day Process </h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Day Initial Process </span>
-											</div>
-											<div class="right">Day Start process before daily work</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Day End Process </span>
-											</div>
-											<div class="right">Day End process after daily work</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Holiday Process </span>
-											</div>
-											<div class="right">Holiday Declaration Facility</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-2-16">
-									<div class="head mt-4">
-										<h4>Back Office<i class="fa-solid fa-arrow-right ms-2 me-2"></i>DSE Uniform
-											Reports</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Accounting Report</span>
-											</div>
-											<div class="right">Regulatory Report</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Stock CDBL Report</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Stock Portfolio Reports</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Trade Stock Reports</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Margin Reports</span>
-											</div>
-											<div class="right"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cardWrapper" id="item-3">
-								<div id="item-3-6">
-									<div class="head mt-4">
-										<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i>Lookup</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Department</span>
-											</div>
-											<div class="right">create modify delete Employee Department Information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Designation</span>
-											</div>
-											<div class="right">create modify delete Employee Designation Information
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Occupation</span>
-											</div>
-											<div class="right">create modify delete Investor Occupation Information
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-3-7">
-									<div class="head mt-4">
-										<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i> Employee
-											Information </h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Employee Basic</span>
-											</div>
-											<div class="right">Employee Basic Information setup</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Employee's Education Information </span>
-											</div>
-											<div class="right">Employee Educational Information setup</div>
-										</div>
-									</div>
-								</div>
-								<div id="item-3-8">
-									<div class="head mt-4">
-										<h4>Basic Setup<i class="fa-solid fa-arrow-right ms-2 me-2"></i> Security</h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>All Investor Access Control</span>
-											</div>
-											<div class="right">Employee wise Full Access to all Investor(Back Office/MIS
-												Report Module) </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Manual Lock/Unlock User</span>
-											</div>
-											<div class="right">Manually Lock/Unlock of a User/Employee</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Register</span>
-											</div>
-											<div class="right">create new Software User and assign role to User </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Report Access Control</span>
-											</div>
-											<div class="right">User/Employee wise Report Access Control</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Role</span>
-											</div>
-											<div class="right">create modify delete User Role Information</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Security Module</span>
-											</div>
-											<div class="right">Role wise Page Access to User/Employee</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cardWrapper" id="item-4">
-								<div id="item-4-1">
-									<div class="head">
-										<h4>MIS<i class="fa-solid fa-arrow-right ms-2 me-2"></i> MIS Reports </h4>
-									</div>
-									<div class="body">
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Active/Inactive Client</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>All RM's Asset Database</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>BO Opening</span>
-											</div>
-											<div class="right">Introducer wise BO Opening Information report </div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Deposit &withdraw</span>
-											</div>
-											<div class="right">Introducer wise Deposit/Withdraw Details/Summary report
-											</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Portfolio Management</span>
-											</div>
-											<div class="right">Introducer wise Investor Portfolio Reports</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>RM Wise Securities Holding</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>RM Performance</span>
-											</div>
-											<div class="right">Employee Performance Report (At a glance)</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>RM Portfolio Return</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>RM Profile & Log</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>RM's Customer Database</span>
-											</div>
-											<div class="right"></div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Securities Buy & Sale</span>
-											</div>
-											<div class="right">Introducer wise Trade (Buy/Sale), Report</div>
-										</div>
-										<div class="infoWrapper">
-											<div class="left">
-												<img src="images/shield-check.svg">
-												<span>Turnover & Commission</span>
-											</div>
-											<div class="right">Introducer wise Daily Trade Turnover and commission
-												Report </div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="secHead" id="item-5">
-								<h1 class="display-6">client list</h1>
-								<div class="divider">
-									<div class="left"></div>
-									<img src="images/star.svg">
-									<span class="right"></span>
-								</div>
-							</div>
-							<div class="clientListParent">
 								<div class="cardWrapper">
-									<div class="clientList">
-										<div class="contentBg">
-											<div class="clientLogos">
-												<div class="grid row">
-													<div
-														class="grid-item ubroker uhrms col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="http://www.eblsecurities.com" target="_blank"
-															class="clientLogoWrapper">
-															<img src="images/clients/ubroker/eblsl.svg">
-														</a>
-													</div>
-													<div
-														class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="https://www.barakasecurities.com/" target="_blank"
-															class="clientLogoWrapper">
-															<img src="images/clients/ubroker/baraka.png">
-														</a>
-													</div>
-													<div
-														class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="https://biplobgroupbd.com/" target="_blank"
-															class="clientLogoWrapper">
-															<img src="images/clients/ubroker/biplob.svg">
-														</a>
-													</div>
-													<div
-														class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="https://www.agraniinsurance.com/" target="_blank"
-															class="clientLogoWrapper">
-															<img src="images/clients/ubroker/agrani.svg">
-														</a>
-													</div>
-													<div
-														class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="http://tsisecurities.com/" target="_blank"
-															class="clientLogoWrapper">
-															<img src="images/clients/ubroker/tsi.png">
-														</a>
-													</div>
-													<div
-														class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="http://www.cordialsecurities.net/" target="_blank"
-															class="clientLogoWrapper">
-															<img src="images/clients/ubroker/cordial.png">
-															<span class="ms-lg-3">Cordial <br> Securities Ltd.</span>
-														</a>
-													</div>
-													<div
-														class="grid-item ubroker col-6 col-lg-4 col-xl-3 col-md-4 my-2">
-														<a href="https://www.cse.com.bd/stockbroker/memberDetails/137"
-															target="_blank" class="clientLogoWrapper">
-															<span>Nurjahan <br>Securities Ltd.</span>
-														</a>
-													</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-12">
+													<span>
+														Investor Information Management
+													</span>
 												</div>
+												<div class="col-lg-12">
+													<span>
+														Portfolio & Ledger Management
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														IPO Management
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Trade Management
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Settlement with CDBL
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Margin Loan Management
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Investor Receipt Payment Management (Cash, Cheque,
+														BEFTN, RTGS)
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Charge Management (Investor wise Charge Setup)
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Various Process Management (Day initial, Day end, Month
+														end, Quarter end, Year-end, Holiday)
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Audit Trial, SMS & E-mail Notification
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Data Backup facility from Front end.
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Accounting Management
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-uas">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										User Access & Security
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6">
+													<span>
+														Dynamic role Management system.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Role wise access control.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														User wise access control
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														User wise report access control
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Investor locking for user
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														User wise file upload control
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														User wise Email & sms control system
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Branch wise monitoring system (Branch manager)
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-dse-cse">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										DSE/CSE
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6">
+													<span>
+														Generate Cash & Stock Limit & Client Registration files for
+														DSE/CSE. (Morning/Intraday)
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Upload & Process Trade Files From DSE/CSE.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Rollback System of processed Trade Files.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Finding Short Sales & Report.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Generate CNS (DSE), MO (CSE)
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														DSE Uniform Reports (For Audit Purpose).
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Exchange wise Hawla, Laga & AIT Calculation.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-cdbl">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										CDBL
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6">
+													<span>
+														Upload & Process All Files from CDBL.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Rollback System Of Uploaded CDBL Files.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Account Modify Files Processing from CDBL.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Manual Rate Setup System of CDBL Share In Files.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Calculation Of IPO Shares & Non IPO Shares For Brokerage
+														Commission Calculation.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Generate Pay In/Pay Out Files for CDBL.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														All Reports Of Uploaded CDBL Files.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														Mismatch Report Between BackOffice & CDBL DPA6 Files.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-bsec">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										BSEC
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6">
+													<span>
+														Inquiry from BSEC.
+													</span>
+												</div>
+												<div class="col-lg-6">
+													<span>
+														On demand Providing reports against Inquiry.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-mb">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Merchant Bank (DP)
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-12">
+													<span>
+														Generate Bill Of All DP Trade.
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Upload System Of DP Cash & Stock Limit Files given by DP.
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Generate Cash & Stock Limit & Client Registration Files of
+														DP Investor.
+													</span>
+												</div>
+												<div class="col-lg-12">
+													<span>
+														Rollback System Of Uploaded Files.
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-ii">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Investor & Instrument
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-12"><span>New Account Open According to CDBL
+														Open.</span></div>
+												<div class="col-lg-12"><span>Account Information Modify according to
+														CDBL Modify.</span></div>
+												<div class="col-lg-12"><span>New Account/ Modify (Manual).</span></div>
+												<div class="col-lg-12"><span>Joint Holder & Nominee Setup.</span></div>
+												<div class="col-lg-12"><span>New Instrument / Modify Instrument
+														Info.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-tbc">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Trade & Brokerage Commission
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Trade Processing.</span></div>
+												<div class="col-lg-6"><span>Brokerage Commission Setup System.</span>
+												</div>
+												<div class="col-lg-6"><span>Investor wise Brokerage Commission
+														Setup.</span></div>
+												<div class="col-lg-6"><span>Calculation of Brokerage Commission from
+														trade.</span></div>
+												<div class="col-lg-6"><span>Brokerage Commission Collection
+														(Automation/Manual).</span></div>
+												<div class="col-lg-6"><span>Brokerage Commission Refund.</span></div>
+												<div class="col-lg-6"><span>Calculation of IPO Share Commission &
+														NON-IPO Share</span></div>
+												<div class="col-lg-6"><span>Net Brokerage Income Report (Daily,
+														Monthly, Yearly) &</span></div>
+												<div class="col-lg-6"><span>Branch wise.</span></div>
+												<div class="col-lg-6"><span>Generate Trade Confirmation
+														Statement.</span></div>
+												<div class="col-lg-6"><span>Client & Instrument wise Balance & Stock
+														Netting.</span></div>
+												<div class="col-lg-6"><span>Balance & Stock Matured System
+														(Automatic).</span></div>
+												<div class="col-lg-6"><span>DP wise Trade & Bill Generate.</span></div>
+												<div class="col-lg-6"><span>Generate DSE Members Payment, CNS & CSE MO
+														from Trade.</span></div>
+												<div class="col-lg-6"><span>Finding Short Sale & Same Share Buy Sale &
+														Margin & Non</span></div>
+												<div class="col-lg-6"><span>Margin Share Buy Sale, Over-trading Report.
+														(Compliance)</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-plm">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Portfolio & Ledger Management
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Investor/Instrument Wise Security
+														Holdings.</span></div>
+												<div class="col-lg-6"><span>Share Locking/Unlocking According to CDBL
+														(Automatic).</span></div>
+												<div class="col-lg-6"><span>Share Locking/Unlocking System
+														(Manual).</span></div>
+												<div class="col-lg-6"><span>Share In/Out According to CDBL.</span>
+												</div>
+												<div class="col-lg-6"><span>Share In/Out (Manual).</span></div>
+												<div class="col-lg-6"><span>Average Cost Change (Manual).</span></div>
+												<div class="col-lg-6"><span>IPO/Non-IPO Share Assign System When Share
+														In</span></div>
+												<div class="col-lg-6"><span>(Automatic/Manual).</span></div>
+												<div class="col-lg-6"><span>All Portfolio Management Reports.</span>
+												</div>
+												<div class="col-lg-6"><span>Investor wise Ledger.</span></div>
+												<div class="col-lg-6"><span>Investor wise instrument stock
+														ledger.</span></div>
+												<div class="col-lg-6"><span>Transaction type wise ledger.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-ipo">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										IPO Management
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-12"><span>New Instrument Entry System.</span></div>
+												<div class="col-lg-12"><span>IPO Order, Application, Cancel
+														System.</span></div>
+												<div class="col-lg-12"><span>Negative Balance/ Lower Balance IPO
+														Application.</span></div>
+												<div class="col-lg-12"><span>Generate All IPO Application Details,
+														Application Summary</span></div>
+												<div class="col-lg-12"><span>(Pdf & txt) Files.</span></div>
+												<div class="col-lg-12"><span>Upload & Process IPO Allocation & Refund
+														Files.</span></div>
+												<div class="col-lg-12"><span>SMS System Of IPO Allocation to Allocated
+														Investors.</span></div>
+												<div class="col-lg-12"><span>IPO Share Credit/Lock/Block According to
+														CDBL.</span></div>
+												<div class="col-lg-12"><span>IPO Application According to Matured Share
+														Market</span></div>
+												<div class="col-lg-12"><span>value(CDBL) on</span></div>
+												<div class="col-lg-12"><span>Record Date.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-charges">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Charges
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Charge Setup System.</span></div>
+												<div class="col-lg-6"><span>Investor wise Charge Setup System.</span>
+												</div>
+												<div class="col-lg-6"><span>Charge Collection According to CDBL Charge
+														Files.</span></div>
+												<div class="col-lg-6"><span>Interest Rate Setup System.</span></div>
+												<div class="col-lg-6"><span>Investor wise Interest Rate Setup
+														System.</span></div>
+												<div class="col-lg-6"><span>Charge Collection (Manual).</span></div>
+												<div class="col-lg-6"><span>All Charge Collection reports.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-margin">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Margin
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Daily Interest Accrued System According to
+														Rate setup</span></div>
+												<div class="col-lg-6"><span>(Automatic).</span></div>
+												<div class="col-lg-6"><span>Quarterly Collection of Accrued Interest
+														(Automatic).</span></div>
+												<div class="col-lg-6"><span>Manual Interest Collection.</span></div>
+												<div class="col-lg-6"><span>Collected Interest Refund System.</span>
+												</div>
+												<div class="col-lg-6"><span>Margin/Non Margin Client Setup.</span></div>
+												<div class="col-lg-6"><span>Generate Cash Dividend Report (For Sending
+														to Company).</span></div>
+												<div class="col-lg-6"><span>Cash Dividend Receive System According Given
+														Files</span></div>
+												<div class="col-lg-6"><span>(Margin Client).</span></div>
+												<div class="col-lg-6"><span>Receivable Cash Dividend Calculation.</span>
+												</div>
+												<div class="col-lg-6"><span>Margin Loan Management.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-cp">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Collection & Payment
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Investor wise fund Collection System.</span>
+												</div>
+												<div class="col-lg-6"><span>Investor wise Payment System.</span></div>
+												<div class="col-lg-6"><span>Investor wise Payment System (Negative
+														Balance).</span></div>
+												<div class="col-lg-6"><span>Investor to Investor fund Transfer
+														System.</span></div>
+												<div class="col-lg-6"><span>BEFTN & RTGS.</span></div>
+												<div class="col-lg-6"><span>Print Money Receipts (Collection &
+														Payment).</span></div>
+												<div class="col-lg-6"><span>Transaction Edit System Before Day
+														End.</span></div>
+												<div class="col-lg-6"><span>Cheque Process & Reconciliation System
+														According to Bank.</span></div>
+												<div class="col-lg-6"><span>Cheque Print System (payment).</span></div>
+												<div class="col-lg-6"><span>Integration of collection & payment to
+														Accounts (Automatic).</span></div>
+												<div class="col-lg-6"><span>Generate Unclear Cheque Reports.</span>
+												</div>
+												<div class="col-lg-6"><span>Generate BEFTN & RTGS Reports According to
+														BANK Format.</span></div>
+												<div class="col-lg-6"><span>Real-time Effect to Investors Portfolio &
+														Ledger.</span></div>
+												<div class="col-lg-6"><span>Transaction Reversal System.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-it">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Introducer & Trader
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Investor wise Introducer Setup
+														System.</span></div>
+												<div class="col-lg-6"><span>Investor wise Trader Setup System.</span>
+												</div>
+												<div class="col-lg-6"><span>New Trader Entry System.</span></div>
+												<div class="col-lg-6"><span>Close Existing Trader.</span></div>
+												<div class="col-lg-6"><span>Introducer wise reports.</span></div>
+												<div class="col-lg-6"><span>Trader wise Buy/Sale & Other reports.</span>
+												</div>
+												<div class="col-lg-6"><span>Temporary Trader Assign System.</span></div>
+												<div class="col-lg-6"><span>Temporary Trader merge System.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-cr">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Compliance Reports
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Short sale Report</span></div>
+												<div class="col-lg-6"><span>Margin Buy & Non-Margin sale.</span></div>
+												<div class="col-lg-6"><span>Cash Code Negative Balance.</span></div>
+												<div class="col-lg-6"><span>Group wise trade summary with trader
+														information.</span></div>
+												<div class="col-lg-6"><span>Margin Loan Position Report.</span></div>
+												<div class="col-lg-6"><span>Negative Equity Report.</span></div>
+												<div class="col-lg-6"><span>Dashboard for Compliance.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-email-sms">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Email & SMS
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Email & SMS Service Access Control System Of
+														Investors.</span></div>
+												<div class="col-lg-6"><span>Daily Portfolio & Trade Confirmation Email
+														System</span></div>
+												<div class="col-lg-6"><span>(Scheduler/Manually).</span></div>
+												<div class="col-lg-6"><span>Single Portfolio Email System (On
+														Demand).</span></div>
+												<div class="col-lg-6"><span>General/Special Day Email System to All
+														Investors/Selected Investors.</span></div>
+												<div class="col-lg-6"><span>General SMS Service to All
+														Investors/Selected Investors.</span></div>
+												<div class="col-lg-6"><span>Daily Trade Confirmation SMS Service.</span>
+												</div>
+												<div class="col-lg-6"><span>Reports Of Email/SMS Sending
+														Confirmations.</span></div>
+												<div class="col-lg-6"><span>Set Priority for sending email.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-reports">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Reports
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Portfolio Reports (investor wise/instrument
+														wise).</span></div>
+												<div class="col-lg-6"><span>Ledger Reports (investor wise & stock
+														ledger).</span></div>
+												<div class="col-lg-6"><span>Investor wise & Instrument wise Stock
+														Reports.</span></div>
+												<div class="col-lg-6"><span>Generate client's Tax Certificate.</span>
+												</div>
+												<div class="col-lg-6"><span>Closing Balance Report (Receivable &
+														payable).</span></div>
+												<div class="col-lg-6"><span>Share & Cash Dividend Receivable
+														Reports.</span></div>
+												<div class="col-lg-6"><span>Margin Loan, ration & Equity Reports.</span>
+												</div>
+												<div class="col-lg-6"><span>Client's Profit Loss Analysis
+														Reports.</span></div>
+												<div class="col-lg-6"><span>Client's Portfolio Analysis reports.</span>
+												</div>
+												<div class="col-lg-6"><span>Regulatory Reports</span></div>
+												<div class="col-lg-6"><span>A. Monthly Statement B. Monthly Activity C.
+														Financial Netting</span></div>
+												<div class="col-lg-6"><span>D. Net Capital Balance & Aggregate
+														Indebtedness Ratio Reports</span></div>
+												<div class="col-lg-6"><span>MIS Special Reports</span></div>
+												<div class="col-lg-6"><span>Introducer & Service provider wise
+														performance Analysis Module.</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-mis">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Accounting
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-4"><span>Active/Inactive Client</span></div>
+												<div class="col-lg-4"><span>All RM's Asset Database</span></div>
+												<div class="col-lg-4"><span>BO Opening</span></div>
+												<div class="col-lg-4"><span>Deposit & Withdraw</span></div>
+												<div class="col-lg-4"><span>Portfolio Management</span></div>
+												<div class="col-lg-4"><span>RM Wise Securities Holding</span></div>
+												<div class="col-lg-4"><span>RM Performance</span></div>
+												<div class="col-lg-4"><span>RM Portfolio Return</span></div>
+												<div class="col-lg-4"><span>RM Profile & Log</span></div>
+												<div class="col-lg-4"><span>RM's Customer Database</span></div>
+												<div class="col-lg-4"><span>Securities Buy & Sale</span></div>
+												<div class="col-lg-4"><span>Turnover & Commission</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-accounting">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										MIS Reports / RM Performance
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-4"><span>Chart of Accounts</span></div>
+												<div class="col-lg-4"><span>Voucher Entry</span></div>
+												<div class="col-lg-4"><span>Account Wise Voucher</span></div>
+												<div class="col-lg-4"><span>Bank Book & Cash Book</span></div>
+												<div class="col-lg-4"><span>Income Expense</span></div>
+												<div class="col-lg-4"><span>Profit Loss Statement</span></div>
+												<div class="col-lg-4"><span>Receive Payment</span></div>
+												<div class="col-lg-4"><span>Trial Balance</span></div>
+												<div class="col-lg-4"><span>Balance Sheet</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="item-audit">
+								<div class="secHead mt-4">
+									<h1 class="display-6">
+										Audit Trail
+									</h1>
+									<div class="divider">
+										<div class="left"></div>
+										<img src="images/star.svg">
+										<span class="right"></span>
+									</div>
+								</div>
+								<div class="cardWrapper">
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="row">
+												<div class="col-lg-6"><span>Audit Trail as guided by Dhaka Stock
+														Exchange (DSE).</span></div>
+												<div class="col-lg-6"><span>Searching facility to get user transaction
+														by User, Date range and</span></div>
+												<div class="col-lg-6"><span>Action.</span></div>
+												<div class="col-lg-6"><span>Grid shows the Searching result.</span>
+												</div>
+												<div class="col-lg-6"><span>Transaction details results are available at
+														grid.</span></div>
+												<div class="col-lg-6"><span>Investor wise, Cheque wise, User wise Audit
+														trail Collection</span></div>
+												<div class="col-lg-6"><span>and payment report with various searching
+														criteria.</span></div>
+												<div class="col-lg-6"><span>Investor wise, Date wise, User wise Audit
+														trail Investor</span></div>
+												<div class="col-lg-6"><span>and charge report with various searching
+														criteria.</span></div>
+												<div class="col-lg-6"><span>User wise and Date wise user Log in/out
+														information report.</span></div>
 											</div>
 										</div>
 									</div>

@@ -55,16 +55,20 @@ body {
       border: 2px solid rgba(8, 160, 57, 0.5); }
       .uBroker .cardWrapper .body .infoWrapper:not(:last-child) {
         margin-bottom: 15px; }
-      .uBroker .cardWrapper .body .infoWrapper .left, .uBroker .cardWrapper .body .infoWrapper .right {
+      .uBroker .cardWrapper .body .infoWrapper .left,
+      .uBroker .cardWrapper .body .infoWrapper .right {
         padding: 15px;
         flex-basis: 50%;
         word-wrap: break-word; }
-        .uBroker .cardWrapper .body .infoWrapper .left img, .uBroker .cardWrapper .body .infoWrapper .right img {
+        .uBroker .cardWrapper .body .infoWrapper .left img,
+        .uBroker .cardWrapper .body .infoWrapper .right img {
           height: 18px;
           margin-right: 10px; }
-        .uBroker .cardWrapper .body .infoWrapper .left span, .uBroker .cardWrapper .body .infoWrapper .right span {
+        .uBroker .cardWrapper .body .infoWrapper .left span,
+        .uBroker .cardWrapper .body .infoWrapper .right span {
           margin: unset; }
-          .uBroker .cardWrapper .body .infoWrapper .left span:before, .uBroker .cardWrapper .body .infoWrapper .right span:before {
+          .uBroker .cardWrapper .body .infoWrapper .left span:before,
+          .uBroker .cardWrapper .body .infoWrapper .right span:before {
             display: none; }
       .uBroker .cardWrapper .body .infoWrapper .left {
         display: flex;
@@ -125,8 +129,11 @@ body {
         content: "\f058";
         font-family: "Font Awesome 6 Free";
         font-weight: normal;
-        margin-right: 5px;
+        margin-right: 7px;
         color: #08A039; }
+    .uBroker .cardWrapper.highlighted-feature span:before {
+      content: "\f005";
+      font-weight: bold; }
     .uBroker .cardWrapper:not(:last-child) {
       margin-bottom: 30px; }
 
