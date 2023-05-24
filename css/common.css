@@ -486,7 +486,8 @@ hr, p {
 .UcasScrollSpy .parent-pills {
   position: sticky;
   top: 100px;
-  z-index: 1; }
+  z-index: 1;
+  }
   .UcasScrollSpy .parent-pills .nav-link:before {
     content: "\f058";
     font-family: "Font Awesome 6 Free";

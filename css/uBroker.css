@@ -134,6 +134,9 @@ body {
     .uBroker .cardWrapper.highlighted-feature span:before {
       content: "\f005";
       font-weight: bold; }
+    .uBroker .cardWrapper.dev-tools span:before {
+      content: "\f121";
+      font-weight: bold; }
     .uBroker .cardWrapper:not(:last-child) {
       margin-bottom: 30px; }
 

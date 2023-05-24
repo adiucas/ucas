@@ -187,6 +187,15 @@ body {
 			}
 		}
 
+		&.dev-tools {
+			span {
+				&:before {
+					content: "\f121";
+					font-weight: bold;
+				}
+			}
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
