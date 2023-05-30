@@ -68,7 +68,8 @@
       <img src="images/logo.svg" class="logo">
       <div class="companyName">United Corporate Advisory Services Ltd.</div>
     </a>
-    <button class="navbar-toggler" onclick="toggleNavBtn()" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" onclick="toggleNavBtn()" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navToggleIcon">
         <i id="navToggler" class="fa-solid fa-bars"></i>
       </span>
@@ -84,8 +85,16 @@
             <i class="fa-solid fa-chevron-down d-lg-none d-inline-block" style="font-size: 14px;"></i>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="uBroker.html">UBroker</a></li>
-            <li><a class="dropdown-item" href="RealestateERP.html">Real Estate ERP</a></li>
+            <li>
+              <a class="dropdown-item" href="uBroker.html">
+                <img src="images/FeaturedProductIcon/ubroker-logo.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="RealestateERP.html">
+                <img src="images/FeaturedProductIcon/abashon.svg">
+              </a>
+            </li>
             <li><a class="dropdown-item" href="digiagm.html">Digi AGM/EGM</a></li>
             <li><a class="dropdown-item" href="uhrms.html">UHRMS</a></li>
             <li><a class="dropdown-item" href="udr.html">UDR</a></li>
@@ -107,38 +116,38 @@
 </nav>
 
 <script type="text/javascript">
-  $(document).ready(function() {
-      // $('a[href^="#"]').click(function(event) {
-      //     var id = $(this).attr("href");
-      //     var offset = 80;
-      //     var target = $(id).offset().top - offset;
-      //     $('html, body').animate({scrollTop:target}, 500);
-      //     event.preventDefault();
-      // });
-      $('header .nav-item .nav-link').click(function(event) {
-          var id = $(this).attr("href");
-          var offset = 60;
-          var target = $(id).offset().top - offset;
-          $('html, body').animate({scrollTop:target}, 0);
-          event.preventDefault();
-      });
+  $(document).ready(function () {
+    // $('a[href^="#"]').click(function(event) {
+    //     var id = $(this).attr("href");
+    //     var offset = 80;
+    //     var target = $(id).offset().top - offset;
+    //     $('html, body').animate({scrollTop:target}, 500);
+    //     event.preventDefault();
+    // });
+    $('header .nav-item .nav-link').click(function (event) {
+      var id = $(this).attr("href");
+      var offset = 60;
+      var target = $(id).offset().top - offset;
+      $('html, body').animate({ scrollTop: target }, 0);
+      event.preventDefault();
+    });
   });
 
   if ($(window).width() > 960) {
-     $( ".dropdown" )
-       .mouseover(function() {
-         $('.nav-link', this).addClass('show');
-         $('.nav-link', this).addClass('dropBorder');
-         $('.dropdown-menu', this).addClass('show');
-       })
-       .mouseout(function() {
-         $('.nav-link', this).removeClass('show');
-         $('.nav-link', this).removeClass('dropBorder');
-         $('.dropdown-menu', this).removeClass('show');
-       });
+    $(".dropdown")
+      .mouseover(function () {
+        $('.nav-link', this).addClass('show');
+        $('.nav-link', this).addClass('dropBorder');
+        $('.dropdown-menu', this).addClass('show');
+      })
+      .mouseout(function () {
+        $('.nav-link', this).removeClass('show');
+        $('.nav-link', this).removeClass('dropBorder');
+        $('.dropdown-menu', this).removeClass('show');
+      });
   }
 
   function toggleNavBtn() {
-      $("#navToggler").toggleClass('fa-bars fa-xmark');
+    $("#navToggler").toggleClass('fa-bars fa-xmark');
   }
 </script>

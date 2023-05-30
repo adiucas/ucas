@@ -1,28 +1,30 @@
-.gradBg{
+.gradBg {
 	background: grad();
 	min-height: 100vh;
 	position: absolute;
 	width: 100%;
 }
 
-.contactTop{
+.contactTop {
 	@include flex(col);
 	color: #ffffff;
 	margin-left: 15px;
 	position: absolute;
 	z-index: 1;
 
-	.phone, .mail{
-		@include flex(row,null,center);
-		.iconWrapper{
-			@include flex(row,center,center);
+	.phone,
+	.mail {
+		@include flex(row, null, center);
+
+		.iconWrapper {
+			@include flex(row, center, center);
 			width: 28px;
 			height: 28px;
 			background: #ffffff;
 			border-radius: 50%;
 			margin-right: 10px;
 
-			i{
+			i {
 				font-size: 14px;
 				color: $primCol;
 			}
@@ -30,21 +32,24 @@
 	}
 }
 
-.contactTop.scrolled, .followUsTop.scrolled{
+.contactTop.scrolled,
+.followUsTop.scrolled {
 	color: $primCol;
 	top: 9px;
-	.phone, .mail{
-		.iconWrapper{
+
+	.phone,
+	.mail {
+		.iconWrapper {
 			background: $primCol;
 
-			i{
+			i {
 				color: $lpCol;
 			}
 		}
 	}
 }
 
-.followUsTop{
+.followUsTop {
 	@include flex(col);
 	color: #ffffff;
 	margin-right: 30px;
@@ -53,10 +58,11 @@
 	top: 0;
 	z-index: 1;
 
-	.icons{
-		@include flex(row,null, center);
-		.iconWrapper{
-			@include flex(row,center,center);
+	.icons {
+		@include flex(row, null, center);
+
+		.iconWrapper {
+			@include flex(row, center, center);
 			width: 32px;
 			height: 32px;
 			border: 1px solid #ffffff;
@@ -64,7 +70,7 @@
 			position: relative;
 			transition: 0.3s all;
 
-			&:after{
+			&:after {
 				content: "";
 				display: block;
 				width: 32px;
@@ -76,20 +82,20 @@
 				transition: 0.3s all;
 			}
 
-			i{
+			i {
 				font-size: 16px;
 				color: $primCol;
 			}
 
-			&:not(:last-child){
+			&:not(:last-child) {
 				margin-right: 15px;
 			}
 
-			&:hover{
+			&:hover {
 				border: 1px solid #ffffff;
 				transform: scale(1.5);
 
-				&:after{
+				&:after {
 					content: "";
 					display: block;
 					width: 24px;
@@ -104,12 +110,12 @@
 	}
 }
 
-.followUsTop.scrolled{
-	.icons{
-		.iconWrapper{
+.followUsTop.scrolled {
+	.icons {
+		.iconWrapper {
 			border: 1px solid $primCol;
 
-			&:after{
+			&:after {
 				content: "";
 				display: block;
 				width: 32px;
@@ -121,20 +127,20 @@
 				transition: 0.3s all;
 			}
 
-			i{
+			i {
 				font-size: 16px;
 				color: $lpCol;
 			}
 
-			&:not(:last-child){
+			&:not(:last-child) {
 				margin-right: 15px;
 			}
 
-			&:hover{
+			&:hover {
 				border: 1px solid $primCol;
 				transform: scale(1.5);
 
-				&:after{
+				&:after {
 					content: "";
 					display: block;
 					width: 24px;
@@ -150,11 +156,11 @@
 }
 
 .sticky-top {
-    top: 15px;
-    padding: 0 15px;
+	top: 15px;
+	padding: 0 15px;
 }
 
-.navbar{
+.navbar {
 	background: $lpCol;
 	border-radius: 15px;
 	padding-left: 15px;
@@ -162,37 +168,39 @@
 	box-shadow: 0 5px 10px rgba($primCol, 25%);
 }
 
-.navbar-brand{
-	@include flex(row,null, center);
+.navbar-brand {
+	@include flex(row, null, center);
 	margin-right: unset;
 	color: $primCol;
 	white-space: unset;
-	.logo{
+
+	.logo {
 		width: 100%;
 		max-width: 70px;
 		margin-right: 15px;
 	}
 }
 
-.navbar-brand:focus, .navbar-brand:hover {
-    color: $primCol;
+.navbar-brand:focus,
+.navbar-brand:hover {
+	color: $primCol;
 }
 
-.companyName{
+.companyName {
 	@include head();
 	font-size: 24px;
 	line-height: 1;
 }
 
-.nav-link{
+.nav-link {
 	color: rgba($primCol, 100%);
 }
 
-.navbar{
-	.navbar-nav .nav-link.active{
+.navbar {
+	.navbar-nav .nav-link.active {
 		color: $primCol;
 
-		&:after{
+		&:after {
 			content: "";
 			display: block;
 			width: 100%;
@@ -202,69 +210,79 @@
 		}
 	}
 
-	.nav-link{
+	.nav-link {
 		line-height: 1.8;
-		&:after{
+
+		&:after {
 			margin-top: -2px;
 		}
 	}
-	.nav-link:focus, .nav-link:hover {
-	    color: $primCol;
 
-	    &:after{
-	    	content: "";
-	    	display: block;
-	    	width: 100%;
-	    	border-bottom: 2px solid $primCol;
-	    	border-radius: 2px;
-	    }
+	.nav-link:focus,
+	.nav-link:hover {
+		color: $primCol;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			border-bottom: 2px solid $primCol;
+			border-radius: 2px;
+		}
 	}
 }
 
-.dropdown-menu{
+.dropdown-menu {
 	top: 58px;
 	background: $lpCol;
 	border-radius: 10px;
 	border: 0;
 	overflow: hidden;
-	box-shadow: 0px 5px 10px rgba(darken($primCol,15%), 75%);
-	display:block;
+	box-shadow: 0px 5px 10px rgba(darken($primCol, 15%), 75%);
+	display: block;
 	padding: 0;
 	max-height: 0;
 	transition: 0.5s all;
 
-	li{
+	li {
 		margin-left: 8px;
 		margin-right: 8px;
 
-		&:first-child{
+		&:first-child {
 			margin-top: 8px;
 		}
-		&:last-child{
+
+		&:last-child {
 			margin-bottom: 8px;
 		}
 	}
+
+	img {
+		max-height: 50px;
+	}
 }
 
-.dropdown-menu.show{
+.dropdown-menu.show {
 	max-height: 500px;
 }
 
 
 
-.dropdown-item{
+.dropdown-item {
 	border-radius: 5px;
 	transition: 0.3s all;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #ffffff;
-    background-color: $primCol;
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: #ffffff;
+	background-color: $primCol;
 }
 
-.dropBorder{
+.dropBorder {
 	color: $primCol;
-	&:after{
+
+	&:after {
 		content: "";
 		display: block;
 		width: 100%;
@@ -273,20 +291,21 @@
 	}
 }
 
-.contactFollowTop{
-	@include flex(row,space-between,center);
+.contactFollowTop {
+	@include flex(row, space-between, center);
 	position: absolute;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
 
-	.left{
+	.left {
 		@extend .contactTop;
 		position: unset;
 		flex-direction: row;
 		margin-left: 0;
 	}
-	.right{
+
+	.right {
 		@extend .followUsTop;
 		position: unset;
 		flex-direction: row;
@@ -295,7 +314,7 @@
 }
 
 
-.navbar-toggler{
+.navbar-toggler {
 	border: unset;
 	outline: none;
 	padding: unset;
@@ -303,8 +322,8 @@
 }
 
 .navbar-toggler:focus {
-    outline: none;
-    box-shadow: unset;
+	outline: none;
+	box-shadow: unset;
 }
 
 /**

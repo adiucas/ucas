@@ -103,11 +103,15 @@ hr, p {
   margin-left: 15px;
   position: absolute;
   z-index: 1; }
-  .contactTop .phone, .contactFollowTop .left .phone, .contactTop .mail, .contactFollowTop .left .mail {
+  .contactTop .phone, .contactFollowTop .left .phone,
+  .contactTop .mail,
+  .contactFollowTop .left .mail {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    .contactTop .phone .iconWrapper, .contactFollowTop .left .phone .iconWrapper, .contactTop .mail .iconWrapper, .contactFollowTop .left .mail .iconWrapper {
+    .contactTop .phone .iconWrapper, .contactFollowTop .left .phone .iconWrapper,
+    .contactTop .mail .iconWrapper,
+    .contactFollowTop .left .mail .iconWrapper {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -117,16 +121,32 @@ hr, p {
       background: #ffffff;
       border-radius: 50%;
       margin-right: 10px; }
-      .contactTop .phone .iconWrapper i, .contactFollowTop .left .phone .iconWrapper i, .contactTop .mail .iconWrapper i, .contactFollowTop .left .mail .iconWrapper i {
+      .contactTop .phone .iconWrapper i, .contactFollowTop .left .phone .iconWrapper i,
+      .contactTop .mail .iconWrapper i,
+      .contactFollowTop .left .mail .iconWrapper i {
         font-size: 14px;
         color: #08A039; }
 
-.contactTop.scrolled, .contactFollowTop .scrolled.left, .followUsTop.scrolled, .contactFollowTop .scrolled.right {
+.contactTop.scrolled, .contactFollowTop .scrolled.left,
+.followUsTop.scrolled,
+.contactFollowTop .scrolled.right {
   color: #08A039;
   top: 9px; }
-  .contactTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.left .phone .iconWrapper, .contactTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.left .mail .iconWrapper, .followUsTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.right .phone .iconWrapper, .followUsTop.scrolled .mail .iconWrapper, .contactFollowTop .scrolled.right .mail .iconWrapper {
+  .contactTop.scrolled .phone .iconWrapper, .contactFollowTop .scrolled.left .phone .iconWrapper,
+  .contactTop.scrolled .mail .iconWrapper,
+  .contactFollowTop .scrolled.left .mail .iconWrapper,
+  .followUsTop.scrolled .phone .iconWrapper,
+  .contactFollowTop .scrolled.right .phone .iconWrapper,
+  .followUsTop.scrolled .mail .iconWrapper,
+  .contactFollowTop .scrolled.right .mail .iconWrapper {
     background: #08A039; }
-    .contactTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.left .phone .iconWrapper i, .contactTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.left .mail .iconWrapper i, .followUsTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.right .phone .iconWrapper i, .followUsTop.scrolled .mail .iconWrapper i, .contactFollowTop .scrolled.right .mail .iconWrapper i {
+    .contactTop.scrolled .phone .iconWrapper i, .contactFollowTop .scrolled.left .phone .iconWrapper i,
+    .contactTop.scrolled .mail .iconWrapper i,
+    .contactFollowTop .scrolled.left .mail .iconWrapper i,
+    .followUsTop.scrolled .phone .iconWrapper i,
+    .contactFollowTop .scrolled.right .phone .iconWrapper i,
+    .followUsTop.scrolled .mail .iconWrapper i,
+    .contactFollowTop .scrolled.right .mail .iconWrapper i {
       color: #F3F9F4; }
 
 .followUsTop, .contactFollowTop .right {
@@ -234,7 +254,8 @@ hr, p {
     max-width: 70px;
     margin-right: 15px; }
 
-.navbar-brand:focus, .navbar-brand:hover {
+.navbar-brand:focus,
+.navbar-brand:hover {
   color: #08A039; }
 
 .companyName {
@@ -259,9 +280,11 @@ hr, p {
   line-height: 1.8; }
   .navbar .nav-link:after {
     margin-top: -2px; }
-.navbar .nav-link:focus, .navbar .nav-link:hover {
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
   color: #08A039; }
-  .navbar .nav-link:focus:after, .navbar .nav-link:hover:after {
+  .navbar .nav-link:focus:after,
+  .navbar .nav-link:hover:after {
     content: "";
     display: block;
     width: 100%;
@@ -286,6 +309,8 @@ hr, p {
       margin-top: 8px; }
     .dropdown-menu li:last-child {
       margin-bottom: 8px; }
+  .dropdown-menu img {
+    max-height: 50px; }
 
 .dropdown-menu.show {
   max-height: 500px; }
@@ -294,7 +319,8 @@ hr, p {
   border-radius: 5px;
   transition: 0.3s all; }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
   color: #ffffff;
   background-color: #08A039; }
 
@@ -486,8 +512,7 @@ hr, p {
 .UcasScrollSpy .parent-pills {
   position: sticky;
   top: 100px;
-  z-index: 1;
-  }
+  z-index: 1; }
   .UcasScrollSpy .parent-pills .nav-link:before {
     content: "\f058";
     font-family: "Font Awesome 6 Free";
