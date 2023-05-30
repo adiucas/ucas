@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
+
+/*==============================
+=            banner            =
+==============================*/
+.slider {
+  margin-top: -120px; }
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: unset;
+  padding-top: 150px;
+  padding-bottom: 30px; }
+  .carousel-inner .carousel-item .primTitle {
+    font-family: "Gantari", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1;
+    color: #ffffff; }
+  .carousel-inner .carousel-item .secTitle {
+    font-family: "M PLUS 2", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px; }
+  .carousel-inner img {
+    max-width: 100%; }
+
+/*=====  End of banner  ======*/
+/* -------------------------------------------- */
+/*                    career                    */
+/* -------------------------------------------- */
+.career {
+  position: relative;
+  background: #eeeeee;
+  padding: 30px 0; }
+  .career .accordion-button {
+    font-family: "Gantari", sans-serif;
+    font-weight: 700;
+    font-size: 20px; }
+  .career .job-desc .single-block:not(:last-child)::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background: rgba(8, 160, 57, 0.25);
+    width: 100%;
+    margin: 10px 0; }
+  .career .job-desc .single-block .title {
+    font-family: "Gantari", sans-serif;
+    font-weight: 700;
+    color: #08A039;
+    text-transform: capitalize; }
+  .career .job-desc .single-block .data ul {
+    padding-left: unset; }
+    .career .job-desc .single-block .data ul li {
+      list-style: inside; }
+
+/*# sourceMappingURL=Career.css.map */

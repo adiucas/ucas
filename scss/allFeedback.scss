@@ -1,7 +1,7 @@
 @import 'templates/variables';
 @import 'templates/mixins';
 
-body{
+body {
 	background: grad();
 }
 
@@ -9,18 +9,18 @@ body{
 =            banner            =
 ==============================*/
 
-.slider{
+.slider {
 	margin-top: -120px;
 }
 
-.carousel-inner{
-	@include flex(row,null,center);
+.carousel-inner {
+	@include flex(row, null, center);
 	height: unset;
 	padding-top: 150px;
 	padding-bottom: 30px;
 
-	.carousel-item{
-		.primTitle{
+	.carousel-item {
+		.primTitle {
 			@include head("900");
 			color: #ffffff;
 			font-size: 65px;
@@ -28,14 +28,15 @@ body{
 			color: #ffffff;
 		}
 
-		.secTitle{
+		.secTitle {
 			@include para();
 			color: #ffffff;
 			font-size: 20px;
 			margin-top: 15px;
 		}
 	}
-	img{
+
+	img {
 		max-width: 100%;
 	}
 }
@@ -46,133 +47,150 @@ body{
 =            All Feedback            =
 ===================================*/
 
-.allFeedback{
+.allFeedback {
 	position: relative;
 	background: #eeeeee;
 
-	.fpTabWrapper{
+	.fpTabWrapper {
 		background: $lpCol;
 		border-radius: 15px;
-		box-shadow: 0 10px 20px rgba($primCol,15%);
+		box-shadow: 0 10px 20px rgba($primCol, 15%);
 		overflow: hidden;
 		margin-top: 15px;
-		.nav-tabs{
+
+		.nav-tabs {
 			padding-right: unset;
 			border-bottom: 2px solid #dddddd;
-			.nav-item{
+
+			.nav-item {
 				flex-grow: 1;
 				flex-basis: (100%/6);
 				flex-grow: 1;
 				display: flex;
 				justify-content: center;
 
-				&:not(:last-child){
+				&:not(:last-child) {
 					border-right: 1px solid #dddddd;
 				}
 			}
 		}
-		.tab-content{
-			.tab-pane{
+
+		.tab-content {
+			.tab-pane {
 				padding: 30px;
-				
-				.feedbackWrapper{
-					@include flex(row,null,center);
-					border: 1px dashed rgba($primCol,50%);
+
+				.feedbackWrapper {
+					@include flex(row, null, center);
+					border: 1px dashed rgba($primCol, 50%);
 					border-radius: 15px;
-					&:not(:last-child){
+
+					&:not(:last-child) {
 						margin-bottom: 20px;
 					}
 
-					.left{
-						@include flex(col,center,center);
-						flex-shrink:0;
+					.left {
+						@include flex(col, center, center);
+						flex-shrink: 0;
 						padding: 20px;
-						border-right: 1px dashed rgba($primCol,50%);
-						.userImage{
+						border-right: 1px dashed rgba($primCol, 50%);
+
+						.userImage {
 							display: inline-block;
 							overflow: hidden;
 							border-radius: 100px;
 							border: 1px solid $primCol;
-							img{
+
+							img {
 								width: 100%;
 								max-width: 100px;
 							}
 						}
-						.name{
+
+						.name {
 							@include head();
 							font-size: 24px;
 							line-height: 1;
 							color: $primCol;
 						}
-						.designation{
-							color: rgba(#000,75%);
+
+						.designation {
+							color: rgba(#000, 75%);
 						}
 					}
-					.right{
+
+					.right {
 						padding: 20px;
 					}
 				}
 			}
 		}
-		.singleFp{
-			@include flex(col,center,center);
+
+		.singleFp {
+			@include flex(col, center, center);
 			background: $lpCol;
 			padding: 1rem;
 			border-radius: 0;
-			border:unset;
+			border: unset;
 			width: 100%;
 			transition: 0.3s all;
 
-			.icon{
-				@include flex(row,center,center);
+			.icon {
+				@include flex(row, center, center);
 				width: 50px;
 				height: 50px;
 				transition: 0.3s all;
 
-				img{
+				img {
 					max-height: 50px;
 					transition: 0.3s all;
 				}
 			}
 
-			.text{
-				color:$primCol;
+			.text {
+				color: $primCol;
 				text-align: center;
 				margin-top: .5rem;
 				transition: 0.3s all;
 			}
 
-			&:hover,&.active{
+			&:hover,
+			&.active {
 				background: $primCol;
 
-				.icon{
+				.icon {
 					border-color: $lpCol;
 
-					img{
+					img {
 						filter: brightness(0) invert(1) drop-shadow(0 0 5px $lpCol);
 					}
 				}
-				.text{
-					color:$lpCol;
+
+				.text {
+					color: $lpCol;
 				}
 			}
 
-			&.active{
+			&.active {
 				position: relative;
-				&:after{
+
+				&:after {
 					content: "\f0d7";
 					font-family: "Font Awesome 6 Free";
 					position: absolute;
 					bottom: -40px;
 					font-weight: bold;
 					font-size: 50px;
-					color:$primCol;
+					color: $primCol;
 				}
 			}
-			&#realErp-tab,&#ubroker-tab{
-				&:hover,&.active{
-					.icon{
-						img{
+
+			&#realErp-tab,
+			&#ubroker-tab {
+
+				&:hover,
+				&.active {
+					.icon {
+						img {
 							filter: drop-shadow(0 0 5px $lpCol);
 						}
 					}

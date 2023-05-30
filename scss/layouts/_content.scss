@@ -1,69 +1,123 @@
 .btn-primary {
-    color: #fff;
-    background-color: $primCol;
-    border-color: $primCol;
-    text-transform: uppercase;
+	color: #fff;
+	background-color: $primCol;
+	border-color: $primCol;
+	text-transform: uppercase;
 }
+
 .btn-primary:hover {
-    color: #fff;
-    background-color: darken($primCol, 5%);
-    border-color: darken($primCol, 5%);
-}
-.btn-primary.focus, .btn-primary:focus {
-	color: #fff;
-	background-color: darken($primCol, 5%);
-	border-color: lighten($primCol, 50%);
-	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
-}
-.btn-primary:not(:disabled):not(.disabled):active{
-	color: #fff;
-	background-color: darken($primCol, 5%);
-	border-color: lighten($primCol, 50%);
-	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
-}
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
-    box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
-}
-.btn-outline-primary {
-    color: $primCol;
-    border-color: $primCol;
-}
-.btn-outline-primary:hover {
-    color: #fff;
-    background-color: $primCol;
-    border-color: $primCol;
-}
-.btn-outline-primary.focus, .btn-outline-primary:focus{
-	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
-}
-.btn-outline-primary:not(:disabled):not(.disabled):active{
 	color: #fff;
 	background-color: darken($primCol, 5%);
 	border-color: darken($primCol, 5%);
 }
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus{
+
+.btn-primary.focus,
+.btn-primary:focus {
+	color: #fff;
+	background-color: darken($primCol, 5%);
+	border-color: lighten($primCol, 50%);
+	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+	color: #fff;
+	background-color: darken($primCol, 5%);
+	border-color: lighten($primCol, 50%);
+	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
+}
+
+.btn-outline-primary {
+	color: $primCol;
+	border-color: $primCol;
+}
+
+.btn-outline-primary:hover {
+	color: #fff;
+	background-color: $primCol;
+	border-color: $primCol;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+	color: #fff;
+	background-color: darken($primCol, 5%);
+	border-color: darken($primCol, 5%);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
 	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
 }
 
 .form-control:focus {
-    border-color: $primCol;
-    box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
+	border-color: $primCol;
+	box-shadow: 0 0 0 0.2rem rgba($primCol, 0.25);
 }
 
-.secHead{
+.accordion {
+	--bs-accordion-bg: #{$lpCol};
+	--bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+	--bs-accordion-border-color: #{rgba($primCol,25%)};
+	--bs-accordion-border-radius: 0.5rem;
+	--bs-accordion-inner-border-radius: calc(0.5rem - 1px);
+	--bs-accordion-btn-color: #{$lpCol};
+	--bs-accordion-btn-bg: #{$primCol};
+	--bs-accordion-btn-focus-border-color: unset;
+	--bs-accordion-btn-focus-box-shadow: unset;
+	--bs-accordion-active-color: #{$lpCol};
+	--bs-accordion-active-bg: #{darken($primCol,5%)};
+	--bs-accordion-btn-icon: #{url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E")};
+	--bs-accordion-btn-active-icon: #{url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E")};
+}
+
+.accordion-body {
+	background-color: $lpCol;
+}
+
+.accordion-item,
+.accordion-button {
+	border-radius: var(--bs-accordion-border-radius);
+}
+
+.accordion-button:not(.collapsed) {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.accordion-item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.accordion-body {
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+}
+
+.secHead {
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
 	color: $primCol;
 
-	.divider{
-		@include flex(row,space-between, center);
-		img{
+	.divider {
+		@include flex(row, space-between, center);
+
+		img {
 			width: 60px;
 			margin-right: 10px;
 			margin-left: 10px;
 		}
-		.left, .right{
+
+		.left,
+		.right {
 			width: 100%;
 			height: 2px;
 			background: $primCol;
@@ -71,14 +125,14 @@
 	}
 }
 
-.text-justify{
+.text-justify {
 	text-align: justify !important;
 }
 
-.UcasScrollSpy{
-	.parent-pills{
+.UcasScrollSpy {
+	.parent-pills {
 		position: sticky;
-		top:100px;
+		top: 100px;
 		z-index: 1;
 
 		// &:before{
@@ -90,33 +144,36 @@
 		// 	left: 21px;
 		// 	top:15px;
 		// }
-		.nav-link{
-			&:before{
-				content:"\f058";
+		.nav-link {
+			&:before {
+				content: "\f058";
 				font-family: "Font Awesome 6 Free";
 				color: $primCol;
 				font-weight: bold;
 				margin-right: 10px;
 				visibility: visible;
-				border-radius:100px;
-				flex-shrink:0;
+				border-radius: 100px;
+				flex-shrink: 0;
 			}
 		}
 	}
-	.child-pills{
-		position:relative;
-		&:before{
-			content:"";
-			width:2px;
-			height:100%;
+
+	.child-pills {
+		position: relative;
+
+		&:before {
+			content: "";
+			width: 2px;
+			height: 100%;
 			background: $primCol;
 			position: absolute;
 			left: 37px;
-			top:20px;
+			top: 20px;
 		}
-		.nav-link{
-			&:before{
-				content:"";
+
+		.nav-link {
+			&:before {
+				content: "";
 				font-family: "Font Awesome 6 Free";
 				font-weight: bold;
 				margin-right: 10px;
@@ -124,23 +181,29 @@
 				width: 12px;
 				height: 12px;
 				background: $primCol;
-				border-radius:100px;
-				flex-shrink:0;
+				border-radius: 100px;
+				flex-shrink: 0;
 			}
 		}
 	}
-	.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-	    color: $lpCol;
-	    background-color: $primCol;
+
+	.nav-pills .nav-link.active,
+	.nav-pills .show>.nav-link {
+		color: $lpCol;
+		background-color: $primCol;
 	}
-	.nav-link:focus, .nav-link:hover {
-	    color: $primCol;
+
+	.nav-link:focus,
+	.nav-link:hover {
+		color: $primCol;
 	}
-	.nav-link{
-		@include flex(row,null,center);
+
+	.nav-link {
+		@include flex(row, null, center);
 		position: relative;
-		&:after{
-			content:"\f0a9";
+
+		&:after {
+			content: "\f0a9";
 			font-family: "Font Awesome 6 Free";
 			font-weight: bold;
 			margin-left: auto;
@@ -149,24 +212,26 @@
 			visibility: hidden;
 		}
 	}
-	.nav-link.active{
-		&:before{
+
+	.nav-link.active {
+		&:before {
 			visibility: hidden;
 		}
-		&:after{
+
+		&:after {
 			visibility: visible;
 		}
 	}
 }
 
-#SpyNav{
+#SpyNav {
 	white-space: nowrap;
 	z-index: 1;
 	transition: 0.3s all;
 }
 
-.SpyNavBtn{
-	@include flex(row,center,center);
+.SpyNavBtn {
+	@include flex(row, center, center);
 	background: grad();
 	position: absolute;
 	top: 0;
@@ -176,53 +241,58 @@
 	height: 35px;
 	cursor: pointer;
 
-	.close{
-		@include flex(row,center,center);
+	.close {
+		@include flex(row, center, center);
 		width: 15px;
 		height: 3px;
-		background: rgba($lpCol,0%);
+		background: rgba($lpCol, 0%);
 
-		&:before,&:after{
+		&:before,
+		&:after {
 			position: absolute;
-			content:"";
+			content: "";
 			width: 15px;
 			height: 3px;
 			border-radius: 3px;
 			background: $lpCol;
 			transition: 0.3s all;
 		}
-		&:before{
+
+		&:before {
 			transform: rotate(45deg);
 		}
-		&:after{
+
+		&:after {
 			transform: rotate(-45deg);
 		}
 	}
 }
 
-.closed{
+.closed {
 	padding: 0;
 	transform: translateX(-100%);
 
-	.UcasScrollSpy{
+	.UcasScrollSpy {
 		padding-right: 0;
 		border-right: unset;
 
-		.nav-link{
+		.nav-link {
 			display: none;
 		}
 	}
 
-	.SpyNavBtn{
-		right:-50px;
-		.close{
-			background: rgba($lpCol,100%);
+	.SpyNavBtn {
+		right: -50px;
 
-			&:before{
+		.close {
+			background: rgba($lpCol, 100%);
+
+			&:before {
 				transform: rotate(0);
 				margin-bottom: 12px;
 			}
-			&:after{
+
+			&:after {
 				transform: rotate(0);
 				margin-top: 12px;
 			}
@@ -235,41 +305,42 @@
 =            client list            =
 ===================================*/
 
-.clientListParent{
+.clientListParent {
 
-	.cardWrapper{
-		.clientList{
+	.cardWrapper {
+		.clientList {
 			position: relative;
 			background: $lpCol;
 
-			.contentBg{
+			.contentBg {
 				position: relative;
 
-				.clientLogos{
+				.clientLogos {
 
-					.grid{
-						.grid-item{
+					.grid {
+						.grid-item {
 							display: flex;
-							height:100px;
+							height: 100px;
 						}
-						.clientLogoWrapper{
-							@include flex(row,center,center);
+
+						.clientLogoWrapper {
+							@include flex(row, center, center);
 							background: #fff;
-							box-shadow: 0 10px 20px rgba($primCol,15%);
+							box-shadow: 0 10px 20px rgba($primCol, 15%);
 							min-height: 100px;
 							border-radius: 15px;
 							outline: 1px solid transparent;
 							transition: 0.3s all;
-							padding:15px;
+							padding: 15px;
 							width: 100%;
 
-							img{
-								max-width:100%;
+							img {
+								max-width: 100%;
 								max-height: 50px;
 							}
 
-							span{
-								@include flex(row,center,center);
+							span {
+								@include flex(row, center, center);
 								font-family: $headFF;
 								font-weight: bold;
 								height: 50px;
@@ -277,12 +348,12 @@
 								font-size: 18px;
 								line-height: 1.1;
 
-								&:before{
-									display:none;
+								&:before {
+									display: none;
 								}
 							}
 
-							&:hover{
+							&:hover {
 								transform: scale(0.9);
 								outline: 1px solid $primCol;
 							}
@@ -298,21 +369,22 @@
 /*=====  End of our clients  ======*/
 
 @keyframes btnBrochureAnim {
+
 	0%,
 	50%,
 	100% {
-		box-shadow:  0 0 20px #fff;
+		box-shadow: 0 0 20px #fff;
 		// transform: scale(1.2);
 	}
 
 	25%,
 	75% {
-		box-shadow:  0 0 0 #ffffff;
+		box-shadow: 0 0 0 #ffffff;
 		// transform: scale(1);
 	}
 }
 
-.btn-brochure{
+.btn-brochure {
 	background: #F3F9F4;
 	border: 1px solid #F3F9F4;
 	width: max-content;
@@ -324,12 +396,13 @@
 	transform-origin: 0 50%;
 	animation: btnBrochureAnim 2s linear 0s infinite normal forwards;
 
-	&:hover,&:active{
-		background: linear-gradient(315deg,#076932,#009999);
+	&:hover,
+	&:active {
+		background: linear-gradient(315deg, #076932, #009999);
 		transform: scale(0.9);
 		color: #F3F9F4 !important;
 		border: 1px solid #F3F9F4 !important;
-		box-shadow:  0 0 10px #ffffff;
+		box-shadow: 0 0 10px #ffffff;
 	}
 }
 
