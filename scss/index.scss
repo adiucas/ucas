@@ -5,15 +5,16 @@
 =            banner            =
 ==============================*/
 
-.slider{
+.slider {
 	margin-top: 15px;
 }
 
-.carousel-inner{
-	@include flex(row,null,center);
+.carousel-inner {
+	@include flex(row, null, center);
 	height: calc(100vh - 100px);
-	.carousel-item{
-		.primTitle{
+
+	.carousel-item {
+		.primTitle {
 			@include head("900");
 			color: #ffffff;
 			font-size: 65px;
@@ -21,7 +22,8 @@
 			color: #ffffff;
 			visibility: hidden;
 		}
-		.secTitle{
+
+		.secTitle {
 			visibility: hidden;
 			@include para();
 			color: #ffffff;
@@ -29,7 +31,7 @@
 			margin-top: 15px;
 		}
 
-		.btn-banner{
+		.btn-banner {
 			visibility: hidden;
 			border: 1px solid $lpCol;
 			width: max-content;
@@ -39,23 +41,27 @@
 			padding: 10px 20px 10px 20px;
 			transition: 0.3s all;
 
-			&:hover{
+			&:hover {
 				background: $lpCol;
 				color: $primCol;
 			}
 		}
-		.btn-brochure{
+
+		.btn-brochure {
 			margin-top: 30px;
-			visibility:hidden;
+			visibility: hidden;
 		}
 	}
-	img{
+
+	img {
 		visibility: hidden;
 		max-width: 100%;
 	}
 
-	.carousel-item.active{
-		.primTitle{
+	.carousel-item.active {
+
+		.primTitle,
+		.product-logo {
 			visibility: visible;
 			animation: titleAnim 1s ease 0s 1 normal both;
 
@@ -71,9 +77,10 @@
 				}
 			}
 		}
-		.secTitle{
+
+		.secTitle {
 			visibility: visible;
-			animation: titleAnim2 2s ease 0.5s 1 normal both;
+			animation: titleAnim2 3s ease 0.5s 1 normal both;
 
 			@keyframes titleAnim2 {
 				0% {
@@ -85,7 +92,8 @@
 				}
 			}
 		}
-		.btn-banner{
+
+		.btn-banner {
 			visibility: visible;
 			animation: btnBannerAnim 1s ease 0.5s 1 normal both;
 
@@ -99,8 +107,9 @@
 				}
 			}
 		}
-		.btn-brochure{
-			visibility:visible;
+
+		.btn-brochure {
+			visibility: visible;
 
 			animation: btnBannerAnim 1s ease 0.5s 1 normal both;
 
@@ -114,17 +123,22 @@
 				}
 			}
 		}
-		img{
-			visibility:visible;
-			animation: banneImg 1s ease-in-out 1.5s 1 normal both;
 
-			@keyframes banneImg {
-				0% {
-					opacity: 0;
-				}
+		.right {
+			img {
+				visibility: visible;
+				animation: banneImg 1s ease-in-out 1.5s 1 normal both;
 
-				100% {
-					opacity: 1;
+				@keyframes banneImg {
+					0% {
+						opacity: 0;
+						transform: translateY(50px);
+					}
+
+					100% {
+						opacity: 1;
+						transform: translateY(0);
+					}
 				}
 			}
 		}
@@ -133,32 +147,32 @@
 
 
 .carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    margin-right: 5px;
-    margin-left: 5px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: $lpCol;
-    background-clip: unset;
-    border: 0;
-    border-top: unset;
-    border-bottom: unset;
-    border-radius: 100px;
-    opacity: .5;
-    transition: opacity .6s ease;
-    transition: width 0.6s ease;
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin-right: 5px;
+	margin-left: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: $lpCol;
+	background-clip: unset;
+	border: 0;
+	border-top: unset;
+	border-bottom: unset;
+	border-radius: 100px;
+	opacity: .5;
+	transition: opacity .6s ease;
+	transition: width 0.6s ease;
 }
 
 .carousel-indicators .active {
-    opacity: 1;
-    width: 60px;
+	opacity: 1;
+	width: 60px;
 }
 
-.carousel-indicators{
+.carousel-indicators {
 	margin-bottom: 30px;
 }
 
@@ -170,169 +184,247 @@
 	position: absolute;
 	bottom: 0;
 	transform: scale(0.7);
-	cursor:pointer;
+	cursor: pointer;
 	z-index: 2;
 }
 
 
-.m_scroll_arrows
-{
-  display: block;
-  width: 5px;
-  height: 5px;
-  -ms-transform: rotate(45deg); /* IE 9 */
-  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-   
-  border-right: 2px solid white;
-  border-bottom: 2px solid white;
-  margin: 0 0 3px 4px;
-  
-  width: 16px;
-  height: 16px;
+.m_scroll_arrows {
+	display: block;
+	width: 5px;
+	height: 5px;
+	-ms-transform: rotate(45deg);
+	/* IE 9 */
+	-webkit-transform: rotate(45deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	margin: 0 0 3px 4px;
+
+	width: 16px;
+	height: 16px;
 }
 
 
-.unu
-{
-  margin-top: 1px;
+.unu {
+	margin-top: 1px;
 }
 
-.unu, .doi, .trei
-{
-    -webkit-animation: mouse-scroll 1s infinite;
-    -moz-animation: mouse-scroll 1s infinite;
-    animation: mouse-scroll 1s infinite;
-  
+.unu,
+.doi,
+.trei {
+	-webkit-animation: mouse-scroll 1s infinite;
+	-moz-animation: mouse-scroll 1s infinite;
+	animation: mouse-scroll 1s infinite;
+
 }
 
-.unu
-{
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
-  -webkit-animation-direction: alternate;
-  
-  animation-direction: alternate;
-  animation-delay: alternate;
+.unu {
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-webkit-animation-direction: alternate;
+
+	animation-direction: alternate;
+	animation-delay: alternate;
 }
 
-.doi
-{
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
-  -webkit-animation-direction: alternate;
-  
-  animation-delay: .2s;
-  animation-direction: alternate;
-  
-  margin-top: -6px;
+.doi {
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-webkit-animation-direction: alternate;
+
+	animation-delay: .2s;
+	animation-direction: alternate;
+
+	margin-top: -6px;
 }
 
-.trei
-{
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
-  -webkit-animation-direction: alternate;
-  
-  animation-delay: .3s;
-  animation-direction: alternate;
-  
-  
-  margin-top: -6px;
+.trei {
+	-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-webkit-animation-direction: alternate;
+
+	animation-delay: .3s;
+	animation-direction: alternate;
+
+
+	margin-top: -6px;
 }
 
 .mouse {
-  height: 42px;
-  width: 24px;
-  border-radius: 14px;
-  transform: none;
-  border: 2px solid white;
-  top: 170px;
+	height: 42px;
+	width: 24px;
+	border-radius: 14px;
+	transform: none;
+	border: 2px solid white;
+	top: 170px;
 }
 
 .wheel {
-  height: 5px;
-  width: 2px;
-  display: block;
-  margin: 5px auto;
-  background: white;
-  position: relative;
-  
-  height: 4px;
-  width: 4px;
-  border: 2px solid #fff;
-  -webkit-border-radius: 8px;
-          border-radius: 8px;
+	height: 5px;
+	width: 2px;
+	display: block;
+	margin: 5px auto;
+	background: white;
+	position: relative;
+
+	height: 4px;
+	width: 4px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
 }
 
 .wheel {
-  -webkit-animation: mouse-wheel 0.6s linear infinite;
-  -moz-animation: mouse-wheel 0.6s linear infinite;
-  animation: mouse-wheel 0.6s linear infinite;
+	-webkit-animation: mouse-wheel 0.6s linear infinite;
+	-moz-animation: mouse-wheel 0.6s linear infinite;
+	animation: mouse-wheel 0.6s linear infinite;
 }
 
-@-webkit-keyframes mouse-wheel{
-   0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
+@-webkit-keyframes mouse-wheel {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
 
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
-    transform: translateY(6px);
-  }
+	100% {
+		opacity: 0;
+		-webkit-transform: translateY(6px);
+		-ms-transform: translateY(6px);
+		transform: translateY(6px);
+	}
 }
+
 @-moz-keyframes mouse-wheel {
-  0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
+	0% {
+		top: 1px;
+	}
+
+	25% {
+		top: 2px;
+	}
+
+	50% {
+		top: 3px;
+	}
+
+	75% {
+		top: 2px;
+	}
+
+	100% {
+		top: 1px;
+	}
 }
+
 @-o-keyframes mouse-wheel {
 
-   0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
+	0% {
+		top: 1px;
+	}
+
+	25% {
+		top: 2px;
+	}
+
+	50% {
+		top: 3px;
+	}
+
+	75% {
+		top: 2px;
+	}
+
+	100% {
+		top: 1px;
+	}
 }
+
 @keyframes mouse-wheel {
 
-   0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
+	0% {
+		top: 1px;
+	}
+
+	25% {
+		top: 2px;
+	}
+
+	50% {
+		top: 3px;
+	}
+
+	75% {
+		top: 2px;
+	}
+
+	100% {
+		top: 1px;
+	}
 }
 
 @-webkit-keyframes mouse-scroll {
 
-  0%   { opacity: 0;}
-  50%  { opacity: .5;}
-  100% { opacity: 1;}
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
+
 @-moz-keyframes mouse-scroll {
 
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
+
 @-o-keyframes mouse-scroll {
 
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
+
 @keyframes mouse-scroll {
 
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 /*=====  End of banner  ======*/
@@ -341,65 +433,69 @@
 =            about ucas            =
 ==================================*/
 
-.aboutUcasInner{
+.aboutUcasInner {
 	@include flex(row);
 	background: $lpCol;
 	border-radius: 30px;
 	overflow: hidden;
-	box-shadow: 0 10px 20px rgba($primCol,15%);
+	box-shadow: 0 10px 20px rgba($primCol, 15%);
 
-	.left,.right{
+	.left,
+	.right {
 		color: $primCol;
 		text-align: justify;
 	}
 
-	.left{
-		.textWrapper{
+	.left {
+		.textWrapper {
 			padding-top: 1.5rem;
 			padding-bottom: 1.5rem;
 		}
 	}
 
-	.right{
-		.mdMsgBg{
-			@include flex(col,null,center);
+	.right {
+		.mdMsgBg {
+			@include flex(col, null, center);
 			background: grad();
 			height: 100%;
 			padding: 30px;
 
-			.photoWrapper{
-				.photo{
+			.photoWrapper {
+				.photo {
 					width: 100%;
 				}
 			}
 
-			.nameDesignationWrapper{
+			.nameDesignationWrapper {
 				color: $lpCol;
 				text-align: center;
 				margin-top: 15px;
 			}
 
-			.speachWrapper{
+			.speachWrapper {
 				margin-top: 30px;
 				padding: 25px 20px;
 				color: $lpCol;
 				position: relative;
-				i{
+
+				i {
 					font-size: 50px;
 					opacity: 0.2;
 					z-index: 0;
 					position: absolute;
 				}
-				.fa-quote-left{
+
+				.fa-quote-left {
 					top: 0;
 					left: 0;
 				}
-				.fa-quote-right{
+
+				.fa-quote-right {
 					bottom: 0;
 					right: 0;
 				}
 			}
-			
+
 		}
 	}
 }
@@ -410,28 +506,28 @@
 =            services            =
 ================================*/
 
-#services{
+#services {
 	padding-top: 90px;
 }
 
-.serviceWrapper{
-	@include flex(row,center);
+.serviceWrapper {
+	@include flex(row, center);
 	margin-top: 30px;
 
-	.singleService{
-		@include flex(row,center,center);
+	.singleService {
+		@include flex(row, center, center);
 		max-width: 250px;
 		margin-right: 0.5rem;
 		margin-left: 0.5rem;
 		position: relative;
 		transition: 0.3s all;
 
-		img{
+		img {
 			width: 100%;
 		}
 
-		.iconText{
-			@include flex(col,center,center);
+		.iconText {
+			@include flex(col, center, center);
 			position: absolute;
 			padding: 15px;
 			text-align: center;
@@ -439,7 +535,7 @@
 			font-weight: 500;
 			transition: 0.3s all;
 
-			img{
+			img {
 				width: unset;
 				height: 100px;
 				margin-bottom: 5px;
@@ -447,14 +543,14 @@
 			}
 		}
 
-		&:hover{
+		&:hover {
 			transform: scale(0.9);
 			cursor: pointer;
 
-			.iconText{
+			.iconText {
 				text-shadow: 0 2px 5px black;
 
-				img{
+				img {
 					filter: drop-shadow(0 0 5px $lpCol);
 				}
 			}
@@ -462,20 +558,20 @@
 	}
 }
 
-.serviceWrapper2{
+.serviceWrapper2 {
 	@extend .serviceWrapper;
 	margin-top: -55px;
 
-	.singleService{
+	.singleService {
 		max-width: 250px;
 	}
 }
 
-.serviceWrapper3{
+.serviceWrapper3 {
 	@extend .serviceWrapper;
 	margin-top: -55px;
 
-	.singleService{
+	.singleService {
 		max-width: 250px;
 	}
 }
@@ -486,10 +582,10 @@
 =            featured product            =
 ========================================*/
 
-.featuredProduct{
+.featuredProduct {
 	position: relative;
-	
-	.fpBg{
+
+	.fpBg {
 		position: absolute;
 		z-index: -1;
 		width: 100%;
@@ -498,25 +594,25 @@
 		transform: translateX(-50%);
 	}
 
-	.contentBg{
+	.contentBg {
 		padding: 1rem 2rem 2.2rem 2rem;
 		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
 		position: relative;
 
-		.btn-explore{
+		.btn-explore {
 			position: absolute;
 			top: 25px;
 			right: -17px;
 
-			img{
+			img {
 				width: 100%;
 				max-width: 150px;
 			}
 		}
 
-		.btn-explore1{
+		.btn-explore1 {
 			@extend .btn-explore;
 			top: unset;
 			right: unset;
@@ -526,91 +622,99 @@
 			width: 100%;
 			justify-content: center;
 
-			img{
+			img {
 				max-width: 170px;
 			}
 		}
 
-		.secHead{
+		.secHead {
 			padding: 1rem 0 .5rem 0;
 		}
 
-		.fpTabWrapper{
+		.fpTabWrapper {
 			background: $lpCol;
 			border-radius: 15px;
-			box-shadow: 0 10px 20px rgba($primCol,15%);
+			box-shadow: 0 10px 20px rgba($primCol, 15%);
 			overflow: hidden;
 			margin-top: 15px;
-			.nav-tabs{
+
+			.nav-tabs {
 				padding-right: unset;
 				border-bottom: 2px solid #dddddd;
-				.nav-item{
+
+				.nav-item {
 					flex-grow: 1;
 					flex-basis: (100%/6);
 					flex-grow: 1;
 					display: flex;
 					justify-content: center;
 
-					&:not(:last-child){
+					&:not(:last-child) {
 						border-right: 1px solid #dddddd;
 					}
 				}
 			}
-			.tab-content{
-				.tab-pane{
+
+			.tab-content {
+				.tab-pane {
 					padding: 30px;
 
-					.borderr{
+					.borderr {
 						border: 1px solid $primCol;
 						border-radius: 15px;
 					}
 
-					.title{
+					.title {
 						padding: 30px 45px 0 45px;
-						h2{
+
+						h2 {
 							color: $primCol;
 						}
-						p{
+
+						p {
 							color: rgba($primCol, 90%);
 							font-size: 24px;
 						}
 
-						&:after{
-							content:"";
+						&:after {
+							content: "";
 							display: block;
 							width: 100%;
 							height: 2px;
 							background: $primCol;
-							border-radius:2px;
+							border-radius: 2px;
 							margin-top: 5px;
 						}
 					}
-					.content{
-						padding: 5px 30px 30px 30px;
-						@include flex(row,null,null);
-						flex-wrap:wrap;
 
-						label{
-							margin-left:15px;
-							color: rgba(#000000,50%);
+					.content {
+						padding: 5px 30px 30px 30px;
+						@include flex(row, null, null);
+						flex-wrap: wrap;
+
+						label {
+							margin-left: 15px;
+							color: rgba(#000000, 50%);
 							text-transform: uppercase;
 							font-weight: bold;
 							width: 100%;
-							&:after{
-								content:"";
-								display:block;
-								width:100%;
-								height:1px;
-								background:rgba(#000000,25%);
+
+							&:after {
+								content: "";
+								display: block;
+								width: 100%;
+								height: 1px;
+								background: rgba(#000000, 25%);
 							}
 						}
-						.point{
-							@include flex(row,null,baseline);
+
+						.point {
+							@include flex(row, null, baseline);
 							flex-basis: calc(50% - 30px);
 							margin: 5px 15px;
 
-							&:before{
-								content:"\f058";
+							&:before {
+								content: "\f058";
 								font-family: $fw;
 								color: $primCol;
 								margin-right: 5px;
@@ -619,65 +723,74 @@
 					}
 				}
 			}
-			.singleFp{
-				@include flex(col,center,center);
+
+			.singleFp {
+				@include flex(col, center, center);
 				background: $lpCol;
 				padding: 1rem;
 				border-radius: 0;
-				border:unset;
+				border: unset;
 				width: 100%;
 				transition: 0.3s all;
 
-				.icon{
-					@include flex(row,center,center);
+				.icon {
+					@include flex(row, center, center);
 					width: 50px;
 					height: 50px;
 					transition: 0.3s all;
 
-					img{
+					img {
 						max-height: 50px;
 						transition: 0.3s all;
 					}
 				}
 
-				.text{
-					color:$primCol;
+				.text {
+					color: $primCol;
 					text-align: center;
 					margin-top: .5rem;
 					transition: 0.3s all;
 				}
 
-				&:hover,&.active{
+				&:hover,
+				&.active {
 					background: $primCol;
 
-					.icon{
+					.icon {
 						border-color: $lpCol;
 
-						img{
+						img {
 							filter: brightness(0) invert(1) drop-shadow(0 0 5px $lpCol);
 						}
 					}
-					.text{
-						color:$lpCol;
+
+					.text {
+						color: $lpCol;
 					}
 				}
 
-				&.active{
+				&.active {
 					position: relative;
-					&:after{
+
+					&:after {
 						content: "\f0d7";
 						font-family: "Font Awesome 6 Free";
 						position: absolute;
 						bottom: -40px;
 						font-weight: bold;
 						font-size: 50px;
-						color:$primCol;
+						color: $primCol;
 					}
 				}
-				&#realErp-tab,&#ubroker-tab{
-					&:hover,&.active{
-						.icon{
-							img{
+
+				&#realErp-tab,
+				&#ubroker-tab,
+				&#digiagm-tab {
+
+					&:hover,
+					&.active {
+						.icon {
+							img {
 								filter: drop-shadow(0 0 5px $lpCol);
 							}
 						}
@@ -696,11 +809,11 @@
 =            website development & vps hosting            =
 =========================================================*/
 
-.webVps{
+.webVps {
 	position: relative;
 	overflow-x: hidden;
 
-	.webVpsBg1{
+	.webVpsBg1 {
 		position: absolute;
 		z-index: -1;
 		width: 150px;
@@ -708,20 +821,22 @@
 		left: -100px;
 	}
 
-	.webVpsBg2{
+	.webVpsBg2 {
 		@extend .webVpsBg1;
-		    width: 70px;
-		    top: 480px;
-		    left: -45px;
+		width: 70px;
+		top: 480px;
+		left: -45px;
 	}
-	.webVpsBg3{
+
+	.webVpsBg3 {
 		@extend .webVpsBg1;
-		    width: 200px;
-		    top: 50px;
-		    left: unset;
-		    right: -240px;
+		width: 200px;
+		top: 50px;
+		left: unset;
+		right: -240px;
 	}
-	.webVpsBg4{
+
+	.webVpsBg4 {
 		@extend .webVpsBg1;
 		width: 180px;
 		top: 350px;
@@ -729,33 +844,33 @@
 		right: -200px;
 	}
 
-	.contentBg{
+	.contentBg {
 		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
 		position: relative;
 	}
 
-	.services{
+	.services {
 		padding: 1rem 2rem 1.5rem 2rem;
 		position: relative;
 
-		.secHead{
+		.secHead {
 			padding: 1rem 0 .5rem 0;
 		}
 
-		.singleWebVps{
-			@include flex(col,center,center);
+		.singleWebVps {
+			@include flex(col, center, center);
 			background: $lpCol;
 			padding: 35px 15px 15px;
-			box-shadow: 0 10px 20px rgba($primCol,15%);
+			box-shadow: 0 10px 20px rgba($primCol, 15%);
 			border-radius: 1rem;
 			transition: 0.3s all;
 			position: relative;
 			margin-top: 35px;
 
-			.icon{
-				@include flex(row,center,center);
+			.icon {
+				@include flex(row, center, center);
 				border-radius: 100px;
 				width: 70px;
 				height: 70px;
@@ -764,71 +879,72 @@
 				top: -35px;
 				background: $primCol;
 
-				img{
+				img {
 					max-height: 35px;
 					filter: brightness(0) invert(1);
 					transition: 0.3s all;
 				}
 			}
 
-			.text{
-				color:$primCol;
+			.text {
+				color: $primCol;
 				text-align: center;
 				margin-top: .5rem;
 				transition: 0.3s all;
 			}
 
-			&:hover{
+			&:hover {
 				background: $primCol;
 				transform: scale(0.9);
 
-				.icon{
+				.icon {
 					outline: 7px solid $lpCol;
 
-					img{
+					img {
 						filter: drop-shadow(0 0 5px $lpCol);
 					}
 				}
-				.text{
-					color:$lpCol;
+
+				.text {
+					color: $lpCol;
 				}
 			}
 		}
 	}
 
-	.portfolio{
+	.portfolio {
 		padding: 1rem 2rem 1.5rem 2rem;
 		position: relative;
 
-		.secHead{
+		.secHead {
 			padding: 1rem 0 .5rem 0;
 		}
 
-		.singleWebVps{
-			@include flex(col,center,center);
+		.singleWebVps {
+			@include flex(col, center, center);
 			background: $lpCol;
 			padding: 15px;
-			box-shadow: 0 10px 20px rgba($primCol,15%);
+			box-shadow: 0 10px 20px rgba($primCol, 15%);
 			border: 1px solid $secCol;
 			border-radius: 1.5rem;
 			transition: 0.3s all;
 			position: relative;
 
-			.logo{
-				@include flex(row,center,center);
+			.logo {
+				@include flex(row, center, center);
 				border-radius: 100px;
 				transition: 0.3s all;
 
-				img{
+				img {
 					height: 40px;
 					max-width: 100%;
 					transition: 0.3s all;
 				}
 			}
 
-			.link{
-				@include flex(row,space-between,center);
-				color:$primCol;
+			.link {
+				@include flex(row, space-between, center);
+				color: $primCol;
 				border-radius: 100px;
 				border: 1px solid $primCol;
 				margin-top: .5rem;
@@ -836,15 +952,15 @@
 				transition: 0.3s all;
 				padding: 5px;
 
-				.text{
-					@include flex(row,center,center);
+				.text {
+					@include flex(row, center, center);
 					padding: 0 10px;
 					width: 100%;
 					font-size: 11px;
 				}
 
-				.icon{
-					@include flex(row,center,center);
+				.icon {
+					@include flex(row, center, center);
 					width: 32px;
 					height: 32px;
 					background: $primCol;
@@ -855,14 +971,14 @@
 				}
 			}
 
-			&:hover{
+			&:hover {
 				transform: scale(0.9);
 
-				.link{
-					color:$lpCol;
+				.link {
+					color: $lpCol;
 					background: $primCol;
 
-					.icon{
+					.icon {
 						background: $lpCol;
 						color: $primCol;
 					}
@@ -870,56 +986,62 @@
 			}
 		}
 	}
-	.borderr{
+
+	.borderr {
 		margin-right: -15px;
 		margin-left: -15px;
 	}
 
-	.title{
+	.title {
 		padding: 30px 45px 0 45px;
-		h2{
+
+		h2 {
 			color: $primCol;
 		}
-		p{
+
+		p {
 			color: rgba($primCol, 90%);
 			font-size: 24px;
 		}
 
-		&:after{
-			content:"";
+		&:after {
+			content: "";
 			display: block;
 			width: 100%;
 			height: 2px;
 			background: $primCol;
-			border-radius:2px;
+			border-radius: 2px;
 			margin-top: 5px;
 		}
 	}
-	.content{
-		@include flex(row);
-		flex-wrap:wrap;
 
-		label{
-			margin-left:15px;
-			color: rgba(#000000,50%);
+	.content {
+		@include flex(row);
+		flex-wrap: wrap;
+
+		label {
+			margin-left: 15px;
+			color: rgba(#000000, 50%);
 			text-transform: uppercase;
 			font-weight: bold;
 			width: 100%;
-			&:after{
-				content:"";
-				display:block;
-				width:100%;
-				height:1px;
-				background:rgba(#000000,25%);
+
+			&:after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 1px;
+				background: rgba(#000000, 25%);
 			}
 		}
-		.point{
-			@include flex(row,null,baseline);
+
+		.point {
+			@include flex(row, null, baseline);
 			flex-basis: calc(33.333% - 30px);
 			margin: 5px 15px;
 
-			&:before{
-				content:"\f058";
+			&:before {
+				content: "\f058";
 				font-family: $fw;
 				color: $primCol;
 				margin-right: 5px;
@@ -934,28 +1056,28 @@
 =            our clients            =
 ===================================*/
 
-.ourClient{
+.ourClient {
 	position: relative;
 
-	.contentBg{
+	.contentBg {
 		padding: 1rem 2rem 1.5rem 2rem;
 		background: #f2f2f2;
 		border: 1px solid #dddddd;
 		border-radius: 1.5rem;
 		position: relative;
 
-		.btn-explore{
+		.btn-explore {
 			position: absolute;
 			top: 25px;
 			right: -17px;
 
-			img{
+			img {
 				width: 100%;
 				max-width: 150px;
 			}
 		}
 
-		.btn-explore1{
+		.btn-explore1 {
 			@extend .btn-explore;
 			top: unset;
 			right: unset;
@@ -965,49 +1087,50 @@
 			width: 100%;
 			justify-content: center;
 
-			img{
+			img {
 				max-width: 170px;
 			}
 		}
 
-		.secHead{
+		.secHead {
 			padding: 1rem 0 1rem 0;
 		}
 
-		.clientLogos{
-			.filter{
+		.clientLogos {
+			.filter {
 				text-align: center;
 
-				button{
-					&:not(:last-child){
+				button {
+					&:not(:last-child) {
 						margin-right: 15px;
 					}
 				}
 			}
 
-			.grid{
-				.grid-item{
+			.grid {
+				.grid-item {
 					display: flex;
-					height:100px;
+					height: 100px;
 				}
-				.clientLogoWrapper{
-					@include flex(row,center,center);
+
+				.clientLogoWrapper {
+					@include flex(row, center, center);
 					background: $lpCol;
-					box-shadow: 0 10px 20px rgba($primCol,15%);
+					box-shadow: 0 10px 20px rgba($primCol, 15%);
 					min-height: 100px;
 					border-radius: 15px;
 					outline: 1px solid transparent;
 					transition: 0.3s all;
-					padding:30px;
+					padding: 30px;
 					width: 100%;
 
-					img{
-						max-width:100%;
+					img {
+						max-width: 100%;
 						max-height: 50px;
 					}
 
-					span{
-						@include flex(row,center,center);
+					span {
+						@include flex(row, center, center);
 						font-family: $headFF;
 						font-weight: bold;
 						height: 50px;
@@ -1016,7 +1139,7 @@
 						line-height: 1.1;
 					}
 
-					&:hover{
+					&:hover {
 						transform: scale(0.9);
 						outline: 1px solid $primCol;
 					}
@@ -1033,75 +1156,82 @@
 =            client feedback            =
 =======================================*/
 
-.clientFeedback{
+.clientFeedback {
 	background: #f2f2f2;
 
-	.cfBody{
+	.cfBody {
 		background: $lpCol;
-		box-shadow: 0 10px 20px rgba($primCol,15%);
+		box-shadow: 0 10px 20px rgba($primCol, 15%);
 		border-radius: 30px;
 		overflow: hidden;
 		margin-top: 30px;
 		position: relative;
 
-		.left{
+		.left {
 			background: grad();
 			color: $lpCol;
 
-			.photoNameWrapper{
-				@include flex(col,center,center);
+			.photoNameWrapper {
+				@include flex(col, center, center);
 				padding: 30px 18px 30px 30px;
 
-				.photo{
+				.photo {
 					max-width: 250px;
 					max-height: 250px;
 					border-radius: 250px;
 					overflow: hidden;
-					outline: 10px solid rgba($lpCol,25%);
+					outline: 10px solid rgba($lpCol, 25%);
 				}
-				.name{
+
+				.name {
 					margin-top: 15px;
 					text-align: center;
 				}
 			}
 		}
-		.right{
+
+		.right {
 			padding: 30px 35px 30px 30px;
-			.feedTextWrapper{
-				@include flex(row,center,center);
+
+			.feedTextWrapper {
+				@include flex(row, center, center);
 				padding: 50px;
 				position: relative;
 				height: 100%;
-				.fa-quote-left,.fa-quote-right{
+
+				.fa-quote-left,
+				.fa-quote-right {
 					position: absolute;
 					font-size: 124px;
-					color: rgba($primCol,15%);
+					color: rgba($primCol, 15%);
 					z-index: -1;
 					line-height: 75px;
 				}
 
-				.fa-quote-left{
+				.fa-quote-left {
 					top: 0;
 					left: 0;
 				}
 
-				.fa-quote-right{
+				.fa-quote-right {
 					bottom: 0;
 					right: 0;
 				}
 			}
 		}
-		.owl-nav{
+
+		.owl-nav {
 			position: absolute;
 			top: 10px;
 			right: 20px;
 			font-size: 30px;
 
-			[type="button"]{
+			[type="button"] {
 				margin: 0 5px;
 			}
 		}
-		.btn-all-feedback{
+
+		.btn-all-feedback {
 			background: grad();
 			position: absolute;
 			bottom: 20px;
@@ -1114,87 +1244,96 @@
 	}
 }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
 	background: grad();
-	 -webkit-background-clip: text;
-	 -webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
+
 /*=====  End of client feedback  ======*/
 
 /*==============================
 =            footer            =
 ==============================*/
 
-footer{
+footer {
 	background: grad();
 	color: #ffffff;
 
 	.secHead {
-	    width: 100%;
-	    text-align: left;
-	    text-transform: unset;
-	    color: #ffffff;
-	    margin-bottom: 15px;
-	    font-family: $headFF;
+		width: 100%;
+		text-align: left;
+		text-transform: unset;
+		color: #ffffff;
+		margin-bottom: 15px;
+		font-family: $headFF;
 
-	    span{
-	    	font-size: 32px;
-	    }
+		span {
+			font-size: 32px;
+		}
 
-	    .divider{
-	    	.left,.right{
-	    		background: #ffffff;
-	    	}
-	    }
+		.divider {
+
+			.left,
+			.right {
+				background: #ffffff;
+			}
+		}
 	}
 
-	.cu-container{
-		.infoWrapper{
-			@include flex(row,null,center);
+	.cu-container {
+		.infoWrapper {
+			@include flex(row, null, center);
 			background: $lpCol;
 			padding: 15px;
 			border-radius: 15px;
-			box-shadow: 0 10px 20px darken(rgba($primCol,15%),50%);
+			box-shadow: 0 10px 20px darken(rgba($primCol, 15%), 50%);
 
-			span{
+			span {
 				color: #000000;
 			}
-			.iconWrapper{
-				@include flex(row,center,center);
+
+			.iconWrapper {
+				@include flex(row, center, center);
 				width: 50px;
 				height: 50px;
 				border: 1px solid $primCol;
 				border-radius: 30px;
 				margin-right: 10px;
 				flex-shrink: 0;
-				img{
+
+				img {
 					height: 25px;
 				}
 			}
 
-			&:not(:last-child){
+			&:not(:last-child) {
 				margin-bottom: 15px;
 			}
 		}
 	}
 
-	.usefulLinks{
+	.usefulLinks {
 		@include flex(col);
 		margin-bottom: 15px;
-		a{
-			&:hover{
+
+		a {
+			&:hover {
 				text-decoration: underline;
 			}
-			&:not(:last-child){
+
+			&:not(:last-child) {
 				margin-bottom: 5px;
 			}
 		}
 	}
 
-	.followUs{
-		@include flex(row,null,center);
-		a{
-			@include flex(row,center,center);
+	.followUs {
+		@include flex(row, null, center);
+
+		a {
+			@include flex(row, center, center);
 			width: 50px;
 			height: 50px;
 			border: 2px solid $lpCol;
@@ -1204,11 +1343,11 @@ footer{
 			font-size: 25px;
 			transition: 0.3s all;
 
-			&:not(:last-child){
+			&:not(:last-child) {
 				margin-right: 10px;
 			}
 
-			&:hover{
+			&:hover {
 				background: transparent;
 				color: $lpCol;
 				transform: scale(0.9);
@@ -1216,13 +1355,14 @@ footer{
 		}
 	}
 
-	.mapWrapper{
+	.mapWrapper {
 		@include flex(row);
 		height: 100%;
 		border-radius: 15px;
 		overflow: hidden;
-		box-shadow: 0 10px 20px darken(rgba($primCol,15%),50%);
-		iframe{
+		box-shadow: 0 10px 20px darken(rgba($primCol, 15%), 50%);
+
+		iframe {
 			width: 100%;
 		}
 	}
@@ -1234,22 +1374,16 @@ footer{
 =            copyright            =
 =================================*/
 
-.copyright{
-	@include flex(row,center,center);
+.copyright {
+	@include flex(row, center, center);
 	background: $primCol;
 	padding: 5px 10px;
 	color: $lpCol;
 
-	img{
-		margin:0 15px;
+	img {
+		margin: 0 15px;
 		height: 30px;
 	}
 }
 
 /*=====  End of copyright  ======*/
-
-
-
-
-
-

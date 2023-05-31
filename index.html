@@ -45,7 +45,7 @@
 	=            banner            =
 	=============================-->
 	<div class="slider container-lg container-fluid">
-		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
+		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 			<a class="mouse_scroll" href="#aboutUs">
 				<div class="mouse">
 					<div class="wheel"></div>
@@ -66,20 +66,8 @@
 				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="5"></button>
 			</div>
 			<div class="carousel-inner">
+
 				<div class="carousel-item active">
-					<div class="row">
-						<div class="left col-lg-7 align-self-center text-center text-lg-start">
-							<div class="primTitle">United Corporate <br> Advisory Services Ltd. </div>
-							<div class="secTitle">BASIS Member since 2016</div>
-							<button class="btn btn-banner" onclick="window.open('images/DigiAGM.pdf')">Discover
-								Now</button>
-						</div>
-						<div class="right col-lg-5 text-center text-lg-end">
-							<img src="images/banner/BASIS_MEMBERSHIP_CERTIFICATE.png">
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
 					<div class="row">
 						<div class="left col-lg-5 col-xl-4 align-self-center text-center text-lg-start">
 							<div class="primTitle">
@@ -112,7 +100,9 @@
 				<div class="carousel-item">
 					<div class="row">
 						<div class="left col-lg-4  col-xl-4 col-xxl-4 align-self-center text-center text-lg-start">
-							<div class="primTitle">DigiAGM/EGM</div>
+							<div class="primTitle">
+								<img class="product-logo" src="images/FeaturedProductIcon/digiagm.svg" alt="">
+							</div>
 							<div class="secTitle">Digital Platform for AGM/EGM</div>
 							<a href="digiagm.html" class="btn btn-banner me-2">Discover Now</a>
 						</div>
@@ -142,6 +132,19 @@
 						</div>
 						<div class="right col-lg-8 col-xl-9 text-center text-lg-end">
 							<img src="images/banner/hrms.png">
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="left col-lg-7 align-self-center text-center text-lg-start">
+							<div class="primTitle">United Corporate <br> Advisory Services Ltd. </div>
+							<div class="secTitle">BASIS Member since 2016</div>
+							<button class="btn btn-banner" onclick="window.open('images/DigiAGM.pdf')">Discover
+								Now</button>
+						</div>
+						<div class="right col-lg-5 text-center text-lg-end">
+							<img src="images/banner/BASIS_MEMBERSHIP_CERTIFICATE.png">
 						</div>
 					</div>
 				</div>
@@ -377,10 +380,7 @@
 								data-bs-target="#digiagm-tab-pane" type="button" role="tab"
 								aria-controls="digiagm-tab-pane" aria-selected="true">
 								<div class="icon">
-									<img src="images/FeaturedProductIcon/video-conference-icon.png">
-								</div>
-								<div class="text">
-									<h5>DigiAGM/EGM</h5>
+									<img src="images/FeaturedProductIcon/digiagm.svg">
 								</div>
 							</a>
 						</li>
