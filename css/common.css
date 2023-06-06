@@ -312,6 +312,12 @@ hr, p {
   .dropdown-menu img {
     max-height: 50px; }
 
+.fp-dropdown li:not(:last-child) {
+  border-bottom: 1px solid rgba(8, 160, 57, 0.25); }
+.fp-dropdown img {
+  margin: 5px auto;
+  display: block; }
+
 .dropdown-menu.show {
   max-height: 500px; }
 

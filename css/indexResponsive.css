@@ -115,7 +115,11 @@
   .gradBg {
     display: none; }
 
-  #aboutUs, #services, #featuredProduct, .webVps, .ourClient {
+  #aboutUs,
+  #services,
+  #featuredProduct,
+  .webVps,
+  .ourClient {
     background: #ffffff; }
 
   /*==============================
@@ -123,7 +127,7 @@
   ==============================*/
   .slider {
     margin-top: unset;
-    background: unset; }
+    background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
 
   .carousel-indicators {
     margin-bottom: 30px; }
@@ -143,7 +147,8 @@
       font-size: 28px; }
     .carousel-inner .carousel-item .secTitle {
       font-size: 14px; }
-    .carousel-inner .carousel-item .btn-banner, .carousel-inner .carousel-item .btn-brochure {
+    .carousel-inner .carousel-item .btn-banner,
+    .carousel-inner .carousel-item .btn-brochure {
       font-size: 14px;
       margin-top: 15px; }
 
@@ -223,7 +228,8 @@
         justify-content: center;
         position: relative;
         background: #08A039; }
-        .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-prev, .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-next {
+        .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-prev,
+        .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-next {
           background: #F3F9F4;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;

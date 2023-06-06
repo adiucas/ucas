@@ -262,6 +262,19 @@
 	}
 }
 
+.fp-dropdown {
+	li {
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba($primCol, 25%);
+		}
+	}
+
+	img {
+		margin: 5px auto;
+		display: block;
+	}
+}
+
 .dropdown-menu.show {
 	max-height: 500px;
 }
