@@ -267,6 +267,8 @@
 		&:not(:last-child) {
 			border-bottom: 1px solid rgba($primCol, 25%);
 		}
+
+		text-align: center;
 	}
 
 	img {
