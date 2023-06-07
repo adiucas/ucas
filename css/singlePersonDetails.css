@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
+
+/*==============================
+=            banner            =
+==============================*/
+.slider {
+  margin-top: -120px; }
+
+.carousel-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: unset;
+  padding-top: 150px;
+  padding-bottom: 30px; }
+  .carousel-inner .carousel-item .primTitle {
+    font-family: "Gantari", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .carousel-inner .carousel-item .secTitle {
+    font-family: "M PLUS 2", sans-serif;
+    color: #ffffff;
+    font-size: 20px; }
+  .carousel-inner img {
+    max-width: 100%; }
+
+/*=====  End of banner  ======*/
+/*===================================
+=            management info            =
+===================================*/
+.ourTeam {
+  position: relative;
+  background: #eeeeee; }
+  .ourTeam .description {
+    border: 1px solid #08A039;
+    border-radius: 15px;
+    padding: 15px; }
+
+/*=====  End of management info  ======*/
+
+/*# sourceMappingURL=singlePersonDetails.css.map */
