@@ -1,7 +1,7 @@
 @import 'templates/variables';
 @import 'templates/mixins';
 
-body{
+body {
 	background: grad();
 }
 
@@ -9,26 +9,31 @@ body{
 =            banner            =
 ==============================*/
 
-.slider{
+.slider {
 	margin-top: -120px;
 }
 
-.carousel-inner{
-	@include flex(row,null,center);
+.carousel-inner {
+	@include flex(row, null, center);
 	height: unset;
 	padding-top: 150px;
 	padding-bottom: 30px;
 
-	.carousel-item{
-		.primTitle{
+	.carousel-item {
+		.primTitle {
 			@include head("900");
 			color: #ffffff;
 			font-size: 65px;
 			line-height: 1;
 			color: #ffffff;
+
+			img {
+				max-width: 400px;
+				height: unset;
+			}
 		}
 
-		.secTitle{
+		.secTitle {
 			@include para();
 			color: #ffffff;
 			font-size: 20px;
@@ -36,7 +41,8 @@ body{
 			margin-top: 5px;
 		}
 	}
-	img{
+
+	img {
 		max-width: 100%;
 		height: 250px;
 	}
@@ -48,48 +54,50 @@ body{
 =            digiagm           =
 ===================================*/
 
-.crm{
+.crm {
 	position: relative;
 	background: #eeeeee;
-	.col-lg-4{
+
+	.col-lg-4 {
 		@include flex(row);
 	}
 
-	.secHead{
+	.secHead {
 		margin-bottom: 30px;
 	}
-	.cardWrapper{
+
+	.cardWrapper {
 		background: $lpCol;
 		padding: 30px;
 		border-radius: 30px;
 		box-shadow: 0 10px 20px rgba($primCol, 15%);
 		width: 100%;
 
-		label{
+		label {
 			font-family: $headFF;
 			color: $primCol;
 			font-weight: bold;
-			width:100%;
+			width: 100%;
 			margin-bottom: 5px;
 
-			&:after{
-				content:"";
+			&:after {
+				content: "";
 				display: block;
 				width: 100%;
-				background: rgba($primCol,50%);
-				height:2px;
+				background: rgba($primCol, 50%);
+				height: 2px;
 			}
 		}
 
-		ul{
+		ul {
 			list-style-type: none;
 			padding-left: 0;
 
-			li{
-				@include flex(row,null,baseline);
-				margin:5px 0;
+			li {
+				@include flex(row, null, baseline);
+				margin: 5px 0;
 
-				&:before{
+				&:before {
 					content: "\f058";
 					font-family: "Font Awesome 6 Free";
 					font-weight: normal;
@@ -99,37 +107,40 @@ body{
 			}
 		}
 
-		.head{
+		.head {
 			width: 100%;
 			color: $primCol;
 			border-radius: 30px;
 			margin-bottom: 10px;
 
-			&:after{
-				content:"";
+			&:after {
+				content: "";
 				display: block;
-				height:2px;
+				height: 2px;
 				background: rgba($primCol, 25%);
 				margin-top: 3px;
 			}
 		}
-		.pdfWrapper{
+
+		.pdfWrapper {
 			width: 100%;
 			height: 100%;
 			border-radius: 15px;
 			overflow: hidden;
 			border: 2px solid $primCol;
 		}
-		.pdfFile{
-			width:100%;
+
+		.pdfFile {
+			width: 100%;
 			height: 100%;
 		}
 
-		span{
-			@include flex(row,null,baseline);
-			margin:5px 0;
+		span {
+			@include flex(row, null, baseline);
+			margin: 5px 0;
 			word-break: break-word;
-			&:before{
+
+			&:before {
 				content: "\f058";
 				font-family: "Font Awesome 6 Free";
 				font-weight: normal;
@@ -138,7 +149,7 @@ body{
 			}
 		}
 
-		&:not(:last-child){
+		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
 	}
@@ -146,15 +157,16 @@ body{
 
 /*=====  End of management info  ======*/
 
-.UcasScrollSpy{
-	.parent-pills{
-		&:before{
-			height:calc(100% - 40px);
+.UcasScrollSpy {
+	.parent-pills {
+		&:before {
+			height: calc(100% - 40px);
 		}
 	}
-	.child-pills{
-		&:before{
-			height:calc(100% - 40px);
+
+	.child-pills {
+		&:before {
+			height: calc(100% - 40px);
 		}
 	}
 }

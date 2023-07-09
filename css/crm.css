@@ -21,6 +21,9 @@ body {
     font-size: 65px;
     line-height: 1;
     color: #ffffff; }
+    .carousel-inner .carousel-item .primTitle img {
+      max-width: 400px;
+      height: unset; }
   .carousel-inner .carousel-item .secTitle {
     font-family: "M PLUS 2", sans-serif;
     color: #ffffff;

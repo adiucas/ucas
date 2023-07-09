@@ -525,6 +525,12 @@
             color: #08A039; }
         .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab:hover .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab.active .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#ubroker-tab:hover .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#ubroker-tab.active .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#digiagm-tab:hover .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#digiagm-tab.active .icon img {
           filter: drop-shadow(0 0 5px #F3F9F4); }
+        .featuredProduct .contentBg .fpTabWrapper .singleFp#crm-tab .icon {
+          width: 100%; }
+          .featuredProduct .contentBg .fpTabWrapper .singleFp#crm-tab .icon img {
+            width: 100%; }
+        .featuredProduct .contentBg .fpTabWrapper .singleFp#crm-tab:hover .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#crm-tab.active .icon img {
+          filter: drop-shadow(0 0 5px #F3F9F4); }
 
 /*=====  End of featured product  ======*/
 /*=========================================================

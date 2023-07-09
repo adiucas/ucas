@@ -796,6 +796,25 @@
 						}
 					}
 				}
+
+				&#crm-tab {
+					.icon {
+						width: 100%;
+
+						img {
+							width: 100%;
+						}
+					}
+
+					&:hover,
+					&.active {
+						.icon {
+							img {
+								filter: drop-shadow(0 0 5px $lpCol);
+							}
+						}
+					}
+				}
 			}
 		}
 	}
