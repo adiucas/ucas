@@ -2,76 +2,83 @@
  =            footer            =
  ==============================*/
 
- footer{
- 	background: grad();
+ footer {
+ 	background: grad("180deg");
  	color: #ffffff;
 
  	.secHead {
- 	    width: 100%;
- 	    text-align: left;
- 	    text-transform: unset;
- 	    color: #ffffff;
- 	    margin-bottom: 15px;
- 	    font-family: $headFF;
+ 		width: 100%;
+ 		text-align: left;
+ 		text-transform: unset;
+ 		color: #ffffff;
+ 		margin-bottom: 15px;
+ 		font-family: $headFF;
 
- 	    span{
- 	    	font-size: 32px;
- 	    }
+ 		span {
+ 			font-size: 32px;
+ 		}
 
- 	    .divider{
- 	    	.left,.right{
- 	    		background: #ffffff;
- 	    	}
- 	    }
+ 		.divider {
+
+ 			.left,
+ 			.right {
+ 				background: #ffffff;
+ 			}
+ 		}
  	}
 
- 	.cu-container{
- 		.infoWrapper{
- 			@include flex(row,null,center);
+ 	.cu-container {
+ 		.infoWrapper {
+ 			@include flex(row, null, center);
  			background: $lpCol;
  			padding: 15px;
  			border-radius: 15px;
- 			box-shadow: 0 10px 20px darken(rgba($primCol,15%),50%);
+ 			box-shadow: 0 10px 20px darken(rgba($primCol, 15%), 50%);
 
- 			span{
+ 			span {
  				color: #000000;
  			}
- 			.iconWrapper{
- 				@include flex(row,center,center);
+
+ 			.iconWrapper {
+ 				@include flex(row, center, center);
  				width: 50px;
  				height: 50px;
  				border: 1px solid $primCol;
  				border-radius: 30px;
  				margin-right: 10px;
  				flex-shrink: 0;
- 				img{
+
+ 				img {
  					height: 25px;
  				}
  			}
 
- 			&:not(:last-child){
+ 			&:not(:last-child) {
  				margin-bottom: 15px;
  			}
  		}
  	}
 
- 	.usefulLinks{
+ 	.usefulLinks {
  		@include flex(col);
  		margin-bottom: 15px;
- 		a{
- 			&:hover{
+
+ 		a {
+ 			&:hover {
  				text-decoration: underline;
  			}
- 			&:not(:last-child){
+
+ 			&:not(:last-child) {
  				margin-bottom: 5px;
  			}
  		}
  	}
 
- 	.followUs{
- 		@include flex(row,null,center);
- 		a{
- 			@include flex(row,center,center);
+ 	.followUs {
+ 		@include flex(row, null, center);
+
+ 		a {
+ 			@include flex(row, center, center);
  			width: 50px;
  			height: 50px;
  			border: 2px solid $lpCol;
@@ -81,11 +88,11 @@
  			font-size: 25px;
  			transition: 0.3s all;
 
- 			&:not(:last-child){
+ 			&:not(:last-child) {
  				margin-right: 10px;
  			}
 
- 			&:hover{
+ 			&:hover {
  				background: transparent;
  				color: $lpCol;
  				transform: scale(0.9);
@@ -93,13 +100,14 @@
  		}
  	}
 
- 	.mapWrapper{
+ 	.mapWrapper {
  		@include flex(row);
  		height: 100%;
  		border-radius: 15px;
  		overflow: hidden;
- 		box-shadow: 0 10px 20px darken(rgba($primCol,15%),50%);
- 		iframe{
+ 		box-shadow: 0 10px 20px darken(rgba($primCol, 15%), 50%);
+
+ 		iframe {
  			width: 100%;
  		}
  	}
@@ -111,18 +119,18 @@
  =            copyright            =
  =================================*/
 
- .copyright{
- 	@include flex(row,center,center);
+ .copyright {
+ 	@include flex(row, center, center);
  	background: $primCol;
  	padding: 5px 10px;
  	color: $lpCol;
 
- 	img{
- 		margin:0 15px;
+ 	img {
+ 		margin: 0 15px;
  		height: 30px;
  	}
  }
 
  /*=====  End of copyright  ======*/
 
-@import "footerResponsive";
+ @import "footerResponsive";

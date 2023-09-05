@@ -9,21 +9,46 @@ html {
   overflow-x: hidden; }
 
 body {
-  font-family: "M PLUS 2", sans-serif; }
+  font-family: "M PLUS 2", sans-serif;
+  /* width */
+  /* Track */
+  /* Handle */ }
+  body::-webkit-scrollbar {
+    width: 15px;
+    cursor: pointer; }
+  body::-webkit-scrollbar-track {
+    background: rgba(8, 160, 57, 0.15); }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    opacity: 0.5;
+    background: #08A039;
+    border: 1px solid #F3F9F4;
+    background-clip: padding-box; }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
   text-decoration: none;
   color: unset; }
 
-a, p, span, button {
+a,
+p,
+span,
+button {
   font-family: "M PLUS 2", sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Gantari", sans-serif;
   font-weight: 700;
   margin: 0; }
 
-hr, p {
+hr,
+p {
   margin: 0; }
 
 .pt15 {
@@ -781,7 +806,7 @@ hr, p {
 =            footer            =
 ==============================*/
 footer {
-  background: linear-gradient(135deg, #08A039 0%, #009999 100%);
+  background: linear-gradient(180deg, #08A039 0%, #009999 100%);
   color: #ffffff; }
   footer .secHead {
     width: 100%;
@@ -792,7 +817,8 @@ footer {
     font-family: "Gantari", sans-serif; }
     footer .secHead span {
       font-size: 32px; }
-    footer .secHead .divider .left, footer .secHead .divider .right {
+    footer .secHead .divider .left,
+    footer .secHead .divider .right {
       background: #ffffff; }
   footer .cu-container .infoWrapper {
     display: flex;

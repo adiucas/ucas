@@ -1,91 +1,140 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-html{
+html {
 	overflow-x: hidden;
 }
 
-body{
+body {
 	@include para;
+
+	/* width */
+	&::-webkit-scrollbar {
+		width: 15px;
+		cursor: pointer;
+	}
+
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: rgba($color: $primCol, $alpha: .15)
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		opacity: 0.5;
+		background: $primCol;
+		border: 1px solid $lpCol;
+		background-clip: padding-box;
+	}
 }
 
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
 	text-decoration: none;
 	color: unset;
 }
 
-a, p, span,button{
+a,
+p,
+span,
+button {
 	@include para;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	@include head("700");
-	margin:0;
-}
-
-hr,p{
 	margin: 0;
 }
 
-.pt15{
+hr,
+p {
+	margin: 0;
+}
+
+.pt15 {
 	padding-top: 15px;
 }
-.pt30{
+
+.pt30 {
 	padding-top: 30px;
 }
-.pt60{
+
+.pt60 {
 	padding-top: 60px;
 }
-.pb15{
+
+.pb15 {
 	padding-bottom: 15px;
 }
-.pb30{
+
+.pb30 {
 	padding-bottom: 30px;
 }
-.pb60{
+
+.pb60 {
 	padding-bottom: 60px;
 }
-.ptb15{
+
+.ptb15 {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.ptb30{
+
+.ptb30 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-.ptb60{
+
+.ptb60 {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
-.mt15{
+
+.mt15 {
 	margin-top: 15px;
 }
-.mt30{
+
+.mt30 {
 	margin-top: 30px;
 }
-.mt60{
+
+.mt60 {
 	margin-top: 60px;
 }
-.mb15{
+
+.mb15 {
 	margin-bottom: 15px;
 }
-.mb30{
+
+.mb30 {
 	margin-bottom: 30px;
 }
-.mb60{
+
+.mb60 {
 	margin-bottom: 60px;
 }
-.mtb15{
+
+.mtb15 {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-.mtb30{
+
+.mtb30 {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-.mtb60{
+
+.mtb60 {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
