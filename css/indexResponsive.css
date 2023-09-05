@@ -227,10 +227,10 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        background: #08A039; }
+        background: #F3F9F4; }
         .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-prev,
         .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav button.owl-next {
-          background: #F3F9F4;
+          background: #08A039;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           border: none; }
@@ -245,16 +245,18 @@
           .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-nav i {
             font-size: 30px; }
         .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-item img {
-          width: unset; }
+          width: 100%; }
+        .featuredProduct .contentBg .fpTabWrapper #fpCarousel .owl-stage {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
       .featuredProduct .contentBg .fpTabWrapper .singleFp {
         width: 170px;
-        background: unset; }
-        .featuredProduct .contentBg .fpTabWrapper .singleFp .icon img {
-          filter: brightness(0) invert(1) drop-shadow(0 0 5px #F3F9F4); }
-        .featuredProduct .contentBg .fpTabWrapper .singleFp .text {
-          color: #F3F9F4; }
-          .featuredProduct .contentBg .fpTabWrapper .singleFp .text h5 {
-            font-size: 16px; }
+        background: unset;
+        border-bottom: unset;
+        box-shadow: unset; }
+        .featuredProduct .contentBg .fpTabWrapper .singleFp .text h5 {
+          font-size: 16px; }
         .featuredProduct .contentBg .fpTabWrapper .singleFp.active:after {
           display: none; }
         .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab .icon img {
@@ -262,6 +264,8 @@
           height: 150px; }
         .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab:hover .icon img, .featuredProduct .contentBg .fpTabWrapper .singleFp#realErp-tab.active .icon img {
           filter: drop-shadow(0 0 5px #F3F9F4); }
+        .featuredProduct .contentBg .fpTabWrapper .singleFp.active {
+          box-shadow: unset; }
       .featuredProduct .contentBg .fpTabWrapper .tab-content .tab-pane .title {
         padding: 20px 20px 0 20px; }
         .featuredProduct .contentBg .fpTabWrapper .tab-content .tab-pane .title p {

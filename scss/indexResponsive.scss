@@ -362,11 +362,11 @@
 				#fpCarousel {
 					@include flex(row, center);
 					position: relative;
-					background: $primCol;
+					background: $lpCol;
 
 					.owl-nav button.owl-prev,
 					.owl-nav button.owl-next {
-						background: $lpCol;
+						background: $primCol;
 						-webkit-background-clip: text;
 						-webkit-text-fill-color: transparent;
 						border: none;
@@ -387,23 +387,23 @@
 					}
 
 					.owl-item img {
-						width: unset;
+						width: 100%;
+					}
+
+					.owl-stage {
+						@include flex(row, null, center);
 					}
 				}
 
 				.singleFp {
 					width: 170px;
 					background: unset;
+					border-bottom: unset;
+					box-shadow: unset;
 
-					.icon {
-						img {
-							filter: brightness(0) invert(1) drop-shadow(0 0 5px #F3F9F4);
-						}
-					}
+					.icon {}
 
 					.text {
-						color: $lpCol;
-
 						h5 {
 							font-size: 16px;
 						}
@@ -431,6 +431,10 @@
 								}
 							}
 						}
+					}
+
+					&.active {
+						box-shadow: unset;
 					}
 				}
 

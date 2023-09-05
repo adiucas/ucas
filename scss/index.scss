@@ -640,11 +640,10 @@
 
 			.nav-tabs {
 				padding-right: unset;
-				border-bottom: 2px solid #dddddd;
+				flex-wrap: nowrap;
 
 				.nav-item {
-					flex-grow: 1;
-					flex-basis: (100%/6);
+					flex-basis: 100%;
 					flex-grow: 1;
 					display: flex;
 					justify-content: center;
@@ -720,18 +719,62 @@
 								margin-right: 5px;
 							}
 						}
+
+						.gridd {
+							.grid-item {
+								display: flex;
+								height: 100px;
+							}
+
+							.clientLogoWrapper {
+								@include flex(row, center, center);
+								background: $lpCol;
+								box-shadow: 0 10px 20px rgba($primCol, 15%);
+								min-height: 100px;
+								border-radius: 15px;
+								outline: 1px solid rgba($color: $secCol, $alpha: .25);
+								transition: 0.3s all;
+								padding: 30px;
+								width: 100%;
+
+								img {
+									max-width: 100%;
+									max-height: 50px;
+								}
+
+								span {
+									@include flex(row, center, center);
+									font-family: $headFF;
+									font-weight: bold;
+									height: 50px;
+									color: $primCol;
+									font-size: 18px;
+									line-height: 1.1;
+								}
+
+								&:hover {
+									transform: scale(0.9);
+									outline: 1px solid $primCol;
+								}
+							}
+						}
 					}
 				}
 			}
 
 			.singleFp {
 				@include flex(col, center, center);
-				background: $lpCol;
+				background: #fff;
 				padding: 1rem;
 				border-radius: 0;
 				border: unset;
 				width: 100%;
 				transition: 0.3s all;
+				box-shadow: 0 1px 0 #dddddd;
+
+				img {
+					width: 100%;
+				}
 
 				.icon {
 					@include flex(row, center, center);
@@ -740,6 +783,7 @@
 					transition: 0.3s all;
 
 					img {
+						width: unset;
 						max-height: 50px;
 						transition: 0.3s all;
 					}
@@ -754,31 +798,24 @@
 
 				&:hover,
 				&.active {
-					background: $primCol;
+					background: $lpCol;
 
 					.icon {
 						border-color: $lpCol;
-
-						img {
-							filter: brightness(0) invert(1) drop-shadow(0 0 5px $lpCol);
-						}
-					}
-
-					.text {
-						color: $lpCol;
 					}
 				}
 
 				&.active {
 					position: relative;
+					box-shadow: 0 2px 0 $primCol;
 
 					&:after {
 						content: "\f0d7";
 						font-family: "Font Awesome 6 Free";
 						position: absolute;
-						bottom: -40px;
+						bottom: -27px;
 						font-weight: bold;
-						font-size: 50px;
+						font-size: 30px;
 						color: $primCol;
 					}
 				}
@@ -786,25 +823,6 @@
 				&#realErp-tab,
 				&#ubroker-tab,
 				&#digiagm-tab {
-
-					&:hover,
-					&.active {
-						.icon {
-							img {
-								filter: drop-shadow(0 0 5px $lpCol);
-							}
-						}
-					}
-				}
-
-				&#crm-tab {
-					.icon {
-						width: 100%;
-
-						img {
-							width: 100%;
-						}
-					}
 
 					&:hover,
 					&.active {
