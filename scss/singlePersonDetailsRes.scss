@@ -1,40 +1,34 @@
 @import 'templates/variables';
 @import 'templates/mixins';
 
-@media (max-width: 1720px){
+@media (max-width: 1720px) {
 	.sticky-top {
-	    padding-top: 40px;
+		padding-top: 40px;
 	}
+
 	/*==============================
 	=            banner            =
 	==============================*/
-	.carousel-inner{
+	.carousel-inner {
 		height: unset;
 	}
 }
 
-@media (max-width: 1400px){
-	/*==============================
-	=            banner            =
-	==============================*/
-	.carousel-inner{
-		.carousel-item{
-			.primTitle{
-				font-size: 45px;
-			}
-		}
+@media (max-width: 1400px) {
+	.single-person-details .description .primTitle {
+		font-size: 45px;
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
-	.carousel-inner{
-		.carousel-item{
-			.right{
+	.carousel-inner {
+		.carousel-item {
+			.right {
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
 
-				img{
+				img {
 					width: 100%;
 				}
 			}
@@ -42,26 +36,30 @@
 	}
 }
 
-@media (max-width: 992px){
-	/*==============================
-	=            banner            =
-	==============================*/
-	.carousel-inner{
-		img{
-			margin-top: 30px;
-			max-width: 200px;
-		}
+@media (max-width: 992px) {
+	.carousel-inner {
+		padding-top: 120px;
+	}
 
-		.carousel-item{
-			.primTitle{
+	.single-person-details {
+		padding-right: 12px;
+		padding-left: 12px;
+
+		.description {
+			.primTitle {
 				font-size: 35px;
 			}
+		}
+
+		img {
+			margin-top: 30px;
+			max-width: 200px;
 		}
 	}
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
 	.sticky-top {
-	    padding-top: 0;
+		padding-top: 0;
 	}
 }

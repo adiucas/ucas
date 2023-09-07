@@ -292,6 +292,12 @@
     right: unset;
     left: 20px; }
 
+  .clientFeedback .cfBody .right .feedTextWrapper .review-product {
+    top: 0;
+    right: 0;
+    bottom: unset;
+    left: unset; }
+
   /*==============================
   =            footer            =
   ==============================*/

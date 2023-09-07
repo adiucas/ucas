@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,YAAY;EACX,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EAEnB,cAAC;IACA,SAAS,EAAE,IAAI;IACf,KAAK,ECTG,OAAO;IDUf,WAAW,EAAE,IAAI;;AAInB,gBAAgB;EACf,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EAEnB,kBAAC;IACA,SAAS,EAAE,IAAI;IACf,KAAK,ECpBG,OAAO;IDqBf,WAAW,EAAE,KAAK",
+"sources": ["../scss/ubrokerBrochure.scss","../scss/templates/_variables.scss"],
+"names": [],
+"file": "ubrokerBrochure.css"
+}

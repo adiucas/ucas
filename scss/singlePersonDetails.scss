@@ -17,45 +17,57 @@ body {
 	@include flex(row, null, center);
 	height: unset;
 	padding-top: 150px;
-	padding-bottom: 30px;
+}
 
-	.carousel-item {
-		.primTitle {
-			@include head("900");
-			color: #ffffff;
-			font-size: 65px;
-			line-height: 1;
-			color: #ffffff;
-			text-transform: uppercase;
-		}
-
-		.secTitle {
-			@include para();
-			color: #ffffff;
-			font-size: 20px;
-		}
-	}
-
-	img {
-		max-width: 100%;
-	}
+.mainBannerWrapper {
+	background: grad();
 }
 
 /*=====  End of banner  ======*/
 
 /*===================================
-=            management info            =
+=            single-person-details           =
 ===================================*/
 
-.ourTeam {
+.single-person-details {
 	position: relative;
 	background: #eeeeee;
 
 	.description {
 		border: 1px solid $primCol;
 		border-radius: 15px;
-		padding: 15px;
+		padding: 30px;
+
+		.title-image {
+			&::after {
+				content: "";
+				width: 100%;
+				display: block;
+				height: 2px;
+				background: $primCol;
+				border-radius: 100px;
+				margin: 10px 0;
+			}
+		}
+
+		.primTitle {
+			@include head("900");
+			color: $primCol;
+			font-size: 65px;
+			line-height: 1;
+			text-transform: uppercase;
+		}
+
+		.secTitle {
+			@include para();
+			color: $secCol;
+			font-size: 20px;
+		}
+
+		img {
+			max-width: 100%;
+		}
 	}
 }
 
-/*=====  End of management info  ======*/
+/*=====  End of single-person-details ======*/

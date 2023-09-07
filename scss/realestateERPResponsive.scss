@@ -1,25 +1,27 @@
 @import 'templates/variables';
 @import 'templates/mixins';
 
-@media (max-width: 1720px){
+@media (max-width: 1720px) {
 	.sticky-top {
-	    padding-top: 40px;
+		padding-top: 40px;
 	}
+
 	/*==============================
 	=            banner            =
 	==============================*/
-	.carousel-inner{
+	.carousel-inner {
 		height: unset;
 	}
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
+
 	/*==============================
 	=            banner            =
 	==============================*/
-	.carousel-inner{
-		.carousel-item{
-			.primTitle{
+	.carousel-inner {
+		.carousel-item {
+			.primTitle {
 				font-size: 45px;
 			}
 		}
@@ -27,10 +29,10 @@
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
-	.carousel-inner{
-		.carousel-item{
-			.right{
-				img{
+	.carousel-inner {
+		.carousel-item {
+			.right {
+				img {
 					width: 100%;
 				}
 			}
@@ -38,26 +40,33 @@
 	}
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
+
 	/*==============================
 	=            banner            =
 	==============================*/
-	.carousel-inner{
-		img{
-			margin-top: 30px;
-			max-width: 200px;
+	.carousel-inner .carousel-item .primTitle img {
+		margin-top: 30px;
+		max-width: 300px;
+	}
+
+	.carousel-inner {
+		.carousel-item {
+			.primTitle {
+				font-size: 35px;
+			}
 		}
 
-		.carousel-item{
-			.primTitle{
-				font-size: 35px;
+		.right {
+			img {
+				margin-top: 30px;
 			}
 		}
 	}
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
 	.sticky-top {
-	    padding-top: 0;
+		padding-top: 0;
 	}
 }

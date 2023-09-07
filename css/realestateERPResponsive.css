@@ -20,11 +20,14 @@
   /*==============================
   =            banner            =
   ==============================*/
-  .carousel-inner img {
+  .carousel-inner .carousel-item .primTitle img {
     margin-top: 30px;
-    max-width: 200px; }
+    max-width: 300px; }
+
   .carousel-inner .carousel-item .primTitle {
-    font-size: 35px; } }
+    font-size: 35px; }
+  .carousel-inner .right img {
+    margin-top: 30px; } }
 @media (max-width: 576px) {
   .sticky-top {
     padding-top: 0; } }

@@ -406,4 +406,33 @@
 	}
 }
 
+.modal-open {
+	padding-right: unset !important;
+}
+
+.modalBrochure {
+	padding-right: unset !important;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.modal-content {
+		width: calc(100vw - 30px);
+		height: calc(100vh - 65px);
+	}
+
+	.btn-close {
+		position: absolute;
+		right: -30px;
+		color: #ffffff;
+		filter: invert(1);
+	}
+}
+
+.mainBannerWrapper {
+	background: grad();
+}
+
 @import "contentResponsive";

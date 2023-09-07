@@ -38,7 +38,8 @@
 
 <body>
 	<!-- Modal -->
-	<div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal modalBrochure fade" id="brochureModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -48,7 +49,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="gradBg"></div>
 	<!--============================
 	=            header            =
 	=============================-->
@@ -63,7 +63,7 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="row">
-							<div class="left col-lg-8 align-self-center text-center text-lg-start">
+							<div class="left col-lg-7 align-self-center text-center text-lg-start">
 								<div class="primTitle">
 									<img src="images/FeaturedProductIcon/abashon.svg" alt="">
 								</div>
@@ -72,8 +72,8 @@
 								<button class="btn btn-brochure" data-bs-toggle="modal"
 									data-bs-target="#brochureModal">Read Brochure</button>
 							</div>
-							<div class="right col-lg-4 text-center text-lg-end">
-								<img src="images/realestateerp.png">
+							<div class="right col-lg-5 text-center text-lg-end">
+								<img src="images/banner/rerp.png">
 							</div>
 						</div>
 					</div>
@@ -94,11 +94,11 @@
 								<div class="SpyNavBtn">
 									<span class="close"></span>
 								</div>
-								<a class="nav-link" href="#hrms">Human Resource <br> Management System</a>
-								<a class="nav-link" href="#lps">Land Purchase <br> System</a>
 								<a class="nav-link" href="#crs">Credit Realization <br> System </a>
+								<a class="nav-link" href="#lps">Land Purchase <br> System</a>
 								<a class="nav-link" href="#ams">Asset Management <br> System</a>
 								<a class="nav-link" href="#pis">Purchase & Inventory <br> System</a>
+								<a class="nav-link" href="#hrms">Human Resource <br> Management System</a>
 								<a class="nav-link" href="#iais">Integrated Accounting <br> Information System</a>
 								<a class="nav-link" href="#clientList">Client List</a>
 							</nav>
@@ -113,49 +113,6 @@
 									<div class="left"></div>
 									<img src="images/star.svg">
 									<span class="right"></span>
-								</div>
-							</div>
-							<div class="cardWrapper" id="hrms">
-								<div class="head">
-									<h4>Human Resource Management System</h4>
-								</div>
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="row">
-											<div class="col-lg-12"><span>Employee Database & Recruitment.</span></div>
-											<div class="col-lg-12"><span>Attendance Management</span></div>
-											<div class="col-lg-12"><span>Document Automation.</span></div>
-											<div class="col-lg-12"><span>Leave management.</span></div>
-											<div class="col-lg-12"><span>Payroll Management.</span></div>
-											<div class="col-lg-12"><span>Loan Management.</span></div>
-											<div class="col-lg-12"><span>PF Management.</span></div>
-											<div class="col-lg-12"><span>Gratuity Management.</span></div>
-											<div class="col-lg-12"><span>Earn Leave Management.</span></div>
-											<div class="col-lg-12"><span>Fixed Asset Management System.</span></div>
-											<div class="col-lg-12"><span>Covance.</span></div>
-											<div class="col-lg-12"><span>Inventory (Office supply).</span></div>
-											<div class="col-lg-12"><span>Food Allowance.</span></div>
-											<div class="col-lg-12"><span>Reports.</span></div>
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<img src="images/RealEstateERP/hrms.svg" class="img-fluid">
-									</div>
-								</div>
-							</div>
-							<div class="cardWrapper" id="lps">
-								<div class="head">
-									<h4>Land Purchase System</h4>
-								</div>
-								<div class="row">
-									<div class="col-lg-4"><span>Land Owner’s Information</span></div>
-									<div class="col-lg-4"><span>Land Purchase.</span></div>
-									<div class="col-lg-4"><span>Land Registration Process.</span></div>
-									<div class="col-lg-4"><span>Mutation Process.</span></div>
-									<div class="col-lg-4"><span>Reports.</span></div>
-									<div class="col-lg-4"><span>Mouza RS, CS Wise Land Inventory.</span></div>
-									<div class="col-lg-4"><span>Purchase and Mutation Short Report.</span></div>
-									<div class="col-lg-4"><span>Ploting and Development System.</span></div>
 								</div>
 							</div>
 							<div class="cardWrapper" id="crs">
@@ -192,6 +149,22 @@
 									</div>
 								</div>
 							</div>
+							<div class="cardWrapper" id="lps">
+								<div class="head">
+									<h4>Land Purchase System</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-4"><span>Land Owner’s Information</span></div>
+									<div class="col-lg-4"><span>Land Purchase.</span></div>
+									<div class="col-lg-4"><span>Land Registration Process.</span></div>
+									<div class="col-lg-4"><span>Mutation Process.</span></div>
+									<div class="col-lg-4"><span>Reports.</span></div>
+									<div class="col-lg-4"><span>Mouza RS, CS Wise Land Inventory.</span></div>
+									<div class="col-lg-4"><span>Purchase and Mutation Short Report.</span></div>
+									<div class="col-lg-4"><span>Ploting and Development System.</span></div>
+								</div>
+							</div>
+
 							<div class="cardWrapper" id="ams">
 								<div class="head">
 									<h4>Asset Management System</h4>
@@ -225,6 +198,34 @@
 									<div class="col-lg-6"><span>Purchase Report (Date Wise, Product Wise, Supplier
 											Wise).</span></div>
 									<div class="col-lg-6"><span>Fixed Asset Register (Only For Corporate Office).</span>
+									</div>
+								</div>
+							</div>
+							<div class="cardWrapper" id="hrms">
+								<div class="head">
+									<h4>Human Resource Management System</h4>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="row">
+											<div class="col-lg-12"><span>Employee Database & Recruitment.</span></div>
+											<div class="col-lg-12"><span>Attendance Management</span></div>
+											<div class="col-lg-12"><span>Document Automation.</span></div>
+											<div class="col-lg-12"><span>Leave management.</span></div>
+											<div class="col-lg-12"><span>Payroll Management.</span></div>
+											<div class="col-lg-12"><span>Loan Management.</span></div>
+											<div class="col-lg-12"><span>PF Management.</span></div>
+											<div class="col-lg-12"><span>Gratuity Management.</span></div>
+											<div class="col-lg-12"><span>Earn Leave Management.</span></div>
+											<div class="col-lg-12"><span>Fixed Asset Management System.</span></div>
+											<div class="col-lg-12"><span>Covance.</span></div>
+											<div class="col-lg-12"><span>Inventory (Office supply).</span></div>
+											<div class="col-lg-12"><span>Food Allowance.</span></div>
+											<div class="col-lg-12"><span>Reports.</span></div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<img src="images/RealEstateERP/hrms.svg" class="img-fluid">
 									</div>
 								</div>
 							</div>

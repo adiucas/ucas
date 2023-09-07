@@ -37,6 +37,31 @@
 
 <body>
 	<div class="gradBg"></div>
+
+	<!-- abashon brochure modal -->
+	<div class="modal modalBrochure fade" id="abashonBrochureModal" tabindex="-1" aria-labelledby="abashonBrochureModal"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-body">
+					<iframe class="brochureLoader" src="realEstateErpBrochure.html"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ubroker brochure modal -->
+	<div class="modal modalBrochure fade" id="ubrokerBrochureModal" tabindex="-1" aria-labelledby="ubrokerBrochureModal"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-body">
+					<iframe class="brochureLoader" src="ubrokerBrochure.html"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--============================
 	=            header            =
 	=============================-->
@@ -45,7 +70,7 @@
 	=            banner            =
 	=============================-->
 	<div class="slider container-lg container-fluid">
-		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="false">
+		<div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 			<a class="mouse_scroll" href="#aboutUs">
 				<div class="mouse">
 					<div class="wheel"></div>
@@ -75,6 +100,9 @@
 							</div>
 							<div class="secTitle">Back office Management software <br> for stockbrokers and dealer</div>
 							<a class="btn btn-banner me-2" href="uBroker.html">Discover Now</a>
+							<a class="btn btn-brochure" data-bs-toggle="modal"
+								data-bs-target="#ubrokerBrochureModal">Read
+								Brochure</a>
 						</div>
 						<div class="right col-lg-7 col-xl-8 text-center text-lg-end">
 							<img class="uBroker-banner" src="images/banner/ubroker.png"
@@ -86,11 +114,13 @@
 					<div class="row">
 						<div class="left col-lg-5 col-xl-4 col-xxl-5 align-self-center text-center text-lg-start">
 							<div class="primTitle">
-								<img class="product-logo" src="images/FeaturedProductIcon/abashon.svg" alt="">
+								<img class="product-logo abashon" src="images/FeaturedProductIcon/abashon.svg" alt="">
 							</div>
 							<div class="secTitle">Enterprise Resource Planner <br> for realestate and landbusiness</div>
 							<a href="RealestateERP.html" class="btn btn-banner me-2">Discover Now</a>
-							<a class="btn btn-brochure" href="uBroker.html">Read Brochure</a>
+							<a class="btn btn-brochure" data-bs-toggle="modal"
+								data-bs-target="#abashonBrochureModal">Read
+								Brochure</a>
 						</div>
 						<div class="right col-lg-7 col-xl-8 col-xxl-7 text-center text-lg-end">
 							<img src="images/banner/rerp.png">
@@ -274,7 +304,7 @@
 					<img src="images/ServiceBg.png">
 					<div class="iconText">
 						<img src="images/ServiceIcons/2560114.png">
-						<span> Software development <br> and IT enabled services</span>
+						<span>Web Application <br> and Software Development.</span>
 					</div>
 				</a>
 				<a href="javascript:void(0)" class="singleService">
@@ -288,14 +318,14 @@
 					<img src="images/ServiceBg.png">
 					<div class="iconText">
 						<img src="images/ServiceIcons/mobile-app-dev-icon.png">
-						<span>Mobile App Development <br> (Android/iOS)</span>
+						<span>Mobile App Development <br> (Android & iOS)</span>
 					</div>
 				</a>
 				<a href="javascript:void(0)" class="singleService">
 					<img src="images/ServiceBg.png">
 					<div class="iconText">
 						<img src="images/ServiceIcons/vps.png">
-						<span>VPS <br> Cloud Hosting</span>
+						<span>Cloud Hosting <br> (AWS, AZURE)</span>
 					</div>
 				</a>
 			</div>
@@ -304,21 +334,14 @@
 					<img src="images/ServiceBg.png">
 					<div class="iconText">
 						<img src="images/ServiceIcons/digiagm.png">
-						<span>Digital <br>AGM/EGM</span>
+						<span>AGM and EGM Holding.</span>
 					</div>
 				</a>
 				<a href="javascript:void(0)" class="singleService">
 					<img src="images/ServiceBg.png">
 					<div class="iconText">
 						<img src="images/ServiceIcons/divident.png">
-						<span>Dividend Data Processing <br> & Management</span>
-					</div>
-				</a>
-				<a href="javascript:void(0)" class="singleService">
-					<img src="images/ServiceBg.png">
-					<div class="iconText">
-						<img src="images/ServiceIcons/ipo.png">
-						<span>Post Management of <br>Initial Public Offerings (IPO)</span>
+						<span>Dividend Data Processing</span>
 					</div>
 				</a>
 				<a href="javascript:void(0)" class="singleService">
@@ -331,17 +354,8 @@
 				<a href="javascript:void(0)" class="singleService">
 					<img src="images/ServiceBg.png">
 					<div class="iconText">
-						<img src="images/ServiceIcons/networking.png">
-						<span>Corporate <br> Networking</span>
-					</div>
-				</a>
-			</div>
-			<div class="serviceWrapper3">
-				<a href="javascript:void(0)" class="singleService">
-					<img src="images/ServiceBg.png">
-					<div class="iconText">
 						<img src="images/ServiceIcons/pngwing.com.png">
-						<span> Hardware service <br>and maintenance</span>
+						<span> Hardware service <br>and Corporate Networking</span>
 					</div>
 				</a>
 				<a href="javascript:void(0)" class="singleService">
@@ -352,6 +366,22 @@
 					</div>
 				</a>
 			</div>
+			<!-- <div class="serviceWrapper3">
+				<a href="javascript:void(0)" class="singleService">
+					<img src="images/ServiceBg.png">
+					<div class="iconText">
+						<img src="images/ServiceIcons/pngwing.com.png">
+						<span> Hardware service <br>and Corporate Networking</span>
+					</div>
+				</a>
+				<a href="javascript:void(0)" class="singleService">
+					<img src="images/ServiceBg.png">
+					<div class="iconText">
+						<img src="images/ServiceIcons/work.png">
+						<span>Training <br> & Consultancy</span>
+					</div>
+				</a>
+			</div> -->
 		</div>
 	</div>
 
@@ -1235,10 +1265,18 @@
 							<div class="feedTextWrapper">
 								<i class="fa-solid fa-quote-left"></i>
 								<i class="fa-solid fa-quote-right"></i>
-								“UBROKER is a tremendously user friendly Back office system for stockbrokers. The system
-								is equipped to comply with latest updates and directives from Bangladesh Securities and
-								Exchange Commission as well as DSE, CSE and CDBL. We are satisfied with their clients’
-								service as well. We wish their success”
+								<p>
+									“UBROKER is a tremendously user friendly Back office system for stockbrokers. The
+									system
+									is equipped to comply with latest updates and directives from Bangladesh Securities
+									and
+									Exchange Commission as well as DSE, CSE and CDBL. We are satisfied with their
+									clients’
+									service as well. We wish their success”
+								</p>
+								<div class="review-product">
+									Product - UBROKER
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1258,9 +1296,15 @@
 							<div class="feedTextWrapper">
 								<i class="fa-solid fa-quote-left"></i>
 								<i class="fa-solid fa-quote-right"></i>
-								Very nicely presented website with all the information required. Very interactive and
-								serves the purpose meaningfully. The maintenance from the team UCAS is very
-								satisfactory.
+								<p>
+									Very nicely presented website with all the information required. Very interactive
+									and
+									serves the purpose meaningfully. The maintenance from the team UCAS is very
+									satisfactory.
+								</p>
+								<div class="review-product">
+									Product - Website
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1280,10 +1324,19 @@
 							<div class="feedTextWrapper">
 								<i class="fa-solid fa-quote-left"></i>
 								<i class="fa-solid fa-quote-right"></i>
-								UCAS has supplied us with the “ABASON” a very user friendly ERP system for real estate
-								companies. It covers all the aspects of Real Estate Company to put on true automation
-								process. It amazingly reduces the constraints of work process and makes the reports to
-								the authorities more authentic. It makes the decision making so effective and perfect.
+								<p>
+									UCAS has supplied us with the “ABASON” a very user friendly ERP system for real
+									estate
+									companies. It covers all the aspects of Real Estate Company to put on true
+									automation
+									process. It amazingly reduces the constraints of work process and makes the reports
+									to
+									the authorities more authentic. It makes the decision making so effective and
+									perfect.
+								</p>
+								<div class="review-product">
+									Product - ABASHON
+								</div>
 							</div>
 						</div>
 					</div>

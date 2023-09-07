@@ -1,0 +1,24 @@
+@import 'templates/variables';
+@import 'templates/mixins';
+
+.next-button{
+	display: flex;
+	align-items: center;
+
+	i{
+		font-size: 30px;
+		color: $primCol;
+		margin-left: 30px;
+	}
+}
+
+.previous-button{
+	display: flex;
+	align-items: center;
+
+	i{
+		font-size: 30px;
+		color: $primCol;
+		margin-left: -30px;
+	}
+}
