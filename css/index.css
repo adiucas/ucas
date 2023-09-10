@@ -460,6 +460,10 @@
           .featuredProduct .contentBg .fpTabWrapper .tab-content .tab-pane .title p {
             color: rgba(8, 160, 57, 0.9);
             font-size: 24px; }
+          .featuredProduct .contentBg .fpTabWrapper .tab-content .tab-pane .title .wrappper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
           .featuredProduct .contentBg .fpTabWrapper .tab-content .tab-pane .title:after {
             content: "";
             display: block;
@@ -772,75 +776,6 @@
         margin-right: 5px; }
 
 /*=====  End of website development & vps hosting  ======*/
-/*===================================
-=            our clients            =
-===================================*/
-.ourClient {
-  position: relative; }
-  .ourClient .contentBg {
-    padding: 1rem 2rem 1.5rem 2rem;
-    background: #f2f2f2;
-    border: 1px solid #dddddd;
-    border-radius: 1.5rem;
-    position: relative; }
-    .ourClient .contentBg .btn-explore, .ourClient .contentBg .btn-explore1 {
-      position: absolute;
-      top: 25px;
-      right: -17px; }
-      .ourClient .contentBg .btn-explore img, .ourClient .contentBg .btn-explore1 img {
-        width: 100%;
-        max-width: 150px; }
-    .ourClient .contentBg .btn-explore1 {
-      top: unset;
-      right: unset;
-      left: 0;
-      bottom: -18px;
-      display: flex;
-      width: 100%;
-      justify-content: center; }
-      .ourClient .contentBg .btn-explore1 img {
-        max-width: 170px; }
-    .ourClient .contentBg .secHead {
-      padding: 1rem 0 1rem 0; }
-    .ourClient .contentBg .clientLogos .filter {
-      text-align: center; }
-      .ourClient .contentBg .clientLogos .filter button:not(:last-child) {
-        margin-right: 15px; }
-    .ourClient .contentBg .clientLogos .grid .grid-item {
-      display: flex;
-      height: 100px; }
-    .ourClient .contentBg .clientLogos .grid .clientLogoWrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      background: #F3F9F4;
-      box-shadow: 0 10px 20px rgba(8, 160, 57, 0.15);
-      min-height: 100px;
-      border-radius: 15px;
-      outline: 1px solid transparent;
-      transition: 0.3s all;
-      padding: 30px;
-      width: 100%; }
-      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper img {
-        max-width: 100%;
-        max-height: 50px; }
-      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper span {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-family: "Gantari", sans-serif;
-        font-weight: bold;
-        height: 50px;
-        color: #08A039;
-        font-size: 18px;
-        line-height: 1.1; }
-      .ourClient .contentBg .clientLogos .grid .clientLogoWrapper:hover {
-        transform: scale(0.9);
-        outline: 1px solid #08A039; }
-
-/*=====  End of our clients  ======*/
 /*=======================================
 =            client feedback            =
 =======================================*/
