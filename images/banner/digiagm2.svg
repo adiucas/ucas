@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1543" height="345.06" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1543 345.06">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-672.96" y1="-471.71" x2="-672.96" y2="-541.05" gradientTransform="translate(759.71 816.77)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ddd"/>
+      <stop offset=".99" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-672.96" y1="-476.71" x2="-672.96" y2="-536.05" gradientTransform="translate(759.71 816.77)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ddd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-273.25" y1="-471.71" x2="-273.25" y2="-541.05" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-273.25" x2="-273.25" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="-479.95" y1="-471.71" x2="-479.95" y2="-541.05" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-479.95" x2="-479.95" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-7" x1="-29.66" y1="-471.71" x2="-29.66" y2="-541.05" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="-29.66" x2="-29.66" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-9" x1="225.97" y1="-471.71" x2="225.97" y2="-541.05" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="225.97" y1="-476.71" x2="225.97" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-11" x1="469.38" y1="-471.71" x2="469.38" y2="-541.05" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-12" x1="469.38" y1="-476.71" x2="469.38" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-13" x1="691.8" y1="-471.71" x2="691.8" y2="-541.05" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-14" x1="691.8" y1="-476.71" x2="691.8" y2="-536.05" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-15" x1="558.9" y1="320.4" x2="558.9" y2="211.96" gradientTransform="translate(212.6 -211.96)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-16" x1="558.9" y1="316.59" x2="558.9" y2="215.78" gradientTransform="translate(212.6 -211.96)" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <g>
+          <rect x="0" y="275.72" width="173.51" height="69.34" rx="15" ry="15" fill="url(#linear-gradient)"/>
+          <rect x="5" y="280.72" width="163.51" height="59.34" rx="10" ry="10" fill="url(#linear-gradient-2)"/>
+        </g>
+        <text transform="translate(16.73 315.61)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="20" font-weight="700"><tspan x="0" y="0">Zoom Meeting</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="386.02" y="275.72" width="200.91" height="69.34" rx="15" ry="15" fill="url(#linear-gradient-3)"/>
+          <path d="m401.02,280.72h170.91c5.52,0,10,4.48,10,10v39.34c0,5.52-4.48,10-10,10h-170.91c-5.52,0-10-4.48-10-10v-39.34c0-5.52,4.48-10,10-10Z" fill="url(#linear-gradient-4)"/>
+        </g>
+        <text transform="translate(409.3 297.26)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">Video Conferencing</tspan><tspan x="5.02" y="19.2">with Company and</tspan><tspan x="27.61" y="38.4">Share holder</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="193.51" y="275.72" width="172.51" height="69.34" rx="15" ry="15" fill="url(#linear-gradient-5)"/>
+          <rect x="198.51" y="280.72" width="162.51" height="59.34" rx="10" ry="10" fill="url(#linear-gradient-6)"/>
+        </g>
+        <text transform="translate(236.83 305.61)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="20" font-weight="700"><tspan x="0" y="0">Realtime</tspan><tspan x="-24.53" y="24">Online Voting</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="606.92" y="275.72" width="246.27" height="69.34" rx="15" ry="15" fill="url(#linear-gradient-7)"/>
+          <rect x="611.92" y="280.72" width="236.27" height="59.34" rx="10" ry="10" fill="url(#linear-gradient-8)"/>
+        </g>
+        <text transform="translate(621.74 305.95)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="19" font-weight="700"><tspan x="0" y="0">Emailing Annual report</tspan><tspan x="35.83" y="22.8">to Share holder</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="873.19" y="275.72" width="224.97" height="69.34" rx="15" ry="15" fill="url(#linear-gradient-9)"/>
+          <path d="m888.19,340.06c-5.51,0-10-4.49-10-10v-39.34c0-5.51,4.49-10,10-10h194.97c5.51,0,10,4.49,10,10v39.34c0,5.51-4.49,10-10,10h-194.97Z" fill="url(#linear-gradient-10)"/>
+        </g>
+        <text transform="translate(889.47 306.2)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="19" font-weight="700"><tspan x="0" y="0">Email &amp; SMS of AGM</tspan><tspan x="1.87" y="22.8">Date to Shareholder</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="1118.17" y="275.72" width="221.86" height="69.34" rx="15" ry="15" fill="url(#linear-gradient-11)"/>
+          <path d="m1133.17,340.06c-5.51,0-10-4.49-10-10v-39.34c0-5.51,4.49-10,10-10h191.86c5.51,0,10,4.49,10,10v39.34c0,5.51-4.49,10-10,10h-191.86Z" fill="url(#linear-gradient-12)"/>
+        </g>
+        <text transform="translate(1134.76 315.71)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="20" font-weight="700"><tspan x="0" y="0">Scrutinize Support</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="1360.02" y="275.72" width="182.98" height="69.34" rx="15" ry="15" fill="url(#linear-gradient-13)"/>
+          <rect x="1365.02" y="280.72" width="172.98" height="59.34" rx="10" ry="10" fill="url(#linear-gradient-14)"/>
+        </g>
+        <text transform="translate(1373.59 305.71)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="20" font-weight="700"><tspan x="0" y="0">Customize AGM</tspan><tspan x="47.79" y="24">Portal</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect x="691.15" width="160.71" height="108.44" rx="11.45" ry="11.45" fill="url(#linear-gradient-15)"/>
+        <rect x="694.97" y="3.82" width="153.07" height="100.81" rx="7.64" ry="7.64" fill="url(#linear-gradient-16)"/>
+      </g>
+      <g>
+        <text transform="translate(738.75 89.04)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="28" font-weight="700"><tspan x="0" y="0">EGM</tspan></text>
+        <text transform="translate(738.85 39.71)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="28" font-weight="700"><tspan x="0" y="0">AGM</tspan></text>
+      </g>
+      <line x1="851.35" y1="54.22" x2="694.07" y2="54.22" fill="none" stroke="#0e8944" stroke-miterlimit="10" stroke-width="1.53"/>
+    </g>
+    <path d="m1451.51,270.04c0-153.52-680.01-161.32-680.01-161.32,0,0,457.59,58.32,457.59,161.32" fill="none" stroke="#fff"/>
+    <path d="m87.07,270.04c0-153.52,684.75-161.32,684.75-161.32,0,0-490.84,30.91-491.74,161.32" fill="none" stroke="#fff"/>
+    <path d="m771.5,108.71c-46.86,44.07-66.56,96.12-41.44,161.32" fill="none" stroke="#fff"/>
+    <g>
+      <path d="m1451.51,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m1451.51,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="1451.51" cy="270.04" r="9" fill="#359946"/>
+    </g>
+    <g>
+      <path d="m1229.1,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m1229.1,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="1229.1" cy="270.04" r="9" fill="#359946"/>
+    </g>
+    <g>
+      <path d="m730.06,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m730.06,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="730.06" cy="270.04" r="9" fill="#359946"/>
+    </g>
+    <path d="m771.5,108.71c93.22,28.53,202.54,64.41,214.18,161.32" fill="none" stroke="#fff"/>
+    <g>
+      <path d="m985.68,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m985.68,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="985.68" cy="270.04" r="9" fill="#359946"/>
+    </g>
+    <path d="m771.5,108.71c-96.48,17.96-285.18,26.29-284.55,161.32" fill="none" stroke="#fff"/>
+    <g>
+      <path d="m486.47,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m486.47,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="486.47" cy="270.04" r="9" fill="#359946"/>
+    </g>
+    <g>
+      <path d="m771.5,122.72c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m771.5,122.72c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="771.5" cy="108.71" r="9" fill="#359946"/>
+    </g>
+    <g>
+      <path d="m86.75,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m86.75,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="86.75" cy="270.04" r="9" fill="#359946"/>
+    </g>
+    <g>
+      <path d="m279.76,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+      <path d="m279.76,284.04c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+      <circle cx="279.76" cy="270.04" r="9" fill="#359946"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1823.97" height="309.82" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1823.97 309.82">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-379.41" y1="-148.57" x2="-379.41" y2="-211.13" gradientTransform="translate(470.44 458.39)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ddd"/>
+      <stop offset=".99" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-379.41" y1="-153.57" x2="-379.41" y2="-206.13" gradientTransform="translate(470.44 458.39)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ddd"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="76.93" y1="-148.57" x2="76.93" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="76.93" x2="76.93" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="-158.03" y1="-148.57" x2="-158.03" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-158.03" x2="-158.03" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-7" x1="280.71" y1="-148.57" x2="280.71" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="280.71" x2="280.71" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-9" x1="496.99" y1="-148.57" x2="496.99" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="496.99" x2="496.99" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-11" x1="723.32" y1="-148.57" x2="723.32" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-12" x1="723.32" x2="723.32" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-13" x1="975.44" y1="-148.57" x2="975.44" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-14" x1="975.44" x2="975.44" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-15" x1="1247.16" y1="-148.57" x2="1247.16" y2="-211.13" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-16" x1="1247.16" x2="1247.16" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-17" x1="675.59" y1="315.33" x2="675.59" y2="234.7" gradientTransform="translate(234.7 -234.7)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-18" x1="675.59" y1="310.33" x2="675.59" y2="239.7" gradientTransform="translate(234.7 -234.7)" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <g>
+          <rect x="0" y="247.27" width="182.06" height="62.56" rx="15" ry="15" fill="url(#linear-gradient)"/>
+          <rect x="5" y="252.27" width="172.06" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-2)"/>
+        </g>
+        <text transform="translate(17.1 282.65)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">Monthly Reporting</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="442.76" y="247.27" width="209.22" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-3)"/>
+          <rect x="447.76" y="252.27" width="199.22" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-4)"/>
+        </g>
+        <text transform="translate(456.07 273.04)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">BO Wise Reconciliation</tspan><tspan x="45.31" y="19.2">and History</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="202.06" y="247.27" width="220.7" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-5)"/>
+          <rect x="207.06" y="252.27" width="210.7" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-6)"/>
+        </g>
+        <text transform="translate(249.5 274.78)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">Yearly Summary</tspan><tspan x="-29.06" y="19.2">Divident Reconciliation</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="671.99" y="247.27" width="158.34" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-7)"/>
+          <rect x="676.98" y="252.27" width="148.34" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-8)"/>
+        </g>
+        <text transform="translate(687.49 273.02)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">Bank Statement</tspan><tspan x="4.93" y="19.2">Upload System</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="850.33" y="247.27" width="234.21" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-9)"/>
+          <rect x="855.33" y="252.27" width="224.21" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-10)"/>
+        </g>
+        <text transform="translate(891.44 275.02)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">Warrant/BOID wise</tspan><tspan x="-24.12" y="19.2">Clear &amp; Uclear Statement</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="1104.54" y="247.27" width="178.46" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-11)"/>
+          <rect x="1109.54" y="252.27" width="168.46" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-12)"/>
+        </g>
+        <text transform="translate(1125.71 273.26)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">BO/Warrant wise</tspan><tspan x="13.62" y="19.2">Query Option</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="1300.54" y="247.27" width="290.68" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-13)"/>
+          <rect x="1305.54" y="252.27" width="280.68" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-14)"/>
+        </g>
+        <text transform="translate(1316.56 273.42)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">Tax Certifcate Download Option</tspan><tspan x="66.52" y="19.2">and Mail Option</tspan></text>
+      </g>
+      <g>
+        <g>
+          <rect x="1611.22" y="247.27" width="212.75" height="62.56" rx="15" ry="15" fill="url(#linear-gradient-15)"/>
+          <rect x="1616.22" y="252.27" width="202.75" height="52.56" rx="10" ry="10" fill="url(#linear-gradient-16)"/>
+        </g>
+        <text transform="translate(1630.03 284.4)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="16" font-weight="700"><tspan x="0" y="0">SMS &amp; Email Facilities</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <g>
+          <rect x="751.32" y="0" width="317.95" height="80.63" rx="15" ry="15" fill="url(#linear-gradient-17)"/>
+          <rect x="756.32" y="5" width="307.95" height="70.63" rx="10" ry="10" fill="url(#linear-gradient-18)"/>
+        </g>
+        <text transform="translate(783.61 50.07)" fill="#0e8944" font-family="MPLUS2-Bold, &apos;M PLUS 2&apos;" font-size="32" font-weight="700"><tspan x="0" y="0">Listed Company</tspan></text>
+      </g>
+      <path d="m1717.6,241.96c0-153.52-807.31-161.32-807.31-161.32,0,0,535.59,58.32,535.59,161.32" fill="none" stroke="#fff"/>
+      <path d="m91.03,241.96c0-153.52,819.26-161.32,819.26-161.32" fill="none" stroke="#fff"/>
+      <path d="m312.73,241.96c0-153.52,597.88-161.32,597.88-161.32,0,0-362.92,58.32-362.92,161.32" fill="none" stroke="#fff"/>
+      <path d="m910.29,80.64c28.93,42.8,58.81,96.28,57.14,161.32" fill="none" stroke="#fff"/>
+      <g>
+        <path d="m1717.6,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m1717.6,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="1717.6" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <g>
+        <circle cx="1445.88" cy="241.96" r="14" fill="#fff"/>
+        <circle cx="1445.88" cy="241.96" r="14" fill="none" stroke="#0e8944"/>
+        <circle cx="1445.88" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <g>
+        <path d="m967.43,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m967.43,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="967.43" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <path d="m910.29,80.64c80.55,15.19,248.67,84.83,283.47,161.32" fill="none" stroke="#fff"/>
+      <g>
+        <path d="m1193.77,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m1193.77,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="1193.77" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <path d="m910.29,80.64c-67.1,16.73-155.74,95.52-158.65,161.32" fill="none" stroke="#fff"/>
+      <g>
+        <path d="m751.16,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m751.16,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="751.16" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <g>
+        <path d="m910.29,94.64c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m910.29,94.64c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="910.29" cy="80.64" r="9" fill="#359946"/>
+      </g>
+      <g>
+        <path d="m312.41,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m312.41,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="312.41" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <g>
+        <path d="m91.03,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m91.03,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="91.03" cy="241.96" r="9" fill="#359946"/>
+      </g>
+      <g>
+        <path d="m547.38,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="#fff"/>
+        <path d="m547.38,255.96c-7.72,0-14-6.28-14-14s6.28-14,14-14,14,6.28,14,14-6.28,14-14,14Z" fill="none" stroke="#0e8944"/>
+        <circle cx="547.37" cy="241.96" r="9" fill="#359946"/>
+      </g>
+    </g>
+  </g>
+</svg>

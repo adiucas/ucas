@@ -12,8 +12,8 @@ body {
   flex-direction: row;
   align-items: center;
   height: unset;
-  padding-top: 150px;
-  padding-bottom: 30px; }
+  padding-top: 180px;
+  padding-bottom: 50px; }
   .carousel-inner .carousel-item .primTitle {
     font-family: "Gantari", sans-serif;
     font-weight: 900;
@@ -29,6 +29,9 @@ body {
     margin-top: 5px; }
   .carousel-inner img {
     max-width: 100%; }
+
+.mainBannerWrapper {
+  background: linear-gradient(135deg, #08A039 0%, #009999 100%); }
 
 /*=====  End of banner  ======*/
 /*===================================

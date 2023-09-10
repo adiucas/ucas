@@ -120,4 +120,3 @@ $('.nav-pills .nav-link').click(function (event) {
   event.preventDefault();
 });
 
-
