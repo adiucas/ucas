@@ -30,6 +30,15 @@ body {
 			font-size: 65px;
 			line-height: 1;
 			color: #ffffff;
+
+			.dsc-enlisted {
+				margin-bottom: -5px;
+
+				img {
+					max-width: 100%;
+					max-height: 75px;
+				}
+			}
 		}
 
 		.secTitle {
