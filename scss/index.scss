@@ -46,6 +46,16 @@
 			line-height: 1;
 			color: #ffffff;
 			visibility: hidden;
+
+			.dsc-enlisted {
+				margin-bottom: -5px;
+
+				img {
+					max-width: 100%;
+					max-height: 75px;
+					visibility: visible;
+				}
+			}
 		}
 
 		.secTitle {

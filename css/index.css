@@ -34,6 +34,12 @@
     line-height: 1;
     color: #ffffff;
     visibility: hidden; }
+    .carousel-inner .carousel-item .primTitle .dsc-enlisted {
+      margin-bottom: -5px; }
+      .carousel-inner .carousel-item .primTitle .dsc-enlisted img {
+        max-width: 100%;
+        max-height: 75px;
+        visibility: visible; }
   .carousel-inner .carousel-item .secTitle {
     visibility: hidden;
     font-family: "M PLUS 2", sans-serif;
