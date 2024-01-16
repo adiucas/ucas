@@ -120,3 +120,14 @@ $('.nav-pills .nav-link').click(function (event) {
   event.preventDefault();
 });
 
+var elem = document.querySelector('.grid');
+var msnry = new Masonry(elem, {
+  // options
+  percentPosition: true,
+  // columnWidth: '.grid-item',
+  itemSelector: '.grid-item',
+  // fitWidth: true,
+  gutter: 0,
+  horizontalOrder: true
+});
+
